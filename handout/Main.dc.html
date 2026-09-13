@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <style>
+    body { margin: 0; font-family: Arial, Helvetica, "Helvetica Neue", sans-serif; }
+    a { color: #A6462B; } a:hover { color: #8A3A22; }
+    .sec { border-top: 1px solid #CFC6B4; padding-top: 8px; }
+    .hd { display: flex; align-items: center; gap: 7px; margin-bottom: 6px; }
+    .num { font-size: 12px; font-weight: 700; color: #A6462B; letter-spacing: 0.06em; }
+    .ttl { font-size: 13px; font-weight: 700; color: #132741; letter-spacing: 0.07em; text-transform: uppercase; }
+    .lbl { font-size: 12px; font-weight: 700; color: #8A8069; letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 4px; }
+    ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 3px; }
+    li { font-size: 15px; line-height: 1.24; color: #4A5C73; padding-left: 13px; position: relative; text-wrap: pretty; }
+    li::before { content: ""; position: absolute; left: 0; top: 7px; width: 5px; height: 5px; background: #A6462B; }
+    b { color: #132741; font-weight: 700; }
+    .src { font-size: 11.5px; line-height: 1.3; color: #8A8069; font-style: italic; }
+  </style>
+</helmet>
+
+<div style="width: 794px; height: 1123px; background: #EFE7DA; box-sizing: border-box; display: flex; flex-direction: column; overflow: hidden;">
+
+  <!-- Kopf / Formalien -->
+  <div style="background: #1A2A41; padding: 17px 44px 15px 44px; display: flex; justify-content: space-between; align-items: flex-start; gap: 24px;">
+    <div style="display: flex; flex-direction: column; gap: 5px;">
+      <div style="font-size: 11.5px; font-weight: 700; color: #D9A184; letter-spacing: 0.16em; text-transform: uppercase;">Handout · Politik und Wirtschaft LK</div>
+      <div style="font-size: 30px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.01em; line-height: 1.05;">Der Gaza-Konflikt</div>
+      <div style="font-size: 15px; color: #C3CBD1; line-height: 1.25;">Eine politische Konfliktanalyse seit dem 7. Oktober 2023</div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 2px; text-align: right; font-size: 12px; line-height: 1.45; color: #C3CBD1; flex-shrink: 0; padding-top: 3px;">
+      <div>Augustinerschule Friedberg</div>
+      <div>Politik und Wirtschaft LK, Q3</div>
+      <div>Fachlehrkraft: Herr Yazdi</div>
+      <div style="color: #FFFFFF; font-weight: 700;">Celvin und Lennard</div>
+      <div>21. September 2026</div>
+    </div>
+  </div>
+
+  <!-- Leitfrage -->
+  <div style="padding: 11px 44px 11px 44px; background: #E3DACA; display: flex; gap: 11px; align-items: flex-start;">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A6462B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 1px;"><circle cx="12" cy="12" r="9"></circle><path d="M9.2 9.2a2.9 2.9 0 0 1 5.6 1c0 2-2.8 2.5-2.8 4"></path><path d="M12 17.2h.01"></path></svg>
+    <div>
+      <div style="font-size: 11.5px; font-weight: 700; color: #8A8069; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 3px;">Leitfrage</div>
+      <div style="font-size: 14.5px; line-height: 1.3; color: #132741; text-wrap: pretty;">Deutschland hat sich verpflichtet, für die Sicherheit Israels einzustehen. Was bedeutet diese Verpflichtung, wenn die Sicherheitsinteressen der israelischen Regierung und das humanitäre Völkerrecht in Widerspruch geraten — sollte Deutschland dennoch Waffen an Israel liefern?</div>
+    </div>
+  </div>
+
+  <!-- Hauptteil -->
+  <div style="flex-grow: 1; padding: 12px 44px 0 44px; display: flex; flex-direction: column; gap: 11px;">
+
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px;">
+
+      <!-- Spalte links -->
+      <div style="display: flex; flex-direction: column; gap: 11px;">
+
+        <div class="sec">
+          <div class="hd">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#A6462B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"></path><circle cx="12" cy="10" r="2.6"></circle></svg>
+            <span class="num">01</span><span class="ttl">Geografische Verortung</span>
+          </div>
+          <ul>
+            <li><b>365 km², rund 2 Mio. Menschen</b> — die Hälfte davon minderjährig</li>
+            <li>Jeder Übergang wird von Israel oder Ägypten kontrolliert</li>
+            <li>Palästinensische Gebiete: Gazastreifen und Westjordanland — räumlich getrennt, seit 2007 auch getrennt regiert</li>
+            <li>Die am 7.10.2023 angegriffenen Kibbuzim liegen wenige Kilometer entfernt</li>
+          </ul>
+        </div>
+
+        <div class="sec">
+          <div class="hd">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#A6462B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"></circle><path d="M3 20c0-3.3 2.7-5.4 6-5.4s6 2.1 6 5.4"></path><path d="M16.5 5.4a3.2 3.2 0 0 1 0 6.2"></path><path d="M18.4 14.9c1.7.8 2.6 2.5 2.6 5.1"></path></svg>
+            <span class="num">02</span><span class="ttl">Konfliktparteien</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <div>
+              <div class="lbl">Israelische Seite</div>
+              <ul>
+                <li>Regierung Netanjahu, Wahl am 27. Oktober 2026</li>
+                <li>Koalitionspartner mit eigener Vetomacht</li>
+                <li>Streitkräfte mit operativem Ermessen</li>
+                <li>Gespaltene Gesellschaft, Kriegsmüdigkeit</li>
+              </ul>
+            </div>
+            <div>
+              <div class="lbl">Palästinensische Seite</div>
+              <ul>
+                <li>Hamas-Politbüro in Doha, Vorsitz Khalil al-Hayya</li>
+                <li>Militärflügel in Gaza mit eigenem Spielraum</li>
+                <li>Islamischer Dschihad, nicht gebunden</li>
+                <li>Autonomiebehörde, seit 2007 ohne Zugang</li>
+              </ul>
+            </div>
+            <div style="font-size: 13px; line-height: 1.3; color: #8A8069;"><b style="color:#8A8069;">Indirekt beteiligt:</b> USA, UN, EU, Katar, Ägypten, Türkei, Iran</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Spalte rechts -->
+      <div style="display: flex; flex-direction: column; gap: 11px;">
+
+        <div class="sec">
+          <div class="hd">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#A6462B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"></circle><circle cx="12" cy="12" r="3.6"></circle><path d="M12 1.6v3.4M12 19v3.4M1.6 12h3.4M19 12h3.4"></path></svg>
+            <span class="num">03</span><span class="ttl">Konfliktgegenstand</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px; margin-bottom: 7px;">
+            <div style="display: flex; gap: 9px; align-items: baseline;"><span style="font-size: 12.5px; font-weight: 700; color: #A6462B; width: 64px; flex-shrink: 0;">1948</span><span style="font-size: 14.5px; line-height: 1.22; color: #4A5C73;">Gründung Israels, zugleich Flucht und Vertreibung</span></div>
+            <div style="display: flex; gap: 9px; align-items: baseline;"><span style="font-size: 12.5px; font-weight: 700; color: #A6462B; width: 64px; flex-shrink: 0;">2007</span><span style="font-size: 14.5px; line-height: 1.22; color: #4A5C73;">Hamas übernimmt Gaza, danach Abriegelung</span></div>
+            <div style="display: flex; gap: 9px; align-items: baseline;"><span style="font-size: 12.5px; font-weight: 700; color: #A6462B; width: 64px; flex-shrink: 0;">7.10.2023</span><span style="font-size: 14.5px; line-height: 1.22; color: #132741; font-weight: 700;">Angriff der Hamas, rund 1.200 Getötete — Kriegsbeginn</span></div>
+            <div style="display: flex; gap: 9px; align-items: baseline;"><span style="font-size: 12.5px; font-weight: 700; color: #A6462B; width: 64px; flex-shrink: 0;">10.10.2025</span><span style="font-size: 14.5px; line-height: 1.22; color: #4A5C73;">Waffenruhe, gestützt durch UN-Resolution 2803</span></div>
+            <div style="display: flex; gap: 9px; align-items: baseline;"><span style="font-size: 12.5px; font-weight: 700; color: #A6462B; width: 64px; flex-shrink: 0;">2026</span><span style="font-size: 14.5px; line-height: 1.22; color: #4A5C73;">Roadmap: die Hamas stimmt zu, Israel lehnt ab</span></div>
+          </div>
+          <div style="background: #E3DACA; padding: 7px 10px;">
+            <div style="font-size: 14px; line-height: 1.28; color: #132741; text-wrap: pretty;">Die Palästinenser fordern einen eigenen Staat. Israel sieht die Hamas als existenzielle Sicherheitsbedrohung und will ihre militärische wie politische Herrschaft über Gaza verhindern.</div>
+          </div>
+        </div>
+
+        <div class="sec">
+          <div class="hd">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#A6462B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M15.6 8.4l-2 5.2-5.2 2 2-5.2z"></path></svg>
+            <span class="num">04</span><span class="ttl">Interessen und Ziele</span>
+          </div>
+          <div style="display: flex; flex-direction: column;">
+            <div style="display: grid; grid-template-columns: 88px minmax(0,1fr) minmax(0,1fr); gap: 8px; padding-bottom: 4px; border-bottom: 1px solid #CFC6B4;">
+              <div class="lbl" style="margin:0;">Akteur</div><div class="lbl" style="margin:0;">Offizielle Position</div><div class="lbl" style="margin:0; color:#A6462B;">Tatsächl. Interesse</div>
+            </div>
+            <div style="display: grid; grid-template-columns: 88px minmax(0,1fr) minmax(0,1fr); gap: 8px; padding: 5px 0; border-bottom: 1px solid #CFC6B4;">
+              <div style="font-size:13.5px; line-height:1.25; font-weight:700; color:#132741;">Regierung</div><div style="font-size:13.5px; line-height:1.25; color:#4A5C73;">Entwaffnung der Hamas</div><div style="font-size:13.5px; line-height:1.25; color:#A6462B;">Politisches Überleben bis zur Wahl</div>
+            </div>
+            <div style="display: grid; grid-template-columns: 88px minmax(0,1fr) minmax(0,1fr); gap: 8px; padding: 5px 0; border-bottom: 1px solid #CFC6B4;">
+              <div style="font-size:13.5px; line-height:1.25; font-weight:700; color:#132741;">Koalition</div><div style="font-size:13.5px; line-height:1.25; color:#4A5C73;">Kein palästinensischer Staat</div><div style="font-size:13.5px; line-height:1.25; color:#A6462B;">Erhalt der eigenen Vetomacht</div>
+            </div>
+            <div style="display: grid; grid-template-columns: 88px minmax(0,1fr) minmax(0,1fr); gap: 8px; padding: 5px 0; border-bottom: 1px solid #CFC6B4;">
+              <div style="font-size:13.5px; line-height:1.25; font-weight:700; color:#132741;">Hamas</div><div style="font-size:13.5px; line-height:1.25; color:#4A5C73;">Schrittweise Entwaffnung</div><div style="font-size:13.5px; line-height:1.25; color:#A6462B;">Organisatorisches Überleben</div>
+            </div>
+            <div style="display: grid; grid-template-columns: 88px minmax(0,1fr) minmax(0,1fr); gap: 8px; padding: 5px 0;">
+              <div style="font-size:13.5px; line-height:1.25; font-weight:700; color:#132741;">USA</div><div style="font-size:13.5px; line-height:1.25; color:#4A5C73;">Umsetzung des Friedensplans</div><div style="font-size:13.5px; line-height:1.25; color:#A6462B;">Prestige und Regionalordnung</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 05 volle Breite -->
+    <div class="sec">
+      <div class="hd">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#A6462B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.4v17.2M6.6 20.6h10.8"></path><path d="M4.6 7.4h14.8"></path><path d="M7.6 7.4L4.6 14h6z"></path><path d="M16.4 7.4L13.4 14h6z"></path></svg>
+        <span class="num">05</span><span class="ttl">Macht und Ressourcen — eine ausgeprägte Asymmetrie</span>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px;">
+        <div>
+          <div class="lbl">Israel und IDF</div>
+          <ul>
+            <li>Reguläre Armee, vollständige Luftherrschaft</li>
+            <li><b>48,3 Mrd. USD</b> Militärausgaben 2025 — 7,8 % des BIP</li>
+            <li>Die USA als Schutzmacht</li>
+            <li>Kontrolle über Grenzen, Strom, Wasser und Hilfslieferungen</li>
+          </ul>
+        </div>
+        <div>
+          <div class="lbl">Hamas</div>
+          <ul>
+            <li>Irreguläre Kräfte, ausgebautes Tunnelsystem</li>
+            <li>Keine überprüfbaren Haushaltszahlen</li>
+            <li>Katar und Türkei als Unterstützer, Iran geschwächt</li>
+            <li>Kontrolle über die Verteilungswege im Gebiet</li>
+          </ul>
+        </div>
+      </div>
+      <div style="margin-top: 8px; font-size: 14.5px; line-height: 1.3; color: #A6462B; font-weight: 700;">Die Asymmetrie bestimmt, welche Mittel jeder Seite überhaupt zur Verfügung stehen.</div>
+    </div>
+
+  </div>
+
+  <!-- Fusszeile -->
+  <div style="padding: 8px 44px 12px 44px; display: flex; justify-content: space-between; align-items: baseline; border-top: 1px solid #CFC6B4; margin: 9px 44px 0 44px; padding-left: 0; padding-right: 0;">
+    <div class="src">Zahlenangaben stammen von Konfliktparteien oder UN-Stellen und sind entsprechend einzuordnen.</div>
+    <div style="font-size: 12px; font-weight: 700; color: #132741;">Seite 1 von 2</div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>
