@@ -35,7 +35,7 @@
   .tick.c{bottom:56px;right:62px;border-width:0 1.5px 1.5px 0}
 
   /* Brand block (top-left, above where the profile photo sits) */
-  .brand{position:absolute;top:52px;left:92px;display:flex;align-items:center;gap:20px}
+  .brand{position:absolute;top:52px;left:56px;display:flex;align-items:center;gap:20px}
   .mark{width:80px;height:80px;border-radius:20px;overflow:hidden;
     border:1px solid rgba(143,188,255,.35);
     box-shadow:0 0 0 6px rgba(110,168,254,.06),0 12px 40px -8px rgba(110,168,254,.45)}
@@ -51,6 +51,7 @@
   .line2{font-family:"Instrument Serif",serif;font-style:italic;font-size:78px;white-space:nowrap;line-height:1.02;letter-spacing:-.01em;margin-top:2px;
     background:linear-gradient(180deg,#ffffff 10%,#c2d6ff 60%,#8fa7d9 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
     filter:drop-shadow(0 6px 30px rgba(110,168,254,.25));padding:0 12px}
+  .line1 em{font-style:normal;color:var(--accent-strong)}
   .bar{width:720px;height:6px;border-radius:6px;margin-top:14px;
     background:linear-gradient(90deg,var(--accent),#7c7cfb 55%,var(--violet));
     box-shadow:0 0 24px 2px rgba(110,168,254,.55)}
@@ -65,7 +66,7 @@
 <div class="banner" id="banner">
   <div class="grid"></div>
   <span class="corner tl">+</span><span class="corner tr">+</span><span class="corner br">+</span>
-  <span class="tick a"></span><span class="tick b"></span><span class="tick c"></span>
+  <span class="tick b"></span><span class="tick c"></span>
 
   <div class="brand">
     <div class="mark"><img src="logo.jpg" alt=""></div>
@@ -73,7 +74,7 @@
   </div>
 
   <div class="main">
-    <div class="line1">Content + Ads aus einer Hand</div>
+    <div class="line1"><em>Content</em> + <em>Ads</em> aus einer Hand</div>
     <div class="line2">Vom Schnitt bis zum Neukunden</div>
     <div class="bar"></div>
     <div class="pills">
