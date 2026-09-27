@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>SenzelGrowth LinkedIn Banner</title>
+
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+  :root{
+    --navy-950:#05070d; --navy-900:#0a0e1a; --navy-800:#10152a; --navy-700:#1a2140;
+    --ink:#f5f7fb; --muted:#97a1c2; --muted-strong:#c2c9e0;
+    --accent:#6ea8fe; --accent-strong:#8fbcff; --violet:#a78bfa;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{background:var(--navy-950)}
+  .banner{
+    position:relative; width:1584px; height:396px; overflow:hidden;
+    font-family:Inter,system-ui,sans-serif; color:var(--ink);
+    background:
+      radial-gradient(ellipse 55% 90% at 60% 55%, rgba(38,74,160,.55), transparent 70%),
+      radial-gradient(ellipse 30% 60% at 88% 20%, rgba(167,139,250,.18), transparent 70%),
+      radial-gradient(ellipse 35% 70% at 8% 30%, rgba(110,168,254,.14), transparent 70%),
+      linear-gradient(180deg,#070b18 0%, #05070d 100%);
+  }
+  .grid{position:absolute;inset:0;
+    background-image:linear-gradient(rgba(143,188,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(143,188,255,.06) 1px,transparent 1px);
+    background-size:44px 44px;
+    -webkit-mask-image:radial-gradient(ellipse 60% 80% at 60% 50%,#000 10%,transparent 80%);
+            mask-image:radial-gradient(ellipse 60% 80% at 60% 50%,#000 10%,transparent 80%);}
+  .corner{position:absolute;color:rgba(194,201,224,.35);font-size:18px;line-height:1}
+  .corner.tl{top:22px;left:24px}.corner.tr{top:22px;right:24px}.corner.br{bottom:22px;right:24px}
+  .tick{position:absolute;width:14px;height:14px;border-color:rgba(194,201,224,.4);border-style:solid}
+  .tick.a{top:56px;left:62px;border-width:1.5px 0 0 1.5px}
+  .tick.b{top:56px;right:62px;border-width:1.5px 1.5px 0 0}
+  .tick.c{bottom:56px;right:62px;border-width:0 1.5px 1.5px 0}
+
+  /* Brand block (top-left, above where the profile photo sits) */
+  .brand{position:absolute;top:58px;left:96px;display:flex;align-items:center;gap:18px}
+  .mark{width:64px;height:64px;border-radius:16px;overflow:hidden;
+    border:1px solid rgba(143,188,255,.35);
+    box-shadow:0 0 0 6px rgba(110,168,254,.06),0 12px 40px -8px rgba(110,168,254,.45)}
+  .mark img{width:100%;height:100%;object-fit:cover;transform:scale(1.9)}
+  .wordmark{font-size:34px;font-weight:600;letter-spacing:-.02em}
+  .wordmark span{color:var(--accent-strong)}
+
+  /* Main message */
+  .main{position:absolute;left:560px;right:120px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+  .eyebrow{font-family:"JetBrains Mono",monospace;font-size:15px;letter-spacing:.22em;color:var(--violet);text-transform:uppercase;margin-bottom:18px}
+  .eyebrow i{font-style:normal;color:rgba(167,139,250,.45);margin:0 12px}
+  .line1{position:relative;font-size:50px;font-weight:500;letter-spacing:-.025em;line-height:1}
+  .line1::before{content:"";position:absolute;right:calc(100% + 28px);top:54%;width:64px;height:1.5px;
+    background:linear-gradient(90deg,transparent,var(--accent))}
+  .line1::after{content:"";position:absolute;right:calc(100% + 96px);top:54%;width:8px;height:8px;margin-top:-3px;border-radius:50%;
+    background:var(--accent);box-shadow:0 0 14px 3px rgba(110,168,254,.7)}
+  .line2{font-family:"Instrument Serif",serif;font-style:italic;font-size:92px;line-height:1.02;letter-spacing:-.01em;margin-top:2px;
+    background:linear-gradient(180deg,#ffffff 10%,#c2d6ff 60%,#8fa7d9 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+    filter:drop-shadow(0 6px 30px rgba(110,168,254,.25));padding:0 12px}
+  .bar{width:560px;height:6px;border-radius:6px;margin-top:10px;
+    background:linear-gradient(90deg,var(--accent),#7c7cfb 55%,var(--violet));
+    box-shadow:0 0 24px 2px rgba(110,168,254,.55)}
+  .pills{display:flex;gap:12px;margin-top:26px}
+  .pill{display:inline-flex;align-items:center;gap:8px;padding:9px 18px;border-radius:999px;font-size:15px;font-weight:500;color:var(--muted-strong);
+    background:rgba(16,21,42,.7);border:1px solid rgba(143,188,255,.22);backdrop-filter:blur(6px)}
+  .pill b{color:var(--accent-strong);font-weight:600}
+  .dot{width:7px;height:7px;border-radius:50%;background:#4ade80;box-shadow:0 0 10px #4ade80}
+</style>
+</head>
+<body>
+<div class="banner" id="banner">
+  <div class="grid"></div>
+  <span class="corner tl">+</span><span class="corner tr">+</span><span class="corner br">+</span>
+  <span class="tick a"></span><span class="tick b"></span><span class="tick c"></span>
+
+  <div class="brand">
+    <div class="mark"><img src="logo.jpg" alt=""></div>
+    <div class="wordmark">Senzel<span>Growth</span></div>
+  </div>
+
+  <div class="main">
+    <div class="eyebrow">Content<i>|</i>Ads<i>|</i>KI-Automatisierung</div>
+    <div class="line1">Content &amp; Marketing, das verkauft</div>
+    <div class="line2">Planbare Neukunden</div>
+    <div class="bar"></div>
+    <div class="pills">
+      <span class="pill"><span class="dot"></span>Für lokale Unternehmen &amp; Selbständige</span>
+      <span class="pill"><b>→</b> Kostenloses Strategiegespräch</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>
