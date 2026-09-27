@@ -1,0 +1,87 @@
+{
+  "typ": "Wochenbericht",
+  "kunde": "Starshine Emotions",
+  "kw": 39,
+  "zeitraum": { "von": "2026-09-21", "bis": "2026-09-27" },
+  "ansprechpartner": "Celvin Senzel",
+
+  "fazit": {
+    "headline": "Die Anzeigen funktionieren – der Engpass liegt nach dem Klick.",
+    "punkte": [
+      { "art": "gut", "text": "Danzig, Firebirds und die neu gestartete Schlager-Seereise bringen gute Gespräche im Superchat. Die Schlager-Seereise ist zusätzlich der stärkste organische Post der Woche." },
+      { "art": "problem", "text": "Olsenbande (Ü45) wird überdurchschnittlich oft geklickt (CTR 27,4 % über Branchenschnitt), daraus entstehen aber kaum Gespräche. Die Chats insgesamt verlaufen zäh, weil Chatbot Emil zu lange und zu kompliziert antwortet." },
+      { "art": "fokus", "text": "Priorität dieser Woche: Emil straffen. Mehr Budget für Olsenbande lohnt sich erst, wenn aus den Klicks auch Gespräche werden." }
+    ]
+  },
+
+  "kampagnen": [
+    {
+      "name": "Olsenbande (Ü45)",
+      "hinweis": "Neu aufgesetzt ab 45 Jahren, Advantage+ aus. Alte Version pausiert.",
+      "zahl": "CTR +27,4 %",
+      "zahl_info": "vs. Branchenschnitt · 11 €/Tag",
+      "status": "beobachten",
+      "einordnung": "Anzeige zieht, aber kaum Gespräche im Superchat – deutlich schwächer als die anderen Reisen.",
+      "naechster_schritt": "Budget halten, nach dem Emil-Update neu bewerten."
+    },
+    {
+      "name": "Kopenhagen (Traffic)",
+      "hinweis": "2 Anzeigen aktiv",
+      "zahl": "0,17 € / Klick",
+      "zahl_info": "243 Klicks · 7.131 Aufrufe · 40,48 €",
+      "status": "gut",
+      "einordnung": "Günstiger Traffic, Klickrate 3,4 %.",
+      "naechster_schritt": "Weiterlaufen lassen."
+    },
+    {
+      "name": "Danzig & Firebirds",
+      "hinweis": "Budget reduziert",
+      "zahl": "",
+      "zahl_info": "",
+      "status": "gut",
+      "einordnung": "Gute Gespräche im Superchat trotz niedrigerem Budget.",
+      "naechster_schritt": "Weiterlaufen lassen."
+    },
+    {
+      "name": "Schlager-Seereise",
+      "hinweis": "Neu gestartet",
+      "zahl": "",
+      "zahl_info": "",
+      "status": "gut",
+      "einordnung": "Gute Gespräche im Superchat, stärkster organischer Post.",
+      "naechster_schritt": "Weiterlaufen lassen."
+    },
+    {
+      "name": "Retargeting",
+      "hinweis": "Konzept fertig",
+      "zahl": "",
+      "zahl_info": "",
+      "status": "vorbereitung",
+      "einordnung": "Erreicht Personen, die schon Interesse gezeigt haben.",
+      "naechster_schritt": "Zeitnah launchen."
+    }
+  ],
+
+  "schwerpunkt": {
+    "titel": "Engpass: Chatbot Emil",
+    "text": "Im Superchat kommen vereinzelt mehr Chats an, die Gespräche verlaufen aber zäh. Mirco sieht es wie wir: Emils Begrüßung ist zu lang und zu kompliziert. Ziel ist, die wichtigsten Punkte sofort zu nennen und Interessenten so schnell wie möglich an die persönliche Beratung zu übergeben – denn genau die macht die Qualität von Starshine Emotions aus."
+  },
+
+  "abschnitte": [
+    {
+      "titel": "Organischer Content (Facebook & Instagram)",
+      "punkte": [
+        "Story-Highlights auf Instagram eingerichtet – ältere Stories bleiben damit dauerhaft sichtbar.",
+        "Stärkster Post: Schlager-Seereise Oktober 2027 (Semino Rossi, Patrick Lindner, Stefan Mross u.a.).",
+        "Die übrigen Top-Posts liegen zwischen 69 und 462 Interaktionen. Fotos und Karussells performen weiterhin am stabilsten."
+      ]
+    }
+  ],
+
+  "naechste_schritte": [
+    { "was": "Emil überarbeiten: kürzere Begrüßung, wichtigste Punkte sofort, schnelle Übergabe an die persönliche Beratung." },
+    { "was": "Retargeting-Kampagne launchen." },
+    { "was": "Olsenbande nach dem Emil-Update prüfen: Werden aus den Klicks Gespräche? Erst dann über mehr Budget entscheiden." },
+    { "was": "Story-Highlights in neuen Posts verlinken." }
+  ]
+}
