@@ -4,7 +4,7 @@
 // Ergebnis je Post:       <name>.png (1080 x 1350) und <name>_vorschau25.png
 
 // ===== GEMEINSAME TEXTE =====================================================
-const CTA_VORSATZ = 'Per WhatsApp:';
+const CTA_VORSATZ = 'Jetzt buchen per WhatsApp';
 const CTA_STICHWORT = '„Kopenhagen 2027“';
 
 // ===== FARBWELTEN ===========================================================
@@ -23,42 +23,37 @@ const POSTS = [
   {
     name: 'post1_maechtig_gewaltig', farben: 'espresso',
     foto: 'kopenhagen_auto.jpg', fotoPosition: '50% 96%',
-    kicker: 'Für alle, die mit der Olsenbande groß geworden sind',
+    kicker: 'Für alle Olsenbande-Fans',
     headline: 'Mächtig gewaltig:|Kopenhagen für [965 €].', groesse: 84,
-    unterzeile: 'Statt 999 € – nur für Frühbucher bis 31. Oktober.',
-    fakten: '4 Tage · Hotel · Frühstück · Stadtprogramm · Bus ab Erfurt',
+    unterzeile: 'Statt 999 € · nur bis 31. Oktober',
   },
   {
     name: 'post2_erinnern_sie_sich', farben: 'petrol',
     foto: 'nyhavn_17.jpg', fotoPosition: '50% 28%',
     kicker: 'Erinnern Sie sich?',
     headline: 'Früher im Fernsehen.|Jetzt für [965 €] erleben.', groesse: 80,
-    unterzeile: '34 € gespart – nur bis 31. Oktober.',
-    fakten: 'Kopenhagen 2027 · 4 Tage · Hotel · Frühstück',
+    unterzeile: '34 € sparen · nur bis 31. Oktober',
   },
   {
     name: 'post3_bis_ende_oktober', farben: 'hell',
     foto: 'nyhavn_rotes_haus.jpg', fotoPosition: '50% 46%',
     kicker: 'Kopenhagen 2027 · 4 Tage',
-    headline: '[965 €] bis Ende|Oktober.', groesse: 90,
+    headline: '[965 €] bis Ende|Oktober.', groesse: 86,
     unterzeile: 'Danach 999 €.',
-    fakten: 'Hotel · Frühstück · Stadtprogramm · Bus ab Erfurt',
   },
   {
     name: 'post4_einsteigen_ankommen', farben: 'nacht',
     foto: 'nyhavn_abend.jpg', fotoPosition: '50% 58%',
     kicker: 'Einsteigen in Erfurt.',
     headline: 'Ankommen in Kopenhagen.|Für [965 €].', groesse: 82,
-    unterzeile: 'Statt 999 € – Frühbucherpreis bis 31. Oktober.',
-    fakten: 'Hotel, Frühstück, Stadtprogramm – Sie lehnen sich zurück.',
+    unterzeile: 'Statt 999 € · nur bis 31. Oktober',
   },
   {
     name: 'post5_zu_zweit', farben: 'pflaume',
     foto: 'nyhavn_abend.jpg', fotoPosition: '86% 56%', fotoZoom: 1.45,
-    kicker: 'Die Reise, von der Sie schon so lange reden',
+    kicker: 'Kopenhagen 2027 · 4 Tage',
     headline: 'Zu zweit nach Kopenhagen.|[68 €] gespart.', groesse: 82,
-    unterzeile: '965 € statt 999 € pro Person – nur bis 31. Oktober.',
-    fakten: '4 Tage · Hotel · Frühstück · Stadtprogramm · Bus ab Erfurt',
+    unterzeile: '965 € statt 999 € p. P. · bis 31. Oktober',
   },
 ];
 
@@ -116,13 +111,13 @@ function baueHtml(p) {
   .zeile { display: block; white-space: nowrap; }
   .gold { color: ${f.akzent}; }
   .linie { width: 340px; height: 3px; background: ${f.akzent}; margin-top: 30px; }
-  .unterzeile { margin-top: 22px; font-size: 32px; font-weight: 500; white-space: nowrap; }
-  .fakten { margin-top: 8px; font-size: 25px; font-weight: 400; color: ${f.leise}; white-space: nowrap; }
+  .unterzeile { margin-top: 24px; font-size: 34px; font-weight: 500; white-space: nowrap; }
   .unten { margin-top: auto; display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 1; }
-  .pille { display: inline-flex; align-items: baseline; gap: 12px; padding: 22px 40px; border-radius: 999px; background: ${f.pille}; color: ${f.pilleText};
+  .pille { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 4px; padding: 20px 44px 22px; border-radius: 26px; background: ${f.pille}; color: ${f.pilleText};
     font-size: 34px; font-weight: 600; white-space: nowrap; }
   .pille b { font-weight: 800; color: ${p.farben === 'hell' ? f.pille === '#2A1E16' ? '#E7C27D' : f.akzent : f.akzent}; }
-  .pille .klein { font-weight: 500; opacity: .8; }
+  .pille .klein { font-size: 26px; line-height: 1.2; font-weight: 600; opacity: .85; }
+  .pille b { font-size: 46px; line-height: 1.1; }
 
   .logo { position: absolute; right: 28px; top: ${FOTO_HOEHE - 114}px; width: 200px; height: 200px; border-radius: 50%;
     box-shadow: 0 6px 18px rgba(0,0,0,.25);
@@ -136,9 +131,8 @@ function baueHtml(p) {
     <div class="headline">${headlineHtml(p.headline)}</div>
     <div class="linie"></div>
     <div class="unterzeile" data-text>${esc(p.unterzeile)}</div>
-    <div class="fakten" data-text>${esc(p.fakten)}</div>
     <div class="unten">
-      <div class="pille" data-text><span class="klein">${esc(CTA_VORSATZ)}</span> <b>${esc(CTA_STICHWORT)}</b></div>
+      <div class="pille"><span class="klein" data-text>${esc(CTA_VORSATZ)}</span><b data-text>${esc(CTA_STICHWORT)}</b></div>
     </div>
   </div>
   <img class="logo" src="${url(LOGO)}" alt="">
@@ -170,7 +164,7 @@ function pruefen([W, H]) {
     if (Math.hypot(nx - bx, ny - by) < bogen.width / 2 + 16) out.push(`Text berührt den Goldbogen: "${el.textContent.trim()}"`);
   });
   boxen.forEach(({ el, r }) => { if (hit(r, logo)) out.push(`Logo berührt "${el.textContent.trim()}"`); });
-  const fakten = document.querySelector('.fakten').getBoundingClientRect();
+  const fakten = document.querySelector('.unterzeile').getBoundingClientRect();
   const pille = document.querySelector('.pille').getBoundingClientRect();
   const luft = Math.round(pille.top - fakten.bottom);
   if (luft < 28) out.push(`Zu wenig Luft über dem Button (${luft}px)`);
