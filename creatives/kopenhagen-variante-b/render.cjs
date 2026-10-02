@@ -31,11 +31,19 @@ const VORSCHAU = 'vorschau_25.png';
 const BREITE = 1080;
 const HOEHE = 1350;
 const FOTO_POSITION = '50% 50%';  // Ausschnitt; Foto bleibt sonst unverändert
-const HEADLINE_GROESSE = 104;     // px, Titan One
-const STICKER_DURCHMESSER = 450;  // px, Preis-Sticker
-const STICKER_MITTE_Y = 805;      // px, vertikale Mitte des Stickers
+const HEADLINE_GROESSE = 92;      // px, Titan One
+const HEADLINE_OBEN = 22;         // px Abstand zum oberen Rand
+// Häuserflächen im Nyhavn-Foto (Koordinaten im fertigen Creative); die Headline darf sie nicht berühren
+const HAEUSER = [
+  { left: 846, top: 112, right: 1080, bottom: 1350 }, // rechtes Haus mit Dach
+  { left: 985, top: 70, right: 1030, bottom: 1350 },  // Schornstein
+  { left: 190, top: 270, right: 880, bottom: 1350 },  // rotes Haus mit Dach
+  { left: 0, top: 336, right: 200, bottom: 1350 },    // gelbes Haus links
+];
+const STICKER_DURCHMESSER = 420;  // px, Preis-Sticker
+const STICKER_MITTE_Y = 800;      // px, vertikale Mitte des Stickers
 const STICKER_DREHUNG = -7;       // Grad
-const PREIS_GROESSE = 122;        // px
+const PREIS_GROESSE = 112;        // px
 const FUSS_OBEN = 1000;           // px, ab hier beginnt der dunkle Fuß
 // ============================================================================
 
@@ -92,7 +100,7 @@ const html = `<!doctype html>
   .foto { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: ${FOTO_POSITION}; }
 
   /* Headline mittig im hellen Himmel */
-  .headline { position: absolute; left: 0; right: 0; top: 40px; text-align: center;
+  .headline { position: absolute; left: 0; right: 0; top: ${HEADLINE_OBEN}px; text-align: center;
     font-family: 'Titan One', sans-serif; font-size: ${HEADLINE_GROESSE}px; line-height: .98; letter-spacing: .01em; color: var(--braun); }
   .headline .jahr { color: var(--rost); }
 
@@ -115,12 +123,12 @@ const html = `<!doctype html>
     filter: drop-shadow(0 10px 16px rgba(30,15,5,.35)); }
   .sticker-form { position: absolute; inset: 0; }
   .sticker-inhalt { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
-  .vorsatz { font-size: 40px; font-weight: 800; color: var(--braun); text-transform: uppercase; letter-spacing: .04em; }
+  .vorsatz { font-size: 36px; font-weight: 800; color: var(--braun); text-transform: uppercase; letter-spacing: .04em; }
   .preis { font-family: 'Titan One', sans-serif; font-size: ${PREIS_GROESSE}px; line-height: 1; color: var(--rost); margin: 2px 0 0; white-space: nowrap; }
-  .zusatz { font-size: 38px; font-weight: 800; color: var(--braun); }
+  .zusatz { font-size: 34px; font-weight: 800; color: var(--braun); }
 
   /* Inhalt im Fuß, mittig */
-  .fuss-inhalt { position: absolute; left: 0; right: 0; bottom: 44px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .fuss-inhalt { position: absolute; left: 0; right: 0; bottom: 54px; display: flex; flex-direction: column; align-items: center; text-align: center; }
   .leistungen { font-size: 40px; font-weight: 700; color: var(--creme); white-space: nowrap; }
   .leistungen .punkt { color: var(--senf); margin: 0 .4em; }
   .frist { margin-top: 10px; font-size: 34px; font-weight: 600; color: var(--senf); }
@@ -175,7 +183,7 @@ const html = `<!doctype html>
   await page.evaluate(() => document.fonts.ready);
   await page.waitForLoadState('networkidle');
 
-  const pruefung = await page.evaluate(([W, H, D, PREIS_GR]) => {
+  const pruefung = await page.evaluate(([W, H, D, PREIS_GR, HAEUSER]) => {
     const out = [];
     if (!document.fonts.check(`${PREIS_GR}px "Titan One"`)) out.push('Titan One nicht geladen');
     if (!document.fonts.check('700 32px Rubik')) out.push('Rubik nicht geladen');
@@ -199,6 +207,19 @@ const html = `<!doctype html>
       if (hit(t, box.logo)) out.push(`Headline "${el.textContent}" berührt das Logo`);
       if (t.left < 40 || t.right > W - 40) out.push(`Headline "${el.textContent}" zu breit`);
     });
+    // Exakte Buchstabenfläche der Headline gegen die Häuser prüfen
+    const ctx = document.createElement('canvas').getContext('2d');
+    document.querySelectorAll('.headline [data-text]').forEach((el) => {
+      const cs = getComputedStyle(el);
+      ctx.font = `${cs.fontSize} "Titan One"`;
+      const m = ctx.measureText(el.textContent);
+      const line = textBox(el);
+      const content = m.fontBoundingBoxAscent + m.fontBoundingBoxDescent;
+      const baseline = line.top + (line.height - content) / 2 + m.fontBoundingBoxAscent;
+      const g = { left: line.left, right: line.right, top: baseline - m.actualBoundingBoxAscent, bottom: baseline + m.actualBoundingBoxDescent };
+      HAEUSER.forEach((h, i) => { if (hit(g, h)) out.push(`Headline "${el.textContent}" überlappt Haus ${i + 1}`); });
+      if (g.top < 20) out.push(`Headline "${el.textContent}" zu nah am oberen Rand`);
+    });
     const stickerUnten = box.sticker.bottom, fussText = textBox(document.querySelector('.leistungen'));
     if (stickerUnten > fussText.top - 12) out.push('Sticker berührt die Leistungszeile');
     // Preis muss in den inneren Kreis passen
@@ -209,7 +230,7 @@ const html = `<!doctype html>
       if (t.left < 24 || t.right > W - 24) out.push(`Text zu breit: "${el.textContent}"`);
     });
     return { out, sticker: `y ${Math.round(box.sticker.top)}–${Math.round(box.sticker.bottom)}`, fussText: Math.round(fussText.top) };
-  }, [BREITE, HOEHE, STICKER_DURCHMESSER, PREIS_GROESSE]);
+  }, [BREITE, HOEHE, STICKER_DURCHMESSER, PREIS_GROESSE, HAEUSER]);
 
   await page.screenshot({ path: path.join(dir, AUSGABE) });
 
