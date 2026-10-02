@@ -126,7 +126,7 @@ function baueHtml(p) {
   .pille .klein { font-weight: 500; opacity: .8; }
 
   .vertrauen { position: absolute; left: ${RAND}px; bottom: 22px; font-size: 20px; font-weight: 500; color: ${f.leise}; white-space: nowrap; }
-  .logo { position: absolute; right: 30px; top: ${FOTO_HOEHE - 86}px; width: 164px; height: 164px; border-radius: 50%;
+  .logo { position: absolute; right: 28px; top: ${FOTO_HOEHE - 114}px; width: 200px; height: 200px; border-radius: 50%;
     box-shadow: 0 6px 18px rgba(0,0,0,.25);
     object-fit: cover; border: 6px solid ${f.flaeche}; background: #fff; }
 </style></head>
