@@ -31,12 +31,12 @@ const VERLAUF_SCHWARZ = 0.6;      // unteres Viertel: transparent -> 60 % Schwar
 const KARTE_BREITE = 560;         // px
 const KARTE_HOEHE = 330;          // px
 const PREIS_GROESSE = 156;        // px, Preis auf der Kinokarte
-const KARTE_SKALIERUNG = 0.8;     // Kinokarte insgesamt verkleinern (1 = Originalgröße)
+const KARTE_SKALIERUNG = 0.86;    // Kinokarte insgesamt verkleinern (1 = Originalgröße)
 const KARTE_DREHUNG = -6;         // Grad
 const KARTE_RECHTS = 56;          // px Abstand Kinokarte zum rechten Rand
 const KARTE_UNTEN = 90;           // px Abstand Kinokarte zum unteren Rand
-const CTA_LINKS = 76;             // px Abstand CTA zum linken Rand
-const CTA_UNTEN = 120;            // px Abstand CTA zum unteren Rand
+const CTA_LINKS = 56;             // px Abstand CTA zum linken Rand
+const CTA_OBEN = 56;              // px Abstand CTA zum oberen Rand
 // ============================================================================
 
 const fs = require('fs');
@@ -136,7 +136,7 @@ const html = `<!doctype html>
   .unten { position: absolute; left: 0; right: 0; top: var(--riss); bottom: 12px; display: grid; place-items: center; font-size: 30px; font-weight: 700; letter-spacing: .03em; color: var(--braun); }
 
   /* --- CTA unten links --- */
-  .cta { position: absolute; left: ${CTA_LINKS}px; bottom: ${CTA_UNTEN}px; padding: 16px 22px; border-radius: 14px; background: var(--senf); color: var(--braun); font-size: 34px; font-weight: 700; line-height: 1.2; }
+  .cta { position: absolute; left: ${CTA_LINKS}px; top: ${CTA_OBEN}px; padding: 16px 22px; border-radius: 14px; background: var(--senf); color: var(--braun); font-size: 34px; font-weight: 700; line-height: 1.2; }
   .cta strong { font-weight: 800; letter-spacing: .02em; }
 </style>
 </head>
