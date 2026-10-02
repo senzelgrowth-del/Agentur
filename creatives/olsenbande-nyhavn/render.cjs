@@ -33,7 +33,7 @@ const KARTE_HOEHE = 330;          // px
 const PREIS_GROESSE = 156;        // px, Preis auf der Kinokarte
 const KARTE_SKALIERUNG = 0.86;    // Kinokarte insgesamt verkleinern (1 = Originalgröße)
 const KARTE_DREHUNG = -6;         // Grad
-const KARTE_RECHTS = 56;          // px Abstand Kinokarte zum rechten Rand
+const KARTE_RECHTS = 180;         // px Abstand Kinokarte zum rechten Rand
 const KARTE_UNTEN = 90;           // px Abstand Kinokarte zum unteren Rand
 const CTA_LINKS = 56;             // px Abstand CTA zum linken Rand
 const CTA_OBEN = 56;              // px Abstand CTA zum oberen Rand
