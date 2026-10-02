@@ -9,6 +9,7 @@ const HEADLINE_2 = '2027';
 const PREIS_VORSATZ = '4 Tage ab';
 const PREIS = '965 €';
 const PREIS_ZUSATZ = 'p. P.';
+const PREIS_ALT = '999 €';        // regulärer Preis als Preisanker (nur in Variationen mit preisAnker: true)
 const LEISTUNGEN = ['Hotel', 'Frühstück', 'Stadtprogramm'];
 const FRIST = 'Frühbucherpreis bis 31. Oktober';
 const CTA = 'WhatsApp: „Kopenhagen 2027“';
@@ -57,6 +58,45 @@ const VARIATIONEN = [
     logo: { center: true, top: 200 },
     sticker: { d: 420, x: 540, y: 1200, drehung: -7, preis: 110 },
     fussOben: 1500, fussUnten: 270,
+  },
+  // ----- 1:1 (1080 x 1080): Foto als Held, kompakter Fuß ------------------
+  {
+    name: 'q1_rotes_haus_1x1',
+    foto: 'nyhavn_rotes_haus.jpg', breite: 1080, hoehe: 1080, fotoPosition: '50% 50%',
+    layout: 'himmel', headlineAlign: 'center', headlineGroesse: 68, headlineOben: 16,
+    logo: { left: 10, top: 10 }, logoGroesse: 112,
+    haeuser: [
+      { left: 750, top: 84, right: 1080, bottom: 1080 }, // rechtes Haus mit Dach
+      { left: 862, top: 54, right: 890, bottom: 1080 },  // Schornstein
+      { left: 240, top: 206, right: 790, bottom: 1080 }, // rotes Haus mit Dach
+      { left: 0, top: 262, right: 250, bottom: 1080 },   // gelbes Haus links
+    ],
+    sticker: { d: 356, x: 540, y: 640, drehung: -7, preis: 84 },
+    fussOben: 846, fussUnten: 22, kompakt: true, preisAnker: true, fristFeld: true,
+  },
+  {
+    name: 'q2_abendstimmung_1x1',
+    foto: 'nyhavn_abend.jpg', breite: 1080, hoehe: 1080, fotoPosition: '50% 50%',
+    layout: 'himmel', headlineAlign: 'left', headlineGroesse: 74, headlineOben: 18, headlineLinks: 40,
+    logo: { right: 10, top: 10 }, logoGroesse: 112,
+    haeuser: [
+      { left: 560, top: 250, right: 1080, bottom: 1080 }, // Häuserzeile
+      { left: 0, top: 470, right: 560, bottom: 1080 },   // Häuser hinten links
+    ],
+    sticker: { d: 356, x: 250, y: 650, drehung: -8, preis: 84 },
+    fussOben: 846, fussUnten: 22, kompakt: true, preisAnker: true, fristFeld: true,
+  },
+  {
+    name: 'q3_nyhavn17_1x1',
+    foto: 'nyhavn_17.jpg', breite: 1080, hoehe: 1080, fotoPosition: '50% 30%',
+    layout: 'himmel', headlineAlign: 'left', headlineGroesse: 70, headlineOben: 18, headlineLinks: 40,
+    logo: { right: 10, top: 10 }, logoGroesse: 112,
+    haeuser: [
+      { left: 700, top: 0, right: 790, bottom: 1080 },  // Masten
+      { left: 0, top: 160, right: 700, bottom: 1080 },  // Häuserzeile mit Antennen
+    ],
+    sticker: { d: 356, x: 830, y: 630, drehung: 7, preis: 84 },
+    fussOben: 846, fussUnten: 22, kompakt: true, preisAnker: true, fristFeld: true,
   },
 ];
 // ============================================================================
@@ -136,10 +176,10 @@ function baueHtml(v) {
   .headline .jahr { color: ${kopfband ? 'var(--senf)' : 'var(--rost)'}; }
 
   /* Logo rund mit weichem Übergang */
-  .logo-halo { position: absolute; ${logoPos} width: 132px; height: 132px; border-radius: 50%;
+  .logo-halo { position: absolute; ${logoPos} width: ${v.logoGroesse || 132}px; height: ${v.logoGroesse || 132}px; border-radius: 50%;
     background: radial-gradient(circle, rgba(243,230,200,.95) 0%, rgba(243,230,200,.88) 52%, rgba(243,230,200,0) 71%);
     display: grid; place-items: center; }
-  .logo { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; transform: scale(1.18);
+  .logo { width: ${Math.round((v.logoGroesse || 132) * 0.727)}px; height: ${Math.round((v.logoGroesse || 132) * 0.727)}px; border-radius: 50%; object-fit: cover; transform: scale(1.18);
     -webkit-mask-image: radial-gradient(circle, #000 58%, rgba(0,0,0,.6) 66%, transparent 71%);
             mask-image: radial-gradient(circle, #000 58%, rgba(0,0,0,.6) 66%, transparent 71%); }
 
@@ -155,17 +195,20 @@ function baueHtml(v) {
   .sticker-inhalt { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
   .vorsatz { font-size: ${Math.round(s.preis * 0.32)}px; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; }
   .preis { font-family: 'Titan One', sans-serif; font-size: ${s.preis}px; line-height: 1; color: var(--rost); margin-top: 2px; white-space: nowrap; }
-  .zusatz { font-size: ${Math.round(s.preis * 0.3)}px; font-weight: 800; }
+  .zusatz { font-size: ${Math.round(s.preis * 0.3)}px; font-weight: 800; white-space: nowrap; }
+  .anker { color: var(--rost); margin-left: .25em; }
+  .anker s { text-decoration-thickness: 3px; }
 
   /* Inhalt im Fuß, mittig */
   .fuss-inhalt { position: absolute; left: 0; right: 0; bottom: ${v.fussUnten}px; display: flex; flex-direction: column; align-items: center; text-align: center; }
-  .leistungen { font-size: 46px; font-weight: 700; color: var(--creme); white-space: nowrap; }
+  .leistungen { font-size: ${v.kompakt ? 38 : 46}px; font-weight: 700; color: var(--creme); white-space: nowrap; }
   .leistungen .punkt { color: var(--senf); margin: 0 .4em; }
-  .frist { margin-top: 14px; font-size: 38px; font-weight: 600; color: var(--senf); }
+  .frist { margin-top: ${v.kompakt ? 6 : 14}px; font-size: ${v.kompakt ? 31 : 38}px; font-weight: 600; color: var(--senf); }
+  .frist-feld .frist { margin-top: 10px; padding: 3px 16px; border-radius: 8px; background: var(--senf); color: var(--braun); font-weight: 700; }
 
   /* CTA als Eintrittskarte mit Einkerbungen */
-  .cta { margin-top: 30px; padding: 22px 64px; background: var(--wa); color: #fff; border-radius: 10px;
-    font-size: 46px; font-weight: 800; white-space: nowrap;
+  .cta { margin-top: ${v.kompakt ? 16 : 30}px; padding: ${v.kompakt ? '15px 56px' : '22px 64px'}; background: var(--wa); color: #fff; border-radius: 10px;
+    font-size: ${v.kompakt ? 38 : 46}px; font-weight: 800; white-space: nowrap;
     -webkit-mask: radial-gradient(circle 16px at 0 50%, transparent 98%, #000) left / 51% 100% no-repeat,
                   radial-gradient(circle 16px at 100% 50%, transparent 98%, #000) right / 51% 100% no-repeat;
             mask: radial-gradient(circle 16px at 0 50%, transparent 98%, #000) left / 51% 100% no-repeat,
@@ -191,12 +234,12 @@ function baueHtml(v) {
     <div class="sticker-inhalt">
       <div class="vorsatz" data-text>${esc(PREIS_VORSATZ)}</div>
       <div class="preis" data-text data-im-sticker>${esc(PREIS)}</div>
-      <div class="zusatz" data-text>${esc(PREIS_ZUSATZ)}</div>
+      <div class="zusatz" data-text>${esc(PREIS_ZUSATZ)}${v.preisAnker ? ` <span class="anker">statt <s>${esc(PREIS_ALT)}</s></span>` : ''}</div>
     </div>
   </div>
 
   ${v.story ? `<div class="kopf-inhalt" data-check="info">${infoHtml}</div>` : ''}
-  <div class="fuss-inhalt" data-check="fuss">
+  <div class="fuss-inhalt ${v.fristFeld ? 'frist-feld' : ''}" data-check="fuss">
     ${v.story ? '' : infoHtml}
     <div class="cta" data-text>${esc(CTA)}</div>
   </div>
