@@ -6,7 +6,6 @@
 // ===== GEMEINSAME TEXTE =====================================================
 const CTA_VORSATZ = 'Per WhatsApp:';
 const CTA_STICHWORT = '„Kopenhagen 2027“';
-const VERTRAUEN = 'Starshine Emotions · Ihr Reisebüro in Erfurt';
 
 // ===== FARBWELTEN ===========================================================
 // flaeche = Textfeld, text = Haupttext, akzent = Gold für Preis und Linie, pille = Button
@@ -125,7 +124,6 @@ function baueHtml(p) {
   .pille b { font-weight: 800; color: ${p.farben === 'hell' ? f.pille === '#2A1E16' ? '#E7C27D' : f.akzent : f.akzent}; }
   .pille .klein { font-weight: 500; opacity: .8; }
 
-  .vertrauen { position: absolute; left: ${RAND}px; bottom: 22px; font-size: 20px; font-weight: 500; color: ${f.leise}; white-space: nowrap; }
   .logo { position: absolute; right: 28px; top: ${FOTO_HOEHE - 114}px; width: 200px; height: 200px; border-radius: 50%;
     box-shadow: 0 6px 18px rgba(0,0,0,.25);
     object-fit: cover; border: 6px solid ${f.flaeche}; background: #fff; }
@@ -143,7 +141,6 @@ function baueHtml(p) {
       <div class="pille" data-text><span class="klein">${esc(CTA_VORSATZ)}</span> <b>${esc(CTA_STICHWORT)}</b></div>
     </div>
   </div>
-  <div class="vertrauen" data-text>${esc(VERTRAUEN)}</div>
   <img class="logo" src="${url(LOGO)}" alt="">
 </body></html>`;
 }
