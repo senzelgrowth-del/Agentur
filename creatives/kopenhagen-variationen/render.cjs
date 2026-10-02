@@ -24,6 +24,31 @@ const WHATSAPP_GRUEN = '#1DA851';
 
 const LOGO = 'logo.jpg';
 
+// ===== FARBTHEMEN (je Variation wählbar über thema: '...') ==================
+// stickerForm: 'welle' (gewellter Preisaufkleber), 'rosette' (Plakette mit Doppelring), 'zacken' (Stern)
+// streifenStil: 'band' (drei breite Streifen), 'linien' (zwei feine Linien)
+// ctaForm: 'ticket' (Eintrittskarte mit Einkerbungen), 'pille' (runder Button)
+const THEMEN = {
+  kino: { // 70er Kino: Braun, Senf, Rost
+    fuss: DUNKELBRAUN, streifen: [SENFGELB, ORANGE, ROSTROT], streifenStil: 'band',
+    sticker: SENFGELB, stickerText: DUNKELBRAUN, preis: ROSTROT, ring: DUNKELBRAUN, stickerForm: 'welle',
+    headline1: DUNKELBRAUN, headline2: ROSTROT, headlineTag: null,
+    leistungen: CREME, punkt: SENFGELB, fristBg: SENFGELB, fristText: DUNKELBRAUN, ctaForm: 'ticket',
+  },
+  nacht: { // Abend am Hafen: Nachtblau, Creme, Gold
+    fuss: '#16233F', streifen: ['#E8B04A', '#16233F', '#E8B04A'], streifenStil: 'linien',
+    sticker: CREME, stickerText: '#16233F', preis: '#C2412D', ring: '#16233F', stickerForm: 'rosette',
+    headline1: CREME, headline2: '#E8B04A', headlineTag: '#16233F',
+    leistungen: CREME, punkt: '#E8B04A', fristBg: '#E8B04A', fristText: '#16233F', ctaForm: 'pille',
+  },
+  petrol: { // Sonnenuntergang: Petrol, Koralle, Senf
+    fuss: '#0F3B3A', streifen: ['#E2674A', SENFGELB, '#2E7D74'], streifenStil: 'band',
+    sticker: '#E2674A', stickerText: '#FFF3E0', preis: '#FFF3E0', ring: '#FFF3E0', stickerForm: 'zacken',
+    headline1: '#0F3B3A', headline2: '#E2674A', headlineTag: null,
+    leistungen: CREME, punkt: '#E2674A', fristBg: SENFGELB, fristText: '#0F3B3A', ctaForm: 'ticket',
+  },
+};
+
 // ===== VARIATIONEN ==========================================================
 // layout 'himmel':   Headline direkt im hellen Himmel des Fotos
 // layout 'kopfband': Headline in einem dunklen Kopfband (für unruhigen oder dunklen Himmel)
@@ -75,7 +100,7 @@ const VARIATIONEN = [
     fussOben: 846, fussUnten: 22, kompakt: true, preisAnker: true, fristFeld: true,
   },
   {
-    name: 'q2_abendstimmung_1x1',
+    name: 'q2_abendstimmung_1x1', thema: 'nacht',
     foto: 'nyhavn_abend.jpg', breite: 1080, hoehe: 1080, fotoPosition: '50% 50%',
     layout: 'himmel', headlineAlign: 'left', headlineGroesse: 74, headlineOben: 18, headlineLinks: 40,
     logo: { right: 10, top: 10 }, logoGroesse: 112,
@@ -87,7 +112,7 @@ const VARIATIONEN = [
     fussOben: 846, fussUnten: 22, kompakt: true, preisAnker: true, fristFeld: true,
   },
   {
-    name: 'q3_nyhavn17_1x1',
+    name: 'q3_nyhavn17_1x1', thema: 'petrol',
     foto: 'nyhavn_17.jpg', breite: 1080, hoehe: 1080, fotoPosition: '50% 30%',
     layout: 'himmel', headlineAlign: 'left', headlineGroesse: 70, headlineOben: 18, headlineLinks: 40,
     logo: { right: 10, top: 10 }, logoGroesse: 112,
@@ -117,22 +142,37 @@ const dir = __dirname;
 const url = (p) => 'file://' + path.resolve(dir, p);
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
-// Gewellter Rand des Preis-Stickers (wie ein 70er Preisaufkleber)
-function stickerSvg(d) {
-  const c = d / 2, R = c - 12, A = 9, N = 26, pts = [];
-  for (let i = 0; i <= 720; i++) {
-    const t = (i / 720) * Math.PI * 2;
-    const r = R + A * Math.cos(N * t);
-    pts.push(`${(c + r * Math.cos(t)).toFixed(1)},${(c + r * Math.sin(t)).toFixed(1)}`);
+// Form des Preis-Stickers
+function stickerSvg(d, t) {
+  const c = d / 2, R = c - 12, pts = [];
+  let ring = '';
+  if (t.stickerForm === 'zacken') {
+    const N = 22;
+    for (let i = 0; i < N * 2; i++) {
+      const w = (i / (N * 2)) * Math.PI * 2, r = i % 2 ? R - 24 : R;
+      pts.push(`${(c + r * Math.cos(w)).toFixed(1)},${(c + r * Math.sin(w)).toFixed(1)}`);
+    }
+    ring = `<circle cx="${c}" cy="${c}" r="${R - 42}" fill="none" stroke="${t.ring}" stroke-width="3" opacity=".8"/>`;
+  } else {
+    const welle = t.stickerForm === 'rosette' ? { A: 4, N: 44 } : { A: 9, N: 26 };
+    for (let i = 0; i <= 720; i++) {
+      const w = (i / 720) * Math.PI * 2, r = R + welle.A * Math.cos(welle.N * w);
+      pts.push(`${(c + r * Math.cos(w)).toFixed(1)},${(c + r * Math.sin(w)).toFixed(1)}`);
+    }
+    ring = t.stickerForm === 'rosette'
+      ? `<circle cx="${c}" cy="${c}" r="${R - 18}" fill="none" stroke="${t.ring}" stroke-width="5"/>
+         <circle cx="${c}" cy="${c}" r="${R - 28}" fill="none" stroke="${t.ring}" stroke-width="2"/>`
+      : `<circle cx="${c}" cy="${c}" r="${R - 30}" fill="none" stroke="${t.ring}" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round"/>`;
   }
   return `<svg class="sticker-form" width="${d}" height="${d}" viewBox="0 0 ${d} ${d}">
-    <polygon points="${pts.join(' ')}" fill="${SENFGELB}"/>
-    <circle cx="${c}" cy="${c}" r="${R - 30}" fill="none" stroke="${DUNKELBRAUN}" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round"/>
+    <polygon points="${pts.join(' ')}" fill="${t.sticker}"/>
+    ${ring}
   </svg>`;
 }
 
 function baueHtml(v) {
   const kopfband = v.layout === 'kopfband';
+  const t = THEMEN[v.thema || 'kino'];
   const s = v.sticker;
   const logoPos = v.logo.center
     ? `left: 50%; top: ${v.logo.top}px; transform: translateX(-50%);`
@@ -140,10 +180,14 @@ function baueHtml(v) {
   const headlinePos = v.headlineAlign === 'left'
     ? `left: ${v.headlineLinks}px; text-align: left;`
     : 'left: 0; right: 0; text-align: center;';
-  const streifen = (top, umgekehrt) => `position: absolute; left: 0; right: 0; top: ${top}px; height: 36px;
-    background: linear-gradient(to bottom, ${umgekehrt
-      ? 'var(--rost) 0 12px, var(--orange) 12px 24px, var(--senf) 24px 36px'
-      : 'var(--senf) 0 12px, var(--orange) 12px 24px, var(--rost) 24px 36px'});`;
+  const [s1, s2, s3] = t.streifen;
+  const streifen = (top, umgekehrt) => {
+    const [a, b, c] = umgekehrt ? [s3, s2, s1] : [s1, s2, s3];
+    const verlauf = t.streifenStil === 'linien'
+      ? `transparent 0 14px, ${a} 14px 20px, ${t.fuss} 20px 28px, ${c} 28px 32px, ${t.fuss} 32px 36px`
+      : `${a} 0 12px, ${b} 12px 24px, ${c} 24px 36px`;
+    return `position: absolute; left: 0; right: 0; top: ${top}px; height: 36px; background: linear-gradient(to bottom, ${verlauf});`;
+  };
 
   const infoHtml = `<div class="leistungen" data-text>${LEISTUNGEN.map(esc).join('<span class="punkt">•</span>')}</div>
     <div class="frist" data-text>${esc(FRIST)}</div>`;
@@ -172,8 +216,9 @@ function baueHtml(v) {
 
   .headline { position: absolute; ${headlinePos} top: ${v.headlineOben}px;
     font-family: 'Titan One', sans-serif; font-size: ${v.headlineGroesse}px; line-height: .98; letter-spacing: .01em;
-    color: ${kopfband ? 'var(--creme)' : 'var(--braun)'}; }
-  .headline .jahr { color: ${kopfband ? 'var(--senf)' : 'var(--rost)'}; }
+    color: ${kopfband ? 'var(--creme)' : t.headline1}; }
+  .headline .jahr { color: ${kopfband ? 'var(--senf)' : t.headline2}; }
+  ${t.headlineTag && !kopfband ? `.headline { background: ${t.headlineTag}; padding: 14px 26px 18px; border-radius: 18px; margin-left: -26px; }` : ''}
 
   /* Logo rund mit weichem Übergang */
   .logo-halo { position: absolute; ${logoPos} width: ${v.logoGroesse || 132}px; height: ${v.logoGroesse || 132}px; border-radius: 50%;
@@ -184,7 +229,7 @@ function baueHtml(v) {
             mask-image: radial-gradient(circle, #000 58%, rgba(0,0,0,.6) 66%, transparent 71%); }
 
   /* Dunkler Kino-Fuß mit 70er-Streifen */
-  .fuss { position: absolute; left: 0; right: 0; top: ${v.fussOben}px; bottom: 0; background: var(--braun); }
+  .fuss { position: absolute; left: 0; right: 0; top: ${v.fussOben}px; bottom: 0; background: ${t.fuss}; }
   .fuss-streifen { ${streifen(v.fussOben - 36, false)} }
 
   /* Preis-Sticker */
@@ -193,22 +238,25 @@ function baueHtml(v) {
     filter: drop-shadow(0 10px 16px rgba(30,15,5,.35)); }
   .sticker-form { position: absolute; inset: 0; }
   .sticker-inhalt { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+  .sticker-inhalt { color: ${t.stickerText}; }
   .vorsatz { font-size: ${Math.round(s.preis * 0.32)}px; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; }
-  .preis { font-family: 'Titan One', sans-serif; font-size: ${s.preis}px; line-height: 1; color: var(--rost); margin-top: 2px; white-space: nowrap; }
+  .preis { font-family: 'Titan One', sans-serif; font-size: ${s.preis}px; line-height: 1; color: ${t.preis}; margin-top: 2px; white-space: nowrap; }
   .zusatz { font-size: ${Math.round(s.preis * 0.3)}px; font-weight: 800; white-space: nowrap; }
-  .anker { color: var(--rost); margin-left: .25em; }
+  .anker { color: ${t.stickerForm === 'zacken' ? t.stickerText : t.preis}; margin-left: .25em; opacity: ${t.stickerForm === 'zacken' ? .85 : 1}; }
   .anker s { text-decoration-thickness: 3px; }
 
   /* Inhalt im Fuß, mittig */
   .fuss-inhalt { position: absolute; left: 0; right: 0; bottom: ${v.fussUnten}px; display: flex; flex-direction: column; align-items: center; text-align: center; }
-  .leistungen { font-size: ${v.kompakt ? 38 : 46}px; font-weight: 700; color: var(--creme); white-space: nowrap; }
-  .leistungen .punkt { color: var(--senf); margin: 0 .4em; }
+  .leistungen { font-size: ${v.kompakt ? 38 : 46}px; font-weight: 700; color: ${t.leistungen}; white-space: nowrap; }
+  .leistungen .punkt { color: ${t.punkt}; margin: 0 .4em; }
   .frist { margin-top: ${v.kompakt ? 6 : 14}px; font-size: ${v.kompakt ? 31 : 38}px; font-weight: 600; color: var(--senf); }
-  .frist-feld .frist { margin-top: 10px; padding: 3px 16px; border-radius: 8px; background: var(--senf); color: var(--braun); font-weight: 700; }
+  .cta.pille { border-radius: 999px; }
+  .frist-feld .frist { margin-top: 10px; padding: 3px 16px; border-radius: 8px; background: ${t.fristBg}; color: ${t.fristText}; font-weight: 700; }
 
   /* CTA als Eintrittskarte mit Einkerbungen */
   .cta { margin-top: ${v.kompakt ? 16 : 30}px; padding: ${v.kompakt ? '15px 56px' : '22px 64px'}; background: var(--wa); color: #fff; border-radius: 10px;
-    font-size: ${v.kompakt ? 38 : 46}px; font-weight: 800; white-space: nowrap;
+    font-size: ${v.kompakt ? 38 : 46}px; font-weight: 800; white-space: nowrap; }
+  .cta.ticket {
     -webkit-mask: radial-gradient(circle 16px at 0 50%, transparent 98%, #000) left / 51% 100% no-repeat,
                   radial-gradient(circle 16px at 100% 50%, transparent 98%, #000) right / 51% 100% no-repeat;
             mask: radial-gradient(circle 16px at 0 50%, transparent 98%, #000) left / 51% 100% no-repeat,
@@ -230,7 +278,7 @@ function baueHtml(v) {
   <div class="fuss"></div>
 
   <div class="sticker" data-check="sticker">
-    ${stickerSvg(s.d)}
+    ${stickerSvg(s.d, t)}
     <div class="sticker-inhalt">
       <div class="vorsatz" data-text>${esc(PREIS_VORSATZ)}</div>
       <div class="preis" data-text data-im-sticker>${esc(PREIS)}</div>
@@ -241,7 +289,7 @@ function baueHtml(v) {
   ${v.story ? `<div class="kopf-inhalt" data-check="info">${infoHtml}</div>` : ''}
   <div class="fuss-inhalt ${v.fristFeld ? 'frist-feld' : ''}" data-check="fuss">
     ${v.story ? '' : infoHtml}
-    <div class="cta" data-text>${esc(CTA)}</div>
+    <div class="cta ${t.ctaForm === 'pille' ? 'pille' : 'ticket'}" data-text>${esc(CTA)}</div>
   </div>
 </body>
 </html>`;
