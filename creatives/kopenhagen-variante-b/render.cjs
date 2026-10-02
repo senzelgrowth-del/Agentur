@@ -128,14 +128,14 @@ const html = `<!doctype html>
   .zusatz { font-size: 34px; font-weight: 800; color: var(--braun); }
 
   /* Inhalt im Fuß, mittig */
-  .fuss-inhalt { position: absolute; left: 0; right: 0; bottom: 54px; display: flex; flex-direction: column; align-items: center; text-align: center; }
-  .leistungen { font-size: 40px; font-weight: 700; color: var(--creme); white-space: nowrap; }
+  .fuss-inhalt { position: absolute; left: 0; right: 0; bottom: 42px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .leistungen { font-size: 46px; font-weight: 700; color: var(--creme); white-space: nowrap; }
   .leistungen .punkt { color: var(--senf); margin: 0 .4em; }
-  .frist { margin-top: 10px; font-size: 34px; font-weight: 600; color: var(--senf); }
+  .frist { margin-top: 14px; font-size: 38px; font-weight: 600; color: var(--senf); }
 
   /* CTA als Eintrittskarte mit Einkerbungen */
-  .cta { margin-top: 26px; padding: 24px 64px; background: var(--wa); color: #fff; border-radius: 10px;
-    font-size: 42px; font-weight: 800; white-space: nowrap;
+  .cta { margin-top: 30px; padding: 22px 64px; background: var(--wa); color: #fff; border-radius: 10px;
+    font-size: 46px; font-weight: 800; white-space: nowrap;
     -webkit-mask: radial-gradient(circle 16px at 0 50%, transparent 98%, #000) left / 51% 100% no-repeat,
                   radial-gradient(circle 16px at 100% 50%, transparent 98%, #000) right / 51% 100% no-repeat;
             mask: radial-gradient(circle 16px at 0 50%, transparent 98%, #000) left / 51% 100% no-repeat,
