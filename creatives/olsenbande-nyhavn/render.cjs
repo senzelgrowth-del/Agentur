@@ -18,12 +18,13 @@ const ROSTROT = '#B5432A';
 const DUNKELBRAUN = '#3A2418';
 
 // ===== DATEIEN ==============================================================
-const FOTO = process.env.FOTO || 'nyhavn.jpg';
+const FOTO = process.env.FOTO || 'foto.jpg';
 const LOGO = 'logo.jpg';
 const AUSGABE = 'creative_1x1.png';
 const VORSCHAU = 'vorschau_25.png';
 
 // ===== FEINEINSTELLUNG ======================================================
+const FOTO_ORIGINAL = true;       // true = Foto unverändert (kein Filmlook, kein Korn, kein Verlauf)
 const FOTO_POSITION = '50% 50%';  // object-position: Ausschnitt der Häuserfassaden
 const FOTO_ZOOM = 1.0;            // >1 vergrößert die Fassaden
 const KORN_DECKKRAFT = 0.06;      // Filmkorn, max. 0.06
@@ -87,7 +88,7 @@ const html = `<!doctype html>
     width: 100%; height: 100%;
     object-fit: cover; object-position: ${FOTO_POSITION};
     transform: scale(${FOTO_ZOOM}); transform-origin: ${FOTO_POSITION};
-    filter: sepia(.14) saturate(1.22) contrast(.94) brightness(1.03);
+    ${FOTO_ORIGINAL ? '' : 'filter: sepia(.14) saturate(1.22) contrast(.94) brightness(1.03);'}
   }
   .waerme  { background: var(--senf); mix-blend-mode: soft-light; opacity: .22; }
   .schatten-blass { background: #3a2a20; mix-blend-mode: lighten; opacity: .55; } /* hebt nur die tiefsten Schatten leicht an */
@@ -142,11 +143,11 @@ const html = `<!doctype html>
 </head>
 <body>
   <div class="ebene"><img class="foto" src="${url(fotoPfad)}" alt=""></div>
-  <div class="ebene waerme"></div>
+${FOTO_ORIGINAL ? '' : `  <div class="ebene waerme"></div>
   <div class="ebene schatten-blass"></div>
   <div class="ebene verlauf"></div>
   <div class="ebene korn"></div>
-
+`}
 
   <div class="logo-halo" data-check="logo"><img class="logo" src="${url(LOGO)}" alt=""></div>
 
