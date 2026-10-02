@@ -31,7 +31,7 @@ const VERLAUF_SCHWARZ = 0.6;      // unteres Viertel: transparent -> 60 % Schwar
 const KARTE_BREITE = 560;         // px
 const KARTE_HOEHE = 330;          // px
 const PREIS_GROESSE = 156;        // px, Preis auf der Kinokarte
-const KARTE_SKALIERUNG = 0.86;    // Kinokarte insgesamt verkleinern (1 = Originalgröße)
+const KARTE_SKALIERUNG = 0.92;    // Größe der Kinokarte (1 = 560 x 330 px)
 const KARTE_DREHUNG = -6;         // Grad
 const KARTE_RECHTS = 56;          // px Abstand Kinokarte zum rechten Rand
 const KARTE_UNTEN = 335;          // px Abstand Kinokarte zum unteren Rand
