@@ -4,15 +4,12 @@
 // Ergebnis:             creative_1x1.png (1080 x 1080) und vorschau_25.png (270 x 270)
 
 // ===== TEXTE ================================================================
-const BUZZWORD = 'Kopenhagen 2027';
-const TITEL = 'Auf den Spuren der Olsenbande';
-const UNTERZEILE = 'Im Mai · Bus ab Erfurt';
 const KARTE_LABEL = 'FRÜHBUCHER';
 const PREIS = '965 €';
 const PREIS_ALT = '999 €';
 const KARTE_FRIST = 'nur bis Ende Oktober';
 const CTA_VORSATZ = 'Schreiben Sie uns';
-const CTA_STICHWORT = 'KOPENHAGEN';
+const CTA_STICHWORT = '„Kopenhagen 2027“';
 
 // ===== FARBEN (70er Kinopalette) ============================================
 const CREME = '#F3E6C8';
@@ -31,11 +28,11 @@ const FOTO_POSITION = '50% 50%';  // object-position: Ausschnitt der Häuserfass
 const FOTO_ZOOM = 1.0;            // >1 vergrößert die Fassaden
 const KORN_DECKKRAFT = 0.06;      // Filmkorn, max. 0.06
 const VERLAUF_SCHWARZ = 0.6;      // unteres Viertel: transparent -> 60 % Schwarz
-const KARTE_BREITE = 580;         // px
+const KARTE_BREITE = 560;         // px
 const KARTE_HOEHE = 330;          // px
 const PREIS_GROESSE = 156;        // px, Preis auf der Kinokarte
 const KARTE_DREHUNG = -6;         // Grad
-const KARTE_RECHTS = 52;          // px Abstand Kinokarte zum rechten Rand
+const KARTE_RECHTS = 40;          // px Abstand Kinokarte zum rechten Rand
 const KARTE_UNTEN = 64;           // px Abstand Kinokarte zum unteren Rand
 // ============================================================================
 
@@ -94,13 +91,6 @@ const html = `<!doctype html>
   .korn { background-image: url("${korn}"); background-size: 300px; mix-blend-mode: overlay; opacity: ${KORN_DECKKRAFT}; }
   .verlauf { top: 75%; background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,${VERLAUF_SCHWARZ})); }
 
-  /* --- Titel oben links --- */
-  /* dunkelbraunes Feld nur hinter dem Text: Kontrast unabhängig vom Himmel */
-  .kopf { position: absolute; left: 32px; top: 40px; padding: 22px 28px 24px 24px; border-radius: 18px;
-          background: rgba(58,36,24,.86); color: var(--creme); }
-  .buzz { font-family: 'Fraunces', serif; font-weight: 900; font-size: 92px; line-height: .98; letter-spacing: -.025em; color: var(--creme); font-variation-settings: 'SOFT' 100, 'WONK' 0, 'opsz' 144; }
-  .titel { font-family: 'Fraunces', serif; font-weight: 700; font-size: 42px; line-height: 1.1; color: var(--senf); margin-top: 10px; font-variation-settings: 'SOFT' 100, 'WONK' 0; }
-  .unterzeile { font-size: 32px; font-weight: 600; margin-top: 10px; color: var(--creme); }
 
   /* --- Logo oben rechts, rund mit weichem Übergang --- */
   .logo-halo {
@@ -136,14 +126,14 @@ const html = `<!doctype html>
   .rahmen::after { content: ''; position: absolute; inset: 5px; border: 1px solid var(--rost); opacity: .55; }
   .oben { position: absolute; left: 0; right: 0; top: 0; height: var(--riss); display: flex; flex-direction: column; align-items: center; justify-content: center; padding-top: 10px; }
   .label { font-size: 24px; font-weight: 700; letter-spacing: .34em; margin-right: -.34em; color: var(--rost); }
-  .preis-zeile { display: flex; align-items: baseline; gap: 14px; margin-top: 2px; }
+  .preis-zeile { display: flex; align-items: baseline; gap: 10px; margin-top: 2px; }
   .preis { font-family: 'Fraunces', serif; font-weight: 900; font-size: ${PREIS_GROESSE}px; line-height: .92; letter-spacing: -.035em; color: var(--braun); font-variation-settings: 'SOFT' 100, 'WONK' 0, 'opsz' 144; }
   .preis-alt { font-size: 38px; font-weight: 700; color: var(--rost); text-decoration: line-through; text-decoration-thickness: 3px; }
   .riss { position: absolute; left: 30px; right: 30px; top: var(--riss); border-top: 3px dashed var(--rost); opacity: .85; }
   .unten { position: absolute; left: 0; right: 0; top: var(--riss); bottom: 12px; display: grid; place-items: center; font-size: 30px; font-weight: 700; letter-spacing: .03em; color: var(--braun); }
 
   /* --- CTA unten links --- */
-  .cta { position: absolute; left: 32px; bottom: 56px; padding: 18px 24px; border-radius: 14px; background: var(--senf); color: var(--braun); font-size: 36px; font-weight: 700; line-height: 1.2; }
+  .cta { position: absolute; left: 32px; bottom: 56px; padding: 16px 22px; border-radius: 14px; background: var(--senf); color: var(--braun); font-size: 34px; font-weight: 700; line-height: 1.2; }
   .cta strong { font-weight: 800; letter-spacing: .02em; }
 </style>
 </head>
@@ -154,11 +144,6 @@ const html = `<!doctype html>
   <div class="ebene verlauf"></div>
   <div class="ebene korn"></div>
 
-  <div class="kopf" data-check="kopf">
-    <div class="buzz" data-text>${esc(BUZZWORD)}</div>
-    <div class="titel" data-text>${esc(TITEL)}</div>
-    <div class="unterzeile" data-text>${esc(UNTERZEILE)}</div>
-  </div>
 
   <div class="logo-halo" data-check="logo"><img class="logo" src="${url(LOGO)}" alt=""></div>
 
@@ -194,7 +179,7 @@ const html = `<!doctype html>
 
   const pruefung = await page.evaluate(() => {
     const out = [];
-    if (!document.fonts.check('800 44px Fraunces')) out.push('Fraunces nicht geladen');
+    if (!document.fonts.check('900 120px Fraunces')) out.push('Fraunces nicht geladen');
     if (!document.fonts.check('700 32px Inter')) out.push('Inter nicht geladen');
     const box = {};
     document.querySelectorAll('[data-check]').forEach((el) => {
@@ -211,7 +196,7 @@ const html = `<!doctype html>
     });
     // Preiszeile muss innerhalb des Kartenrahmens bleiben (ungedrehte Maße)
     const fit = document.querySelector('[data-fit]');
-    if (fit.offsetWidth > document.querySelector(".karte").offsetWidth - 2 * 30) out.push(`Preiszeile zu breit für die Karte (${fit.offsetWidth}px)`);
+    if (fit.offsetWidth > document.querySelector(".karte").offsetWidth - 2 * 24) out.push(`Preiszeile zu breit für die Karte (${fit.offsetWidth}px)`);
     const k = box.karte;
     return { out, karte: `x ${Math.round(k.left)}–${Math.round(k.right)}, y ${Math.round(k.top)}–${Math.round(k.bottom)}` };
   });
