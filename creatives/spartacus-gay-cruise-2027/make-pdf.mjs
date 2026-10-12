@@ -1,4 +1,5 @@
-// Fasst die exportierten PNGs zu einem 3-seitigen PDF (1080x1350) zusammen, z. B. für den Canva-Import.
+// Erzeugt aus den exportierten PNGs PDFs (1080x1350) für den Canva-Import:
+// ein Sammel-PDF mit allen Creatives und je ein PDF pro Creative.
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -15,13 +16,17 @@ try {
 
 const dir = dirname(fileURLToPath(import.meta.url));
 const files = ["01-zwischen-den-kontinenten.png", "02-shows-djs-drag.png", "03-alles-inklusive.png"];
-const pages = files
-  .map((f) => `<img src="data:image/png;base64,${readFileSync(join(dir, "export", f)).toString("base64")}">`)
-  .join("");
+const imgTag = (f) =>
+  `<img src="data:image/png;base64,${readFileSync(join(dir, "export", f)).toString("base64")}">`;
+const style = "<style>@page{size:1080px 1350px;margin:0}*{margin:0}img{display:block;width:1080px;height:1350px;page-break-after:always}</style>";
 
 const browser = await chromium.launch();
 const page = await browser.newPage();
-await page.setContent(`<style>@page{size:1080px 1350px;margin:0}*{margin:0}img{display:block;width:1080px;height:1350px;page-break-after:always}</style>${pages}`);
-await page.pdf({ path: join(dir, "export", "spartacus-gay-cruise-2027-creatives.pdf"), width: "1080px", height: "1350px", printBackground: true });
+const writePdf = async (images, name) => {
+  await page.setContent(style + images.map(imgTag).join(""));
+  await page.pdf({ path: join(dir, "export", name), width: "1080px", height: "1350px", printBackground: true });
+  console.log("✓", name);
+};
+await writePdf(files, "spartacus-gay-cruise-2027-creatives.pdf");
+for (const f of files) await writePdf([f], f.replace(/\.png$/, ".pdf"));
 await browser.close();
-console.log("✓ PDF");
