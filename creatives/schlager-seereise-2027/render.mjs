@@ -28,14 +28,14 @@ const creatives = [
     name: "01-ueber-30-schlagerstars",
     photo: "konzert-atrium.jpg",
     pos: "50% 50%",
-    headline: "Über 30 Schlagerstars<br>live an Bord",
-    info: "Semino Rossi · Stefan Mross · Patrick Lindner u.v.m.",
+    headline: "<span>Gänsehaut pur</span><br>mit Ihren Stars",
+    info: "Semino Rossi, Stefan Mross, Patrick Lindner<br>&amp; insgesamt über 30 Stars live an Bord",
   },
   {
     name: "02-sonne-meer-schlager",
     photo: "sonnendeck-hafen.jpg",
     pos: "42% 50%",
-    headline: "Sonne, Meer<br>&amp; Schlager pur",
+    headline: "Sonne, Meer<br>&amp; <span>Lieblingslieder</span>",
     info: "Italien · Montenegro · Griechenland · Albanien",
   },
 ];
@@ -47,27 +47,28 @@ const coral = "#ff6b6b";
 const WA_ICON = `<svg viewBox="0 0 32 32"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 6.9L3 29l6.5-2c1.9 1 4.1 1.6 6.5 1.6 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.3c-2.1 0-4.1-.6-5.8-1.7l-.4-.3-3.9 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.8-3.8-1.8-5.9C5 9.9 9.9 5.2 16 5.2s11 4.7 11 10.6-4.9 10.5-11 10.5zm6-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1c-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.8 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.3z"/></svg>`;
 
 const html = (c) => `<!doctype html><html><head><meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@700;800;900&display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@700;800;900&display=block" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:1080px;height:1350px;overflow:hidden;background:#0b1a33}
 body{font-family:Montserrat,sans-serif;color:#fff;position:relative}
 .photo{position:absolute;inset:0;background:url(${img(c.photo)}) ${c.pos}/cover no-repeat}
 .top{position:absolute;left:0;right:0;top:0;height:520px;
-  background:linear-gradient(180deg,rgba(8,20,45,.88) 0%,rgba(8,20,45,.6) 55%,rgba(8,20,45,0) 100%)}
+  background:linear-gradient(180deg,rgba(38,10,48,.85) 0%,rgba(38,10,48,.55) 55%,rgba(38,10,48,0) 100%)}
 .bottom{position:absolute;left:0;right:0;bottom:0;height:620px;
-  background:linear-gradient(0deg,rgba(8,20,45,.94) 0%,rgba(8,20,45,.75) 50%,rgba(8,20,45,0) 100%)}
+  background:linear-gradient(0deg,rgba(38,10,48,.92) 0%,rgba(38,10,48,.72) 50%,rgba(38,10,48,0) 100%)}
 .title{position:absolute;top:80px;left:0;right:0;text-align:center}
 .kicker{font-weight:800;font-size:22px;letter-spacing:.3em;text-transform:uppercase;color:${sun};padding-left:.3em}
-.brand{font-family:'Lilita One',sans-serif;font-size:104px;line-height:1;margin-top:16px;color:#fff;
-  text-shadow:0 5px 0 ${coral},0 10px 34px rgba(0,0,0,.5)}
-.tagline{font-weight:800;font-size:42px;margin-top:20px;color:${sun};text-shadow:0 2px 14px rgba(0,0,0,.6)}
+.brand{font-family:Pacifico,cursive;font-size:104px;line-height:1.25;margin-top:6px;color:#fff}
+.tagline{display:inline-block;font-weight:800;font-size:36px;margin-top:26px;padding:12px 30px;border-radius:50px;
+  background:linear-gradient(90deg,${coral},#ff8e3c);color:#fff}
 .content{position:absolute;left:80px;right:80px;bottom:240px;text-align:center}
-h2{font-weight:900;font-size:62px;line-height:1.08;text-shadow:0 4px 24px rgba(0,0,0,.6)}
-.info{font-weight:700;font-size:30px;line-height:1.35;margin-top:20px;color:rgba(255,255,255,.92);text-shadow:0 2px 12px rgba(0,0,0,.7)}
+h2{font-weight:900;font-size:66px;line-height:1.08}
+h2 span{color:${sun}}
+.info{font-weight:700;font-size:30px;line-height:1.35;margin-top:20px;color:rgba(255,255,255,.95)}
 .cta-row{position:absolute;left:0;right:0;bottom:84px;display:flex;justify-content:center}
 .cta{display:flex;align-items:center;gap:14px;font-weight:800;font-size:28px;padding:22px 42px;border-radius:60px;
-  background:#25d366;color:#fff;box-shadow:0 10px 30px rgba(0,0,0,.45)}
+  background:#25d366;color:#fff;}
 .cta svg{width:36px;height:36px;fill:#fff}
 </style></head><body>
 <div class="photo"></div><div class="top"></div><div class="bottom"></div>
