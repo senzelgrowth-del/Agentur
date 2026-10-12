@@ -30,7 +30,7 @@ const creatives = [
     pos: "50% 100%",
     // Reiter stehen unten im Bild – Headline deshalb direkt unter den Titel
     layout: "top",
-    headline: "Alexander Klaws als Winnetou",
+    headline: "Alexander Klaws<br>als Winnetou",
     info: "3 Tage · Bus ab Erfurt · Hotel &amp; Ticket inklusive",
   },
   {
@@ -46,7 +46,7 @@ const creatives = [
 const gold = "#f3c77a";
 
 const html = (c) => `<!doctype html><html><head><meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=Rye&family=Playfair+Display:ital,wght@1,600;1,700&family=Montserrat:wght@600;700;800&display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@600;700;800;900&display=block" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:1080px;height:1350px;overflow:hidden;background:#140806}
@@ -57,17 +57,17 @@ body{font-family:Montserrat,sans-serif;color:#fff;position:relative}
 .bottom{position:absolute;left:0;right:0;bottom:0;height:${c.layout === "top" ? 300 : 560}px;
   background:linear-gradient(0deg,rgba(14,5,3,.92) 0%,rgba(14,5,3,.7) 50%,rgba(14,5,3,0) 100%)}
 .title{position:absolute;top:84px;left:0;right:0;text-align:center}
-.kicker{font-weight:700;font-size:21px;letter-spacing:.45em;text-transform:uppercase;color:${gold};padding-left:.45em}
-.brand{font-family:Rye,serif;font-size:100px;line-height:1.05;margin-top:18px;color:#fff3dc;
+.kicker{font-weight:800;font-size:22px;letter-spacing:.45em;text-transform:uppercase;color:${gold};padding-left:.45em}
+.brand{font-family:'Alfa Slab One',serif;font-size:98px;line-height:1.05;margin-top:16px;letter-spacing:.01em;color:#fff3dc;
   text-shadow:0 3px 0 rgba(120,30,10,.85),0 8px 30px rgba(0,0,0,.6)}
-.tagline{font-family:'Playfair Display',serif;font-style:italic;font-weight:600;font-size:38px;margin-top:14px;color:${gold}}
+.tagline{font-weight:800;font-size:34px;margin-top:16px;text-shadow:0 2px 14px rgba(0,0,0,.6);color:${gold}}
 .content{position:absolute;left:90px;right:90px;text-align:center;${c.layout === "top" ? "top:420px" : "bottom:250px"}}
-h2{font-family:'Playfair Display',serif;font-style:italic;font-weight:700;font-size:64px;line-height:1.08;
+h2{font-weight:900;font-size:58px;line-height:1.1;letter-spacing:-.005em;
   text-shadow:0 4px 24px rgba(0,0,0,.6)}
-.info{font-weight:600;font-size:22px;letter-spacing:.14em;text-transform:uppercase;margin-top:20px;color:rgba(255,243,220,.88)}
+.info{font-weight:700;font-size:24px;letter-spacing:.1em;text-shadow:0 2px 12px rgba(0,0,0,.7);text-transform:uppercase;margin-top:20px;color:rgba(255,243,220,.88)}
 .cta-row{position:absolute;left:0;right:0;bottom:84px;display:flex;justify-content:center;align-items:center;gap:32px}
 .price{font-weight:800;font-size:54px;color:${gold};line-height:1}
-.price em{font-style:normal;font-weight:600;font-size:22px;color:rgba(255,255,255,.85);margin-left:8px}
+.price em{font-style:normal;font-weight:700;font-size:22px;color:rgba(255,255,255,.85);margin-left:8px}
 .cta{font-weight:800;font-size:26px;letter-spacing:.03em;padding:22px 40px;border-radius:60px;
   background:linear-gradient(180deg,#f7d58f,#e2a948);color:#2a0e06;box-shadow:0 10px 30px rgba(0,0,0,.45)}
 </style></head><body>
