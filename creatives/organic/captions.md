@@ -48,16 +48,17 @@ Wenn am Ende der Vorstellung der Himmel über dem Kalkberg explodiert, hält das
 
 ---
 
-## 04 – Sommer 2027: Kommst du mit? (`04-mitfahren.png`)
-🚨 Begrenzte Plätze: Sommer 2027 – kommst du mit? 🤠
+## 04 – Wir fahren hin – kommst du mit? (`04-mitfahren.png`)
+Wir fahren hin – kommst du mit? 🤠🎟️
 
-Lehn dich zurück, wir kümmern uns um alles:
+Dein Ticket in den Wilden Westen: Im Juli 2027 geht's mit uns zur Freilichtbühne am Kalkberg in Bad Segeberg – eine der größten Freilichtbühnen Europas mit über 7.500 Plätzen.
+
 🚌 Bequem im Reisebus ab Erfurt
 🏨 2 Nächte im Hotel mit Halbpension
-🎟️ Eintrittskarte schon inklusive
+🎟️ Eintrittskarte inklusive
 📅 07.–09.07. oder 18.–20.07.2027
 
-Ideal mit Freunden, Familie oder dem Verein. Die Plätze im Bus sind begrenzt – sichere dir deinen Platz, bevor's zu spät ist!
-👉 Infos & Anmeldung per WhatsApp
+Ideal mit Freunden, Familie oder dem Verein. ⚠️ Die Busplätze sind begrenzt – sichere dir deinen Platz, bevor's zu spät ist!
+👉 Jetzt per WhatsApp Platz anfragen
 
 #KarlMaySpiele2027 #BadSegeberg #Busreise #Gruppenreise #Erfurt #Thüringen #Vereinsausflug
