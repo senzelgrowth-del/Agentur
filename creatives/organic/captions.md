@@ -1,10 +1,10 @@
 # Karl-May-Spiele – organische Posts (Instagram & Facebook)
 
-Format 4:5 (1080×1350) · Reihenfolge = Posting-Reihenfolge · 2 Posts/Woche (z. B. Di + Fr, 18–19 Uhr)
+Format 4:5 (1080×1350) · **Abschluss-Slide für alle Posts:** `00-abschluss-slide.png` jeweils als 2. Bild ins Karussell · Reihenfolge = Posting-Reihenfolge · 2 Posts/Woche (z. B. Di + Fr, 18–19 Uhr)
 
 ---
 
-## 01 – Einmal im Leben Winnetou live erleben! (Karussell: `01-kulisse.png` → `01b-so-gehts.png`)
+## 01 – Einmal im Leben Winnetou live erleben! 
 Einmal im Leben Winnetou live erleben – mit über 200.000 Besuchern allein 2026 eines der beliebtesten Open-Air-Erlebnisse Deutschlands! 🤠🐎
 
 Das erwartet dich bei den Karl-May-Spielen in Bad Segeberg:
