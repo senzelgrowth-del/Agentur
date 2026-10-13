@@ -4,7 +4,7 @@ Format 4:5 (1080×1350) · Reihenfolge = Posting-Reihenfolge · 2 Posts/Woche (z
 
 ---
 
-## 01 – Einmal im Leben Winnetou live erleben! (`01-kulisse.png`)
+## 01 – Einmal im Leben Winnetou live erleben! (Karussell: `01-kulisse.png` → `01b-so-gehts.png`)
 Einmal im Leben Winnetou live erleben – mit über 200.000 Besuchern allein 2026 eines der beliebtesten Open-Air-Erlebnisse Deutschlands! 🤠🐎
 
 Das erwartet dich bei den Karl-May-Spielen in Bad Segeberg:
@@ -13,7 +13,7 @@ Das erwartet dich bei den Karl-May-Spielen in Bad Segeberg:
 🌅 Abendstimmung am Kalkberg, wenn die Felsen rot leuchten
 
 Im Juli 2027 fahren wir mit dem Bus ab Erfurt hin. ⚠️ Die Busplätze sind begrenzt!
-👉 Schreib uns „DABEI“ und wir schicken dir alle Infos.
+👉 Wisch nach links – so einfach sicherst du dir deinen Platz! Oder schreib uns direkt per WhatsApp „Karl May“.
 
 #KarlMaySpiele #BadSegeberg #Kalkberg #Winnetou #Freilichtbühne #Busreise #Erfurt
 
