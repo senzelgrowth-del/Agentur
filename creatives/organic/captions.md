@@ -4,8 +4,8 @@ Format 4:5 (1080×1350) · Reihenfolge = Posting-Reihenfolge · 2 Posts/Woche (z
 
 ---
 
-## 01 – 200.000+ Besucher 2026. Bist du 2027 dabei? (`01-kulisse.png`)
-Über 200.000 Besucher allein in der Saison 2026 – und 2027 geht's weiter! 🤠🐎
+## 01 – Einmal im Leben Winnetou live erleben! (`01-kulisse.png`)
+Einmal im Leben Winnetou live erleben – mit über 200.000 Besuchern allein 2026 eines der beliebtesten Open-Air-Erlebnisse Deutschlands! 🤠🐎
 
 Das erwartet dich bei den Karl-May-Spielen in Bad Segeberg:
 🏜️ Eine der größten Freilichtbühnen Europas – über 7.500 Plätze direkt am Kalkberg
