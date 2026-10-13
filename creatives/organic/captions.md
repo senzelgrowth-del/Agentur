@@ -19,7 +19,7 @@ Das muss man einmal im Leben live erlebt haben.
 ## 02 – 2026 verpasst? (`02-rueckblick.png`)
 2026 verpasst? 2027 bist du dabei! 🎟️
 
-„Im Tal des Todes“ war diesen Sommer ausverkauft-voll – und viele haben sich hinterher geärgert, nicht mitgefahren zu sein. 😅
+„Im Tal des Todes“ war diesen Sommer ein echtes Highlight am Kalkberg. Wer nicht dabei war, hat was verpasst. 😅
 
 Damit dir das 2027 nicht passiert:
 ✅ Bus ab Erfurt
@@ -54,7 +54,7 @@ Lehn dich zurück, wir kümmern uns um alles:
 🎟️ Eintrittskarte schon inklusive
 📅 07.–09.07. oder 18.–20.07.2027
 
-Ideal mit Freunden, Familie oder dem Verein. Unsere Busplätze sind erfahrungsgemäß schnell weg – sichere dir deinen Platz, bevor's zu spät ist!
+Ideal mit Freunden, Familie oder dem Verein. Die Plätze im Bus sind begrenzt – sichere dir deinen Platz, bevor's zu spät ist!
 👉 Infos & Anmeldung per WhatsApp
 
 #KarlMaySpiele2027 #BadSegeberg #Busreise #Gruppenreise #Erfurt #Thüringen #Vereinsausflug
