@@ -13,7 +13,7 @@ Das erwartet dich bei den Karl-May-Spielen in Bad Segeberg:
 🌅 Abendstimmung am Kalkberg, wenn die Felsen rot leuchten
 
 Im Juli 2027 fahren wir mit dem Bus ab Erfurt hin. ⚠️ Die Busplätze sind begrenzt!
-👉 Wisch nach links – so einfach sicherst du dir deinen Platz! Oder schreib uns direkt per WhatsApp „Karl May“.
+👉 Schreib uns einfach eine kurze Nachricht – ganz unverbindlich. Wir organisieren alles, du genießt.
 
 #KarlMaySpiele #BadSegeberg #Kalkberg #Winnetou #Freilichtbühne #Busreise #Erfurt
 
