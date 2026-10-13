@@ -9,8 +9,8 @@ Format 4:5 (1080×1350) · Reihenfolge = Posting-Reihenfolge · 2 Posts/Woche (z
 
 Das erwartet dich bei den Karl-May-Spielen in Bad Segeberg:
 🏜️ Eine der größten Freilichtbühnen Europas – über 7.500 Plätze direkt am Kalkberg
-🐎 2026 ritt Winnetou auf Iltschi in „Im Tal des Todes“ – wir sind gespannt aufs neue Stück 2027
-🎆 Und zum Schluss: das große Finale-Feuerwerk über der Bühne
+🐎 Winnetou live zu Pferd – mitten in der Westernkulisse
+🌅 Abendstimmung am Kalkberg, wenn die Felsen rot leuchten
 
 Im Juli 2027 fahren wir mit dem Bus ab Erfurt hin. ⚠️ Die Busplätze sind begrenzt!
 👉 Schreib uns „DABEI“ und wir schicken dir alle Infos.
