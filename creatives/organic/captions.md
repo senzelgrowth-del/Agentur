@@ -4,18 +4,18 @@ Format 4:5 (1080×1350) · Reihenfolge = Posting-Reihenfolge · 2 Posts/Woche (z
 
 ---
 
-## 01 – Wilder Westen live – nur 1× im Jahr! (`01-kulisse.png`)
-Wilder Westen live – und das nur einmal im Jahr! 🤠🐎
+## 01 – 200.000+ Besucher 2026. Bist du 2027 dabei? (`01-kulisse.png`)
+Über 200.000 Besucher allein in der Saison 2026 – und 2027 geht's weiter! 🤠🐎
 
-Bei den Karl-May-Spielen in Bad Segeberg erlebst du alles hautnah:
-🎭 Die Show – Action, Pferde und echte Wildwest-Atmosphäre
-🏜️ Die Kulisse – mitten im echten Kalkberg-Felsen
-🎆 Das Finale – ein Feuerwerk, das du nicht vergisst
+Das erwartet dich bei den Karl-May-Spielen in Bad Segeberg:
+🏜️ Eine der größten Freilichtbühnen Europas – über 7.500 Plätze direkt am Kalkberg
+🐎 2026 ritt Winnetou auf Iltschi in „Im Tal des Todes“ – wir sind gespannt aufs neue Stück 2027
+🎆 Und zum Schluss: das große Finale-Feuerwerk über der Bühne
 
 Im Juli 2027 fahren wir mit dem Bus ab Erfurt hin. ⚠️ Die Busplätze sind begrenzt!
 👉 Schreib uns „DABEI“ und wir schicken dir alle Infos.
 
-#KarlMaySpiele #BadSegeberg #Kalkberg #Freilichtbühne #Wildwest #Busreise #Erfurt
+#KarlMaySpiele #BadSegeberg #Kalkberg #Winnetou #Freilichtbühne #Busreise #Erfurt
 
 ---
 
