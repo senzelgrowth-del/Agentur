@@ -1,14 +1,25 @@
 <!doctype html><html><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Rye&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="_base.css"><style>
-.blur{position:absolute;inset:-60px;background:url(km-buehne.jpg) center/cover;filter:blur(36px) brightness(.45) saturate(1.2)}
-.top{position:absolute;top:150px;left:70px;right:70px;color:#fff}
-.k{font-family:Rye,serif;color:#F2C66D;font-size:34px}
-.h{font-weight:900;font-size:92px;line-height:1.02;letter-spacing:-2px;margin-top:14px}
-.photo{position:absolute;left:40px;top:560px;width:1000px;height:557px;border-radius:26px;object-fit:cover;box-shadow:0 24px 60px rgba(0,0,0,.55)}
-.tags{position:absolute;left:70px;right:70px;bottom:70px;display:flex;gap:16px;justify-content:center}
-.tags span{border:2px solid rgba(255,255,255,.6);color:#fff;border-radius:40px;padding:14px 26px;font-weight:700;font-size:28px;backdrop-filter:blur(6px);background:rgba(255,255,255,.08)}
+.ad{background:radial-gradient(circle at 50% 40%,#22344a 0%,#121c29 70%)}
+.top{position:absolute;top:70px;left:60px;right:190px;color:#fff}
+.k{font-weight:800;font-size:24px;letter-spacing:5px;color:#F2C66D}
+.h{font-weight:900;font-size:76px;line-height:1.03;letter-spacing:-2px;margin-top:14px}
+.h em{font-style:normal;color:#F2C66D}
+.grid{position:absolute;left:40px;right:40px;top:330px;height:800px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:440px 1fr;gap:16px}
+.c{position:relative;border-radius:22px;overflow:hidden;box-shadow:0 14px 34px rgba(0,0,0,.45)}
+.c img{width:100%;height:100%;object-fit:cover;display:block}
+.c.big{grid-column:1 / 3}
+.c span{position:absolute;left:18px;bottom:18px;background:rgba(18,28,41,.82);color:#fff;font-weight:800;font-size:24px;padding:10px 18px;border-radius:30px}
+.c span b{color:#F2C66D}
+.foot{position:absolute;left:40px;right:40px;bottom:58px;display:flex;align-items:center;justify-content:center;gap:22px}
+.badge{background:#D9342B;color:#fff;font-weight:900;font-size:28px;padding:16px 26px;border-radius:12px;transform:rotate(-2deg);box-shadow:0 8px 20px rgba(0,0,0,.35)}
+.info{color:#fff;font-weight:700;font-size:30px}
 </style></head><body><div class="ad">
-<div class="blur"></div><img class="logo" src="logo-starshine.png">
-<div class="top"><div class="k">Karl-May-Spiele</div><div class="h">Kein Kino der Welt kann das.</div></div>
-<img class="photo" src="km-buehne.jpg">
-<div class="tags"><span>Echte Felsen</span><span>Echte Pferde</span><span>Echtes Feuer</span></div>
+<img class="logo" src="logo-starshine.png">
+<div class="top"><div class="k">KARL-MAY-SPIELE · BAD SEGEBERG</div><div class="h">Wilder Westen live – <em>nur 1× im Jahr!</em></div></div>
+<div class="grid">
+ <div class="c big"><img src="km-feuerwerk.jpg" style="object-position:30% 55%"><span><b>Das Finale:</b> Feuerwerk über der Bühne</span></div>
+ <div class="c"><img src="km-flyer.jpg" style="object-position:72% 70%"><span style="top:18px;bottom:auto"><b>Die Show</b> (Saison 2026)</span></div>
+ <div class="c"><img src="km-kulisse-sets.jpg" style="object-position:40% 60%"><span><b>Die Kulisse:</b> echter Fels</span></div>
+</div>
+<div class="foot"><div class="badge">Begrenzte Busplätze!</div><div class="info">Juli 2027 · ab Erfurt</div></div>
 </div></body></html>

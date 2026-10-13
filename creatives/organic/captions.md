@@ -4,15 +4,18 @@ Format 4:5 (1080×1350) · Reihenfolge = Posting-Reihenfolge · 2 Posts/Woche (z
 
 ---
 
-## 01 – Kein Kino der Welt kann das (`01-kulisse.png`)
-Kein Kino der Welt kann das. 🏜️🐎
+## 01 – Wilder Westen live – nur 1× im Jahr! (`01-kulisse.png`)
+Wilder Westen live – und das nur einmal im Jahr! 🤠🐎
 
-Echte Felsen. Echte Pferde. Echtes Feuer. Bei den Karl-May-Spielen in Bad Segeberg sitzt du mitten im Kalkberg – unter freiem Himmel, während die Sonne hinter den Felsen untergeht. 🌅
+Bei den Karl-May-Spielen in Bad Segeberg erlebst du alles hautnah:
+🎭 Die Show – Action, Pferde und echte Wildwest-Atmosphäre
+🏜️ Die Kulisse – mitten im echten Kalkberg-Felsen
+🎆 Das Finale – ein Feuerwerk, das du nicht vergisst
 
-Das muss man einmal im Leben live erlebt haben.
-👉 Im Juli 2027 fahren wir mit dem Bus ab Erfurt hin – die Plätze sind begrenzt. Schreib uns „DABEI“ und wir schicken dir alle Infos!
+Im Juli 2027 fahren wir mit dem Bus ab Erfurt hin. ⚠️ Die Busplätze sind begrenzt!
+👉 Schreib uns „DABEI“ und wir schicken dir alle Infos.
 
-#KarlMaySpiele #BadSegeberg #Kalkberg #Freilichtbühne #Winnetou #Busreise #Erfurt
+#KarlMaySpiele #BadSegeberg #Kalkberg #Freilichtbühne #Wildwest #Busreise #Erfurt
 
 ---
 
