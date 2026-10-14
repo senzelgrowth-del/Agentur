@@ -1,64 +1,67 @@
-# Karl-May-Spiele – organische Posts (Instagram & Facebook)
+# Karl-May-Spiele – Captions für 4 organische Posts
 
-Format 4:5 (1080×1350) · **Abschluss-Slide für alle Posts:** `00-abschluss-slide.png` jeweils als 2. Bild ins Karussell · Reihenfolge = Posting-Reihenfolge · 2 Posts/Woche (z. B. Di + Fr, 18–19 Uhr)
-
----
-
-## 01 – Einmal im Leben Winnetou live erleben! 
-Einmal im Leben Winnetou live erleben – mit über 200.000 Besuchern allein 2026 eines der beliebtesten Open-Air-Erlebnisse Deutschlands! 🤠🐎
-
-Das erwartet dich bei den Karl-May-Spielen in Bad Segeberg:
-🏜️ Eine der größten Freilichtbühnen Europas – über 7.500 Plätze direkt am Kalkberg
-🐎 Winnetou live zu Pferd – mitten in der Westernkulisse
-🌅 Abendstimmung am Kalkberg, wenn die Felsen rot leuchten
-
-Im Juli 2027 fahren wir mit dem Bus ab Erfurt hin. ⚠️ Die Busplätze sind begrenzt!
-👉 Schreib uns einfach eine kurze Nachricht – ganz unverbindlich. Wir organisieren alles, du genießt.
-
-#KarlMaySpiele #BadSegeberg #Kalkberg #Winnetou #Freilichtbühne #Busreise #Erfurt
+Format 4:5 · Jeweils `00-abschluss-slide.png` als 2. Bild ins Karussell · 2 Posts/Woche (z. B. Di + Fr, 18–19 Uhr)
 
 ---
 
-## 02 – 2026 verpasst? (`02-rueckblick.png`)
+## Post 1 – `01-kulisse.png`
+Einmal im Leben Winnetou live erleben 🤠🐎
+
+Echte Pferde, echte Felsen, rot leuchtende Kulisse – und du mittendrin. Über 200.000 Besucher waren allein 2026 bei den Karl-May-Spielen in Bad Segeberg dabei.
+
+Im Juli 2027 fahren wir hin:
+🚌 Reisebus ab Erfurt
+🏨 2 Nächte im Hotel mit Halbpension
+🎟️ Eintritt inklusive
+
+⚠️ Die Busplätze sind begrenzt.
+👉 Schreib uns einfach eine Nachricht – ganz unverbindlich.
+
+#KarlMaySpiele #BadSegeberg #Winnetou #Kalkberg #Busreise #Erfurt #Thüringen
+
+---
+
+## Post 2 – `02-rueckblick.png`
 2026 verpasst? 2027 bist du dabei! 🎟️
 
-„Im Tal des Todes“ war diesen Sommer ein echtes Highlight am Kalkberg. Wer nicht dabei war, hat was verpasst. 😅
+„Im Tal des Todes“ hat diesen Sommer Tausende am Kalkberg begeistert. Wer nicht dabei war, kennt das Gefühl: nächstes Mal unbedingt!
 
-Damit dir das 2027 nicht passiert:
-✅ Bus ab Erfurt
-✅ 2 Nächte im Hotel mit Halbpension
-✅ Eintrittskarte inklusive
+Damit es 2027 klappt, kümmern wir uns um alles – Bus, Hotel und Eintritt. Du musst nur noch einsteigen. 😊
 
-⚠️ Die Plätze im Bus sind begrenzt – wer zuerst fragt, fährt mit.
-👉 Jetzt per WhatsApp oder Nachricht Platz anfragen!
+📅 07.–09.07. oder 18.–20.07.2027
+⚠️ Wer zuerst schreibt, fährt mit.
+👉 Kurze Nachricht genügt!
 
-#KarlMaySpiele #ImTalDesTodes #BadSegeberg #Winnetou #Busreise #Gruppenreise
+#KarlMaySpiele #ImTalDesTodes #BadSegeberg #Winnetou #Rückblick #Busreise
 
 ---
 
-## 03 – Dieses Finale willst du nicht verpassen (`03-finale.png`)
-Dieses Finale willst du nicht verpassen. 🎆
+## Post 3 – `03-finale.png`
+Dieses Finale willst du nicht verpassen 🎆
 
-Wenn am Ende der Vorstellung der Himmel über dem Kalkberg explodiert, hält das ganze Publikum den Atem an. Gänsehaut pur – und du mittendrin.
+Wenn am Ende der Vorstellung das Feuerwerk über dem Kalkberg aufsteigt, hält das ganze Publikum den Atem an. Gänsehaut pur!
 
-📅 Juli 2027 · Wir fahren hin – du auch?
-👉 Kommentiere „🎆“ oder schreib uns, und wir senden dir die Reisedetails.
+Erlebe es im Juli 2027 live – bequem mit dem Bus ab Erfurt, inklusive Hotel und Eintritt.
+
+👇 Was ist für dich das Highlight: Pferde, Stunts oder Feuerwerk? Schreib's in die Kommentare!
+👉 Oder schick uns direkt eine Nachricht für alle Infos.
 
 #KarlMaySpiele #Feuerwerk #BadSegeberg #Gänsehaut #Wildwest #Sommer2027
 
 ---
 
-## 04 – Wir fahren hin – kommst du mit? (`04-mitfahren.png`)
-Wir fahren hin – kommst du mit? 🤠🎟️
+## Post 4 – `04-mitfahren.png`
+Karl-May-Spiele 2027: Kommst du mit? 🤠🚌
 
-Dein Ticket in den Wilden Westen: Im Juli 2027 geht's mit uns zur Freilichtbühne am Kalkberg in Bad Segeberg – eine der größten Freilichtbühnen Europas mit über 7.500 Plätzen.
-
-🚌 Bequem im Reisebus ab Erfurt
-🏨 2 Nächte im Hotel mit Halbpension
-🎟️ Eintrittskarte inklusive
+Dein Ticket in den Wilden Westen – ohne Planungsstress:
+✅ Bequem im Reisebus ab Erfurt
+✅ 2 Nächte im Hotel mit Halbpension
+✅ Eintrittskarte inklusive
 📅 07.–09.07. oder 18.–20.07.2027
 
-Ideal mit Freunden, Familie oder dem Verein. ⚠️ Die Busplätze sind begrenzt – sichere dir deinen Platz, bevor's zu spät ist!
-👉 Jetzt per WhatsApp Platz anfragen
+Perfekt mit Partner, Freunden, Familie oder dem ganzen Verein.
 
-#KarlMaySpiele2027 #BadSegeberg #Busreise #Gruppenreise #Erfurt #Thüringen #Vereinsausflug
+⚠️ Die Plätze im Bus sind begrenzt – sichere dir deinen Platz rechtzeitig!
+👉 Schreib uns einfach eine Nachricht – ganz unverbindlich.
+
+#KarlMaySpiele2027 #BadSegeberg #Busreise #Gruppenreise #Vereinsausflug #Erfurt #Thüringen
