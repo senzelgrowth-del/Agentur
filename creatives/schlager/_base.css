@@ -1,0 +1,5 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1350px;font-family:Montserrat,sans-serif;overflow:hidden}
+.ad{position:relative;width:1080px;height:1350px;overflow:hidden}
+.logo{position:absolute;top:36px;right:36px;width:124px;height:124px;border-radius:50%;box-shadow:0 6px 20px rgba(0,0,0,.35);z-index:10}
+.rye{font-family:Rye,serif}
