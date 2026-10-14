@@ -1,62 +1,60 @@
-# Karl-May-Spiele – Captions (ohne Hashtags)
+# Karl-May-Spiele – Captions (Variante B, ohne Hashtags)
 
-Format 4:5 · 2. Slide jeweils eine Abschluss-Slide (`00-abschluss-ticket.png`, `00-abschluss-slide-hell.png` oder `00-abschluss-slide.png`)
-
----
-
-## Post 1 – `01-kulisse.png` (2. Slide: Ticket)
-Einmal im Leben Winnetou live erleben 🤠🐎
-
-Pferde im Galopp, rot leuchtende Felsen und über 7.500 Zuschauer unter freiem Himmel – das sind die Karl-May-Spiele in Bad Segeberg. Allein 2026 waren über 200.000 Besucher dabei.
-
-Im Juli 2027 fahren wir mit dem Bus ab Erfurt hin – Hotel und Eintritt inklusive.
-
-⚠️ Die Busplätze sind begrenzt.
-👉 Wisch weiter und schreib uns einfach eine Nachricht!
+Format 4:5 · 2. Slide jeweils eine Abschluss-Slide
 
 ---
 
-## Post 2 – `02-rueckblick.png` (2. Slide: hell)
-2026 verpasst? 2027 bist du dabei! 🎟️
+## Post 1 – `01-kulisse.png`
+Weißt du noch, wie du als Kind Winnetou-Filme geschaut hast? 🐎
 
-Diesen Sommer ritt Winnetou auf Iltschi durch „Im Tal des Todes“ – und über 200.000 Besucher am Kalkberg waren begeistert. Wer nicht dabei war, sagt meistens: Nächstes Jahr unbedingt!
+Genau dieses Gefühl kannst du im Sommer 2027 live erleben – bei den Karl-May-Spielen in Bad Segeberg. Echte Pferde, eine Westernstadt direkt im Kalkberg-Felsen und über 7.500 Plätze unter freiem Himmel.
 
-Damit es 2027 klappt, organisieren wir alles für dich:
+Wir fahren mit dem Bus ab Erfurt hin, Hotel und Eintritt sind schon dabei.
+
+Lust, das Kind in dir nochmal zu wecken? 😊
+👉 Schreib uns einfach eine Nachricht.
+
+---
+
+## Post 2 – `02-rueckblick.png`
+200.000 Besucher in einem Sommer – die können sich nicht irren 🤠
+
+So viele Menschen haben 2026 „Im Tal des Todes“ am Kalkberg erlebt. Und 2027 geht das Abenteuer weiter – diesmal mit dir?
+
+Wir haben alles vorbereitet:
 📅 07.–09.07. oder 18.–20.07.2027
 🚌 Reisebus ab Erfurt
 🏨 2 Nächte im Hotel mit Halbpension
 🎟️ Eintrittskarte inklusive
 
-⚠️ Wer zuerst schreibt, fährt mit.
-👉 Eine kurze Nachricht mit deinem Wunschtermin genügt.
+Unser Bus hat nur eine begrenzte Anzahl Plätze.
+👉 Sag uns einfach per Nachricht Bescheid, welcher Termin dir passt.
 
 ---
 
-## Post 3 – `03-finale.png` (2. Slide: Ticket)
-Dieses Finale willst du nicht verpassen 🎆
+## Post 3 – `03-finale.png`
+Stell dir vor: Ein warmer Juliabend, die Sonne verschwindet hinter den Felsen … 🌅
 
-Am Ende der Vorstellung steigt das Feuerwerk über dem Kalkberg auf – und das ganze Publikum hält den Atem an. Gänsehaut pur!
+Die Pferde galoppieren über den Sand, die Kulisse leuchtet rot – und zum Schluss steigt das große Feuerwerk über dem Kalkberg auf. 🎆
 
-Erlebe es im Juli 2027 live: bequem mit dem Bus ab Erfurt, inklusive Hotel und Eintritt.
+Diesen Abend kannst du 2027 erleben. Wir bringen dich mit dem Bus ab Erfurt hin, du übernachtest im Hotel und der Eintritt ist schon drin.
 
-👇 Was ist für dich das Highlight: Pferde, Stunts oder Feuerwerk?
-👉 Für alle Infos schreib uns einfach eine Nachricht.
+👉 Neugierig? Eine kurze Nachricht genügt.
 
 ---
 
-## Post 4 – `04-mitfahren.png` (2. Slide: hell)
-Karl-May-Spiele 2027: Kommst du mit? 🤠🚌
+## Post 4 – `04-mitfahren.png`
+Kein Auto. Keine Parkplatzsuche. Kein Planen. 🙌
 
-Wir fahren im Juli zu einer der größten Freilichtbühnen Europas – und nehmen dich mit. Du musst nichts selbst planen.
+Wir organisieren deinen Ausflug zu den Karl-May-Spielen 2027 – du lehnst dich einfach zurück:
 
-Alles auf einen Blick:
-📅 Termine: 07.–09.07.2027 oder 18.–20.07.2027
-🚌 Anreise: Reisebus ab Erfurt, hin und zurück
-🏨 Unterkunft: 2 Nächte im Hotel mit Halbpension
-🎟️ Show: Eintrittskarte für die Karl-May-Spiele inklusive
-📍 Ort: Freilichtbühne am Kalkberg, Bad Segeberg
+🚌 Abfahrt im Reisebus ab Erfurt
+🏨 2 Nächte im Hotel mit Halbpension
+🎟️ Eintrittskarte für die Vorstellung am Kalkberg
+📅 Zur Wahl: 07.–09.07. oder 18.–20.07.2027
+📍 Bad Segeberg, Schleswig-Holstein
 
-Ideal für Paare, Freunde, Familien und Vereine.
+Ob mit Partner, den besten Freunden oder dem ganzen Verein – bei uns fährst du entspannt in den Wilden Westen.
 
-⚠️ Die Busplätze sind begrenzt – warte nicht zu lange.
-👉 Schreib uns eine Nachricht mit Wunschtermin und Personenzahl – ganz unverbindlich.
+⚠️ Die Busplätze sind begrenzt.
+👉 Schreib uns Wunschtermin und Personenzahl – ganz unverbindlich.
