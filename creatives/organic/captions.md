@@ -12,7 +12,7 @@ Pferde im Galopp, rot leuchtende Felsen und über 7.500 Zuschauer unter freiem H
 Im Juli 2027 fahren wir mit dem Bus ab Erfurt hin – Hotel und Eintritt inklusive.
 
 ⚠️ Die Busplätze sind begrenzt.
-👉 Wisch nach rechts und schreib uns einfach eine Nachricht!
+👉 Wisch weiter und schreib uns einfach eine Nachricht!
 
 ---
 
