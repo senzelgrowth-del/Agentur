@@ -156,3 +156,42 @@ Statt noch einem Gutschein: ein Wochenende im Wilden Westen. Pferde, Stunts, ein
 🚌 Bus ab Erfurt · 🏨 Hotel mit HP · Eintritt inklusive
 
 👉 Schreib uns, und wir helfen dir bei der Überraschung.
+
+---
+
+# 3 neue Karl-May-Captions (Variante D)
+
+## D1 – Für Vereine & Gruppen
+Euer nächster Vereinsausflug? Ab in den Wilden Westen! 🤠🚌
+
+Ob Kegelclub, Chor, Kollegen oder die ganze Familie: Bei den Karl-May-Spielen in Bad Segeberg erlebt ihr gemeinsam einen Abend, über den ihr noch Jahre redet. Und um die Organisation kümmern wir uns.
+
+📅 07.–09.07. oder 18.–20.07.2027
+🚌 Reisebus ab Erfurt
+🏨 2 Nächte im Hotel mit Halbpension
+🎟️ Eintritt inklusive
+
+👉 Schreibt uns, mit wie vielen Personen ihr kommen möchtet, und wir senden euch alle Infos.
+
+## D2 – Frage an die Community
+Ehrliche Frage: Wer war dein Held als Kind? 🐎
+
+Winnetou oder Old Shatterhand? Schreib's in die Kommentare! 👇
+
+Übrigens: Beide kannst du im Sommer 2027 live erleben. Wir fahren mit dem Bus ab Erfurt zu den Karl-May-Spielen nach Bad Segeberg, mit Hotel, Halbpension und Eintritt.
+
+📅 07.–09.07. oder 18.–20.07.2027
+👉 Lust mitzukommen? Schick uns einfach eine Nachricht.
+
+## D3 – Ablauf der Reise
+So sieht dein Wochenende im Wilden Westen aus 🗓️
+
+Tag 1: Abfahrt im Reisebus ab Erfurt, Ankunft und Check-in im Hotel, Abendessen 🚌
+Tag 2: Freier Tag zum Entspannen, abends die Karl-May-Spiele am Kalkberg mit großem Finale 🎆
+Tag 3: Frühstück und gemütliche Heimfahrt 🏡
+
+Alles inklusive: Bus, 2 Nächte mit Halbpension und deine Eintrittskarte.
+📅 07.–09.07. oder 18.–20.07.2027
+
+⚠️ Die Busplätze sind begrenzt.
+👉 Schreib uns deinen Wunschtermin, ganz unverbindlich.
