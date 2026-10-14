@@ -58,3 +58,33 @@ Ob mit Partner, den besten Freunden oder dem ganzen Verein – bei uns fährst d
 
 ⚠️ Die Busplätze sind begrenzt.
 👉 Schreib uns Wunschtermin und Personenzahl – ganz unverbindlich.
+
+---
+
+# Finale-Post (`03-finale.png` + `03b-finale-cta.png`) – 2 neue Varianten
+
+## Variante A
+Gänsehaut garantiert: das große Finale am Kalkberg 🎆
+
+Wenn am Ende der Vorstellung das Feuerwerk über der Freilichtbühne aufsteigt, halten über 7.500 Zuschauer gleichzeitig den Atem an. Genau diesen Moment kannst du im Sommer 2027 erleben, bei den Karl-May-Spielen in Bad Segeberg.
+
+Wir fahren zweimal hin:
+📅 07.–09. Juli 2027
+📅 18.–20. Juli 2027
+
+🚌 Reisebus ab Erfurt
+🏨 2 Nächte im Hotel mit Halbpension
+🎟️ Eintrittskarte inklusive
+
+👉 Welcher Termin passt dir? Schreib ihn uns einfach per Nachricht.
+
+## Variante B
+Über 200.000 Menschen haben 2026 diesen Moment erlebt. Du auch? ✨
+
+Pferde, Stunts, eine Westernstadt mitten im Felsen und zum Schluss ein Feuerwerk, das den ganzen Kalkberg zum Leuchten bringt. Die Karl-May-Spiele in Bad Segeberg sind eines der beliebtesten Freilichtspiele Deutschlands.
+
+Im Juli 2027 nehmen wir dich mit, ganz ohne Planungsstress: Bus ab Erfurt, Hotel mit Halbpension und Eintritt sind schon dabei.
+
+📅 Zur Wahl: 07.–09.07. oder 18.–20.07.2027
+⚠️ Die Busplätze sind begrenzt.
+👉 Schreib uns deinen Wunschtermin, ganz unverbindlich.
