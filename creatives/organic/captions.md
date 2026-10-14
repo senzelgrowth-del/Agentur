@@ -115,3 +115,44 @@ Wir fahren im Juli 2027 mit dem Bus ab Erfurt hin, Hotel und Eintritt sind schon
 
 ⚠️ Die Busplätze sind begrenzt.
 👉 Welcher Termin passt dir: 07.–09.07. oder 18.–20.07.? Schreib uns!
+
+---
+
+# 3 neue Karl-May-Captions (Variante C)
+
+## C1 – Gemeinsam erleben
+Manche Erlebnisse teilt man am besten. 🤠❤️
+
+Mit dem Partner, der besten Freundin oder dem Enkel, der zum ersten Mal Winnetou auf seinem Pferd sieht: Die Karl-May-Spiele in Bad Segeberg sind ein Ausflug, über den man noch lange spricht.
+
+Im Juli 2027 fahren wir gemeinsam hin:
+📅 07.–09.07. oder 18.–20.07.2027
+🚌 Reisebus ab Erfurt
+🏨 2 Nächte im Hotel mit Halbpension
+🎟️ Eintritt inklusive
+
+👉 Mit wem würdest du fahren? Markiere die Person, und schreib uns für alle Infos.
+
+## C2 – Countdown
+Noch 9 Monate bis zum Wilden Westen. 🐎⏳
+
+Klingt lang? Die Busplätze sind trotzdem schnell weg. Wer jetzt plant, hat den Sommer schon gesichert und kann sich die ganze Zeit darauf freuen.
+
+Das ist alles drin:
+🚌 Hin- und Rückfahrt ab Erfurt
+🏨 2 Übernachtungen mit Halbpension
+🎟️ Eintrittskarte für die Karl-May-Spiele am Kalkberg
+📅 Zur Wahl: 07.–09.07. oder 18.–20.07.2027
+
+👉 Schreib uns einfach eine Nachricht, ganz unverbindlich.
+
+## C3 – Geschenkidee
+Noch auf der Suche nach einem besonderen Geschenk? 🎁
+
+Statt noch einem Gutschein: ein Wochenende im Wilden Westen. Pferde, Stunts, eine Westernstadt im Felsen und ein großes Finale, das man nicht vergisst. Perfekt zu Weihnachten, zum Geburtstag oder einfach so.
+
+🎟️ Karl-May-Spiele Bad Segeberg
+📅 07.–09.07. oder 18.–20.07.2027
+🚌 Bus ab Erfurt · 🏨 Hotel mit HP · Eintritt inklusive
+
+👉 Schreib uns, und wir helfen dir bei der Überraschung.
