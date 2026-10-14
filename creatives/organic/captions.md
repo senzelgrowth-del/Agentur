@@ -88,3 +88,30 @@ Im Juli 2027 nehmen wir dich mit, ganz ohne Planungsstress: Bus ab Erfurt, Hotel
 📅 Zur Wahl: 07.–09.07. oder 18.–20.07.2027
 ⚠️ Die Busplätze sind begrenzt.
 👉 Schreib uns deinen Wunschtermin, ganz unverbindlich.
+
+---
+
+# Bühnen-Post – 2 Varianten
+
+## Variante A
+Diese Bühne hat kein Dach – und das ist das Beste daran 🏜️
+
+Die Freilichtbühne am Kalkberg in Bad Segeberg gehört zu den größten in Europa. Über 7.500 Plätze rund um eine echte Westernstadt, gebaut direkt in den Felsen. Wenn abends die Sonne untergeht und die Kulisse rot zu leuchten beginnt, weißt du: Gleich geht's los.
+
+Im Juli 2027 sitzt du mittendrin:
+📅 07.–09.07. oder 18.–20.07.2027
+🚌 Reisebus ab Erfurt
+🏨 2 Nächte im Hotel mit Halbpension
+🎟️ Eintritt inklusive
+
+👉 Schreib uns einfach eine Nachricht, ganz unverbindlich.
+
+## Variante B
+Kalkberg statt Kinosessel 🤠
+
+Hier wird nicht vor einer Leinwand gespielt, sondern vor echten Felsen. Saloon, Holzhäuser, Treppen und Tunnel: Die ganze Westernstadt ist Teil der Show, und Pferde galoppieren nur ein paar Meter an dir vorbei.
+
+Wir fahren im Juli 2027 mit dem Bus ab Erfurt hin, Hotel und Eintritt sind schon dabei.
+
+⚠️ Die Busplätze sind begrenzt.
+👉 Welcher Termin passt dir: 07.–09.07. oder 18.–20.07.? Schreib uns!
