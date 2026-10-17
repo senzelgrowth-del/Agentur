@@ -1,5 +1,5 @@
 // Rendert die „Western-Sonnenuntergang“-Creatives für die Karl-May-Spiele-Reise
-// in 1:1 (1080x1080) und 4:5 (1080x1350) – reduziert, ohne CTA-Button – sowie je ein PDF für den Canva-Import.
+// in 1:1 (1080x1080) und 4:5 (1080x1350) – reduziert, ohne CTA-Button und ohne Schatten/Konturen – sowie je ein PDF für den Canva-Import.
 // Aufruf: node creatives/karl-may-spiele-2027/render-sunset.mjs
 import { readFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -36,8 +36,8 @@ const creatives = [
     height: 1350,
     photo: "reiter-buehne.jpg",
     pos: "50% 100%",
-    headline: "Winnetou<br>reitet wieder!",
-    sub: "Alexander Klaws live am Kalkberg",
+    headline: "Winnetou<br>reitet wieder",
+    sub: "<b>Alexander Klaws</b> live am Kalkberg",
   },
   {
     name: "08-auf-in-den-wilden-westen-1x1",
@@ -45,55 +45,61 @@ const creatives = [
     height: 1080,
     photo: "buehne-daemmerung.jpg",
     pos: "80% 50%",
-    headline: "Auf in den<br>Wilden Westen!",
-    sub: "mit Alexander Klaws als Winnetou",
+    headline: "Auf in den<br>Wilden Westen",
+    sub: "mit <b>Alexander Klaws</b> als Winnetou",
   },
 ];
 
 const html = (c) => {
   const square = c.height === c.width;
   return `<!doctype html><html><head><meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@700;800;900&display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500;600;700;800&display=block" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:${c.width}px;height:${c.height}px;overflow:hidden;background:${leather}}
 body{font-family:Montserrat,sans-serif;color:${sand};position:relative}
-.photo{position:absolute;inset:0;background:url(${img(c.photo)}) ${c.pos}/cover no-repeat;filter:saturate(1.15) contrast(1.05)}
+.photo{position:absolute;left:0;right:0;top:0;bottom:${square ? 220 : 250}px;background:url(${img(c.photo)}) ${c.pos}/cover no-repeat;filter:saturate(1.1) contrast(1.05)}
 /* Sonnenuntergangs-Tönung in Rost-Orange */
-.tint{position:absolute;inset:0;background:linear-gradient(180deg,#e0702a 0%,${rust} 45%,#7a2e10 100%);mix-blend-mode:soft-light;opacity:.65}
-.top{position:absolute;left:0;right:0;top:0;height:${square ? 520 : 640}px;
-  background:linear-gradient(180deg,rgba(59,29,14,.9) 0%,rgba(59,29,14,.6) 55%,rgba(59,29,14,0) 100%)}
-.bottom{position:absolute;left:0;right:0;bottom:0;height:${square ? 330 : 380}px;
-  background:linear-gradient(0deg,rgba(59,29,14,.95) 0%,rgba(59,29,14,.75) 50%,rgba(59,29,14,0) 100%)}
-/* sauberer schwarzer Rand um alle großen Schriften */
-.stroke{-webkit-text-stroke:var(--s,4px) #000;paint-order:stroke fill}
-.head{position:absolute;left:60px;right:60px;top:${square ? 64 : 84}px;text-align:center}
-.kicker{font-weight:800;font-size:${square ? 21 : 23}px;letter-spacing:.34em;text-transform:uppercase;color:${gold};padding-left:.34em;--s:4px}
-h1{font-family:'Alfa Slab One',serif;font-weight:400;font-size:${square ? 104 : 124}px;line-height:1.02;margin-top:${square ? 16 : 22}px;color:${gold};--s:${square ? 9 : 10}px}
-.sub{font-weight:900;font-size:${square ? 34 : 40}px;margin-top:${square ? 14 : 20}px;color:${sand};--s:6px}
-.foot{position:absolute;left:60px;right:60px;bottom:${square ? 56 : 72}px;text-align:center}
-.rule{width:120px;height:3px;background:${gold};margin:0 auto ${square ? 20 : 24}px}
-.facts{font-weight:900;font-size:${square ? 30 : 34}px;color:${sand};--s:5px}
-.dates{font-weight:800;font-size:${square ? 26 : 29}px;margin-top:${square ? 12 : 14}px;color:${gold};--s:4px}
-/* Preis-Sticker */
-.sticker{position:absolute;${square ? "right:44px;top:410px" : "right:48px;top:560px"};width:${square ? 180 : 200}px;height:${square ? 180 : 200}px;border-radius:50%;
-  background:${rust};border:5px solid #000;box-shadow:inset 0 0 0 7px ${gold};transform:rotate(-12deg);
-  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff;line-height:1}
-.sticker .s1{font-weight:900;font-size:${square ? 19 : 21}px;letter-spacing:.06em;text-transform:uppercase}
-.sticker .s2{font-family:'Alfa Slab One',serif;font-size:${square ? 54 : 60}px;margin:4px 0 2px;color:${sand};--s:5px}
-.sticker .s3{font-weight:900;font-size:${square ? 19 : 21}px}
+.tint{position:absolute;left:0;right:0;top:0;bottom:${square ? 220 : 250}px;background:linear-gradient(180deg,#e0702a 0%,${rust} 50%,#7a2e10 100%);mix-blend-mode:soft-light;opacity:.6}
+/* ruhiger Verlauf für gute Lesbarkeit – keine Schatten, keine Konturen */
+.top{position:absolute;left:0;right:0;top:0;height:${square ? 660 : 720}px;
+  background:linear-gradient(180deg,rgba(43,21,10,.95) 0%,rgba(43,21,10,.85) 55%,rgba(43,21,10,0) 100%)}
+.fade{position:absolute;left:0;right:0;bottom:${square ? 220 : 250}px;height:160px;
+  background:linear-gradient(0deg,${leather} 0%,rgba(59,29,14,0) 100%)}
+.head{position:absolute;left:70px;right:70px;top:${square ? 70 : 90}px;text-align:center}
+.kicker{font-weight:700;font-size:${square ? 20 : 22}px;letter-spacing:.38em;text-transform:uppercase;color:${gold};padding-left:.38em}
+h1{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:${square ? 150 : 176}px;line-height:.9;letter-spacing:.01em;margin-top:${square ? 22 : 28}px;color:${sand}}
+.sub{font-weight:600;font-size:${square ? 32 : 36}px;margin-top:${square ? 18 : 24}px;color:${sand}}
+.sub b{font-weight:800;color:${gold}}
+/* Info-Leiste */
+.bar{position:absolute;left:0;right:0;bottom:0;height:${square ? 220 : 250}px;background:${leather};border-top:3px solid ${gold};
+  display:flex;align-items:center;padding:0 70px}
+.col{flex:1}
+.col + .col{border-left:2px solid rgba(242,181,68,.35);padding-left:56px;margin-left:56px;flex:0 0 auto}
+.label{font-weight:700;font-size:${square ? 17 : 18}px;letter-spacing:.28em;text-transform:uppercase;color:${gold}}
+.line{font-weight:700;font-size:29px;margin-top:10px;color:${sand};white-space:nowrap}
+.line span{font-weight:600;color:${gold}}
+.price{font-family:'Bebas Neue',sans-serif;font-size:${square ? 96 : 108}px;line-height:.9;color:${gold};margin-top:6px}
+.price small{font-family:Montserrat,sans-serif;font-weight:700;font-size:${square ? 24 : 26}px;color:${sand};margin-left:8px}
+.incl{font-weight:500;font-size:${square ? 19 : 20}px;color:rgba(245,228,195,.85);margin-top:8px}
 </style></head><body>
-<div class="photo"></div><div class="tint"></div><div class="top"></div><div class="bottom"></div>
+<div class="photo"></div><div class="tint"></div><div class="top"></div><div class="fade"></div>
 <div class="head">
-  <div class="kicker stroke">Karl-May-Spiele Bad Segeberg 2027</div>
-  <h1 class="stroke">${c.headline}</h1>
-  <div class="sub stroke">${c.sub}</div>
+  <div class="kicker">Karl-May-Spiele Bad Segeberg 2027</div>
+  <h1>${c.headline}</h1>
+  <div class="sub">${c.sub}</div>
 </div>
-<div class="sticker"><span class="s1">nur</span><span class="s2 stroke">399 €</span><span class="s3">p. P.</span></div>
-<div class="foot">
-  <div class="rule"></div>
-  <div class="facts stroke">Bus ab Erfurt · 2 Nächte HP · Ticket inklusive</div>
-  <div class="dates stroke">07.–09.07. &amp; 18.–20.07.2027 mit Feuerwerk</div>
+<div class="bar">
+  <div class="col">
+    <div class="label">Termine</div>
+    <div class="line">07.–09.07.2027</div>
+    <div class="line">18.–20.07.2027 <span>· mit Feuerwerk</span></div>
+  </div>
+  <div class="col">
+    <div class="label">Reisepreis</div>
+    <div class="price">399 €<small>p. P.</small></div>
+    <div class="incl">Bus ab Erfurt · 2 Nächte HP · Ticket</div>
+  </div>
 </div>
 </body></html>`;
 };
