@@ -121,14 +121,12 @@ for (const c of creatives) {
   await page.screenshot({ path: png });
   await page.close();
 
-  // Ein-Seiten-PDF des fertigen PNGs für den Canva-Import
-  const pdfPage = await browser.newPage();
-  await pdfPage.setContent(
-    `<style>@page{size:${c.width}px ${c.height}px;margin:0}*{margin:0}img{display:block;width:${c.width}px;height:${c.height}px}</style>` +
-      `<img src="data:image/png;base64,${readFileSync(png).toString("base64")}">`,
+  // Ein-Seiten-PDF für den Canva-Import. Pillow schreibt die Seitengröße exakt
+  // (1350 px = 1012,5 pt) – Chromium rundet auf ganze Punkt, Canva macht daraus 1351 px.
+  execSync(
+    `python3 -c "import sys; from PIL import Image; Image.open(sys.argv[1]).convert('RGB').save(sys.argv[2], resolution=96.0)" ` +
+      `"${png}" "${join(out, `${c.name}.pdf`)}"`,
   );
-  await pdfPage.pdf({ path: join(out, `${c.name}.pdf`), width: `${c.width}px`, height: `${c.height}px`, printBackground: true });
-  await pdfPage.close();
   console.log("✓", c.name);
 }
 await browser.close();
