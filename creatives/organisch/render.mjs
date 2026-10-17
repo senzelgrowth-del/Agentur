@@ -1,7 +1,7 @@
 // Rendert die Bilder für organische Facebook/Instagram-Posts (4:5, 1080x1350)
 // zu Spartacus Gay Cruise und Danzig. Texte dazu: ../organische-posts.md
 // Aufruf: node creatives/organisch/render.mjs
-import { readFileSync, mkdirSync, existsSync } from "node:fs";
+import { readFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createRequire } from "node:module";
@@ -30,7 +30,7 @@ const navy = "#14213d";
 const rainbowCss = "linear-gradient(90deg,#e53b3b,#f28c28,#f7d23e,#3cb371,#3b82f6,#8b5cf6)";
 
 const page = (css, body) => `<!doctype html><html><head><meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Playfair+Display:wght@700;800&display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=block" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:${W}px;height:${H}px;overflow:hidden;background:${cream}}
@@ -121,30 +121,27 @@ h1{font-weight:900;font-size:80px;line-height:1.04;letter-spacing:-.02em;margin-
 <div class="or">ODER</div>`,
 );
 
-// CTA-Abschlussfolie für die Karussell-Posts 3 und 4 (gleiche Folie für beide).
-// Liegt src/starshine-logo.png vor, wird das echte Logo verwendet, sonst eine Wortmarke.
-const logoFile = join(dir, "src", "starshine-logo.png");
-const logo = existsSync(logoFile)
-  ? `<img class="logo-img" src="data:image/png;base64,${readFileSync(logoFile).toString("base64")}">`
-  : `<div class="wordmark"><span class="star">★</span>Starshine <b>Emotions</b></div>`;
+// CTA-Abschlussfolie für die Karussell-Posts 3 und 4 (gleiche Folie für beide),
+// angelehnt an die Starshine-Vorlage: Logo-Badge, kurze Frage, große Aufforderung.
+const logo = `<img class="logo" src="${img("starshine-logo.jpg")}">`;
 const spartacusCta = page(
-  spartacusCss +
-    `
-.wrap{position:absolute;left:80px;right:80px;top:0;bottom:250px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
-h1{font-weight:900;font-size:96px;line-height:1.04;letter-spacing:-.02em;margin-top:30px}
-.info{font-weight:700;font-size:34px;line-height:1.4;margin-top:30px;color:#4a5568}
-.btn{margin-top:48px;background:${navy};color:${cream};border-radius:80px;padding:28px 56px;font-weight:800;font-size:36px}
-.foot{position:absolute;left:0;right:0;bottom:0;height:250px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;border-top:2px solid rgba(20,33,61,.1)}
-.wordmark{font-family:'Playfair Display',serif;font-weight:700;font-size:54px;color:${navy};display:flex;align-items:center;gap:14px}
-.wordmark b{font-weight:800}
-.star{font-family:Montserrat,sans-serif;font-size:44px;background:${rainbowCss};-webkit-background-clip:text;color:transparent}
-.logo-img{max-height:120px;max-width:600px}
-.url{font-weight:700;font-size:26px;letter-spacing:.06em;color:#4a5568}`,
-  `<div class="wrap">${spartacusKicker}
-<h1>Lust bekommen?<br><span class="rb">Komm mit!</span></h1>
-<div class="info">15.–22. Oktober 2027 · ab Palma de Mallorca<br>Frühbucher: −10 % bis 01.11.2026</div>
-<div class="btn">Jetzt Kabine sichern →</div></div>
-<div class="foot">${logo}<div class="url">starshine-emotions.com</div></div>`,
+  `
+html,body{background:radial-gradient(circle at 50% 42%,#fff6ea 0%,#fde3cf 55%,#f3cfd9 100%)}
+.wrap{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 90px}
+.ring{width:262px;height:262px;border-radius:50%;padding:11px;background:conic-gradient(#e53b3b,#f28c28,#f7d23e,#3cb371,#3b82f6,#8b5cf6,#e53b3b)}
+.logo{width:100%;height:100%;border-radius:50%;object-fit:cover;border:8px solid #fff;display:block}
+.q{font-family:'Playfair Display',serif;font-style:italic;font-weight:700;font-size:54px;margin-top:64px;color:#e8553d}
+h1{font-weight:900;font-size:112px;line-height:1.02;letter-spacing:-.02em;margin-top:18px;color:${navy}}
+.sub{font-weight:600;font-size:36px;line-height:1.45;margin-top:36px;color:#4a5568}
+.meta{position:absolute;left:0;right:0;bottom:84px;text-align:center;font-weight:800;font-size:24px;letter-spacing:.22em;text-transform:uppercase;color:${navy};padding-left:.22em}
+.meta i{display:block;width:84px;height:8px;border-radius:4px;background:${rainbowCss};margin:0 auto 22px}`,
+  `<div class="wrap">
+  <div class="ring">${logo}</div>
+  <div class="q">Lust auf Meer?</div>
+  <h1>Schreib uns<br>einfach!</h1>
+  <div class="sub">Ganz unverbindlich – alle Infos<br>zur Cruise direkt per Nachricht.</div>
+</div>
+<div class="meta"><i></i>Spartacus Gay Cruise · 15.–22.10.2027</div>`,
 );
 
 // ---------- Danzig (ohne Foto: gezeichnete Giebelhaus-Skyline als Bildmotiv) ----------

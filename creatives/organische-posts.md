@@ -70,7 +70,7 @@ Bilder (4:5, 1080 × 1350): `creatives/organisch/export/`
 
 ### Abschlussfolie für Post 3 und Post 4 (Karussell)
 **Bild:** `organisch/export/spartacus-cta-abschluss.png` – als letzte Folie hinter das Abstimmungsbild setzen.
-Logo: Liegt `organisch/src/starshine-logo.png` vor, wird beim nächsten Rendern das echte Logo statt der Wortmarke verwendet.
+Starshine-Logo im Regenbogen-Ring, „Lust auf Meer? Schreib uns einfach!“ – angelehnt an die Starshine-Vorlage.
 
 ---
 
