@@ -23,42 +23,38 @@ mkdirSync(out, { recursive: true });
 const img = (f) =>
   `data:image/jpeg;base64,${readFileSync(join(dir, "src", f)).toString("base64")}`;
 
-// Variante „Postkarte“: heller Grund, emotionale Headline oben, Foto als großes,
-// abgerundetes Bild darunter – angelehnt an die Kundenvorlage (Navy + Regenbogen)
+// Heller Grund, emotionale Headline oben, großes abgerundetes Foto darunter
+// – angelehnt an die Kundenvorlage (Navy + Regenbogen)
 const navy = "#14213d";
 const rainbowCss = "linear-gradient(90deg,#e53b3b,#f28c28,#f7d23e,#3cb371,#3b82f6,#8b5cf6)";
 const creatives = [
-  { name: "06-einfach-du-4x5", width: 1080, height: 1350, pos: "55% 50%" },
-  { name: "07-einfach-du-1x1", width: 1080, height: 1080, pos: "55% 45%" },
+  { name: "08-endlich-du-4x5", width: 1080, height: 1350, pos: "55% 50%" },
+  { name: "09-endlich-du-1x1", width: 1080, height: 1080, pos: "55% 45%" },
 ];
 
+// Bewusst reduziert: eine große emotionale Zeile, eine Infozeile, ein großes Foto
 const html = (c) => {
   const sq = c.width === c.height;
-  const m = sq ? 44 : 52;
-  const head = sq ? 300 : 340;
+  const m = sq ? 40 : 48;
+  const head = sq ? 330 : 420;
   return `<!doctype html><html><head><meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=block" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:${c.width}px;height:${c.height}px;overflow:hidden;background:#fffaf3}
 body{font-family:Montserrat,sans-serif;position:relative;color:${navy}}
-.head{position:absolute;left:${m}px;right:${m}px;top:0;height:${head}px;display:flex;flex-direction:column;justify-content:center}
-.kicker{display:flex;align-items:center;gap:14px;font-weight:800;font-size:${sq ? 23 : 25}px;letter-spacing:.2em;text-transform:uppercase}
-.kicker i{display:block;width:72px;height:8px;border-radius:4px;background:${rainbowCss}}
-h1{font-weight:800;font-size:${sq ? 70 : 78}px;line-height:1.08;margin-top:${sq ? 16 : 20}px;letter-spacing:-.01em}
+.head{position:absolute;left:${m}px;right:${m}px;top:0;height:${head}px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+h1{font-weight:900;font-size:${sq ? 84 : 104}px;line-height:1.02;letter-spacing:-.02em}
 h1 span{background:${rainbowCss};-webkit-background-clip:text;color:transparent}
-.photo{position:absolute;left:${m}px;right:${m}px;top:${head}px;bottom:${m}px;border-radius:28px;
+.meta{font-weight:800;font-size:${sq ? 24 : 26}px;letter-spacing:.16em;text-transform:uppercase;margin-top:${sq ? 20 : 26}px;padding-left:.16em}
+.photo{position:absolute;left:${m}px;right:${m}px;top:${head}px;bottom:${m}px;border-radius:24px;
   background:url(${img("sunset-deck.jpg")}) ${c.pos}/cover no-repeat}
-.label{position:absolute;left:${m + 28}px;bottom:${m + 28}px;background:#fffaf3;border-radius:60px;
-  padding:16px 28px;font-weight:800;font-size:${sq ? 26 : 28}px}
-.label b{color:#c98a2b}
 </style></head><body>
 <div class="head">
-  <div class="kicker"><i></i>Spartacus Gay Cruise 2027</div>
-  <h1>Eine Woche, in der<br>du einfach <span>du bist.</span></h1>
+  <h1>Endlich frei.<br><span>Endlich du.</span></h1>
+  <div class="meta">Spartacus Gay Cruise · 15.–22.10.2027</div>
 </div>
 <div class="photo"></div>
-<div class="label"><b>15.–22.10.2027</b> · Mallorca, Spanien &amp; Marokko</div>
 </body></html>`;
 };
 
