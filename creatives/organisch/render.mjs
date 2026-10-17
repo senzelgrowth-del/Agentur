@@ -132,16 +132,13 @@ html,body{background:radial-gradient(circle at 50% 42%,#fff6ea 0%,#fde3cf 55%,#f
 .logo{width:100%;height:100%;border-radius:50%;object-fit:cover;border:8px solid #fff;display:block}
 .q{font-family:'Playfair Display',serif;font-style:italic;font-weight:700;font-size:54px;margin-top:64px;color:#e8553d}
 h1{font-weight:900;font-size:112px;line-height:1.02;letter-spacing:-.02em;margin-top:18px;color:${navy}}
-.sub{font-weight:600;font-size:36px;line-height:1.45;margin-top:36px;color:#4a5568}
-.meta{position:absolute;left:0;right:0;bottom:84px;text-align:center;font-weight:800;font-size:24px;letter-spacing:.22em;text-transform:uppercase;color:${navy};padding-left:.22em}
-.meta i{display:block;width:84px;height:8px;border-radius:4px;background:${rainbowCss};margin:0 auto 22px}`,
+.sub{font-weight:600;font-size:36px;line-height:1.45;margin-top:36px;color:#4a5568}`,
   `<div class="wrap">
   <div class="ring">${logo}</div>
   <div class="q">Lust auf Meer?</div>
   <h1>Schreib uns<br>einfach!</h1>
   <div class="sub">Ganz unverbindlich – alle Infos<br>zur Cruise direkt per Nachricht.</div>
-</div>
-<div class="meta"><i></i>Spartacus Gay Cruise · 15.–22.10.2027</div>`,
+</div>`,
 );
 
 // ---------- Danzig (ohne Foto: gezeichnete Giebelhaus-Skyline als Bildmotiv) ----------
