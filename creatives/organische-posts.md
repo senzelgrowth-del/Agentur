@@ -1,52 +1,51 @@
 # Organische Posts – Facebook & Instagram
 
+Bilder (4:5, 1080 × 1350): `creatives/organisch/export/`
+
 ## Spartacus Gay Cruise 2027
 
-### Post 1 – Emotion / Community
-**Bild:** `spartacus-gay-cruise-2027/export/08-endlich-du-4x5.png` („Endlich frei. Endlich du.“)
+### Post 1 – „Die schönsten Freundschaften beginnen an Deck.“
+**Bild:** `organisch/export/spartacus-1-freundschaften-an-deck.png`
 
-> Stell dir vor: Die Sonne versinkt im Mittelmeer, die Lichterketten gehen an, der erste Song läuft – und um dich herum Menschen, bei denen du dich nicht erklären musst. 🌅🌈
+> Manche Menschen lernt man auf einer Party kennen. Die besonderen trifft man um Mitternacht an der Reling – mit Blick aufs Meer und dem Gefühl, endlich angekommen zu sein. 🌊💙
 >
-> Genau dafür gibt es die Spartacus Gay Cruise. Eine Woche lang einfach du sein. Lachen, tanzen, neue Freundschaften schließen – oder einfach mit einem Drink an der Reling stehen und aufs Meer schauen.
+> Auf der Spartacus Gay Cruise wird aus „Hi, woher kommst du?“ ganz schnell eine Freundschaft, die bleibt. Eine Woche lang Sonne, Musik und Menschen, bei denen du dich nicht erklären musst. 🌈
 >
 > 📅 15.–22. Oktober 2027
 > 🚢 Vasco da Gama · ab/bis Palma de Mallorca
 > 📍 Barcelona · Valencia · Alicante · Marbella · Tanger
 >
-> Wen würdest du mitnehmen? Markier die Person, mit der du diesen Sonnenuntergang erleben willst. 👇
+> Markier die Person, mit der du an Deck stehen willst. 👇
 >
 > #SpartacusGayCruise #GayCruise #GayTravel #LGBTQTravel #Kreuzfahrt #Mittelmeer #PrideAtSea #Urlaub2027
 
-### Post 2 – Frühbucher-Erinnerung / Vorfreude
-**Bild:** `spartacus-gay-cruise-2027/export/04-sundowner-an-deck-4x5.png` (Sundowner an Deck)
+### Post 2 – „So könnte dein Tag an Bord aussehen“
+**Bild:** `organisch/export/spartacus-2-dein-tag-an-bord.png`
 
-> Nur noch bis 01.11.2026: 10 % Frühbucherrabatt auf die Spartacus Gay Cruise 2027! ⏳
+> Frühstück mit Meerblick, Nachmittag am Pool, abends Drag-Show – und dann tanzen bis die Sonne wieder aufgeht. ☀️🪩
 >
-> Das erwartet dich an Bord:
-> 🎤 Tante Gladice, Nelson Cerqueira, Stefano May, Abby OMG u.v.m.
-> 🪩 DJ-Nächte, Themenpartys, Drag-Shows & Tea Dances
+> So (oder ganz anders) könnte dein Tag auf der Spartacus Gay Cruise aussehen. Mit dabei: Tante Gladice, Nelson Cerqueira, Stefano May, Abby OMG u.v.m. – dazu Themenpartys, Pool Games und Tea Dances.
+>
 > 🍽️ Vollpension, Pool & Sauna inklusive
-> 🧳 Deutschsprachiger Service, Hafengebühren inklusive
-> 🌍 Zwischen den Kontinenten: von Mallorca über Spanien bis nach Marokko
+> 🧳 Deutschsprachiger Service an Bord
+> ⏳ Frühbucher: 10 % Rabatt nur noch bis 01.11.2026
 >
-> Kabinen schon ab 1.214 € p. P. im Frühbucherpreis – und für Alleinreisende gibt es das Single-Match-Programm. 💙
+> Was wäre dein Highlight des Tages? Schreib es in die Kommentare! 👇
 >
-> Schreib uns eine Nachricht oder klick auf den Link in der Bio – wir beraten dich gern persönlich.
->
-> #SpartacusGayCruise #Frühbucher #GayCruise2027 #GayTravel #LGBTQ #Kreuzfahrt #Mallorca #Marokko
+> #SpartacusGayCruise #GayCruise2027 #TeaDance #DragShow #GayTravel #LGBTQ #Kreuzfahrt #Frühbucher
 
 ---
 
 ## Danzig
 
-> ⚠️ Zu Danzig lagen mir keine Reisedaten vor (Termin, Preis, Leistungen). Die Platzhalter in [eckigen Klammern] bitte vor dem Posten ersetzen.
+> ⚠️ Zu Danzig lagen keine Reisedaten vor (Termin, Preis, Leistungen). Die Platzhalter in [eckigen Klammern] bitte vor dem Posten ersetzen.
 
-### Post 1 – Sehnsucht / Inspiration
-**Bild-Tipp:** Altstadt mit den bunten Giebelhäusern am Langen Markt oder an der Mottlau
+### Post 1 – „Danzig. Wo Hanse-Charme auf Ostseeluft trifft.“
+**Bild:** `organisch/export/danzig-1-hanse-charme.png`
 
 > Bunte Giebelhäuser, Kopfsteinpflaster, der Duft von frischen Pierogi – und nur ein paar Minuten weiter die Ostsee. 🌊✨
 >
-> Danzig gehört zu den schönsten Städten Europas und ist trotzdem noch ein echter Geheimtipp. Schlendern Sie über den Langen Markt, bestaunen Sie den Neptunbrunnen und die Marienkirche und genießen Sie am Abend den Blick über die Mottlau.
+> Danzig gehört zu den schönsten Städten Europas und ist trotzdem noch ein echter Geheimtipp. Schlendern Sie über den Langen Markt, bestaunen Sie den Neptunbrunnen und genießen Sie am Abend den Blick über die Mottlau.
 >
 > 📅 [Reisetermin]
 > 🚌 [Anreise, z. B. Busreise ab …]
@@ -56,20 +55,22 @@
 >
 > #Danzig #Gdansk #Polen #Ostsee #Städtereise #Gruppenreise #Reisen #Urlaub
 
-### Post 2 – Leistungen / Gemeinsam reisen
-**Bild-Tipp:** Gruppe bei Stadtführung oder Abendstimmung am Krantor
+### Post 2 – „5 Gründe, warum Sie Danzig lieben werden“
+**Bild:** `organisch/export/danzig-2-fuenf-gruende.png`
 
-> Einfach einsteigen, zurücklehnen und ankommen – wir kümmern uns um den Rest. 💛
+> Danzig steht noch nicht auf Ihrer Liste? Diese 5 Gründe ändern das. 😉
 >
-> Unsere Danzig-Reise auf einen Blick:
-> ✅ [Leistung 1, z. B. Busreise ab …]
-> ✅ [Leistung 2, z. B. X Übernachtungen im …]
-> ✅ [Leistung 3, z. B. Halbpension]
-> ✅ [Leistung 4, z. B. Stadtführung durch die Altstadt]
+> 1️⃣ Langer Markt – bunte Giebelhäuser & der berühmte Neptunbrunnen
+> 2️⃣ Marienkirche – eine der größten Backsteinkirchen der Welt
+> 3️⃣ Krantor – das Wahrzeichen an der Mottlau
+> 4️⃣ Sopot – die längste Holzseebrücke Europas, direkt nebenan
+> 5️⃣ Pierogi – polnische Küche zum Verlieben
 >
-> Ideal für alle, die Kultur, Geschichte und Ostsee-Flair in einer Reise verbinden möchten – und das in netter Gesellschaft.
+> Und das Beste: Sie müssen nichts selbst planen. [Kurz die Reise nennen, z. B. „Mit unserer Busreise ab … vom … bis …“]
 >
 > 💶 [Preis] p. P.
 > 📩 Jetzt Platz sichern: Nachricht an uns oder Link in der Bio.
+>
+> Welcher Grund überzeugt Sie am meisten? 👇
 >
 > #Danzig #Gdansk #Gruppenreise #Busreise #Ostsee #Polenreise #Kulturreise #Städtetrip
