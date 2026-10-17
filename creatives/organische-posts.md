@@ -34,6 +34,40 @@ Bilder (4:5, 1080 × 1350): `creatives/organisch/export/`
 >
 > #SpartacusGayCruise #GayCruise2027 #TeaDance #DragShow #GayTravel #LGBTQ #Kreuzfahrt #Frühbucher
 
+### Post 3 – Abstimmung „Welcher Stopp ist dein Highlight?“ (Reichweiten-Post)
+**Bild:** `organisch/export/spartacus-3-welcher-stopp.png`
+
+> Sechs Stopps, ein Schiff, eine Woche voller Vibes. 🌈🚢
+>
+> Barcelona mit Sitges um die Ecke, Valencia, Alicante, Marbella, Tanger in Marokko – oder doch der Seetag mit Pool, Sonne und Party von morgens bis nachts?
+>
+> Welcher Stopp der Spartacus Gay Cruise 2027 wäre DEIN Highlight? Kommentiere einfach die Zahl:
+>
+> 1️⃣ Barcelona
+> 2️⃣ Valencia
+> 3️⃣ Alicante
+> 4️⃣ Marbella
+> 5️⃣ Tanger
+> 6️⃣ Seetag
+>
+> Wir sind gespannt! 👇
+>
+> #SpartacusGayCruise #GayCruise #GayTravel #Barcelona #Marbella #Tanger #LGBTQTravel #Mittelmeer
+
+### Post 4 – „Pool-Tag oder Partynacht?“ (Reichweiten-Post)
+**Bild:** `organisch/export/spartacus-4-pool-oder-party.png`
+
+> Ehrliche Frage: Was bist du an Bord? 👀
+>
+> ☀️ 1 = Pool-Tag – Liege, Drink, Sonne, Sauna, Nickerchen
+> 🪩 2 = Partynacht – Drag-Show, DJ, Tanzfläche bis zum Sonnenaufgang
+>
+> Schreib 1 oder 2 in die Kommentare – und markier die Person, die garantiert das Gegenteil wählt. 😄
+>
+> (Gut zu wissen: Auf der Spartacus Gay Cruise 2027 musst du dich nicht entscheiden. Du kannst beides haben. 😉)
+>
+> #SpartacusGayCruise #PoolOderParty #GayCruise2027 #GayTravel #LGBTQ #Kreuzfahrt #DragShow #TeaDance
+
 ---
 
 ## Danzig

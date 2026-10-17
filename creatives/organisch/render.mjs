@@ -77,6 +77,50 @@ li b{font-weight:900;width:120px;flex:0 0 auto}`,
 <ul>${day.map(([t, s]) => `<li><b class="rb">${t}</b>${s}</li>`).join("")}</ul></div>`,
 );
 
+// Reichweiten-Formate: Abstimmungen bringen Kommentare und damit Reichweite
+const ports = [
+  ["Barcelona", "🇪🇸", "#e53b3b"],
+  ["Valencia", "🍊", "#f28c28"],
+  ["Alicante", "🏖️", "#e9b824"],
+  ["Marbella", "🌴", "#3cb371"],
+  ["Tanger", "🇲🇦", "#3b82f6"],
+  ["Seetag", "🌊", "#8b5cf6"],
+];
+const spartacus3 = page(
+  spartacusCss +
+    `
+.head{position:absolute;left:60px;right:60px;top:80px;text-align:center}
+h1{font-weight:900;font-size:82px;line-height:1.04;letter-spacing:-.02em;margin-top:24px}
+.grid{position:absolute;left:60px;right:60px;top:370px;display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.tile{height:250px;border-radius:24px;color:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:26px 30px}
+.tile .e{font-size:58px;line-height:1}
+.tile .n{font-weight:900;font-size:44px}
+.tile .k{font-weight:800;font-size:22px;letter-spacing:.14em;text-transform:uppercase;opacity:.9}
+.foot{position:absolute;left:60px;right:60px;bottom:90px;text-align:center;font-weight:800;font-size:34px}`,
+  `<div class="head">${spartacusKicker}<h1>Welcher Stopp ist<br><span class="rb">dein Highlight?</span></h1></div>
+<div class="grid">${ports
+    .map(([n, e, col], i) => `<div class="tile" style="background:${col}"><span class="e">${e}</span><div><div class="k">Kommentiere ${i + 1}</div><div class="n">${n}</div></div></div>`)
+    .join("")}</div>
+<div class="foot">Stimm ab in den Kommentaren 👇</div>`,
+);
+
+const spartacus4 = page(
+  spartacusCss +
+    `
+.head{position:absolute;left:48px;right:48px;top:0;height:300px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+h1{font-weight:900;font-size:80px;line-height:1.04;letter-spacing:-.02em;margin-top:22px}
+.half{position:absolute;left:48px;right:48px;height:470px;border-radius:24px;overflow:hidden}
+.h1{top:300px;background:url(${img("pool-glasdach.jpg")}) 40% 60%/cover no-repeat}
+.h2{top:794px;background:url(${img("sunset-deck.jpg")}) 50% 75%/cover no-repeat}
+.lab{position:absolute;left:28px;bottom:28px;background:${cream};border-radius:60px;padding:16px 30px;font-weight:900;font-size:40px}
+.or{position:absolute;left:50%;top:782px;transform:translate(-50%,-50%);width:132px;height:132px;border-radius:50%;
+  background:${navy};color:${cream};display:flex;align-items:center;justify-content:center;font-weight:900;font-size:27px;letter-spacing:.04em;z-index:2;border:8px solid ${cream}}`,
+  `<div class="head">${spartacusKicker}<h1>Pool-Tag <span class="rb">oder</span> Partynacht?</h1></div>
+<div class="half h1"><span class="lab">☀️ 1 · Pool-Tag</span></div>
+<div class="half h2"><span class="lab">🪩 2 · Partynacht</span></div>
+<div class="or">ODER</div>`,
+);
+
 // ---------- Danzig (ohne Foto: gezeichnete Giebelhaus-Skyline als Bildmotiv) ----------
 const brick = "#a63d2a";
 const ochre = "#e0a43b";
@@ -171,6 +215,8 @@ li .d{font-weight:600;font-size:28px;line-height:1.3;color:#4a5568;margin-top:4p
 const posts = [
   ["spartacus-1-freundschaften-an-deck", spartacus1],
   ["spartacus-2-dein-tag-an-bord", spartacus2],
+  ["spartacus-3-welcher-stopp", spartacus3],
+  ["spartacus-4-pool-oder-party", spartacus4],
   ["danzig-1-hanse-charme", danzig1],
   ["danzig-2-fuenf-gruende", danzig2],
 ];
