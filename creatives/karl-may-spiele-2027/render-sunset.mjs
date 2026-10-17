@@ -1,5 +1,5 @@
 // Rendert die „Western-Sonnenuntergang“-Creatives für die Karl-May-Spiele-Reise
-// in 1:1 (1080x1080) und 4:5 (1080x1350) – reduziert, ohne CTA-Button und ohne Schatten/Konturen – sowie je ein PDF für den Canva-Import.
+// in 1:1 (1080x1080) und 4:5 (1080x1350) – schlicht, ohne Verläufe, Schatten, Preis oder Button – sowie je ein PDF für den Canva-Import.
 // Aufruf: node creatives/karl-may-spiele-2027/render-sunset.mjs
 import { readFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -37,70 +37,45 @@ const creatives = [
     photo: "reiter-buehne.jpg",
     pos: "50% 100%",
     headline: "Winnetou<br>reitet wieder",
-    sub: "<b>Alexander Klaws</b> live am Kalkberg",
+    info: "Mit Alexander Klaws · Busreise ab Erfurt · Juli 2027",
   },
   {
     name: "08-auf-in-den-wilden-westen-1x1",
     width: 1080,
     height: 1080,
-    photo: "buehne-daemmerung.jpg",
-    pos: "80% 50%",
-    headline: "Auf in den<br>Wilden Westen",
-    sub: "mit <b>Alexander Klaws</b> als Winnetou",
+    photo: "arena-tag.jpg",
+    pos: "50% 72%",
+    headline: "Auf in den Wilden Westen",
+    info: "Busreise ab Erfurt · 07.–09.07. &amp; 18.–20.07.2027",
   },
 ];
 
+// Bewusst schlicht: unbearbeitetes Foto, einfarbige Flächen, keine Verläufe,
+// keine Schatten, kein Preis – nur Titel und eine Infozeile.
 const html = (c) => {
   const square = c.height === c.width;
+  const panel = square ? 360 : 480;
   return `<!doctype html><html><head><meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500;600;700;800&display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@600;700&display=block" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-html,body{width:${c.width}px;height:${c.height}px;overflow:hidden;background:${leather}}
-body{font-family:Montserrat,sans-serif;color:${sand};position:relative}
-.photo{position:absolute;left:0;right:0;top:0;bottom:${square ? 220 : 250}px;background:url(${img(c.photo)}) ${c.pos}/cover no-repeat;filter:saturate(1.1) contrast(1.05)}
-/* Sonnenuntergangs-Tönung in Rost-Orange */
-.tint{position:absolute;left:0;right:0;top:0;bottom:${square ? 220 : 250}px;background:linear-gradient(180deg,#e0702a 0%,${rust} 50%,#7a2e10 100%);mix-blend-mode:soft-light;opacity:.6}
-/* ruhiger Verlauf für gute Lesbarkeit – keine Schatten, keine Konturen */
-.top{position:absolute;left:0;right:0;top:0;height:${square ? 660 : 720}px;
-  background:linear-gradient(180deg,rgba(43,21,10,.95) 0%,rgba(43,21,10,.85) 55%,rgba(43,21,10,0) 100%)}
-.fade{position:absolute;left:0;right:0;bottom:${square ? 220 : 250}px;height:160px;
-  background:linear-gradient(0deg,${leather} 0%,rgba(59,29,14,0) 100%)}
-.head{position:absolute;left:70px;right:70px;top:${square ? 70 : 90}px;text-align:center}
-.kicker{font-weight:700;font-size:${square ? 20 : 22}px;letter-spacing:.38em;text-transform:uppercase;color:${gold};padding-left:.38em}
-h1{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:${square ? 150 : 176}px;line-height:.9;letter-spacing:.01em;margin-top:${square ? 22 : 28}px;color:${sand}}
-.sub{font-weight:600;font-size:${square ? 32 : 36}px;margin-top:${square ? 18 : 24}px;color:${sand}}
-.sub b{font-weight:800;color:${gold}}
-/* Info-Leiste */
-.bar{position:absolute;left:0;right:0;bottom:0;height:${square ? 220 : 250}px;background:${leather};border-top:3px solid ${gold};
-  display:flex;align-items:center;padding:0 70px}
-.col{flex:1}
-.col + .col{border-left:2px solid rgba(242,181,68,.35);padding-left:56px;margin-left:56px;flex:0 0 auto}
-.label{font-weight:700;font-size:${square ? 17 : 18}px;letter-spacing:.28em;text-transform:uppercase;color:${gold}}
-.line{font-weight:700;font-size:29px;margin-top:10px;color:${sand};white-space:nowrap}
-.line span{font-weight:600;color:${gold}}
-.price{font-family:'Bebas Neue',sans-serif;font-size:${square ? 96 : 108}px;line-height:.9;color:${gold};margin-top:6px}
-.price small{font-family:Montserrat,sans-serif;font-weight:700;font-size:${square ? 24 : 26}px;color:${sand};margin-left:8px}
-.incl{font-weight:500;font-size:${square ? 19 : 20}px;color:rgba(245,228,195,.85);margin-top:8px}
+html,body{width:${c.width}px;height:${c.height}px;overflow:hidden;background:${sand}}
+body{font-family:Montserrat,sans-serif;color:${leather};position:relative}
+.panel{position:absolute;left:0;right:0;top:0;height:${panel}px;background:${sand};
+  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 70px}
+.kicker{font-weight:700;font-size:${square ? 20 : 22}px;letter-spacing:.34em;text-transform:uppercase;color:${rust};padding-left:.34em}
+h1{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:${square ? 112 : 132}px;line-height:.95;margin-top:${square ? 14 : 18}px;color:${leather}}
+.info{font-weight:600;font-size:${square ? 26 : 28}px;margin-top:${square ? 14 : 18}px;color:${leather}}
+.rule{position:absolute;left:0;right:0;top:${panel}px;height:8px;background:${rust}}
+.photo{position:absolute;left:0;right:0;top:${panel + 8}px;bottom:0;background:url(${img(c.photo)}) ${c.pos}/cover no-repeat}
 </style></head><body>
-<div class="photo"></div><div class="tint"></div><div class="top"></div><div class="fade"></div>
-<div class="head">
-  <div class="kicker">Karl-May-Spiele Bad Segeberg 2027</div>
+<div class="panel">
+  <div class="kicker">Karl-May-Spiele Bad Segeberg</div>
   <h1>${c.headline}</h1>
-  <div class="sub">${c.sub}</div>
+  <div class="info">${c.info}</div>
 </div>
-<div class="bar">
-  <div class="col">
-    <div class="label">Termine</div>
-    <div class="line">07.–09.07.2027</div>
-    <div class="line">18.–20.07.2027 <span>· mit Feuerwerk</span></div>
-  </div>
-  <div class="col">
-    <div class="label">Reisepreis</div>
-    <div class="price">399 €<small>p. P.</small></div>
-    <div class="incl">Bus ab Erfurt · 2 Nächte HP · Ticket</div>
-  </div>
-</div>
+<div class="rule"></div>
+<div class="photo"></div>
 </body></html>`;
 };
 
