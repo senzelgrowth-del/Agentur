@@ -1,5 +1,5 @@
 // Rendert die „Western-Sonnenuntergang“-Creatives für die Karl-May-Spiele-Reise
-// in 1:1 (1080x1080) und 4:5 (1080x1350) – schlicht, ohne Verläufe, Schatten, Preis oder Button – sowie je ein PDF für den Canva-Import.
+// in 1:1 (1080x1080) und 4:5 (1080x1350) – randloses Foto, Text auf einfarbigen Blöcken, ohne Verläufe/Schatten/Preis – sowie je ein PDF für den Canva-Import.
 // Aufruf: node creatives/karl-may-spiele-2027/render-sunset.mjs
 import { readFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -36,46 +36,51 @@ const creatives = [
     height: 1350,
     photo: "reiter-buehne.jpg",
     pos: "50% 100%",
-    headline: "Winnetou<br>reitet wieder",
-    info: "Mit Alexander Klaws · Busreise ab Erfurt · Juli 2027",
+    lines: ["Winnetou", "reitet wieder"],
+    sub: "Mit Alexander Klaws als Winnetou",
   },
   {
     name: "08-auf-in-den-wilden-westen-1x1",
     width: 1080,
     height: 1080,
-    photo: "arena-tag.jpg",
-    pos: "50% 72%",
-    headline: "Auf in den Wilden Westen",
-    info: "Busreise ab Erfurt · 07.–09.07. &amp; 18.–20.07.2027",
+    photo: "buehne-daemmerung.jpg",
+    pos: "100% 60%",
+    lines: ["Auf in den", "Wilden Westen"],
+    sub: "Mit Alexander Klaws als Winnetou",
   },
 ];
 
-// Bewusst schlicht: unbearbeitetes Foto, einfarbige Flächen, keine Verläufe,
-// keine Schatten, kein Preis – nur Titel und eine Infozeile.
+// Foto randlos und unbearbeitet; Texte stehen auf einfarbigen Blöcken
+// (keine Verläufe, keine Schatten, kein Preis).
 const html = (c) => {
   const square = c.height === c.width;
-  const panel = square ? 360 : 480;
   return `<!doctype html><html><head><meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@600;700&display=block" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700;800&display=block" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-html,body{width:${c.width}px;height:${c.height}px;overflow:hidden;background:${sand}}
-body{font-family:Montserrat,sans-serif;color:${leather};position:relative}
-.panel{position:absolute;left:0;right:0;top:0;height:${panel}px;background:${sand};
-  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 70px}
-.kicker{font-weight:700;font-size:${square ? 20 : 22}px;letter-spacing:.34em;text-transform:uppercase;color:${rust};padding-left:.34em}
-h1{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:${square ? 112 : 132}px;line-height:.95;margin-top:${square ? 14 : 18}px;color:${leather}}
-.info{font-weight:600;font-size:${square ? 26 : 28}px;margin-top:${square ? 14 : 18}px;color:${leather}}
-.rule{position:absolute;left:0;right:0;top:${panel}px;height:8px;background:${rust}}
-.photo{position:absolute;left:0;right:0;top:${panel + 8}px;bottom:0;background:url(${img(c.photo)}) ${c.pos}/cover no-repeat}
+html,body{width:${c.width}px;height:${c.height}px;overflow:hidden;background:${leather}}
+body{font-family:Montserrat,sans-serif;position:relative}
+.photo{position:absolute;inset:0;background:url(${img(c.photo)}) ${c.pos}/cover no-repeat}
+.head{position:absolute;left:${square ? 56 : 64}px;top:${square ? 56 : 72}px;display:flex;flex-direction:column;align-items:flex-start}
+.blk{display:inline-block}
+.kicker{font-weight:800;font-size:${square ? 24 : 27}px;letter-spacing:.14em;text-transform:uppercase;
+  background:${rust};color:${sand};padding:12px 20px 11px}
+.t{font-family:'Bebas Neue',sans-serif;font-size:${square ? 124 : 150}px;line-height:1;color:${sand};background:${leather};
+  padding:${square ? "10px 22px 0" : "12px 26px 0"}}
+.sub{font-weight:800;font-size:${square ? 29 : 33}px;background:${sand};color:${leather};padding:14px 22px 13px}
+.info{position:absolute;right:${square ? 56 : 64}px;bottom:${square ? 56 : 72}px;background:${leather};color:${sand};
+  border-left:10px solid ${gold};padding:18px 26px 17px 24px;text-align:left}
+.info div{font-weight:800;font-size:${square ? 28 : 31}px;line-height:1.35}
+.info div + div{color:${gold}}
+.info div:first-child{margin-bottom:4px}
 </style></head><body>
-<div class="panel">
-  <div class="kicker">Karl-May-Spiele Bad Segeberg</div>
-  <h1>${c.headline}</h1>
-  <div class="info">${c.info}</div>
-</div>
-<div class="rule"></div>
 <div class="photo"></div>
+<div class="head">
+  <span class="blk kicker">Karl-May-Spiele Bad Segeberg</span>
+  ${c.lines.map((l) => `<span class="blk t">${l}</span>`).join("")}
+  <span class="blk sub">${c.sub}</span>
+</div>
+<div class="info"><div>Busreise ab Erfurt</div><div>07.–09.07.2027</div><div>18.–20.07.2027</div></div>
 </body></html>`;
 };
 
