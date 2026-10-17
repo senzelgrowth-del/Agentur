@@ -1,7 +1,7 @@
 // Rendert die Bilder für organische Facebook/Instagram-Posts (4:5, 1080x1350)
 // zu Spartacus Gay Cruise und Danzig. Texte dazu: ../organische-posts.md
 // Aufruf: node creatives/organisch/render.mjs
-import { readFileSync, mkdirSync } from "node:fs";
+import { readFileSync, mkdirSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createRequire } from "node:module";
@@ -121,6 +121,32 @@ h1{font-weight:900;font-size:80px;line-height:1.04;letter-spacing:-.02em;margin-
 <div class="or">ODER</div>`,
 );
 
+// CTA-Abschlussfolie für die Karussell-Posts 3 und 4 (gleiche Folie für beide).
+// Liegt src/starshine-logo.png vor, wird das echte Logo verwendet, sonst eine Wortmarke.
+const logoFile = join(dir, "src", "starshine-logo.png");
+const logo = existsSync(logoFile)
+  ? `<img class="logo-img" src="data:image/png;base64,${readFileSync(logoFile).toString("base64")}">`
+  : `<div class="wordmark"><span class="star">★</span>Starshine <b>Emotions</b></div>`;
+const spartacusCta = page(
+  spartacusCss +
+    `
+.wrap{position:absolute;left:80px;right:80px;top:0;bottom:250px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+h1{font-weight:900;font-size:96px;line-height:1.04;letter-spacing:-.02em;margin-top:30px}
+.info{font-weight:700;font-size:34px;line-height:1.4;margin-top:30px;color:#4a5568}
+.btn{margin-top:48px;background:${navy};color:${cream};border-radius:80px;padding:28px 56px;font-weight:800;font-size:36px}
+.foot{position:absolute;left:0;right:0;bottom:0;height:250px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;border-top:2px solid rgba(20,33,61,.1)}
+.wordmark{font-family:'Playfair Display',serif;font-weight:700;font-size:54px;color:${navy};display:flex;align-items:center;gap:14px}
+.wordmark b{font-weight:800}
+.star{font-family:Montserrat,sans-serif;font-size:44px;background:${rainbowCss};-webkit-background-clip:text;color:transparent}
+.logo-img{max-height:120px;max-width:600px}
+.url{font-weight:700;font-size:26px;letter-spacing:.06em;color:#4a5568}`,
+  `<div class="wrap">${spartacusKicker}
+<h1>Lust bekommen?<br><span class="rb">Komm mit!</span></h1>
+<div class="info">15.–22. Oktober 2027 · ab Palma de Mallorca<br>Frühbucher: −10 % bis 01.11.2026</div>
+<div class="btn">Jetzt Kabine sichern →</div></div>
+<div class="foot">${logo}<div class="url">starshine-emotions.com</div></div>`,
+);
+
 // ---------- Danzig (ohne Foto: gezeichnete Giebelhaus-Skyline als Bildmotiv) ----------
 const brick = "#a63d2a";
 const ochre = "#e0a43b";
@@ -217,6 +243,7 @@ const posts = [
   ["spartacus-2-dein-tag-an-bord", spartacus2],
   ["spartacus-3-welcher-stopp", spartacus3],
   ["spartacus-4-pool-oder-party", spartacus4],
+  ["spartacus-cta-abschluss", spartacusCta],
   ["danzig-1-hanse-charme", danzig1],
   ["danzig-2-fuenf-gruende", danzig2],
 ];

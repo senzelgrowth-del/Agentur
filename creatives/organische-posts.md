@@ -68,6 +68,10 @@ Bilder (4:5, 1080 × 1350): `creatives/organisch/export/`
 >
 > #SpartacusGayCruise #PoolOderParty #GayCruise2027 #GayTravel #LGBTQ #Kreuzfahrt #DragShow #TeaDance
 
+### Abschlussfolie für Post 3 und Post 4 (Karussell)
+**Bild:** `organisch/export/spartacus-cta-abschluss.png` – als letzte Folie hinter das Abstimmungsbild setzen.
+Logo: Liegt `organisch/src/starshine-logo.png` vor, wird beim nächsten Rendern das echte Logo statt der Wortmarke verwendet.
+
 ---
 
 ## Danzig
