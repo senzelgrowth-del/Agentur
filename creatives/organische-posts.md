@@ -66,7 +66,9 @@ Bilder (4:5, 1080 × 1350): `creatives/organisch/export/`
 >
 > Gut zu wissen: An Bord musst du dich nicht entscheiden – du kannst beides haben. 😉
 >
-> #SpartacusGayCruise #GayCruise #GayTravel #LGBTQ #Kreuzfahrt
+> 📅 15.–22. Oktober 2027
+> 🚢 Vasco da Gama ab Palma de Mallorca
+> 📍 Barcelona · Valencia · Alicante · Marbella · Tanger
 
 ### Abschlussfolie für Post 3 und Post 4 (Karussell)
 **Bild:** `organisch/export/spartacus-cta-abschluss.png` – als letzte Folie hinter das Abstimmungsbild setzen.
