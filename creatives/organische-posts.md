@@ -120,20 +120,14 @@ Starshine-Logo im Regenbogen-Ring, „Lust auf Meer? Schreib uns einfach!“ –
 
 > ✨ Silvester in Danzig – mit Schlagergala, Heiko & Andy und Open Bar! ✨
 >
-> Feiern Sie mit uns an der polnischen Ostsee ins neue Jahr – mit festlichem Galadinner, Live-Schlager und einem Programm voller Highlights. 🥂🎶
+> Feiern Sie mit uns an der polnischen Ostsee ins neue Jahr. 🥂🎶
 >
 > 🎉 Silvester-Galadinner mit Open Bar
-> 🎤 Schlagergala mit Heiko & Andy
-> 🏰 Ausflug zur imposanten Marienburg
-> 🌊 Geführte Dreistadt-Tour: Danzig, Gdynia & Sopot
-> 🎹 Orgelkonzert in der Kathedrale Oliwa
-> 🍺 Bierverkostung in einer Hausbrauerei
-> 🥃 Danziger Goldwasser-Verkostung
-> 💎 Besuch einer Bernsteinschleiferei
+> 🏰 Ausflug zur Marienburg
+> 🌊 Dreistadt-Tour: Danzig, Gdynia & Sopot
 >
 > 📅 30.12.2026 – 02.01.2027
-> 🏨 3 Nächte im 4-Sterne-Hotel direkt an der Ostsee
-> 🚌 Haustür-Transfer & Komfort-Reisebus
+> 🏨 3 Nächte im 4-Sterne-Hotel an der Ostsee
 > 💶 ab 789 € p. P.
 >
 > Mit wem würden Sie gern ins neue Jahr feiern? Markieren Sie die Person! 👇
