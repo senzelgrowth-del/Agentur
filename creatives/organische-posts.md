@@ -57,14 +57,16 @@ Bilder (4:5, 1080 × 1350): `creatives/organisch/export/`
 ### Post 4 – „Pool-Tag oder Partynacht?“ (Reichweiten-Post)
 **Bild:** `organisch/export/spartacus-4-pool-oder-party.png`
 
-> Ehrliche Frage: Was bist du an Bord? 👀
+> 🌈🚢 SPARTACUS GAY CRUISE 2027 – ehrliche Frage: Was bist du an Bord? 👀
+>
+> 15.–22. Oktober 2027, Mallorca → Spanien → Marokko. Eine Woche auf der Vasco da Gama – und jeden Tag die gleiche schwere Entscheidung:
 >
 > ☀️ 1 = Pool-Tag – Liege, Drink, Sonne, Sauna, Nickerchen
 > 🪩 2 = Partynacht – Drag-Show, DJ, Tanzfläche bis zum Sonnenaufgang
 >
 > Schreib 1 oder 2 in die Kommentare – und markier die Person, die garantiert das Gegenteil wählt. 😄
 >
-> (Gut zu wissen: Auf der Spartacus Gay Cruise 2027 musst du dich nicht entscheiden. Du kannst beides haben. 😉)
+> Gut zu wissen: Auf der Spartacus Gay Cruise musst du dich nicht entscheiden. Du kannst beides haben. 😉
 >
 > #SpartacusGayCruise #PoolOderParty #GayCruise2027 #GayTravel #LGBTQ #Kreuzfahrt #DragShow #TeaDance
 
