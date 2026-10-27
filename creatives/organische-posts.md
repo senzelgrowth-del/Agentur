@@ -136,14 +136,14 @@ Starshine-Logo im Regenbogen-Ring, „Lust auf Meer? Schreib uns einfach!“ –
 
 ## Karl-May-Spiele Bad Segeberg 2027
 
-### Post 1 – „Team Winnetou oder Team Old Shatterhand?“ (Reichweiten-Post)
+### Post 1 – „Wer ist Ihr Held?“ (Reichweiten-Post)
 **Bild:** `organisch/export/karlmay-1-team-winnetou.png`
 
-> Karl-May-Spiele 2027 🤠 Die große Frage am Kalkberg: Auf wessen Seite stehen Sie?
+> Karl-May-Spiele 2027 🤠 Wer ist Ihr Held?
 >
-> 1️⃣ Team Winnetou 🪶
-> 2️⃣ Team Old Shatterhand 🤠
+> 1️⃣ Winnetou 🪶
+> 2️⃣ Old Shatterhand 🤠
 >
-> Schreiben Sie 1 oder 2 in die Kommentare 👇 und markieren Sie die Person, mit der Sie schon als Kind Winnetou geschaut haben! 😄
+> Schreiben Sie 1 oder 2 in die Kommentare 👇 und markieren Sie die Person, mit der Sie früher Winnetou geschaut haben! 😄
 >
-> Und wer es live erleben möchte: Mit uns geht's im Juli 2027 per Bus ab Erfurt zu den Karl-May-Spielen nach Bad Segeberg – mit Alexander Klaws als Winnetou. 🐎
+> 📅 Juli 2027 · Busreise ab Erfurt nach Bad Segeberg

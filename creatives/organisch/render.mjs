@@ -258,26 +258,21 @@ const leather = "#3b1d0e";
 const karlmay1 = page(
   `
 .photo{position:absolute;inset:0;background:url(${img("reiter-buehne.jpg")}) 50% 100%/cover no-repeat}
-.head{position:absolute;left:56px;top:64px;display:flex;flex-direction:column;align-items:flex-start}
-.blk{display:inline-block}
-.kicker{font-weight:800;font-size:26px;letter-spacing:.14em;text-transform:uppercase;background:${rust};color:${sandK};padding:12px 20px 11px}
-.t{font-family:'Bebas Neue',sans-serif;font-size:128px;line-height:1;background:${leather};color:${sandK};padding:12px 24px 0}
+.head{position:absolute;left:0;right:0;top:80px;text-align:center}
+.t{display:inline-block;font-family:'Bebas Neue',sans-serif;font-size:132px;line-height:1;background:${leather};color:${sandK};padding:22px 44px 8px;border-radius:18px}
 .t span{color:#f2b544}
-.tag{position:absolute;font-weight:900;font-size:34px;background:${sandK};color:${leather};padding:14px 24px;border-radius:12px}
-.tag b{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;background:${rust};color:#fff;margin-right:12px}
-.tag::after{content:"";position:absolute;left:40px;bottom:-16px;border:16px solid transparent;border-top-color:${sandK};border-bottom:0}
-.t1{left:160px;top:845px}
+.tag{position:absolute;font-weight:900;font-size:40px;background:${sandK};color:${leather};padding:16px 28px;border-radius:14px}
+.tag b{display:inline-flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:50%;background:${rust};color:#fff;margin-right:14px}
+.tag::after{content:"";position:absolute;bottom:-18px;border:18px solid transparent;border-top-color:${sandK};border-bottom:0}
+.t1{left:150px;top:830px}
 .t1::after{left:250px}
-.t2{right:56px;top:760px}
-.t2::after{left:auto;right:150px}
-.foot{position:absolute;left:56px;bottom:64px;font-weight:900;font-size:34px;background:${leather};color:${sandK};padding:16px 26px}`,
+.t2{right:56px;top:735px}
+.t2::after{right:150px}`,
   `<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=block" rel="stylesheet">
 <div class="photo"></div>
-<div class="head"><span class="blk kicker">Karl-May-Spiele Bad Segeberg</span>
-<span class="blk t">Team <span>Winnetou</span></span><span class="blk t">oder Team</span><span class="blk t"><span>Old Shatterhand?</span></span></div>
+<div class="head"><div class="t">Wer ist <span>Ihr Held?</span></div></div>
 <div class="tag t1"><b>1</b>Winnetou</div>
-<div class="tag t2"><b>2</b>Old Shatterhand</div>
-<div class="foot">Kommentieren Sie 1 oder 2 👇</div>`,
+<div class="tag t2"><b>2</b>Old Shatterhand</div>`,
 );
 
 const posts = [
