@@ -156,18 +156,18 @@ Starshine-Logo im Regenbogen-Ring, „Lust auf Meer? Schreib uns einfach!“ –
 
 ## Schlager Seereise 2027
 
-### Post 1 – Abstimmung + Buchung
-**Bild:** `schlager-seereise-2027/export/01-ueber-30-schlagerstars.png` („Gänsehaut pur mit Ihren Stars“)
+### Post 1 – „Schlager. Sonne. Mittelmeer.“
+**Bild:** Kundenbild – zwei Gäste an Deck im Sonnenuntergang, Text „Schlager. Sonne. Mittelmeer.“
 
-> Semino Rossi oder Stefan Mross? 🎶 1 oder 2 – ab in die Kommentare! 👇
+> Schlager. Sonne. Mittelmeer. ☀️🎶
 >
-> Erleben Sie beide live – und über 30 weitere Schlagerstars: Mit der Schlager Seereise 2027 eine Woche lang auf der Costa Deliziosa durchs Mittelmeer. 🚢
+> Abends an Deck sitzen, die Sonne versinkt im Meer – und gleich beginnt das nächste Konzert mit Ihren Lieblingsstars. So fühlt sich die Schlager Seereise 2027 an. 🚢
 >
-> ✅ Tägliche Live-Konzerte & Schlagerpartys
-> ✅ White Night & Oktoberfest auf See
-> ✅ Vollpension & Trinkgelder inklusive
+> ✅ Über 30 Schlagerstars live an Bord – u. a. Semino Rossi, Stefan Mross & Patrick Lindner
+> ✅ 7 Nächte östliches Mittelmeer mit Vollpension
+> ✅ White Night, Oktoberfest auf See & Tanzabende
 >
 > 📅 02.–09.10.2027 ab Triest oder 03.–10.10.2027 ab Bari
-> 💶 ab 1.299 € p. P.
+> 💶 ab 1.299 € p. P., Trinkgelder inklusive
 >
 > 📩 Jetzt Nachricht schreiben und Kabine reservieren!
