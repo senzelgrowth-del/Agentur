@@ -118,15 +118,22 @@ Starshine-Logo im Regenbogen-Ring, „Lust auf Meer? Schreib uns einfach!“ –
 ### Post 3 – „Silvester in Danzig“
 **Bild:** `organisch/export/danzig-3-silvester.png` (Kundenfoto Speicherstadt an der Mottlau; die eingebrannte Schrift wurde entfernt)
 
-> ✨ Silvester in Danzig – mit Schlagergala, Heiko & Andy und Ostseeblick! ✨
+> ✨ Silvester in Danzig – mit Schlagergala, Heiko & Andy und Open Bar! ✨
 >
-> Historische Speicherhäuser, Lichter über der Mottlau und eine festliche Gala-Nacht: Starten Sie mit uns an der polnischen Ostsee ins neue Jahr. 🥂🎶
+> Feiern Sie mit uns an der polnischen Ostsee ins neue Jahr – mit festlichem Galadinner, Live-Schlager und einem Programm voller Highlights. 🥂🎶
+>
+> 🎉 Silvester-Galadinner mit Open Bar
+> 🎤 Schlagergala mit Heiko & Andy
+> 🏰 Ausflug zur imposanten Marienburg
+> 🌊 Geführte Dreistadt-Tour: Danzig, Gdynia & Sopot
+> 🎹 Orgelkonzert in der Kathedrale Oliwa
+> 🍺 Bierverkostung in einer Hausbrauerei
+> 🥃 Danziger Goldwasser-Verkostung
+> 💎 Besuch einer Bernsteinschleiferei
 >
 > 📅 30.12.2026 – 02.01.2027
+> 🏨 3 Nächte im 4-Sterne-Hotel direkt an der Ostsee
 > 🚌 Haustür-Transfer & Komfort-Reisebus
-> 🏨 3 Nächte im 4-Sterne-Hotel direkt an der Ostsee in Gdynia
-> 🎉 Silvester-Galadinner mit Open Bar
-> 🏰 Marienburg, Dreistadt-Tour, Goldwasser-Verkostung & mehr
-> 💶 ab 789 € p. P. im Doppelzimmer
+> 💶 ab 789 € p. P.
 >
 > Mit wem würden Sie gern ins neue Jahr feiern? Markieren Sie die Person! 👇
