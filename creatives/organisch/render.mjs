@@ -240,15 +240,14 @@ const danzig3 = page(
   `
 html,body{background:${sky}}
 .photo{position:absolute;left:0;right:0;bottom:0;height:1080px;background:url(${img("danzig-mottlau-nacht.jpg")}) 50% 100%/cover no-repeat}
-.head{position:absolute;left:40px;right:40px;top:56px;text-align:center;color:#fff7ea}
-.kicker{font-weight:800;font-size:25px;letter-spacing:.32em;text-transform:uppercase;color:#f4c46a;padding-left:.32em}
-h1{font-family:'Playfair Display',serif;font-weight:800;font-size:100px;line-height:1;margin-top:14px;white-space:nowrap}
-h1 span{color:#f4c46a}
-.sub{font-weight:700;font-size:32px;line-height:1.35;margin-top:16px;color:rgba(255,247,234,.92)}`,
-  `<div class="photo"></div>
-<div class="head"><div class="kicker">✨ 30.12.2026 – 02.01.2027 ✨</div>
-<h1>Silvester in <span>Danzig</span></h1>
-<div class="sub">Schlagergala mit Heiko &amp; Andy an der Ostsee</div></div>`,
+.head{position:absolute;left:40px;right:40px;top:70px;text-align:center}
+h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:150px;line-height:.95;color:#fbf3e6}
+h1 span{color:#f2c879}
+.sub{display:inline-block;margin-top:30px;font-weight:700;font-size:34px;letter-spacing:.06em;color:#2a1a33;background:#f2c879;border-radius:60px;padding:14px 36px}`,
+  `<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=block" rel="stylesheet">
+<div class="photo"></div>
+<div class="head"><h1>Silvester<br><span>in Danzig</span></h1>
+<div class="sub">30.12. – 02.01. · Schlagergala</div></div>`,
 );
 
 const posts = [
