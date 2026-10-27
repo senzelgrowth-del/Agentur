@@ -232,6 +232,25 @@ li .d{font-weight:600;font-size:28px;line-height:1.3;color:#4a5568;margin-top:4p
 <div class="sky">${skyline(260, 0.45)}</div><div class="sea"></div>`,
 );
 
+// Silvester in Danzig: Kundenfoto (Speicherstadt an der Mottlau bei Nacht), die im
+// Original eingebrannte Schrift wurde aus dem Himmel entfernt. Oben wird der Himmel
+// mit seiner eigenen Farbe (#281b2d) verlängert – dort steht der Titel.
+const sky = "#281b2d";
+const danzig3 = page(
+  `
+html,body{background:${sky}}
+.photo{position:absolute;left:0;right:0;bottom:0;height:1080px;background:url(${img("danzig-mottlau-nacht.jpg")}) 50% 100%/cover no-repeat}
+.head{position:absolute;left:40px;right:40px;top:56px;text-align:center;color:#fff7ea}
+.kicker{font-weight:800;font-size:25px;letter-spacing:.32em;text-transform:uppercase;color:#f4c46a;padding-left:.32em}
+h1{font-family:'Playfair Display',serif;font-weight:800;font-size:100px;line-height:1;margin-top:14px;white-space:nowrap}
+h1 span{color:#f4c46a}
+.sub{font-weight:700;font-size:32px;line-height:1.35;margin-top:16px;color:rgba(255,247,234,.92)}`,
+  `<div class="photo"></div>
+<div class="head"><div class="kicker">✨ Jahreswechsel an der Ostsee ✨</div>
+<h1>Silvester in <span>Danzig</span></h1>
+<div class="sub">Lichter über der Mottlau, Feuerwerk um Mitternacht.</div></div>`,
+);
+
 const posts = [
   ["spartacus-1-freundschaften-an-deck", spartacus1],
   ["spartacus-2-dein-tag-an-bord", spartacus2],
@@ -240,6 +259,7 @@ const posts = [
   ["spartacus-cta-abschluss", spartacusCta],
   ["danzig-1-hanse-charme", danzig1],
   ["danzig-2-fuenf-gruende", danzig2],
+  ["danzig-3-silvester", danzig3],
 ];
 
 const browser = await chromium.launch();

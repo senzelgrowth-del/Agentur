@@ -114,3 +114,19 @@ Starshine-Logo im Regenbogen-Ring, „Lust auf Meer? Schreib uns einfach!“ –
 > Welcher Grund überzeugt Sie am meisten? 👇
 >
 > #Danzig #Gdansk #Gruppenreise #Busreise #Ostsee #Polenreise #Kulturreise #Städtetrip
+
+### Post 3 – „Silvester in Danzig“
+**Bild:** `organisch/export/danzig-3-silvester.png` (Kundenfoto Speicherstadt an der Mottlau; die eingebrannte Schrift wurde entfernt)
+
+> ✨ Silvester in Danzig – wo das neue Jahr über der Mottlau beginnt. ✨
+>
+> Stellen Sie sich vor: Die historischen Speicherhäuser leuchten, Lichter spiegeln sich im Wasser – und um Mitternacht erstrahlt der Himmel über der Altstadt im Feuerwerk. 🎆
+>
+> Ein Jahreswechsel, den Sie so schnell nicht vergessen – entspannt, stimmungsvoll und in netter Gesellschaft.
+>
+> 📅 [Reisetermin, z. B. 30.12.–02.01.]
+> 🚌 [Anreise]
+> 🏨 [Hotel & Verpflegung]
+> 🥂 [Silvester-Highlight, z. B. Gala-Abend]
+>
+> Mit wem würden Sie gern ins neue Jahr starten? Markieren Sie die Person! 👇
