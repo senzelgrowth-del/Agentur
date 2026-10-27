@@ -246,9 +246,9 @@ h1{font-family:'Playfair Display',serif;font-weight:800;font-size:100px;line-hei
 h1 span{color:#f4c46a}
 .sub{font-weight:700;font-size:32px;line-height:1.35;margin-top:16px;color:rgba(255,247,234,.92)}`,
   `<div class="photo"></div>
-<div class="head"><div class="kicker">✨ Jahreswechsel an der Ostsee ✨</div>
+<div class="head"><div class="kicker">✨ 30.12.2026 – 02.01.2027 ✨</div>
 <h1>Silvester in <span>Danzig</span></h1>
-<div class="sub">Lichter über der Mottlau, Feuerwerk um Mitternacht.</div></div>`,
+<div class="sub">Schlagergala mit Heiko &amp; Andy an der Ostsee</div></div>`,
 );
 
 const posts = [

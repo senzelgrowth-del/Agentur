@@ -59,8 +59,23 @@ Zentrale Ablage für Meta-Ads-Creatives, organische Posts und alle Reise-Infos d
   - Sonderflug 595 €
   - Bus 375–475 € je nach Region
 
-### Danzig
-- Noch **keine Reisedaten** vorhanden (Termin, Preis, Leistungen, Fotos). In `organische-posts.md` stehen dafür Platzhalter in [eckigen Klammern].
+### Silvester-Schlagergala Danzig/Polen (ATeams, mit Heiko & Andy)
+- **Termin:** 30.12.2026 – 02.01.2027
+- **Hotel:** 3 Nächte im 4-Sterne-Hotel direkt an der Ostsee in **Gdynia** (Dreistadt mit Danzig und Sopot)
+- **Leistungen:**
+  - Haustür-Transfer (PLZ-Gebiete 01 und 02 inklusive, andere auf Anfrage gegen Zuzahlung)
+  - Komfort-Reisebus
+  - Frühstücksbuffet, 2 Abendessen als Buffet
+  - Silvester-Galadinner mit Open Bar
+  - geführte Ausflüge, persönliche Reisebegleitung
+- **Highlights:**
+  - Marienburg, Danziger Werderland, Dreistadt-Tour
+  - Orgelkonzert in der Kathedrale Oliwa (vorbehaltlich der Öffnung am 01.01.)
+  - Danziger Eintopf, Bierverkostung, Bernsteinschleiferei, Goldwasser-Verkostung
+- **Preise p. P.:**
+  - Doppelzimmer: 789 € (Stadtblick mit Zustellbett) bis 839 € (Ostseeblick)
+  - Einzelzimmer: 1.028 € bis 1.118 €
+- Ein öffentliches Feuerwerk ist **nicht** Teil der Leistungen, deshalb nicht in Anzeigen versprechen.
 
 ---
 
