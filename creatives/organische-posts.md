@@ -139,12 +139,17 @@ Starshine-Logo im Regenbogen-Ring, „Lust auf Meer? Schreib uns einfach!“ –
 ### Post 1 – „Wer ist Ihr Held?“ (Reichweiten-Post)
 **Bild:** `organisch/export/karlmay-1-team-winnetou.png`
 
-> Winnetou live erleben? 🤠 Wir fahren hin – kommen Sie mit!
+> Wer ist Ihr Held? 🤠 Schreiben Sie 1 für Winnetou oder 2 für Old Shatterhand in die Kommentare! 👇
 >
-> 🚌 Bus ab Erfurt
-> 🏨 2 Nächte mit Halbpension
-> 🎟️ Ticket für die Karl-May-Spiele inklusive
+> Ganz egal, wie Sie sich entscheiden – live am Kalkberg sind beide noch viel beeindruckender. Kommen Sie mit zu den Karl-May-Spielen 2027 nach Bad Segeberg, mit Alexander Klaws als Winnetou! 🐎
 >
-> 📅 Juli 2027 · nur 399 € p. P.
+> ✅ Busreise ab Erfurt – ohne eigene Anreise
+> ✅ 2 Nächte im Hotel mit Halbpension
+> ✅ Eintrittskarte inklusive
 >
-> 👉 Einfach Nachricht schreiben – wir schicken Ihnen alle Infos!
+> 📅 Termin 1: 07.–09.07.2027
+> 🎆 Termin 2: 18.–20.07.2027 mit Abendvorstellung und großem Feuerwerk
+>
+> 💶 Alles zusammen für 399 € p. P.
+>
+> 📩 Schreiben Sie uns einfach eine Nachricht – wir beraten Sie gern persönlich und reservieren Ihren Platz.
