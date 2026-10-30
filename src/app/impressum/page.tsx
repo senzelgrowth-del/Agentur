@@ -32,11 +32,6 @@ export default function ImpressumPage() {
 
           <LegalSection title="Kontakt">
             <p>
-              Telefon:{" "}
-              <a href="tel:+491637212600" className="text-ink hover:text-accent-strong">
-                +49 163 7212600
-              </a>
-              <br />
               E-Mail:{" "}
               <a href={`mailto:${CONTACT_EMAIL}`} className="text-accent-strong hover:text-ink">
                 {CONTACT_EMAIL}

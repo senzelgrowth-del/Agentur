@@ -13,14 +13,14 @@ export function FinalCta() {
           <GlowOrbs preset="cta" />
           <div className="relative flex flex-col items-center gap-6">
             <h2 className="text-balance max-w-2xl text-3xl sm:text-4xl lg:text-[2.75rem] font-semibold leading-[1.15] tracking-tight text-ink">
-              Lass uns über dein Wachstum sprechen.
+              Lass uns schauen, ob es passt.
             </h2>
             <p className="max-w-xl text-balance text-lg leading-relaxed text-muted">
-              In einem kurzen, kostenlosen Gespräch schauen wir, ob und wie
-              ich dir helfen kann.
+              In einem kostenlosen Gespräch schauen wir, wo dir aktuell Anfragen
+              verloren gehen und ob mein System zu dir passt.
             </p>
             <Button href={CALENDLY_URL} external className="mt-2">
-              Kostenloses Strategiegespräch buchen
+              Kostenloses Erstgespräch buchen
               <ArrowRight size={16} />
             </Button>
           </div>

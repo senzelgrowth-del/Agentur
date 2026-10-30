@@ -1,106 +1,64 @@
-import { Film, Megaphone, Bot, ChevronRight, LucideIcon } from "lucide-react";
+import { Clapperboard, MessageSquareMore, LineChart, LucideIcon } from "lucide-react";
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
-import { FadeIn } from "../ui/FadeIn";
 import { GlowOrbs } from "../ui/GlowOrbs";
 
-type Service = {
+type Step = {
   icon: LucideIcon;
+  number: string;
   title: string;
   description: string;
-  badge?: string;
 };
 
-const SERVICES: Service[] = [
+const STEPS: Step[] = [
   {
-    icon: Film,
-    title: "Content",
-    description: "Reels, Shorts und Longform, organisch oder mit Ads gepusht.",
+    icon: Clapperboard,
+    number: "01",
+    title: "Kurzvideos, die Vertrauen aufbauen",
+    description:
+      "Reels und Shorts, die zeigen, wer du bist und wie du arbeitest. Interessenten kennen dich, bevor sie anfragen.",
   },
   {
-    icon: Megaphone,
-    title: "Marketing",
-    description: "Kampagnen auf Meta und Google für lokale Unternehmen und Selbständige.",
+    icon: MessageSquareMore,
+    number: "02",
+    title: "Ein Anfrage-System, das mitarbeitet",
+    description:
+      "Automatische Antworten per DM und Chat, Vorqualifizierung und direkte Terminbuchung, auch nach Feierabend.",
   },
   {
-    icon: Bot,
-    title: "KI-Automatisierung",
-    description: "Ein Chatbot, der Anfragen sofort beantwortet, auch nachts.",
-    badge: "Extra",
+    icon: LineChart,
+    number: "03",
+    title: "Messen und gezielt verstärken",
+    description:
+      "Monatliches Reporting zu Anfragen und Terminen. Läuft es, verstärken wir gezielt mit Meta-Ads.",
   },
-];
-
-const STEPS = [
-  { number: "01", title: "Kennenlernen", description: "Kurzes, kostenloses Gespräch." },
-  { number: "02", title: "Strategie", description: "Ein Plan für dein Unternehmen." },
-  { number: "03", title: "Umsetzung", description: "Kampagnen gehen live." },
-  { number: "04", title: "Reporting", description: "Monatliches Review der Ergebnisse." },
 ];
 
 export function Services() {
   return (
-    <section id="leistungen" className="relative overflow-hidden py-16 lg:py-20">
+    <section id="system" className="relative overflow-hidden py-16 lg:py-20">
       <GlowOrbs preset="services" />
       <Container className="relative flex flex-col gap-10">
         <SectionHeading
-          eyebrow="Leistungen"
-          title="Was ich mache."
-          description="Content und Marketing sind die Basis. KI-Automatisierung kommt als Extra dazu, wenn sie wirklich hilft."
+          eyebrow="Das System"
+          title="Reichweite allein bringt keine Termine."
+          description="Die meisten haben kein Sichtbarkeits-, sondern ein Anfrage-Problem. Deshalb baue ich Content und Anfrage-System zusammen, aus einer Hand."
         />
 
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {SERVICES.map((service, i) => (
-            <FadeIn key={service.title} delay={i * 0.05}>
-              <div className="group h-full rounded-xl border border-line bg-navy-900/60 p-6 transition-colors duration-300 hover:border-line-strong hover:bg-navy-900">
-                <div className="mb-3 flex items-center gap-3">
-                  <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-line-strong bg-navy-800 text-accent-strong">
-                    <service.icon size={17} />
-                  </span>
-                  <h3 className="text-base font-semibold text-ink">{service.title}</h3>
-                  {service.badge && (
-                    <span className="ml-auto shrink-0 rounded-full border border-line-strong px-2 py-0.5 text-[11px] font-medium text-accent-strong">
-                      {service.badge}
-                    </span>
-                  )}
-                </div>
-                <p className="text-sm leading-snug text-muted">{service.description}</p>
-              </div>
-            </FadeIn>
-          ))}
-        </div>
-
-        <div className="flex flex-col gap-6">
-          <FadeIn className="flex items-center gap-3">
-            <span className="shrink-0 text-xs font-medium tracking-wide text-accent-strong uppercase">
-              Ablauf
-            </span>
-            <span className="h-px flex-1 bg-line" />
-          </FadeIn>
-
-          <div className="flex flex-col gap-6 sm:flex-row sm:items-start">
-            {STEPS.map((step, i) => (
-              <FadeIn
-                key={step.number}
-                delay={i * 0.05}
-                className="flex flex-1 items-start gap-3"
-              >
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-line-strong bg-navy-900 text-xs font-semibold text-accent-strong">
-                  {step.number}
+        <ol className="grid gap-4 lg:grid-cols-3">
+          {STEPS.map((step) => (
+            <li key={step.number} className="flex h-full flex-col gap-4 rounded-2xl border border-line bg-navy-900/60 p-6">
+              <div className="flex items-center justify-between">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-line-strong bg-navy-800 text-accent-strong">
+                  <step.icon size={18} />
                 </span>
-                <div className="flex flex-col gap-0.5">
-                  <h4 className="text-sm font-semibold text-ink">{step.title}</h4>
-                  <p className="text-xs leading-snug text-muted">{step.description}</p>
-                </div>
-                {i < STEPS.length - 1 && (
-                  <ChevronRight
-                    size={16}
-                    className="mt-1 hidden shrink-0 text-line-strong sm:block"
-                  />
-                )}
-              </FadeIn>
-            ))}
-          </div>
-        </div>
+                <span className="text-xs font-semibold text-muted">{step.number}</span>
+              </div>
+              <h3 className="text-lg font-semibold leading-snug text-ink">{step.title}</h3>
+              <p className="text-sm leading-relaxed text-muted">{step.description}</p>
+            </li>
+          ))}
+        </ol>
       </Container>
     </section>
   );

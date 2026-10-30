@@ -16,9 +16,9 @@ const siteUrl = "https://senzelgrowth.de";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "SenzelGrowth — Content & Marketing für lokale Unternehmen",
+  title: "SenzelGrowth — Aus Reichweite werden gebuchte Erstgespräche",
   description:
-    "Content und Marketing für lokale Unternehmen und Selbständige. KI-Automatisierung gibt es als Extra dazu.",
+    "Kurzvideos und ein automatisiertes Anfrage-System aus einer Hand, für Selbständige und Dienstleister, die über ein Erstgespräch verkaufen.",
   keywords: [
     "Content Marketing",
     "Performance Marketing",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Celvin Senzel" }],
   openGraph: {
-    title: "SenzelGrowth — Content & Marketing für lokale Unternehmen",
+    title: "SenzelGrowth — Aus Reichweite werden gebuchte Erstgespräche",
     description:
-      "Content und Marketing für lokale Unternehmen und Selbständige.",
+      "Kurzvideos und ein Anfrage-System aus einer Hand, für Selbständige und Dienstleister.",
     url: siteUrl,
     siteName: "SenzelGrowth",
     locale: "de_DE",
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SenzelGrowth — Content & Marketing für lokale Unternehmen",
+    title: "SenzelGrowth — Aus Reichweite werden gebuchte Erstgespräche",
     description:
-      "Content und Marketing für lokale Unternehmen und Selbständige.",
+      "Kurzvideos und ein Anfrage-System aus einer Hand, für Selbständige und Dienstleister.",
   },
 };
 

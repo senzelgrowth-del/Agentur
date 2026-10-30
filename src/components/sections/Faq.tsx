@@ -10,7 +10,7 @@ const FAQS = [
   {
     question: "Für wen ist SenzelGrowth geeignet?",
     answer:
-      "Für lokale Unternehmen und Selbständige, die planbar neue Kunden gewinnen wollen, egal wie groß dein Team ist.",
+      "Für Selbständige und Dienstleister, deren Kunden über ein Erstgespräch kommen, zum Beispiel Berater, Coaches, Therapeuten oder lokale Dienstleister.",
   },
   {
     question: "Wie läuft der Einstieg ab?",
@@ -18,14 +18,14 @@ const FAQS = [
       "Wir sprechen erstmal kostenlos und unverbindlich. Danach entscheiden wir gemeinsam, ob's passt.",
   },
   {
-    question: "Bietet ihr auch nur einzelne Leistungen an, z. B. nur Content oder nur Marketing?",
+    question: "Kann ich auch nur Content oder nur das Anfrage-System buchen?",
     answer:
       "Ja, beides funktioniert auch einzeln. Am meisten bringt es kombiniert, das besprechen wir im Gespräch.",
   },
   {
     question: "Wie lange dauert die Umsetzung?",
     answer:
-      "Kommt auf den Umfang an. Nach dem Strategiegespräch bekommst du einen realistischen Zeitplan.",
+      "Kommt auf den Umfang an. Nach dem Erstgespräch bekommst du einen realistischen Zeitplan.",
   },
   {
     question: "Wie wird der Erfolg gemessen?",
@@ -40,7 +40,7 @@ const FAQS = [
 ];
 
 export function Faq() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
     <section id="faq" className="py-20 lg:py-28">

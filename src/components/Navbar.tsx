@@ -55,7 +55,7 @@ export function Navbar() {
 
         <div className="hidden md:block">
           <Button href={CALENDLY_URL} external className="px-5 py-2.5 text-sm">
-            Strategiegespräch
+            Erstgespräch buchen
           </Button>
         </div>
 
@@ -87,7 +87,7 @@ export function Navbar() {
               external
               className="mt-3 w-full"
             >
-              Strategiegespräch buchen
+              Erstgespräch buchen
             </Button>
           </Container>
         </div>
