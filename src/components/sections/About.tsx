@@ -9,7 +9,7 @@ export function About() {
         <FadeIn className="order-2 lg:order-1">
           <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-3xl border border-line-strong bg-navy-900">
             <Image
-              src="/celvin.png"
+              src="/celvin.jpg"
               alt="Celvin Senzel"
               fill
               sizes="(min-width: 1024px) 30vw, 90vw"

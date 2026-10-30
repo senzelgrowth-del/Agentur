@@ -3,7 +3,8 @@ export const CONTACT_EMAIL = "senzelgrowth@gmail.com";
 
 export const NAV_LINKS = [
   { href: "#leistungen", label: "Leistungen" },
-  { href: "#ergebnisse", label: "Ergebnisse" },
+  { href: "#referenz", label: "Referenz" },
+  { href: "#ergebnisse", label: "Einblicke" },
   { href: "#pakete", label: "Pakete" },
   { href: "#ueber-mich", label: "Über mich" },
   { href: "#faq", label: "FAQ" },

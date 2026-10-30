@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { X } from "lucide-react";
-import { AnimatePresence, motion } from "framer-motion";
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
 import { FadeIn } from "../ui/FadeIn";
@@ -13,43 +12,36 @@ const RESULTS = [
     id: "leads",
     category: "Marketing",
     image: "/results/leads-dashboard.png",
-    stat: "89 neue Leads",
-    statDetail: "+196,7 % gegenüber dem Vormonat",
-    description: "Eine laufende Kampagne für einen lokalen Kunden, Monat für Monat optimiert.",
+    title: "Leadkampagne für ein lokales Unternehmen",
+    description: "Eine laufende Kampagne, Monat für Monat auf mehr qualifizierte Anfragen optimiert.",
   },
   {
     id: "content",
     category: "Content",
     image: "/results/youtube-revenue.jpg",
-    stat: "10.065 €",
-    statDetail: "geschätzte Einnahmen über 12 Monate",
-    description:
-      "Ein YouTube-Shorts-Kanal, den ich von null mit täglichen Kurzform-Videos aufgebaut habe.",
+    title: "YouTube-Shorts-Kanal von null aufgebaut",
+    description: "Tägliche Kurzform-Videos, aus denen über zwölf Monate ein eigener Kanal mit Einnahmen entstanden ist.",
   },
   {
     id: "ki",
     category: "KI-Automatisierung",
     image: "/results/ki-chat-automatisierung.png",
-    stat: "Rund um die Uhr",
-    statDetail: "automatisierte Kundenkommunikation",
-    description:
-      "Ein Chatbot, der Kundenanfragen automatisch beantwortet, auch außerhalb der Geschäftszeiten.",
+    title: "Chatbot für Kundenanfragen",
+    description: "Beantwortet Anfragen automatisch, auch außerhalb der Geschäftszeiten.",
   },
   {
     id: "meta-kosten",
     category: "Marketing",
     image: "/results/meta-ads-performance.png",
-    stat: "6,71 bis 8,11 €",
-    statDetail: "Kosten pro Lead, je nach Kampagne",
-    description: "Zwei parallele Meta-Kampagnen im direkten Vergleich, beide profitabel.",
+    title: "Meta-Kampagnen im direkten Vergleich",
+    description: "Zwei parallele Kampagnen, getestet und nach Kosten pro Anfrage optimiert.",
   },
   {
     id: "whatsapp",
     category: "Zusammenarbeit",
     image: "/results/whatsapp-kommunikation.png",
-    stat: "Direkt und unkompliziert",
-    statDetail: "so läuft die Kommunikation",
-    description: "Ein Kunde fragt kurz nach, ich antworte direkt, den Rest klären wir im Call.",
+    title: "Kurze Wege in der Kommunikation",
+    description: "Fragen werden direkt beantwortet, alles Weitere klären wir im Call.",
   },
 ];
 
@@ -71,9 +63,9 @@ export function Results() {
     <section id="ergebnisse" className="py-20 lg:py-28">
       <Container className="flex flex-col gap-14">
         <SectionHeading
-          eyebrow="Ergebnisse"
-          title="Ein paar Zahlen, die für sich sprechen."
-          description="Zum Anklicken: Ausschnitte aus echten Projekten, anonymisiert, aber nicht gestellt."
+          eyebrow="Einblicke"
+          title="Einblicke aus echten Projekten."
+          description="Keine großen Versprechen, sondern Ausschnitte aus meiner Arbeit. Anonymisiert, aber echt. Zum Vergrößern anklicken."
         />
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -96,12 +88,9 @@ export function Results() {
                   <span className="text-sm font-medium text-accent-strong">
                     {result.category}
                   </span>
-                  <div>
-                    <p className="text-2xl font-semibold tracking-tight text-ink">
-                      {result.stat}
-                    </p>
-                    <p className="text-sm text-muted">{result.statDetail}</p>
-                  </div>
+                  <p className="text-lg font-semibold leading-snug tracking-tight text-ink">
+                    {result.title}
+                  </p>
                   <p className="text-sm leading-relaxed text-muted">
                     {result.description}
                   </p>
@@ -112,20 +101,14 @@ export function Results() {
         </div>
       </Container>
 
-      <AnimatePresence>
-        {openIndex !== null && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+      {openIndex !== null && (
+          <div
+            role="dialog"
+            aria-modal="true"
             onClick={() => setOpenIndex(null)}
             className="fixed inset-0 z-[60] flex items-center justify-center bg-navy-950/90 p-6 backdrop-blur-sm"
           >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.96 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.96 }}
-              transition={{ duration: 0.2 }}
+            <div
               onClick={(e) => e.stopPropagation()}
               className="relative flex max-h-[85vh] w-full max-w-2xl flex-col overflow-hidden rounded-2xl border border-line-strong bg-navy-900"
             >
@@ -150,17 +133,15 @@ export function Results() {
                   {RESULTS[openIndex].category}
                 </span>
                 <p className="text-2xl font-semibold tracking-tight text-ink">
-                  {RESULTS[openIndex].stat}
+                  {RESULTS[openIndex].title}
                 </p>
-                <p className="text-sm text-muted">{RESULTS[openIndex].statDetail}</p>
                 <p className="mt-2 text-sm leading-relaxed text-muted">
                   {RESULTS[openIndex].description}
                 </p>
               </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+            </div>
+          </div>
+      )}
     </section>
   );
 }

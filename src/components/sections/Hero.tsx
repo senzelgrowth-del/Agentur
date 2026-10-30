@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 import { Container } from "../ui/Container";
 import { Button } from "../ui/Button";
 import { FadeIn } from "../ui/FadeIn";
@@ -38,9 +38,17 @@ export function Hero() {
             <ArrowRight size={16} />
           </Button>
           <Button href="#ergebnisse" variant="secondary">
-            Ergebnisse ansehen
+            Einblicke ansehen
           </Button>
         </FadeIn>
+        <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-muted-strong">
+          {["Kostenloses Erstgespräch", "Persönlicher Ansprechpartner", "Monatliches Reporting"].map((item) => (
+            <li key={item} className="flex items-center gap-2">
+              <Check size={15} className="text-teal" />
+              {item}
+            </li>
+          ))}
+        </ul>
       </Container>
     </section>
   );

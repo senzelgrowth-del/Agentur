@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/sections/Hero";
 import { Services } from "@/components/sections/Services";
 import { VideoShowcase } from "@/components/sections/VideoShowcase";
+import { References } from "@/components/sections/References";
 import { Results } from "@/components/sections/Results";
 import { Pricing } from "@/components/sections/Pricing";
 import { About } from "@/components/sections/About";
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <VideoShowcase />
         <Services />
+        <References />
         <Results />
         <Pricing />
         <About />
