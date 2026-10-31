@@ -1,57 +1,51 @@
-import { Search, HeartHandshake, Megaphone, Users } from "lucide-react";
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
 
-const REASONS = [
-  {
-    icon: Search,
-    title: "Kunden schauen dich an, bevor sie anfragen",
-    description:
-      "Bevor jemand anruft oder bucht, wird gegoogelt und auf Instagram nachgesehen. Wer dort nichts findet, fragt beim Nächsten an.",
-  },
-  {
-    icon: HeartHandshake,
-    title: "Vertrauen entsteht vor dem ersten Gespräch",
-    description:
-      "In Kurzvideos sehen Interessenten, wer du bist und wie du arbeitest. Das erste Gespräch beginnt dann nicht bei null.",
-  },
-  {
-    icon: Megaphone,
-    title: "Reichweite ohne großes Werbebudget",
-    description:
-      "Kurzvideos werden auch Menschen gezeigt, die dir noch nicht folgen. Kein anderes Format bringt dich so günstig zu neuen Leuten.",
-  },
-  {
-    icon: Users,
-    title: "Deine Mitbewerber sind schon da",
-    description:
-      "Wer heute nicht sichtbar ist, überlässt die Aufmerksamkeit anderen. Auch dann, wenn er eigentlich besser ist.",
-  },
+const JOURNEY = [
+  "Jemand braucht genau das, was du anbietest.",
+  "Er googelt deinen Namen und schaut auf Instagram vorbei.",
+  "Er sieht, wer du bist und wie du arbeitest, bevor er dich je gesprochen hat.",
 ];
 
 export function WhyNow() {
   return (
-    <section id="warum" className="py-16 lg:py-20">
-      <Container className="flex flex-col gap-10">
-        <SectionHeading
-          eyebrow="Warum jetzt"
-          title="Ohne Social Media geht es heute nicht mehr."
-          description="Empfehlungen und ein guter Ruf bleiben wichtig. Aber die Entscheidung, ob jemand anfragt, fällt immer öfter online."
-        />
+    <section id="warum" className="py-16 lg:py-24">
+      <Container className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:items-center">
+        <div className="flex flex-col gap-6">
+          <SectionHeading
+            align="left"
+            eyebrow="Warum jetzt"
+            title="Die Entscheidung fällt, bevor du davon erfährst."
+            description="Empfehlungen und ein guter Ruf bleiben wichtig. Aber ob jemand wirklich anfragt, entscheidet sich heute meist online, in wenigen Sekunden."
+          />
+          <p className="max-w-md text-sm leading-relaxed text-muted">
+            Dazu kommt: Kurzvideos werden auch Menschen gezeigt, die dich noch nicht kennen.
+            Kein anderes Format bringt dich so günstig zu neuen Kunden.
+          </p>
+        </div>
 
-        <ul className="grid gap-4 sm:grid-cols-2">
-          {REASONS.map((r) => (
-            <li key={r.title} className="flex gap-4 rounded-2xl border border-line bg-navy-900/60 p-6">
-              <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-line-strong bg-navy-800 text-accent-strong">
-                <r.icon size={18} />
-              </span>
-              <div className="flex flex-col gap-1.5">
-                <h3 className="text-base font-semibold text-ink">{r.title}</h3>
-                <p className="text-sm leading-relaxed text-muted">{r.description}</p>
-              </div>
+        <ol className="relative flex flex-col gap-8 border-l border-line-strong pl-8">
+          {JOURNEY.map((step, i) => (
+            <li key={step} className="relative">
+              <span className="absolute -left-[2.35rem] top-1 h-3 w-3 rounded-full border border-line-strong bg-navy-800" />
+              <span className="text-xs font-medium text-muted">Schritt {i + 1}</span>
+              <p className="mt-1 text-lg leading-snug text-ink">{step}</p>
             </li>
           ))}
-        </ul>
+
+          <li className="relative">
+            <span className="absolute -left-[2.35rem] top-1 h-3 w-3 rounded-full bg-teal shadow-[0_0_14px_rgba(94,234,212,0.7)]" />
+            <span className="text-xs font-medium text-muted">Dann gibt es zwei Möglichkeiten</span>
+            <div className="mt-3 grid gap-3 sm:grid-cols-2">
+              <p className="rounded-2xl border border-teal/40 bg-teal/5 p-4 text-base leading-snug text-ink">
+                Er findet dich, fasst Vertrauen und <span className="text-teal">fragt bei dir an.</span>
+              </p>
+              <p className="rounded-2xl border border-line p-4 text-base leading-snug text-muted">
+                Er findet nichts und fragt beim Nächsten an. Auch wenn du eigentlich besser bist.
+              </p>
+            </div>
+          </li>
+        </ol>
       </Container>
     </section>
   );
