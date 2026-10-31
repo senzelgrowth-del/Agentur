@@ -21,7 +21,7 @@ export function About() {
         <div className="flex flex-col gap-6">
           <span className="text-sm font-medium tracking-wide text-accent-strong uppercase">Über mich</span>
           <h2 className="text-balance text-3xl font-semibold leading-[1.15] tracking-tight text-ink sm:text-4xl">
-            Du arbeitest direkt mit <span className="text-[#163a6b]">mir</span> zusammen.
+            Du arbeitest direkt mit <span className="accent-font text-[#163a6b]">mir</span> zusammen.
           </h2>
           <p className="text-lg leading-relaxed text-muted">
             Ich bin Celvin. Content mache ich seit über fünf Jahren. Ich

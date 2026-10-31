@@ -18,9 +18,9 @@ export function CaseTeaser() {
             <figure className="mx-auto flex max-w-3xl flex-col items-center gap-8 text-center">
               <blockquote className="text-balance text-2xl leading-snug text-muted-strong sm:text-[2rem] sm:leading-snug">
                 „Ich muss wirklich immer wieder sagen: Es macht{" "}
-                <span className="font-semibold text-ink">richtig Spaß</span>, mit Dir
+                <span className="accent-font text-ink">richtig Spaß</span>, mit Dir
                 zusammenzuarbeiten. […] Vielen Dank für die{" "}
-                <span className="font-semibold text-ink">großartige Zusammenarbeit</span>.“
+                <span className="accent-font text-ink">großartige Zusammenarbeit</span>.“
               </blockquote>
               <figcaption className="flex items-center gap-4">
                 <span className="flex h-12 w-12 items-center justify-center rounded-full border border-line-strong bg-white/5 text-lg font-semibold text-ink">

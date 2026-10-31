@@ -19,7 +19,7 @@ export function Hero() {
           </span>
           <h1 className="text-balance text-4xl font-semibold leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-6xl">
             Content und Werbeanzeigen, die{" "}
-            <span className="text-[#163a6b]">Anfragen bringen.</span>
+            <span className="accent-font text-[#163a6b]">Anfragen bringen.</span>
           </h1>
           <p className="max-w-xl text-balance text-lg leading-relaxed text-muted">
             Für Selbstständige und kleine Unternehmen: Ich erstelle deine Reels und Posts und sorge mit

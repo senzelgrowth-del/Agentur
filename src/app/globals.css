@@ -96,3 +96,11 @@ body {
 body.theme-light {
   background: #ffffff;
 }
+
+/* Highlight word in headlines and quotes */
+.accent-font {
+  font-family: var(--font-accent), Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
