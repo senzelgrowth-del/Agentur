@@ -4,7 +4,7 @@ import { Container } from "../ui/Container";
 import { Button } from "../ui/Button";
 import { FadeIn } from "../ui/FadeIn";
 import { GlowOrbs } from "../ui/GlowOrbs";
-import { CALENDLY_URL } from "@/lib/content";
+import { CALENDLY_URL, PROOF } from "@/lib/content";
 
 export function Hero() {
   return (
@@ -47,13 +47,20 @@ export function Hero() {
               {item}
             </li>
           ))}
-          <li>
-            <Link href="/referenzen/starshine-emotions" className="flex items-center gap-2 font-medium text-ink underline-offset-4 hover:underline">
-              <Check size={15} className="text-teal" />
-              500+ Leads für Starshine Emotions
-            </Link>
-          </li>
         </ul>
+
+        <dl className="mt-4 grid w-full max-w-3xl grid-cols-3 divide-x divide-line rounded-2xl border border-line bg-white/70 py-5 soft-shadow">
+          {PROOF.map((p) => (
+            <div key={p.label} className="flex flex-col items-center gap-1 px-2">
+              <dt className="sr-only">{p.label}</dt>
+              <dd className="whitespace-nowrap text-xl font-semibold tracking-tight text-ink sm:text-4xl">{p.value}</dd>
+              <dd className="text-center text-xs leading-snug text-muted sm:text-sm">{p.label}</dd>
+            </div>
+          ))}
+        </dl>
+        <Link href="/referenzen/starshine-emotions" className="-mt-4 inline-flex items-center gap-1.5 text-sm text-muted underline-offset-4 hover:text-ink hover:underline">
+          Wie die 500+ Leads entstanden sind <ArrowRight size={14} />
+        </Link>
       </Container>
     </section>
   );

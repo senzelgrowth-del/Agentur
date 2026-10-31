@@ -4,7 +4,7 @@ import { Hero } from "@/components/sections/Hero";
 import { Offer } from "@/components/sections/Offer";
 import { CaseTeaser } from "@/components/sections/CaseTeaser";
 import { WhyNow } from "@/components/sections/WhyNow";
-import { Services } from "@/components/sections/Services";
+import { About } from "@/components/sections/About";
 import { VideoShowcase } from "@/components/sections/VideoShowcase";
 import { Portfolio } from "@/components/sections/Portfolio";
 import { Pricing } from "@/components/sections/Pricing";
@@ -39,11 +39,11 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <VideoShowcase />
+        <WhyNow />
         <Offer />
         <CaseTeaser />
-        <WhyNow />
-        <Services />
         <Portfolio />
+        <About />
         <Pricing />
         <Faq />
         <FinalCta />

@@ -54,7 +54,7 @@ const PACKAGES = [
 
 export function Pricing() {
   return (
-    <section id="pakete" className="relative overflow-hidden py-20 lg:py-28">
+    <section id="pakete" className="theme-light relative overflow-hidden py-20 lg:py-28">
       <GlowOrbs preset="pricing" />
       <Container className="relative flex flex-col gap-14">
         <SectionHeading

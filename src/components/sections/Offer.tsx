@@ -32,7 +32,7 @@ const SERVICES = [
 
 export function Offer() {
   return (
-    <section id="leistungen" className="theme-light py-20 lg:py-28">
+    <section id="leistungen" className="py-20 lg:py-28">
       <Container className="flex flex-col gap-12">
         <SectionHeading
           eyebrow="Leistungen"
