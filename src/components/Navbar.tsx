@@ -29,15 +29,9 @@ export function Navbar() {
     >
       <Container className="flex h-18 items-center justify-between py-4">
         <Link href="#top" className="flex items-center gap-2.5">
-          <Image
-            src="/logo.jpg"
-            alt="SenzelGrowth Logo"
-            width={32}
-            height={32}
-            className="rounded-lg"
-          />
+          <Image src="/logo-sg.png" alt="SenzelGrowth Logo" width={36} height={23} priority />
           <span className="text-lg font-semibold tracking-tight text-ink">
-            Senzel<span className="text-accent-strong">Growth</span>
+            SenzelGrowth
           </span>
         </Link>
 
@@ -55,7 +49,7 @@ export function Navbar() {
 
         <div className="hidden md:block">
           <Button href={CALENDLY_URL} external className="px-5 py-2.5 text-sm">
-            Strategiegespräch
+            Erstgespräch buchen
           </Button>
         </div>
 
@@ -87,7 +81,7 @@ export function Navbar() {
               external
               className="mt-3 w-full"
             >
-              Strategiegespräch buchen
+              Erstgespräch buchen
             </Button>
           </Container>
         </div>

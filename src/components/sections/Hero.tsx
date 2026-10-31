@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 import { Container } from "../ui/Container";
 import { Button } from "../ui/Button";
 import { FadeIn } from "../ui/FadeIn";
@@ -12,35 +12,37 @@ export function Hero() {
       <GlowOrbs preset="hero" />
 
       <Container className="relative flex flex-col items-center gap-8 text-center">
-        <FadeIn>
-          <span className="inline-flex items-center rounded-full border border-line-strong px-4 py-1.5 text-sm text-muted-strong">
-            Content & Marketing für lokale Unternehmen und Selbständige
-          </span>
-        </FadeIn>
-
         <FadeIn delay={0.05}>
           <h1 className="text-balance max-w-3xl text-4xl font-semibold leading-[1.1] tracking-tight text-ink sm:text-5xl lg:text-6xl">
-            Content und Marketing, das dir neue Kunden bringt.
+            Verlässlicher Content, der Anfragen bringt.
           </h1>
         </FadeIn>
 
         <FadeIn delay={0.1}>
           <p className="max-w-xl text-balance text-lg leading-relaxed text-muted">
-            Organisch oder bezahlt, kurze Clips oder lange Videos: Ich baue
-            Content und Kampagnen, die zu deinem Unternehmen passen.
-            KI-Automatisierung kommt dazu, wo sie wirklich Zeit spart.
+            Ich übernehme deine Kurzvideos und Posts von der Idee bis zur
+            Veröffentlichung und richte alles darauf aus, dass Interessenten bei
+            dir anfragen. Persönlich, transparent, ohne Agentur-Apparat.
           </p>
         </FadeIn>
 
         <FadeIn delay={0.15} className="flex flex-col gap-4 sm:flex-row">
           <Button href={CALENDLY_URL} external>
-            Kostenloses Strategiegespräch
+            Kostenloses Erstgespräch
             <ArrowRight size={16} />
           </Button>
-          <Button href="#ergebnisse" variant="secondary">
-            Ergebnisse ansehen
+          <Button href="#portfolio" variant="secondary">
+            Arbeiten ansehen
           </Button>
         </FadeIn>
+        <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-muted-strong">
+          {["Ein fester Ansprechpartner", "Monatlich ehrliche Auswertung", "Kennenlernen kostenlos & unverbindlich"].map((item) => (
+            <li key={item} className="flex items-center gap-2">
+              <Check size={15} className="text-teal" />
+              {item}
+            </li>
+          ))}
+        </ul>
       </Container>
     </section>
   );

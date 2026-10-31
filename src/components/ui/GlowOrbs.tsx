@@ -1,7 +1,4 @@
-"use client";
-
-import { motion } from "framer-motion";
-
+// Static, GPU-friendly background glow: plain radial gradients, no blur filter, no animation.
 type Orb = {
   color: string;
   size: number;
@@ -9,62 +6,41 @@ type Orb = {
   bottom?: string;
   left?: string;
   right?: string;
-  duration: number;
-  delay?: number;
 };
-
-function Orb({ color, size, top, bottom, left, right, duration, delay = 0 }: Orb) {
-  return (
-    <motion.div
-      className="pointer-events-none absolute rounded-full blur-[100px]"
-      style={{
-        width: size,
-        height: size,
-        top,
-        bottom,
-        left,
-        right,
-        background: color,
-      }}
-      animate={{
-        x: [0, 40, -20, 0],
-        y: [0, -30, 20, 0],
-        scale: [1, 1.15, 0.95, 1],
-        opacity: [0.25, 0.4, 0.2, 0.25],
-      }}
-      transition={{
-        duration,
-        delay,
-        repeat: Infinity,
-        ease: "easeInOut",
-      }}
-    />
-  );
-}
 
 const PRESETS: Record<string, Orb[]> = {
   hero: [
-    { color: "var(--accent)", size: 480, top: "-8rem", left: "50%", duration: 18 },
-    { color: "var(--violet)", size: 340, top: "2rem", right: "8%", duration: 22, delay: 2 },
+    { color: "110,168,254", size: 900, top: "-28rem", left: "calc(50% - 450px)" },
+    { color: "167,139,250", size: 620, top: "-6rem", right: "-6rem" },
   ],
-  services: [
-    { color: "var(--teal)", size: 320, top: "-4rem", right: "10%", duration: 20 },
-  ],
+  services: [{ color: "94,234,212", size: 620, top: "-14rem", right: "0%" }],
   pricing: [
-    { color: "var(--violet)", size: 360, top: "-2rem", left: "8%", duration: 24 },
-    { color: "var(--accent)", size: 280, bottom: "-4rem", right: "12%", duration: 19, delay: 1.5 },
+    { color: "167,139,250", size: 680, top: "-12rem", left: "-6rem" },
+    { color: "110,168,254", size: 560, bottom: "-14rem", right: "0%" },
   ],
   cta: [
-    { color: "var(--accent)", size: 320, top: "-6rem", left: "50%", duration: 16 },
-    { color: "var(--violet)", size: 220, bottom: "-4rem", left: "20%", duration: 21, delay: 1 },
+    { color: "110,168,254", size: 640, top: "-20rem", left: "calc(50% - 320px)" },
+    { color: "167,139,250", size: 420, bottom: "-14rem", left: "10%" },
   ],
 };
 
 export function GlowOrbs({ preset }: { preset: keyof typeof PRESETS }) {
   return (
-    <div className="pointer-events-none absolute inset-0 overflow-hidden">
+    <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
       {PRESETS[preset].map((orb, i) => (
-        <Orb key={i} {...orb} />
+        <div
+          key={i}
+          className="absolute rounded-full"
+          style={{
+            width: orb.size,
+            height: orb.size,
+            top: orb.top,
+            bottom: orb.bottom,
+            left: orb.left,
+            right: orb.right,
+            background: `radial-gradient(circle, rgba(${orb.color},0.22) 0%, rgba(${orb.color},0) 65%)`,
+          }}
+        />
       ))}
     </div>
   );

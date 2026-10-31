@@ -1,11 +1,11 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/sections/Hero";
+import { WhyNow } from "@/components/sections/WhyNow";
 import { Services } from "@/components/sections/Services";
 import { VideoShowcase } from "@/components/sections/VideoShowcase";
-import { Results } from "@/components/sections/Results";
+import { Portfolio } from "@/components/sections/Portfolio";
 import { Pricing } from "@/components/sections/Pricing";
-import { About } from "@/components/sections/About";
 import { Faq } from "@/components/sections/Faq";
 import { FinalCta } from "@/components/sections/FinalCta";
 
@@ -16,10 +16,10 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <VideoShowcase />
+        <WhyNow />
         <Services />
-        <Results />
+        <Portfolio />
         <Pricing />
-        <About />
         <Faq />
         <FinalCta />
       </main>

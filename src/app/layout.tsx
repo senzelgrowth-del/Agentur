@@ -12,13 +12,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://senzelgrowth.de";
+const siteUrl = "https://senzelgrowth.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "SenzelGrowth — Content & Marketing für lokale Unternehmen",
+  title: "SenzelGrowth — Verlässlicher Content, der Anfragen bringt",
   description:
-    "Content und Marketing für lokale Unternehmen und Selbständige. KI-Automatisierung gibt es als Extra dazu.",
+    "Kurzvideos und Posts für Selbständige und kleine Unternehmen, persönlich betreut und auf Anfragen ausgerichtet.",
   keywords: [
     "Content Marketing",
     "Performance Marketing",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Celvin Senzel" }],
   openGraph: {
-    title: "SenzelGrowth — Content & Marketing für lokale Unternehmen",
+    title: "SenzelGrowth — Verlässlicher Content, der Anfragen bringt",
     description:
-      "Content und Marketing für lokale Unternehmen und Selbständige.",
+      "Kurzvideos und Posts, persönlich betreut und auf Anfragen ausgerichtet.",
     url: siteUrl,
     siteName: "SenzelGrowth",
     locale: "de_DE",
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SenzelGrowth — Content & Marketing für lokale Unternehmen",
+    title: "SenzelGrowth — Verlässlicher Content, der Anfragen bringt",
     description:
-      "Content und Marketing für lokale Unternehmen und Selbständige.",
+      "Kurzvideos und Posts, persönlich betreut und auf Anfragen ausgerichtet.",
   },
 };
 
@@ -55,7 +55,7 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-navy-950 text-ink font-sans">
+      <body className="theme-light min-h-full flex flex-col bg-white text-ink font-sans">
         {children}
       </body>
     </html>
