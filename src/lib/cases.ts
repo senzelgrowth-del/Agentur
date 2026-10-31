@@ -6,7 +6,7 @@ export const STARSHINE = {
   location: "Erfurt",
   // 500+ is the total number of leads generated so far (not cumulative with older figures).
   stats: [
-    { value: "500+", label: "Leads insgesamt" },
+    { value: "500+", label: "Leads für Starshine Emotions" },
     // Weighted average of the documented Meta campaigns: 464,92 € spend / 62 leads.
     { value: "7,50 €", label: "Ø Kosten pro Lead in den Meta-Kampagnen" },
   ],

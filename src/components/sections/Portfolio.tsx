@@ -91,7 +91,7 @@ export function Portfolio() {
         </div>
 
         <div className="flex flex-col gap-4">
-          <h3 className="text-center text-sm font-medium tracking-wide text-accent-strong uppercase">Kundenfeedback, ungeschönt</h3>
+          <h3 className="text-center text-sm font-medium tracking-wide text-accent-strong uppercase">Kundenfeedback</h3>
           <div className="grid gap-4 sm:grid-cols-2">
             {FEEDBACK.map((f) => (
               <figure key={f.image} className="soft-shadow flex flex-col overflow-hidden rounded-2xl border border-line bg-navy-900">

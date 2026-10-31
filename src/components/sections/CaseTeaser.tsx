@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Container } from "../ui/Container";
-import { PROOF } from "@/lib/content";
 import { STARSHINE } from "@/lib/cases";
 
 export function CaseTeaser() {
@@ -19,9 +18,9 @@ export function CaseTeaser() {
             <figure className="mx-auto flex max-w-3xl flex-col items-center gap-8 text-center">
               <blockquote className="text-balance text-2xl leading-snug text-muted-strong sm:text-[2rem] sm:leading-snug">
                 „Ich muss wirklich immer wieder sagen: Es macht{" "}
-                <span className="accent-serif text-[1.12em] text-ink">richtig Spaß</span>, mit Dir
+                <span className="font-semibold text-ink">richtig Spaß</span>, mit Dir
                 zusammenzuarbeiten. […] Vielen Dank für die{" "}
-                <span className="accent-serif text-[1.12em] text-ink">großartige Zusammenarbeit</span>.“
+                <span className="font-semibold text-ink">großartige Zusammenarbeit</span>.“
               </blockquote>
               <figcaption className="flex items-center gap-4">
                 <span className="flex h-12 w-12 items-center justify-center rounded-full border border-line-strong bg-white/5 text-lg font-semibold text-ink">
@@ -34,8 +33,8 @@ export function CaseTeaser() {
               </figcaption>
             </figure>
 
-            <dl className="grid grid-cols-2 gap-x-6 gap-y-10 border-t border-line pt-12 lg:grid-cols-4">
-              {PROOF.map((p) => (
+            <dl className="mx-auto grid w-full max-w-2xl grid-cols-2 gap-x-6 gap-y-10 border-t border-line pt-12">
+              {STARSHINE.stats.map((p) => (
                 <div key={p.label} className="flex flex-col items-center gap-2 text-center">
                   <dt className="sr-only">{p.label}</dt>
                   <dd className="bg-gradient-to-b from-white to-[#8fa3c7] bg-clip-text text-4xl font-semibold tracking-tight text-transparent sm:text-5xl">
