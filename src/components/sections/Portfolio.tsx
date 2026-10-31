@@ -33,13 +33,14 @@ const PROJECTS: Project[] = [
   },
 ];
 
+// Only anonymised or neutral material: no client names, no recognisable campaigns.
 const MORE = [
-  { image: "/portfolio/starshine-anzeige-olsenbande.jpg", caption: "Anzeige: Olsenbande-Fanreise", client: "Starshine Emotions" },
-  { image: "/portfolio/starshine-anzeige-kopenhagen.jpg", caption: "Anzeige: Kopenhagen 2027", client: "Starshine Emotions" },
-  { image: "/portfolio/starshine-anzeige-danzig.jpg", caption: "Anzeige: Silvester in Danzig", client: "Starshine Emotions" },
-  { image: "/results/youtube-revenue.jpg", caption: "YouTube-Shorts-Kanal, von null aufgebaut", client: "Eigenes Projekt" },
+  { image: "/portfolio/video-auswertung.jpg", caption: "Auswertung eines Kurzvideos", client: "Content" },
+  { image: "/portfolio/kampagnen-verlauf.jpg", caption: "Verlauf einer Werbekampagne", client: "Kampagnen" },
+  { image: "/portfolio/meta-kampagnen.jpg", caption: "Meta-Kampagnen im Vergleich", client: "Kampagnen" },
+  { image: "/portfolio/lead-kampagne.jpg", caption: "Lead-Kampagne, anonymisiert", client: "Kampagnen" },
+  { image: "/portfolio/google-ads-hinweis.jpg", caption: "Hinweis von Google zu einer Kampagne", client: "Kampagnen" },
   { image: "/results/ki-chat-automatisierung.png", caption: "Chatbot für Kundenanfragen", client: "Extra" },
-  { image: "/portfolio/google-ads-hinweis.jpg", caption: "Google-Ads-Kampagne, Hinweis von Google", client: "Kampagnenbetreuung" },
 ];
 
 const QUOTE = {
