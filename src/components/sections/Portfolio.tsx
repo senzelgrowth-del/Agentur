@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import Image from "next/image";
-import { Play } from "lucide-react";
+import { ChevronDown, Play } from "lucide-react";
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
 
@@ -34,9 +34,12 @@ const PROJECTS: Project[] = [
 ];
 
 const MORE = [
-  { image: "/results/youtube-revenue.jpg", caption: "YouTube-Shorts-Kanal, von null aufgebaut" },
-  { image: "/results/meta-ads-performance.png", caption: "Meta-Kampagnen im Variantentest" },
-  { image: "/results/ki-chat-automatisierung.png", caption: "Chatbot für Kundenanfragen" },
+  { image: "/results/youtube-revenue.jpg", caption: "YouTube-Shorts-Kanal, von null aufgebaut", fit: "contain" },
+  { image: "/results/meta-ads-performance.png", caption: "Meta-Kampagnen im Variantentest", fit: "contain" },
+  { image: "/results/ki-chat-automatisierung.png", caption: "Chatbot für Kundenanfragen", fit: "contain" },
+  { image: "/portfolio/yourmindz-post1-familie.jpg", caption: "Post-Design für YourMindz Health", fit: "cover" },
+  { image: "/portfolio/yourmindz-post2-paar.jpg", caption: "Post-Design für YourMindz Health", fit: "cover" },
+  { image: "/portfolio/yourmindz-post3-kennenlernen.jpg", caption: "Post-Design für YourMindz Health", fit: "cover" },
 ];
 
 function Reel({ src, poster, label }: { src: string; poster: string; label: string }) {
@@ -72,6 +75,7 @@ function Reel({ src, poster, label }: { src: string; poster: string; label: stri
 }
 
 export function Portfolio() {
+  const [showMore, setShowMore] = useState(false);
   return (
     <section id="portfolio" className="py-20 lg:py-28">
       <Container className="flex flex-col gap-10">
@@ -102,16 +106,35 @@ export function Portfolio() {
           ))}
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-3">
-          {MORE.map((m) => (
-            <figure key={m.caption} className="overflow-hidden rounded-2xl border border-line bg-navy-900/60">
-              <div className="relative aspect-[16/10] w-full bg-navy-950">
-                <Image src={m.image} alt={m.caption} fill sizes="(min-width: 640px) 30vw, 90vw" className="object-contain p-3" />
-              </div>
-              <figcaption className="border-t border-line px-5 py-4 text-sm text-muted-strong">{m.caption}</figcaption>
-            </figure>
-          ))}
+        <div className="flex justify-center">
+          <button
+            onClick={() => setShowMore((v) => !v)}
+            aria-expanded={showMore}
+            className="inline-flex items-center gap-2 rounded-full border border-line-strong px-6 py-3 text-sm font-medium text-ink transition-colors hover:bg-white/5"
+          >
+            {showMore ? "Weniger anzeigen" : "Weitere Projekte anzeigen"}
+            <ChevronDown size={16} className={`transition-transform ${showMore ? "rotate-180" : ""}`} />
+          </button>
         </div>
+
+        {showMore && (
+          <div className="grid gap-4 sm:grid-cols-3">
+            {MORE.map((m) => (
+              <figure key={m.image} className="overflow-hidden rounded-2xl border border-line bg-navy-900/60">
+                <div className="relative aspect-[16/10] w-full bg-navy-950">
+                  <Image
+                    src={m.image}
+                    alt={m.caption}
+                    fill
+                    sizes="(min-width: 640px) 30vw, 90vw"
+                    className={m.fit === "cover" ? "object-cover object-top" : "object-contain p-3"}
+                  />
+                </div>
+                <figcaption className="border-t border-line px-5 py-4 text-sm text-muted-strong">{m.caption}</figcaption>
+              </figure>
+            ))}
+          </div>
+        )}
       </Container>
     </section>
   );
