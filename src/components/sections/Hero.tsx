@@ -12,23 +12,17 @@ export function Hero() {
       <GlowOrbs preset="hero" />
 
       <Container className="relative flex flex-col items-center gap-8 text-center">
-        <FadeIn>
-          <span className="inline-flex items-center rounded-full border border-line-strong px-4 py-1.5 text-sm text-muted-strong">
-            Für Selbständige & Dienstleister, die über ein Erstgespräch verkaufen
-          </span>
-        </FadeIn>
-
         <FadeIn delay={0.05}>
           <h1 className="text-balance max-w-3xl text-4xl font-semibold leading-[1.1] tracking-tight text-ink sm:text-5xl lg:text-6xl">
-            Aus Reichweite werden gebuchte Erstgespräche.
+            Verlässlicher Content, der Anfragen bringt.
           </h1>
         </FadeIn>
 
         <FadeIn delay={0.1}>
           <p className="max-w-xl text-balance text-lg leading-relaxed text-muted">
-            Ich verbinde Kurzvideos mit einem Anfrage-System, das Interessenten
-            automatisch bis zum Termin führt. Alles aus einer Hand, ohne dass du
-            Technik, Agentur und Freelancer koordinieren musst.
+            Ich übernehme deine Kurzvideos und Posts von der Idee bis zur
+            Veröffentlichung und richte alles darauf aus, dass Interessenten bei
+            dir anfragen. Persönlich, transparent, ohne Agentur-Apparat.
           </p>
         </FadeIn>
 
@@ -38,11 +32,11 @@ export function Hero() {
             <ArrowRight size={16} />
           </Button>
           <Button href="#portfolio" variant="secondary">
-            Portfolio ansehen
+            Arbeiten ansehen
           </Button>
         </FadeIn>
         <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-muted-strong">
-          {["Alles aus einer Hand", "Persönlicher Ansprechpartner", "Monatliches Reporting"].map((item) => (
+          {["Ein fester Ansprechpartner", "Monatlich ehrliche Auswertung", "Kennenlernen kostenlos & unverbindlich"].map((item) => (
             <li key={item} className="flex items-center gap-2">
               <Check size={15} className="text-teal" />
               {item}

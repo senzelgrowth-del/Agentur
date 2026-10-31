@@ -21,7 +21,7 @@ export function VideoShowcase() {
         <SectionHeading
           eyebrow="Vorstellung"
           title="Kurz zu mir, im Video."
-          description="Wer ich bin, wie ich arbeite und warum Reichweite allein noch keine Kunden bringt."
+          description="Wer ich bin und wie ich arbeite."
         />
 
         <div className="relative mx-auto aspect-video w-full max-w-4xl overflow-hidden rounded-3xl border border-line-strong bg-navy-900 shadow-[0_30px_80px_-30px_rgba(0,0,0,0.6)]">

@@ -16,9 +16,9 @@ const siteUrl = "https://senzelgrowth.de";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "SenzelGrowth — Aus Reichweite werden gebuchte Erstgespräche",
+  title: "SenzelGrowth — Verlässlicher Content, der Anfragen bringt",
   description:
-    "Kurzvideos und ein automatisiertes Anfrage-System aus einer Hand, für Selbständige und Dienstleister, die über ein Erstgespräch verkaufen.",
+    "Kurzvideos und Posts für Selbständige und kleine Unternehmen, persönlich betreut und auf Anfragen ausgerichtet.",
   keywords: [
     "Content Marketing",
     "Performance Marketing",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Celvin Senzel" }],
   openGraph: {
-    title: "SenzelGrowth — Aus Reichweite werden gebuchte Erstgespräche",
+    title: "SenzelGrowth — Verlässlicher Content, der Anfragen bringt",
     description:
-      "Kurzvideos und ein Anfrage-System aus einer Hand, für Selbständige und Dienstleister.",
+      "Kurzvideos und Posts, persönlich betreut und auf Anfragen ausgerichtet.",
     url: siteUrl,
     siteName: "SenzelGrowth",
     locale: "de_DE",
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SenzelGrowth — Aus Reichweite werden gebuchte Erstgespräche",
+    title: "SenzelGrowth — Verlässlicher Content, der Anfragen bringt",
     description:
-      "Kurzvideos und ein Anfrage-System aus einer Hand, für Selbständige und Dienstleister.",
+      "Kurzvideos und Posts, persönlich betreut und auf Anfragen ausgerichtet.",
   },
 };
 

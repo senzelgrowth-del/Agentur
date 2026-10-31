@@ -27,7 +27,6 @@ const PACKAGES = [
     features: [
       "Erweiterter Content (Videos, Posts, Stories, Reels)",
       "Community Management",
-      "DM-Automation Setup",
       "Performance-Analyse & Reporting",
       "Bis zu 2 Kanäle",
       "Wöchentlicher Check-in Call",
@@ -41,7 +40,7 @@ const PACKAGES = [
     features: [
       "Full-Service Content Management",
       "Ads Management (Meta, TikTok)",
-      "Komplette DM-Automation",
+      "Optional: automatische Antworten auf Anfragen",
       "Monatliches Reporting & Strategie-Call",
       "Persönlicher Ansprechpartner",
       "Priorität-Support, Antwort meist unter 2 Stunden",
@@ -73,7 +72,7 @@ export function Pricing() {
               >
                 {pkg.highlight && (
                   <span className="w-fit rounded-full bg-navy-950/5 px-3 py-1 text-xs font-medium text-navy-700">
-                    Beliebteste Wahl
+                    Empfehlung
                   </span>
                 )}
                 <div>

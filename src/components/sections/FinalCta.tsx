@@ -16,8 +16,8 @@ export function FinalCta() {
               Lass uns schauen, ob es passt.
             </h2>
             <p className="max-w-xl text-balance text-lg leading-relaxed text-muted">
-              In einem kostenlosen Gespräch schauen wir, wo dir aktuell Anfragen
-              verloren gehen und ob mein System zu dir passt.
+              Im kostenlosen Erstgespräch bekommst du eine ehrliche Einschätzung,
+              auch wenn das heißt, dass ich nicht der Richtige für dich bin.
             </p>
             <Button href={CALENDLY_URL} external className="mt-2">
               Kostenloses Erstgespräch buchen

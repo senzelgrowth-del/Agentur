@@ -1,64 +1,56 @@
-import { Clapperboard, MessageSquareMore, LineChart, LucideIcon } from "lucide-react";
+import { UserRound, Target, MessageCircleHeart, LucideIcon } from "lucide-react";
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
-import { GlowOrbs } from "../ui/GlowOrbs";
 
-type Step = {
+type Point = {
   icon: LucideIcon;
-  number: string;
   title: string;
   description: string;
 };
 
-const STEPS: Step[] = [
+const POINTS: Point[] = [
   {
-    icon: Clapperboard,
-    number: "01",
-    title: "Kurzvideos, die Vertrauen aufbauen",
+    icon: UserRound,
+    title: "Ein fester Ansprechpartner",
     description:
-      "Reels und Shorts, die zeigen, wer du bist und wie du arbeitest. Interessenten kennen dich, bevor sie anfragen.",
+      "Du sprichst immer mit mir. Ich kenne dein Unternehmen und bin direkt erreichbar, ohne Ticketsystem und Weiterleiten.",
   },
   {
-    icon: MessageSquareMore,
-    number: "02",
-    title: "Ein Anfrage-System, das mitarbeitet",
+    icon: Target,
+    title: "Ziel sind Anfragen, nicht Likes",
     description:
-      "Automatische Antworten per DM und Chat, Vorqualifizierung und direkte Terminbuchung, auch nach Feierabend.",
+      "Jeder Beitrag hat einen klaren nächsten Schritt: anrufen, schreiben oder einen Termin buchen.",
   },
   {
-    icon: LineChart,
-    number: "03",
-    title: "Messen und gezielt verstärken",
+    icon: MessageCircleHeart,
+    title: "Ehrlich, auch wenn es unbequem ist",
     description:
-      "Monatliches Reporting zu Anfragen und Terminen. Läuft es, verstärken wir gezielt mit Meta-Ads.",
+      "Wir schauen jeden Monat gemeinsam auf echte Zahlen. Funktioniert etwas nicht, sage ich es, und wir ändern es.",
   },
 ];
 
 export function Services() {
   return (
-    <section id="system" className="relative overflow-hidden py-16 lg:py-20">
-      <GlowOrbs preset="services" />
-      <Container className="relative flex flex-col gap-10">
-        <SectionHeading
-          eyebrow="Das System"
-          title="Reichweite allein bringt keine Termine."
-          description="Die meisten haben kein Sichtbarkeits-, sondern ein Anfrage-Problem. Deshalb baue ich Content und Anfrage-System zusammen, aus einer Hand."
-        />
+    <section id="arbeitsweise" className="py-16 lg:py-20">
+      <Container className="flex flex-col gap-10">
+        <SectionHeading eyebrow="Arbeitsweise" title="Drei Dinge, auf die du dich verlassen kannst." />
 
-        <ol className="grid gap-4 lg:grid-cols-3">
-          {STEPS.map((step) => (
-            <li key={step.number} className="flex h-full flex-col gap-4 rounded-2xl border border-line bg-navy-900/60 p-6">
-              <div className="flex items-center justify-between">
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-line-strong bg-navy-800 text-accent-strong">
-                  <step.icon size={18} />
-                </span>
-                <span className="text-xs font-semibold text-muted">{step.number}</span>
-              </div>
-              <h3 className="text-lg font-semibold leading-snug text-ink">{step.title}</h3>
-              <p className="text-sm leading-relaxed text-muted">{step.description}</p>
+        <ul className="grid gap-4 lg:grid-cols-3">
+          {POINTS.map((p) => (
+            <li key={p.title} className="flex flex-col gap-3 rounded-2xl border border-line bg-navy-900/60 p-6">
+              <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-line-strong bg-navy-800 text-accent-strong">
+                <p.icon size={18} />
+              </span>
+              <h3 className="text-lg font-semibold text-ink">{p.title}</h3>
+              <p className="text-sm leading-relaxed text-muted">{p.description}</p>
             </li>
           ))}
-        </ol>
+        </ul>
+
+        <p className="text-center text-sm text-muted">
+          Kern meiner Arbeit sind Kurzvideos und Posts. Auf Wunsch kommen Werbeanzeigen oder
+          automatische Antworten auf Anfragen dazu.
+        </p>
       </Container>
     </section>
   );

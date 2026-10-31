@@ -10,7 +10,7 @@ const FAQS = [
   {
     question: "Für wen ist SenzelGrowth geeignet?",
     answer:
-      "Für Selbständige und Dienstleister, deren Kunden über ein Erstgespräch kommen, zum Beispiel Berater, Coaches, Therapeuten oder lokale Dienstleister.",
+      "Für Selbständige und kleine Unternehmen, die über Social Media mehr Anfragen bekommen wollen, zum Beispiel Beraterinnen, Therapeuten, Reisebüros oder lokale Dienstleister.",
   },
   {
     question: "Wie läuft der Einstieg ab?",
@@ -18,9 +18,9 @@ const FAQS = [
       "Wir sprechen erstmal kostenlos und unverbindlich. Danach entscheiden wir gemeinsam, ob's passt.",
   },
   {
-    question: "Kann ich auch nur Content oder nur das Anfrage-System buchen?",
+    question: "Kann ich auch einzelne Leistungen buchen?",
     answer:
-      "Ja, beides funktioniert auch einzeln. Am meisten bringt es kombiniert, das besprechen wir im Gespräch.",
+      "Ja. Die meisten starten mit Kurzvideos und Posts. Werbeanzeigen oder automatische Antworten kommen nur dazu, wenn sie wirklich sinnvoll sind.",
   },
   {
     question: "Wie lange dauert die Umsetzung?",
