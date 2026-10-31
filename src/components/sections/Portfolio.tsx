@@ -72,7 +72,7 @@ function Reel({ src, poster, label }: { src: string; poster: string; label: stri
           aria-label={`Reel für ${label} abspielen`}
           className="group absolute inset-0 flex items-center justify-center"
         >
-          <span className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-white text-navy-950 shadow-[0_8px_30px_rgba(0,0,0,0.4)] transition-transform group-hover:scale-105">
+          <span className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-white text-[#05070d] shadow-[0_8px_30px_rgba(0,0,0,0.4)] transition-transform group-hover:scale-105">
             <Play size={20} fill="currentColor" className="ml-0.5" />
           </span>
         </button>
@@ -84,7 +84,7 @@ function Reel({ src, poster, label }: { src: string; poster: string; label: stri
 export function Portfolio() {
   const [showMore, setShowMore] = useState(false);
   return (
-    <section id="portfolio" className="py-20 lg:py-28">
+    <section id="portfolio" className="theme-light py-20 lg:py-28">
       <Container className="flex flex-col gap-10">
         <SectionHeading eyebrow="Portfolio" title="Aktuelle Kundenprojekte." />
 
@@ -92,7 +92,7 @@ export function Portfolio() {
           {PROJECTS.map((p) => (
             <article
               key={p.name}
-              className="grid gap-6 rounded-3xl border border-line-strong bg-navy-900/60 p-6 sm:grid-cols-[11rem_1fr] sm:items-center"
+              className="soft-shadow grid gap-6 rounded-3xl border border-line bg-navy-900 p-6 sm:grid-cols-[11rem_1fr] sm:items-center"
             >
               {p.reel ? (
                 <Reel src={p.reel.src} poster={p.reel.poster} label={p.name} />
@@ -126,7 +126,7 @@ export function Portfolio() {
           <button
             onClick={() => setShowMore((v) => !v)}
             aria-expanded={showMore}
-            className="inline-flex items-center gap-2 rounded-full border border-line-strong px-6 py-3 text-sm font-medium text-ink transition-colors hover:bg-white/5"
+            className="inline-flex items-center gap-2 rounded-full border border-line-strong bg-white px-6 py-3 text-sm font-medium text-ink transition-colors hover:bg-navy-800"
           >
             {showMore ? "Weniger anzeigen" : "Weitere Projekte anzeigen"}
             <ChevronDown size={16} className={`transition-transform ${showMore ? "rotate-180" : ""}`} />
@@ -136,7 +136,7 @@ export function Portfolio() {
         {showMore && (
           <div className="grid gap-4 sm:grid-cols-3">
             {MORE.map((m) => (
-              <figure key={m.image} className="overflow-hidden rounded-2xl border border-line bg-navy-900/60">
+              <figure key={m.image} className="soft-shadow overflow-hidden rounded-2xl border border-line bg-navy-900">
                 <div className="relative aspect-[4/5] w-full bg-navy-950">
                   <Image src={m.image} alt={m.caption} fill sizes="(min-width: 640px) 30vw, 90vw" className="object-contain" />
                 </div>

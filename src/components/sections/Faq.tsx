@@ -43,7 +43,7 @@ export function Faq() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="py-20 lg:py-28">
+    <section id="faq" className="theme-light py-20 lg:py-28">
       <Container className="flex flex-col gap-14">
         <SectionHeading eyebrow="FAQ" title="Häufige Fragen." />
 
