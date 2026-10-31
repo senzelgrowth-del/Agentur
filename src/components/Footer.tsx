@@ -28,7 +28,7 @@ export function Footer() {
           <span className="flex items-center gap-2.5">
             <Image src="/logo-sg.png" alt="SenzelGrowth Logo" width={33} height={21} />
             <span className="text-lg font-semibold tracking-tight text-ink">
-              Senzel<span className="text-[#163a6b]">Growth</span>
+              SenzelGrowth
             </span>
           </span>
           <a
