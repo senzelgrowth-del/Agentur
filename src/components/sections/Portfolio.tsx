@@ -108,7 +108,7 @@ export function Portfolio() {
           <button
             onClick={() => setShowMore((v) => !v)}
             aria-expanded={showMore}
-            className="inline-flex items-center gap-2 rounded-full border border-line-strong bg-white px-6 py-3 text-sm font-medium text-ink transition-colors hover:bg-navy-800"
+            className="inline-flex items-center gap-2 rounded-xl border border-line-strong bg-white px-6 py-3 text-sm font-medium text-ink transition-colors hover:bg-navy-800"
           >
             {showMore ? "Weniger anzeigen" : "Weitere Projekte anzeigen"}
             <ChevronDown size={16} className={`transition-transform ${showMore ? "rotate-180" : ""}`} />

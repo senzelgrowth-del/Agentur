@@ -48,7 +48,7 @@ export function CaseTeaser() {
             <div className="flex justify-center">
               <Link
                 href={`/referenzen/${STARSHINE.slug}`}
-                className="inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-medium text-navy-950 transition-colors hover:bg-accent-strong"
+                className="inline-flex items-center gap-2 rounded-xl bg-ink px-6 py-3 text-sm font-medium text-navy-950 transition-colors hover:bg-accent-strong"
               >
                 Case Study Starshine Emotions ansehen <ArrowRight size={16} />
               </Link>

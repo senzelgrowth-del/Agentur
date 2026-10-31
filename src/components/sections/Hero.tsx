@@ -37,9 +37,6 @@ export function Hero() {
               sizes="(min-width: 1024px) 28rem, 90vw"
               className="object-cover"
             />
-            <span className="absolute left-4 top-4 rounded-full bg-white/90 px-3.5 py-1.5 text-xs font-medium text-ink backdrop-blur">
-              Dein Ansprechpartner
-            </span>
           </div>
           <figcaption className="px-6 py-5">
             <div>
@@ -54,12 +51,10 @@ export function Hero() {
             href={CALENDLY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-4 rounded-full bg-ink py-2 pl-7 pr-2 text-base font-medium text-white shadow-[0_14px_40px_-14px_rgba(10,14,26,0.6)] transition-colors hover:bg-[#163a6b]"
+            className="group inline-flex items-center gap-3 rounded-xl bg-ink px-7 py-4 text-base font-medium text-white shadow-[0_14px_40px_-14px_rgba(10,14,26,0.6)] transition-colors hover:bg-[#163a6b]"
           >
             Kostenloses Erstgespräch
-            <span className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-white text-ink transition-transform group-hover:translate-x-0.5">
-              <ArrowRight size={18} />
-            </span>
+            <ArrowRight size={18} className="transition-transform group-hover:translate-x-0.5" />
           </a>
           <p className="text-sm text-muted">Kostenlos &amp; 100 % unverbindlich · Termin direkt online wählen</p>
           <dl className="flex gap-10 border-t border-line pt-5">
