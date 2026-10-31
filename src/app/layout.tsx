@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://senzelgrowth.de";
+const siteUrl = "https://senzelgrowth.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
