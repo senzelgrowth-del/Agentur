@@ -9,6 +9,7 @@ import { CALENDLY_URL } from "@/lib/content";
 const PACKAGES = [
   {
     name: "Starter",
+    audience: "Für den Einstieg: ein Kanal, regelmäßig und professionell bespielt.",
     price: "ab 400 €",
     unit: "pro Monat, individuell anpassbar",
     features: [
@@ -22,6 +23,7 @@ const PACKAGES = [
   },
   {
     name: "Growth",
+    audience: "Für mehr Präsenz: zwei Kanäle, Community und wöchentlicher Austausch.",
     price: "ab 700 €",
     unit: "pro Monat, individuell anpassbar",
     features: [
@@ -35,6 +37,7 @@ const PACKAGES = [
   },
   {
     name: "Premium",
+    audience: "Content und Werbeanzeigen komplett aus einer Hand.",
     price: "ab 1.200 €",
     unit: "pro Monat, individuell anpassbar",
     features: [
@@ -91,6 +94,7 @@ export function Pricing() {
                   </p>
                 </div>
 
+                <p className="text-sm leading-relaxed text-muted-strong">{pkg.audience}</p>
                 <ul className="flex flex-1 flex-col gap-3">
                   {pkg.features.map((feature) => (
                     <li

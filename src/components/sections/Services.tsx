@@ -29,6 +29,13 @@ const POINTS: Point[] = [
   },
 ];
 
+const PROCESS = [
+  { title: "Erstgespräch", text: "Kostenlos und unverbindlich. Wir klären, ob es passt." },
+  { title: "Strategie", text: "Ziele, Zielgruppe und ein Plan für Content und Anzeigen." },
+  { title: "Umsetzung", text: "Ich produziere, veröffentliche und betreue die Kampagnen." },
+  { title: "Auswertung", text: "Jeden Monat gemeinsam auf Anfragen und Zahlen schauen." },
+];
+
 export function Services() {
   return (
     <section id="arbeitsweise" className="py-16 lg:py-20">
@@ -47,10 +54,22 @@ export function Services() {
           ))}
         </ul>
 
-        <p className="text-center text-sm text-muted">
-          Kern meiner Arbeit sind Kurzvideos und Posts. Auf Wunsch kommen Werbeanzeigen oder
-          automatische Antworten auf Anfragen dazu.
-        </p>
+        <div className="flex flex-col gap-5">
+          <h3 className="text-center text-sm font-medium tracking-wide text-accent-strong uppercase">So läuft die Zusammenarbeit ab</h3>
+          <ol className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {PROCESS.map((step, i) => (
+              <li key={step.title} className="flex gap-3">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-line-strong text-xs font-semibold text-ink">
+                  {i + 1}
+                </span>
+                <div>
+                  <p className="text-sm font-semibold text-ink">{step.title}</p>
+                  <p className="text-sm leading-snug text-muted">{step.text}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
       </Container>
     </section>
   );

@@ -8,6 +8,7 @@ import { CONTACT_EMAIL } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Impressum — SenzelGrowth",
   description: "Impressum von SenzelGrowth — Celvin Senzel.",
+  alternates: { canonical: "/impressum" },
 };
 
 export default function ImpressumPage() {

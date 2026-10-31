@@ -8,6 +8,7 @@ import { CONTACT_EMAIL } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Datenschutzerklärung — SenzelGrowth",
   description: "Datenschutzerklärung von SenzelGrowth — Celvin Senzel.",
+  alternates: { canonical: "/datenschutz" },
 };
 
 export default function DatenschutzPage() {
@@ -69,25 +70,13 @@ export default function DatenschutzPage() {
           <LegalSection title="4. Externe Dienste">
             <div>
               <h3 className="mb-2 text-sm font-semibold text-muted-strong">
-                Google Fonts
+                Schriftarten
               </h3>
               <p>
-                Diese Seite nutzt zur einheitlichen Darstellung von
-                Schriftarten Google Fonts. Anbieter ist Google LLC, 1600
-                Amphitheatre Parkway, Mountain View, CA 94043, USA. Beim
-                Aufruf der Seite lädt Ihr Browser die benötigten Schriften in
-                Ihren Browser-Cache. Dabei kann Ihre IP-Adresse an
-                Google-Server übertragen werden. Weitere Informationen finden
-                Sie in der Datenschutzerklärung von Google unter{" "}
-                <a
-                  href="https://policies.google.com/privacy"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-accent-strong hover:text-ink"
-                >
-                  policies.google.com/privacy
-                </a>
-                .
+                Die auf dieser Website verwendeten Schriftarten werden lokal von
+                unserem eigenen Server ausgeliefert. Beim Aufruf der Seite
+                findet keine Verbindung zu Servern von Google oder anderen
+                Schriftanbietern statt.
               </p>
             </div>
             <div>

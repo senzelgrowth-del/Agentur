@@ -28,9 +28,9 @@ export function Navbar() {
       }`}
     >
       <Container className="flex h-18 items-center justify-between py-4">
-        <Link href="#top" className="flex items-center gap-2.5">
+        <Link href="/#top" className="flex shrink-0 items-center gap-2">
           <Image src="/logo-sg.png" alt="SenzelGrowth Logo" width={36} height={23} priority />
-          <span className="text-lg font-semibold tracking-tight text-ink">
+          <span className="hidden text-base font-semibold tracking-tight text-ink min-[360px]:inline sm:text-lg">
             SenzelGrowth
           </span>
         </Link>
@@ -53,6 +53,10 @@ export function Navbar() {
           </Button>
         </div>
 
+        <div className="flex items-center gap-2 md:hidden">
+        <Button href={CALENDLY_URL} external className="whitespace-nowrap px-3.5 py-2 text-xs">
+          Erstgespräch
+        </Button>
         <button
           onClick={() => setOpen((v) => !v)}
           aria-label={open ? "Menü schließen" : "Menü öffnen"}
@@ -61,6 +65,7 @@ export function Navbar() {
         >
           {open ? <X size={22} /> : <Menu size={22} />}
         </button>
+        </div>
       </Container>
 
       {open && (

@@ -16,21 +16,24 @@ const siteUrl = "https://senzelgrowth.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "SenzelGrowth — Verlässlicher Content, der Anfragen bringt",
+  title: "SenzelGrowth – Content Creation & Meta Ads für Selbstständige und kleine Unternehmen",
   description:
-    "Kurzvideos und Posts für Selbständige und kleine Unternehmen, persönlich betreut und auf Anfragen ausgerichtet.",
+    "Social-Media-Content und Meta Ads, die Anfragen bringen. Reels, Posts und Werbeanzeigen für Selbstständige und kleine Unternehmen, persönlich betreut von Celvin Senzel.",
   keywords: [
-    "Content Marketing",
+    "Content Creation",
+    "Social Media Marketing",
+    "Meta Ads",
     "Performance Marketing",
-    "KI-Automatisierung",
     "Leadgenerierung",
+    "Reels erstellen lassen",
     "SenzelGrowth",
   ],
   authors: [{ name: "Celvin Senzel" }],
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "SenzelGrowth — Verlässlicher Content, der Anfragen bringt",
+    title: "SenzelGrowth – Content und Werbeanzeigen, die Anfragen bringen",
     description:
-      "Kurzvideos und Posts, persönlich betreut und auf Anfragen ausgerichtet.",
+      "Reels, Posts und Meta Ads für Selbstständige und kleine Unternehmen. Persönlich betreut, mit ehrlicher Auswertung.",
     url: siteUrl,
     siteName: "SenzelGrowth",
     locale: "de_DE",
@@ -38,9 +41,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SenzelGrowth — Verlässlicher Content, der Anfragen bringt",
+    title: "SenzelGrowth – Content und Werbeanzeigen, die Anfragen bringen",
     description:
-      "Kurzvideos und Posts, persönlich betreut und auf Anfragen ausgerichtet.",
+      "Reels, Posts und Meta Ads für Selbstständige und kleine Unternehmen.",
   },
 };
 

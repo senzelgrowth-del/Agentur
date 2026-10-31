@@ -10,7 +10,7 @@ const FAQS = [
   {
     question: "Für wen ist SenzelGrowth geeignet?",
     answer:
-      "Für Selbständige und kleine Unternehmen, die über Social Media mehr Anfragen bekommen wollen, zum Beispiel Beraterinnen, Therapeuten, Reisebüros oder lokale Dienstleister.",
+      "Für Selbstständige und kleine Unternehmen, die über Social Media sichtbar werden und mehr Anfragen bekommen wollen, zum Beispiel Beraterinnen, Therapeuten, Reisebüros oder lokale Dienstleister.",
   },
   {
     question: "Wie läuft der Einstieg ab?",
@@ -20,7 +20,7 @@ const FAQS = [
   {
     question: "Kann ich auch einzelne Leistungen buchen?",
     answer:
-      "Ja. Die meisten starten mit Kurzvideos und Posts. Werbeanzeigen oder automatische Antworten kommen nur dazu, wenn sie wirklich sinnvoll sind.",
+      "Ja. Content Creation und Performance Marketing gibt es einzeln oder kombiniert. KI-Automatisierung, etwa ein Chatbot, kommt nur dazu, wenn sie für dich wirklich sinnvoll ist.",
   },
   {
     question: "Wie lange dauert die Umsetzung?",
