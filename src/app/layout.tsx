@@ -55,7 +55,7 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-navy-950 text-ink font-sans">
+      <body className="theme-light min-h-full flex flex-col bg-white text-ink font-sans">
         {children}
       </body>
     </html>

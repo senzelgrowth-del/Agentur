@@ -37,7 +37,7 @@ export function Services() {
 
         <ul className="grid gap-4 lg:grid-cols-3">
           {POINTS.map((p) => (
-            <li key={p.title} className="flex flex-col gap-3 rounded-2xl border border-line bg-navy-900/60 p-6">
+            <li key={p.title} className="soft-shadow flex flex-col gap-3 rounded-2xl border border-line bg-white p-6">
               <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-line-strong bg-navy-800 text-accent-strong">
                 <p.icon size={18} />
               </span>

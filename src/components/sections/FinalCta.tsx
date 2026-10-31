@@ -9,7 +9,7 @@ export function FinalCta() {
   return (
     <section className="py-20 lg:py-28">
       <Container>
-        <FadeIn className="relative overflow-hidden rounded-3xl border border-line-strong bg-navy-900 px-8 py-20 text-center sm:px-16">
+        <FadeIn className="theme-dark relative overflow-hidden rounded-3xl border border-line-strong bg-navy-900 px-8 py-20 text-center sm:px-16">
           <GlowOrbs preset="cta" />
           <div className="relative flex flex-col items-center gap-6">
             <h2 className="text-balance max-w-2xl text-3xl sm:text-4xl lg:text-[2.75rem] font-semibold leading-[1.15] tracking-tight text-ink">

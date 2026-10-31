@@ -51,7 +51,7 @@ export function VideoShowcase() {
                 priority={false}
               />
               <span className="absolute inset-0 bg-navy-950/10 transition-colors group-hover:bg-navy-950/0" />
-              <span className="relative inline-flex h-20 w-20 items-center justify-center rounded-full bg-white text-navy-950 shadow-[0_10px_40px_rgba(0,0,0,0.45)] transition-transform duration-200 group-hover:scale-105">
+              <span className="relative inline-flex h-20 w-20 items-center justify-center rounded-full bg-white text-[#05070d] shadow-[0_10px_40px_rgba(0,0,0,0.45)] transition-transform duration-200 group-hover:scale-105">
                 <Play size={28} fill="currentColor" className="ml-1" />
               </span>
             </button>

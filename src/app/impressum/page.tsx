@@ -20,7 +20,7 @@ export default function ImpressumPage() {
             Impressum
           </h1>
 
-          <LegalSection title="Angaben gemäß § 5 TMG">
+          <LegalSection title="Angaben gemäß § 5 DDG">
             <p>
               Celvin Senzel
               <br />
@@ -39,7 +39,7 @@ export default function ImpressumPage() {
             </p>
           </LegalSection>
 
-          <LegalSection title="Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV">
+          <LegalSection title="Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV">
             <p>
               Celvin Senzel
               <br />
@@ -58,9 +58,9 @@ export default function ImpressumPage() {
                 Die Inhalte dieser Seiten wurden mit größter Sorgfalt erstellt.
                 Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte
                 kann jedoch keine Gewähr übernommen werden. Als Diensteanbieter
-                sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen
+                sind wir gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen
                 Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8
-                bis 10 TMG sind wir als Diensteanbieter jedoch nicht
+                bis 10 DDG sind wir als Diensteanbieter jedoch nicht
                 verpflichtet, übermittelte oder gespeicherte fremde
                 Informationen zu überwachen oder nach Umständen zu forschen,
                 die auf eine rechtswidrige Tätigkeit hinweisen.
