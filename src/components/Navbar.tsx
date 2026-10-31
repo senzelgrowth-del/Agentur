@@ -3,62 +3,66 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X } from "lucide-react";
-import { Container } from "./ui/Container";
-import { Button } from "./ui/Button";
+import { ArrowUpRight, Menu, X } from "lucide-react";
 import { CALENDLY_URL, NAV_LINKS } from "@/lib/content";
+import { Container } from "./ui/Container";
 
-// Floating dark pill navigation; stays readable on light and dark sections alike.
+// Full-width light header with a hairline border.
 export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 pt-3">
-      <Container>
-        <div className="theme-dark flex h-16 items-center justify-between gap-3 rounded-full border border-line-strong bg-[#0a0e1a]/95 pl-5 pr-2 shadow-[0_12px_40px_-12px_rgba(10,14,26,0.55)] backdrop-blur-md">
-          <Link href="/#top" className="flex shrink-0 items-center gap-2" onClick={() => setOpen(false)}>
-            <Image src="/logo-sg-white.png" alt="SenzelGrowth Logo" width={34} height={22} priority />
-            <span className="hidden text-base font-semibold tracking-tight text-ink min-[400px]:inline">SenzelGrowth</span>
-          </Link>
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-line bg-white/85 backdrop-blur-md">
+      <Container className="flex h-16 items-center justify-between gap-3">
+        <Link href="/#top" className="flex shrink-0 items-center gap-2.5" onClick={() => setOpen(false)}>
+          <Image src="/logo-sg.png" alt="SenzelGrowth Logo" width={34} height={22} priority />
+          <span className="hidden text-base font-semibold tracking-tight text-ink min-[400px]:inline">SenzelGrowth</span>
+        </Link>
 
-          <nav className="hidden items-center gap-7 md:flex">
-            {NAV_LINKS.map((link) => (
-              <Link key={link.href} href={link.href} className="text-sm text-muted-strong transition-colors hover:text-ink">
-                {link.label}
-              </Link>
-            ))}
-          </nav>
+        <nav className="hidden items-center gap-7 md:flex">
+          {NAV_LINKS.map((link) => (
+            <Link key={link.href} href={link.href} className="text-sm text-muted transition-colors hover:text-ink">
+              {link.label}
+            </Link>
+          ))}
+        </nav>
 
-          <div className="flex items-center gap-2">
-            <Button href={CALENDLY_URL} external className="whitespace-nowrap px-5 py-3 text-sm">
-              Erstgespräch
-            </Button>
-            <button
-              onClick={() => setOpen((v) => !v)}
-              aria-label={open ? "Menü schließen" : "Menü öffnen"}
-              aria-expanded={open}
-              className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-ink md:hidden"
-            >
-              {open ? <X size={20} /> : <Menu size={20} />}
-            </button>
-          </div>
+        <div className="flex items-center gap-1">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-lg bg-[#163a6b] px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#0f2a4f]"
+          >
+            Erstgespräch <ArrowUpRight size={15} />
+          </a>
+          <button
+            onClick={() => setOpen((v) => !v)}
+            aria-label={open ? "Menü schließen" : "Menü öffnen"}
+            aria-expanded={open}
+            className="inline-flex h-10 w-10 items-center justify-center text-ink md:hidden"
+          >
+            {open ? <X size={22} /> : <Menu size={22} />}
+          </button>
         </div>
+      </Container>
 
-        {open && (
-          <div className="theme-dark mt-2 rounded-3xl border border-line-strong bg-[#0a0e1a]/95 p-3 backdrop-blur-md md:hidden">
+      {open && (
+        <nav className="border-t border-line bg-white md:hidden">
+          <Container className="flex flex-col py-2">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="block rounded-2xl px-4 py-3 text-base text-muted-strong hover:bg-white/5 hover:text-ink"
+                className="border-b border-line py-3.5 text-base text-ink last:border-0"
               >
                 {link.label}
               </Link>
             ))}
-          </div>
-        )}
-      </Container>
+          </Container>
+        </nav>
+      )}
     </header>
   );
 }
