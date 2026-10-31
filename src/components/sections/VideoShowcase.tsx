@@ -18,11 +18,7 @@ export function VideoShowcase() {
   return (
     <section className="py-20 lg:py-28">
       <Container className="flex flex-col gap-14">
-        <SectionHeading
-          eyebrow="Vorstellung"
-          title="Kurz zu mir, im Video."
-          description="Wer ich bin und wie ich arbeite."
-        />
+        <SectionHeading eyebrow="Vorstellung" title="Kurz zu mir, im Video." />
 
         <div className="relative mx-auto aspect-video w-full max-w-4xl overflow-hidden rounded-3xl border border-line-strong bg-navy-900 shadow-[0_30px_80px_-30px_rgba(0,0,0,0.6)]">
           {/* preload="none": the video only downloads once someone presses play */}

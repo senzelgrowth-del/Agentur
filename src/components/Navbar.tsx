@@ -29,15 +29,9 @@ export function Navbar() {
     >
       <Container className="flex h-18 items-center justify-between py-4">
         <Link href="#top" className="flex items-center gap-2.5">
-          <Image
-            src="/logo.jpg"
-            alt="SenzelGrowth Logo"
-            width={32}
-            height={32}
-            className="rounded-lg"
-          />
+          <Image src="/logo-sg.png" alt="SenzelGrowth Logo" width={36} height={23} priority />
           <span className="text-lg font-semibold tracking-tight text-ink">
-            Senzel<span className="text-accent-strong">Growth</span>
+            Senzel<span className="text-[#163a6b]">Growth</span>
           </span>
         </Link>
 

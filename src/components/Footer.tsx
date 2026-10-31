@@ -26,9 +26,9 @@ export function Footer() {
       <Container className="flex flex-col gap-8 py-12 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex flex-col gap-3">
           <span className="flex items-center gap-2.5">
-            <Image src="/logo.jpg" alt="SenzelGrowth Logo" width={28} height={28} className="rounded-lg" />
+            <Image src="/logo-sg.png" alt="SenzelGrowth Logo" width={33} height={21} />
             <span className="text-lg font-semibold tracking-tight text-ink">
-              Senzel<span className="text-accent-strong">Growth</span>
+              Senzel<span className="text-[#163a6b]">Growth</span>
             </span>
           </span>
           <a
