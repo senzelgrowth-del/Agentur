@@ -51,12 +51,32 @@ export default function DatenschutzPage() {
               prüfen, wenn uns konkrete Anhaltspunkte für eine rechtswidrige
               Nutzung bekannt werden.
             </p>
+            <p>
+              Hosting: Diese Website wird bei Netlify, Inc. (512 2nd Street,
+              Suite 200, San Francisco, CA 94107, USA) gehostet. Beim Aufruf
+              der Seite verarbeitet Netlify technisch notwendige Daten wie die
+              IP-Adresse, Datum und Uhrzeit des Abrufs sowie Browserangaben, um
+              die Website auszuliefern und vor Missbrauch zu schützen. Dabei
+              kann eine Übermittlung in die USA stattfinden; diese erfolgt auf
+              Grundlage der EU-Standardvertragsklauseln bzw. des EU-US Data
+              Privacy Framework. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO
+              (berechtigtes Interesse an einer sicheren und zuverlässigen
+              Bereitstellung der Website). Weitere Informationen:{" "}
+              <a
+                href="https://www.netlify.com/privacy/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent-strong hover:text-ink"
+              >
+                netlify.com/privacy
+              </a>
+              .
+            </p>
           </LegalSection>
 
           <LegalSection title="3. Kontaktaufnahme">
             <p>
-              Wenn Sie uns per E-Mail oder über ein Kontaktformular
-              kontaktieren, werden Ihre Angaben zur Bearbeitung Ihrer Anfrage
+              Wenn Sie uns per E-Mail kontaktieren, werden Ihre Angaben zur Bearbeitung Ihrer Anfrage
               und für den Fall von Anschlussfragen bei uns gespeichert. Diese
               Daten geben wir nicht ohne Ihre Einwilligung weiter.
             </p>
