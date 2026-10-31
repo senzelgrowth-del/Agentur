@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import Image from "next/image";
 import { Play } from "lucide-react";
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
@@ -8,7 +9,6 @@ import { SectionHeading } from "../ui/SectionHeading";
 type Project = {
   name: string;
   field: string;
-  since: string;
   description: string;
   scope: string[];
   reel?: { src: string; poster: string };
@@ -18,27 +18,25 @@ const PROJECTS: Project[] = [
   {
     name: "YourMindz Health",
     field: "Psychologische Beratung für Expats",
-    since: "seit 2026",
     description:
       "Ruhige Reels und Posts, die ein sensibles Thema verständlich machen und zum kostenlosen Kennenlernen einladen.",
-    scope: ["Reels", "Posts", "Redaktionsplan"],
+    scope: ["Reels", "Posts", "Redaktionsplan", "Google Ads", "Google Analytics"],
     reel: { src: "/portfolio/yourmindz-reel.mp4", poster: "/portfolio/yourmindz-reel-poster.jpg" },
   },
   {
     name: "Starshine Emotions",
     field: "Reisebüro & Eventagentur, Erfurt",
-    since: "seit April 2026",
     description:
-      "Reels, Posts und Werbeanzeigen für Reisen und Events. Ziel sind Buchungsanfragen, nicht nur Reichweite.",
-    scope: ["Reels", "Posts", "Meta- & Google-Ads"],
+      "Posts, Werbeanzeigen und ein Chatbot für Reisen und Events. Ziel sind Buchungsanfragen, nicht nur Reichweite.",
+    scope: ["Posts", "Meta Ads", "Chatbot"],
     reel: { src: "/portfolio/starshine-reel.mp4", poster: "/portfolio/starshine-reel-poster.jpg" },
   },
 ];
 
 const MORE = [
-  "Eigenen YouTube-Shorts-Kanal von null aufgebaut",
-  "Meta-Kampagnen in Varianten getestet und laufend verbessert",
-  "Extra: Chatbot, der Anfragen auch nach Feierabend beantwortet",
+  { image: "/results/youtube-revenue.jpg", caption: "YouTube-Shorts-Kanal, von null aufgebaut" },
+  { image: "/results/meta-ads-performance.png", caption: "Meta-Kampagnen im Variantentest" },
+  { image: "/results/ki-chat-automatisierung.png", caption: "Chatbot für Kundenanfragen" },
 ];
 
 function Reel({ src, poster, label }: { src: string; poster: string; label: string }) {
@@ -89,7 +87,6 @@ export function Portfolio() {
                 <Reel src={p.reel.src} poster={p.reel.poster} label={p.name} />
               ) : null}
               <div className="flex flex-col gap-3">
-                <span className="text-xs font-medium text-teal">{p.since}</span>
                 <h3 className="text-xl font-semibold tracking-tight text-ink">{p.name}</h3>
                 <p className="text-sm text-muted-strong">{p.field}</p>
                 <p className="text-sm leading-relaxed text-muted">{p.description}</p>
@@ -105,13 +102,15 @@ export function Portfolio() {
           ))}
         </div>
 
-        <div className="rounded-2xl border border-line px-6 py-5">
-          <p className="mb-3 text-xs font-medium tracking-wide text-accent-strong uppercase">Außerdem</p>
-          <ul className="grid gap-2 text-sm text-muted sm:grid-cols-3">
-            {MORE.map((m) => (
-              <li key={m}>{m}</li>
-            ))}
-          </ul>
+        <div className="grid gap-4 sm:grid-cols-3">
+          {MORE.map((m) => (
+            <figure key={m.caption} className="overflow-hidden rounded-2xl border border-line bg-navy-900/60">
+              <div className="relative aspect-[16/10] w-full bg-navy-950">
+                <Image src={m.image} alt={m.caption} fill sizes="(min-width: 640px) 30vw, 90vw" className="object-contain p-3" />
+              </div>
+              <figcaption className="border-t border-line px-5 py-4 text-sm text-muted-strong">{m.caption}</figcaption>
+            </figure>
+          ))}
         </div>
       </Container>
     </section>
