@@ -17,7 +17,7 @@ export default function ImpressumPage() {
       <Navbar />
       <main className="flex-1 pt-40 pb-24">
         <Container className="flex flex-col gap-10 max-w-2xl">
-          <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-ink">
+          <h1 className="hyphens-auto break-words text-[1.7rem] sm:text-4xl font-semibold tracking-tight text-ink">
             Impressum
           </h1>
 
