@@ -34,13 +34,19 @@ const PROJECTS: Project[] = [
 ];
 
 const MORE = [
-  { image: "/results/youtube-revenue.jpg", caption: "YouTube-Shorts-Kanal, von null aufgebaut", fit: "contain" },
-  { image: "/results/meta-ads-performance.png", caption: "Meta-Kampagnen im Variantentest", fit: "contain" },
-  { image: "/results/ki-chat-automatisierung.png", caption: "Chatbot für Kundenanfragen", fit: "contain" },
-  { image: "/portfolio/yourmindz-post1-familie.jpg", caption: "Post-Design für YourMindz Health", fit: "cover" },
-  { image: "/portfolio/yourmindz-post2-paar.jpg", caption: "Post-Design für YourMindz Health", fit: "cover" },
-  { image: "/portfolio/yourmindz-post3-kennenlernen.jpg", caption: "Post-Design für YourMindz Health", fit: "cover" },
+  { image: "/portfolio/starshine-anzeige-olsenbande.jpg", caption: "Anzeige: Olsenbande-Fanreise", client: "Starshine Emotions" },
+  { image: "/portfolio/starshine-anzeige-kopenhagen.jpg", caption: "Anzeige: Kopenhagen 2027", client: "Starshine Emotions" },
+  { image: "/portfolio/starshine-anzeige-danzig.jpg", caption: "Anzeige: Silvester in Danzig", client: "Starshine Emotions" },
+  { image: "/results/youtube-revenue.jpg", caption: "YouTube-Shorts-Kanal, von null aufgebaut", client: "Eigenes Projekt" },
+  { image: "/results/ki-chat-automatisierung.png", caption: "Chatbot für Kundenanfragen", client: "Extra" },
+  { image: "/portfolio/google-ads-hinweis.jpg", caption: "Google-Ads-Kampagne, Hinweis von Google", client: "Kampagnenbetreuung" },
 ];
+
+const QUOTE = {
+  text: "Ich muss wirklich immer wieder sagen: Es macht richtig Spaß, mit Dir zusammenzuarbeiten. […] Vielen Dank für die großartige Zusammenarbeit. Ich freue mich schon auf alles, was als Nächstes kommt!",
+  author: "Mirco Braun",
+  company: "Starshine Emotions",
+};
 
 function Reel({ src, poster, label }: { src: string; poster: string; label: string }) {
   const [playing, setPlaying] = useState(false);
@@ -106,6 +112,15 @@ export function Portfolio() {
           ))}
         </div>
 
+        <figure className="mx-auto flex max-w-3xl flex-col gap-4 text-center">
+          <blockquote className="text-balance text-lg leading-relaxed text-muted-strong">
+            „{QUOTE.text}“
+          </blockquote>
+          <figcaption className="text-sm text-muted">
+            <span className="font-medium text-ink">{QUOTE.author}</span> · {QUOTE.company}
+          </figcaption>
+        </figure>
+
         <div className="flex justify-center">
           <button
             onClick={() => setShowMore((v) => !v)}
@@ -121,16 +136,13 @@ export function Portfolio() {
           <div className="grid gap-4 sm:grid-cols-3">
             {MORE.map((m) => (
               <figure key={m.image} className="overflow-hidden rounded-2xl border border-line bg-navy-900/60">
-                <div className="relative aspect-[16/10] w-full bg-navy-950">
-                  <Image
-                    src={m.image}
-                    alt={m.caption}
-                    fill
-                    sizes="(min-width: 640px) 30vw, 90vw"
-                    className={m.fit === "cover" ? "object-cover object-top" : "object-contain p-3"}
-                  />
+                <div className="relative aspect-[4/5] w-full bg-navy-950">
+                  <Image src={m.image} alt={m.caption} fill sizes="(min-width: 640px) 30vw, 90vw" className="object-contain" />
                 </div>
-                <figcaption className="border-t border-line px-5 py-4 text-sm text-muted-strong">{m.caption}</figcaption>
+                <figcaption className="flex flex-col gap-0.5 border-t border-line px-5 py-4">
+                  <span className="text-sm text-ink">{m.caption}</span>
+                  <span className="text-xs text-muted">{m.client}</span>
+                </figcaption>
               </figure>
             ))}
           </div>
