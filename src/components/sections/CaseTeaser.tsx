@@ -1,58 +1,57 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Container } from "../ui/Container";
+import { PROOF } from "@/lib/content";
 import { STARSHINE } from "@/lib/cases";
 
 export function CaseTeaser() {
   const q = STARSHINE.quote;
-  const [before, after] = q.text.split(q.highlight);
   return (
     <section id="ergebnisse" className="py-20 lg:py-28">
       <Container>
-        <div className="theme-dark relative overflow-hidden rounded-3xl border border-line-strong bg-navy-900 px-6 py-12 sm:px-12 lg:px-16 lg:py-16">
+        <div className="theme-dark relative overflow-hidden rounded-[2rem] border border-line-strong bg-[#0a0e1a] px-6 py-14 sm:px-12 lg:px-20 lg:py-20">
           <div
             aria-hidden
-            className="pointer-events-none absolute -top-40 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full"
-            style={{ background: "radial-gradient(circle, rgba(110,168,254,0.18) 0%, rgba(110,168,254,0) 65%)" }}
+            className="pointer-events-none absolute -top-48 left-1/2 h-[560px] w-[560px] -translate-x-1/2 rounded-full"
+            style={{ background: "radial-gradient(circle, rgba(110,168,254,0.16) 0%, rgba(110,168,254,0) 65%)" }}
           />
-          <div className="relative flex flex-col gap-12">
-            <div className="flex flex-col items-center gap-4 text-center">
-              <span className="text-sm font-medium tracking-wide text-accent-strong uppercase">Case Study</span>
-              <h2 className="text-balance max-w-2xl text-3xl font-semibold leading-[1.15] tracking-tight text-ink sm:text-4xl">
-                {STARSHINE.name}: {STARSHINE.stats[0].value} Leads für ein Reisebüro aus {STARSHINE.location}.
-              </h2>
-              <p className="text-balance max-w-xl text-lg leading-relaxed text-muted">
-                Content Creation, Meta Ads und laufende Optimierung aus einer Hand.
-              </p>
-            </div>
+          <div className="relative flex flex-col gap-14">
+            <figure className="mx-auto flex max-w-3xl flex-col items-center gap-8 text-center">
+              <blockquote className="text-balance text-2xl leading-snug text-muted-strong sm:text-[2rem] sm:leading-snug">
+                „Ich muss wirklich immer wieder sagen: Es macht{" "}
+                <span className="accent-serif text-[1.12em] text-ink">richtig Spaß</span>, mit Dir
+                zusammenzuarbeiten. […] Vielen Dank für die{" "}
+                <span className="accent-serif text-[1.12em] text-ink">großartige Zusammenarbeit</span>.“
+              </blockquote>
+              <figcaption className="flex items-center gap-4">
+                <span className="flex h-12 w-12 items-center justify-center rounded-full border border-line-strong bg-white/5 text-lg font-semibold text-ink">
+                  M
+                </span>
+                <span className="text-left">
+                  <span className="block font-medium text-ink">{q.author}</span>
+                  <span className="block text-sm text-muted">{STARSHINE.name}, {STARSHINE.industry}</span>
+                </span>
+              </figcaption>
+            </figure>
 
-            <dl className="mx-auto grid w-full max-w-2xl gap-4 sm:grid-cols-2">
-              {STARSHINE.stats.map((s) => (
-                <div key={s.label} className="rounded-2xl border border-line bg-white/[0.03] px-6 py-8 text-center">
-                  <dt className="sr-only">{s.label}</dt>
-                  <dd className="text-5xl font-semibold tracking-tight text-ink sm:text-6xl">{s.value}</dd>
-                  <dd className="mt-2 text-sm text-muted">{s.label}</dd>
+            <dl className="grid grid-cols-2 gap-x-6 gap-y-10 border-t border-line pt-12 lg:grid-cols-4">
+              {PROOF.map((p) => (
+                <div key={p.label} className="flex flex-col items-center gap-2 text-center">
+                  <dt className="sr-only">{p.label}</dt>
+                  <dd className="bg-gradient-to-b from-white to-[#8fa3c7] bg-clip-text text-4xl font-semibold tracking-tight text-transparent sm:text-5xl">
+                    {p.value}
+                  </dd>
+                  <dd className="text-sm text-muted">{p.label}</dd>
                 </div>
               ))}
             </dl>
-
-            <figure className="mx-auto flex max-w-3xl flex-col items-center gap-5 text-center">
-              <blockquote className="text-balance text-xl leading-relaxed text-muted sm:text-2xl">
-                „{before}
-                <span className="text-ink">{q.highlight}</span>
-                {after}“
-              </blockquote>
-              <figcaption className="text-sm text-muted">
-                <span className="font-medium text-ink">{q.author}</span> · {q.role}
-              </figcaption>
-            </figure>
 
             <div className="flex justify-center">
               <Link
                 href={`/referenzen/${STARSHINE.slug}`}
                 className="inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-medium text-navy-950 transition-colors hover:bg-accent-strong"
               >
-                Ganze Case Study ansehen <ArrowRight size={16} />
+                Case Study Starshine Emotions ansehen <ArrowRight size={16} />
               </Link>
             </div>
           </div>

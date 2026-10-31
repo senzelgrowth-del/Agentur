@@ -1,32 +1,35 @@
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight, CalendarDays, Clapperboard, Images, Megaphone, Target, LineChart, LucideIcon } from "lucide-react";
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
 import { CALENDLY_URL } from "@/lib/content";
 
-const SERVICES = [
+type Service = {
+  name: string;
+  claim: string;
+  tiles: { icon: LucideIcon; label: string }[];
+  fit: string;
+};
+
+const SERVICES: Service[] = [
   {
     name: "Content Creation",
-    claim: "Professionell und regelmäßig präsent auf Social Media.",
-    problem: "Du weißt, dass du posten solltest, aber dir fehlen Zeit, Plan und Ideen.",
-    items: [
-      "Content-Strategie und Redaktionsplan",
-      "Reels, Kurzvideos und Posts",
-      "Konzeption, Schnitt und Veröffentlichung",
-      "Einheitlicher Markenauftritt",
+    claim: "Professionell und regelmäßig präsent auf Social Media, ohne dass du Stunden investierst.",
+    tiles: [
+      { icon: CalendarDays, label: "Strategie & Redaktionsplan" },
+      { icon: Clapperboard, label: "Reels & Kurzvideos" },
+      { icon: Images, label: "Posts & Markenauftritt" },
     ],
-    fit: "Für Selbstständige und kleine Unternehmen, die sichtbar sein wollen, ohne selbst Stunden in Social Media zu stecken.",
+    fit: "Für alle, die sichtbar sein wollen, aber keine Zeit dafür haben.",
   },
   {
     name: "Performance Marketing",
-    claim: "Die richtigen Menschen erreichen und Anfragen gewinnen.",
-    problem: "Deine Inhalte sind gut, aber es kommen zu wenige Anfragen.",
-    items: [
-      "Meta Ads auf Facebook und Instagram",
-      "Zielgruppen- und Kampagnenstrategie",
-      "Leadgenerierung",
-      "Laufende Optimierung und Auswertung",
+    claim: "Mit Meta Ads die richtigen Menschen erreichen und planbar Anfragen gewinnen.",
+    tiles: [
+      { icon: Megaphone, label: "Meta Ads" },
+      { icon: Target, label: "Zielgruppen & Leads" },
+      { icon: LineChart, label: "Optimierung & Auswertung" },
     ],
-    fit: "Für Unternehmen, die planbar neue Anfragen gewinnen wollen und wissen möchten, was ihr Werbebudget bringt.",
+    fit: "Für alle, die wissen wollen, was ihr Werbebudget wirklich bringt.",
   },
 ];
 
@@ -42,32 +45,35 @@ export function Offer() {
 
         <div className="grid gap-6 lg:grid-cols-2">
           {SERVICES.map((s) => (
-            <article key={s.name} className="soft-shadow flex flex-col gap-6 rounded-3xl border border-line bg-white p-8 sm:p-10">
-              <div className="flex flex-col gap-2">
-                <h3 className="text-2xl font-semibold tracking-tight text-ink">{s.name}</h3>
-                <p className="text-lg leading-snug text-muted-strong">{s.claim}</p>
+            <article
+              key={s.name}
+              className="theme-dark flex flex-col gap-8 rounded-[2rem] border border-line-strong bg-[#0a0e1a] p-8 shadow-[0_24px_60px_-30px_rgba(10,14,26,0.6)] sm:p-10"
+            >
+              <div className="flex flex-col gap-3">
+                <h3 className="text-3xl font-semibold tracking-tight text-ink">{s.name}</h3>
+                <p className="text-base leading-relaxed text-muted">{s.claim}</p>
               </div>
-              <p className="rounded-xl bg-navy-800 px-4 py-3 text-sm leading-relaxed text-muted">
-                <span className="font-medium text-ink">Das Problem: </span>
-                {s.problem}
-              </p>
-              <ul className="flex flex-col gap-3">
-                {s.items.map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-base text-ink">
-                    <Check size={18} className="mt-0.5 shrink-0 text-accent-strong" />
-                    {item}
+              <ul className="grid grid-cols-3 gap-3">
+                {s.tiles.map((t) => (
+                  <li key={t.label} className="flex flex-col items-center gap-3 rounded-2xl border border-line bg-white/[0.03] px-2 py-5 text-center">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/[0.06] text-accent-strong">
+                      <t.icon size={20} />
+                    </span>
+                    <span className="text-xs font-medium leading-snug text-ink sm:text-sm">{t.label}</span>
                   </li>
                 ))}
               </ul>
-              <p className="mt-auto border-t border-line pt-5 text-sm leading-relaxed text-muted">{s.fit}</p>
-              <a
-                href={CALENDLY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex w-fit items-center gap-2 text-sm font-medium text-ink underline-offset-4 hover:underline"
-              >
-                {s.name} anfragen <ArrowRight size={15} />
-              </a>
+              <div className="mt-auto flex flex-col gap-4 border-t border-line pt-6 sm:flex-row sm:items-center sm:justify-between">
+                <p className="text-sm text-muted">{s.fit}</p>
+                <a
+                  href={CALENDLY_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex shrink-0 items-center gap-2 text-sm font-medium text-ink underline-offset-4 hover:underline"
+                >
+                  Anfragen <ArrowRight size={15} />
+                </a>
+              </div>
             </article>
           ))}
         </div>

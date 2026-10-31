@@ -41,8 +41,8 @@ export default function Home() {
         <VideoShowcase />
         <WhyNow />
         <Offer />
-        <CaseTeaser />
         <Portfolio />
+        <CaseTeaser />
         <About />
         <Pricing />
         <Faq />

@@ -34,6 +34,7 @@
   --color-teal: var(--teal);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-instrument-serif);
 }
 
 html {
@@ -96,4 +97,12 @@ body {
 }
 body.theme-light {
   background: #ffffff;
+}
+
+/* Elegant serif-italic accent for single words in headlines and quotes */
+.accent-serif {
+  font-family: var(--font-instrument-serif), Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.01em;
 }
