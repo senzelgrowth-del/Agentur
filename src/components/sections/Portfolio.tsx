@@ -31,6 +31,7 @@ const PROJECTS: Project[] = [
     description:
       "Reels, Posts und Werbeanzeigen für Reisen und Events. Ziel sind Buchungsanfragen, nicht nur Reichweite.",
     scope: ["Reels", "Posts", "Meta- & Google-Ads"],
+    reel: { src: "/portfolio/starshine-reel.mp4", poster: "/portfolio/starshine-reel-poster.jpg" },
   },
 ];
 
@@ -86,11 +87,7 @@ export function Portfolio() {
             >
               {p.reel ? (
                 <Reel src={p.reel.src} poster={p.reel.poster} label={p.name} />
-              ) : (
-                <div className="hidden aspect-[9/16] w-full items-center justify-center rounded-2xl border border-dashed border-line text-xs text-muted sm:flex">
-                  Reel folgt
-                </div>
-              )}
+              ) : null}
               <div className="flex flex-col gap-3">
                 <span className="text-xs font-medium text-teal">{p.since}</span>
                 <h3 className="text-xl font-semibold tracking-tight text-ink">{p.name}</h3>
