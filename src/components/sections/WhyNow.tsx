@@ -30,7 +30,7 @@ export function WhyNow() {
 
         <div className="grid w-full max-w-3xl gap-4 sm:grid-cols-2">
           <div className="soft-shadow rounded-2xl border border-line bg-white p-6 text-left">
-            <span className="text-xs font-medium tracking-wide text-teal uppercase">Mit Social Media</span>
+            <span className="text-xs font-medium tracking-wide text-[#163a6b] uppercase">Mit Social Media</span>
             <p className="mt-2 text-lg leading-snug text-ink">Er sieht, wer du bist, fasst Vertrauen und fragt bei dir an.</p>
           </div>
           <div className="rounded-2xl border border-line p-6 text-left">
