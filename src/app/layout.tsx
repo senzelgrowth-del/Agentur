@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Playfair_Display } from "next/font/google";
+import { Geist, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -8,7 +8,7 @@ const geistSans = Geist({
 });
 
 // Elegant italic used only for single highlighted words
-const accent = Playfair_Display({
+const accent = Source_Serif_4({
   variable: "--font-accent",
   subsets: ["latin"],
   style: "italic",
