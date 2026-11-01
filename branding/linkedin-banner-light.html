@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>SenzelGrowth LinkedIn Banner (hell)</title>
+<link href="fonts/fonts-light.css" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0a0e1a; --muted:#5b6478; --muted-strong:#343c50;
+    --line:rgba(10,14,26,.08); --line-strong:rgba(10,14,26,.14);
+    --navy:#163a6b; --accent:#2f6bea; --bg:#f4f6fb;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{background:#fff}
+  .banner{
+    position:relative; width:1584px; height:396px; overflow:hidden;
+    font-family:Geist,system-ui,sans-serif; color:var(--ink);
+    background:
+      radial-gradient(ellipse 48% 95% at 64% 0%, rgba(110,168,254,.30), transparent 70%),
+      radial-gradient(ellipse 30% 80% at 96% 10%, rgba(167,139,250,.24), transparent 70%),
+      radial-gradient(ellipse 30% 70% at 30% 110%, rgba(167,139,250,.12), transparent 70%),
+      linear-gradient(180deg,#f7f8fd 0%, #ffffff 100%);
+  }
+  .grid{position:absolute;inset:0;
+    background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+    background-size:64px 64px;opacity:.55;
+    -webkit-mask-image:radial-gradient(ellipse 55% 85% at 64% 20%,#000 15%,transparent 80%);
+            mask-image:radial-gradient(ellipse 55% 85% at 64% 20%,#000 15%,transparent 80%);}
+
+  /* Brand (top-left, clear of the profile photo) */
+  .brand{position:absolute;top:56px;left:56px;display:flex;align-items:center;gap:20px}
+  .brand img{height:50px;width:auto;display:block}
+  .brand .sep{width:1.5px;height:40px;background:var(--line-strong)}
+  .wordmark{font-size:36px;font-weight:600;letter-spacing:-.025em}
+
+  /* Main message */
+  .main{position:absolute;left:540px;right:110px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+  .tag{display:inline-flex;align-items:center;gap:10px;padding:8px 18px;border-radius:999px;background:rgba(255,255,255,.85);
+    border:1px solid var(--line-strong);font-size:17px;color:var(--muted-strong);margin-bottom:20px}
+  .tag i{width:9px;height:9px;border-radius:50%;background:var(--navy)}
+  .h1{font-size:58px;font-weight:600;letter-spacing:-.03em;line-height:1.02;white-space:nowrap}
+  .h2{font-family:"Source Serif 4",Georgia,serif;font-style:italic;font-weight:500;font-size:74px;letter-spacing:-.01em;line-height:1.1;color:var(--navy);white-space:nowrap}
+
+  .proof{display:flex;gap:12px;margin-top:26px}
+  .card{display:flex;align-items:center;gap:10px;padding:9px 18px 9px 9px;border-radius:14px;background:#fff;border:1px solid var(--line);
+    box-shadow:0 1px 2px rgba(10,14,26,.04),0 12px 32px -16px rgba(10,14,26,.22);white-space:nowrap}
+  .card .ic{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex:none;color:#fff;background:linear-gradient(135deg,#2f5fa8,var(--navy))}
+  .card .ic svg{width:19px;height:19px}
+  .card b{font-size:21px;font-weight:600;letter-spacing:-.02em;color:var(--ink)}
+  .card span{font-size:16px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="banner" id="banner">
+  <div class="grid"></div>
+
+  <div class="brand">
+    <img src="logo-sg.png" alt="SG">
+    <span class="sep"></span>
+    <div class="wordmark">SenzelGrowth</div>
+  </div>
+
+  <div class="main">
+    <div class="tag"><i></i>Content Creation &amp; Performance Marketing</div>
+    <div class="h1">Content und Werbeanzeigen, die</div>
+    <div class="h2">Anfragen bringen.</div>
+    <div class="proof">
+      <div class="card">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span>
+        <b>2.000+</b><span>Leads generiert</span>
+      </div>
+      <div class="card">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M2 10h20"/><path d="M6 15h4"/></svg></span>
+        <b>9.000+&nbsp;€</b><span>Werbebudget verwaltet</span>
+      </div>
+      <div class="card">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+        <span style="color:var(--ink);font-weight:500">Für Selbstständige &amp; KMU</span>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
