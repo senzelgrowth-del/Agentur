@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -7,30 +7,36 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+// Elegant italic used only for single highlighted words
+const accent = Source_Serif_4({
+  variable: "--font-accent",
   subsets: ["latin"],
+  style: "italic",
+  weight: ["500"],
 });
 
-const siteUrl = "https://senzelgrowth.de";
+const siteUrl = "https://senzelgrowth.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "SenzelGrowth — Content & Marketing für lokale Unternehmen",
+  title: "SenzelGrowth – Content Creation & Meta Ads für Selbstständige und kleine Unternehmen",
   description:
-    "Content und Marketing für lokale Unternehmen und Selbständige. KI-Automatisierung gibt es als Extra dazu.",
+    "Social-Media-Content und Meta Ads, die Anfragen bringen. Reels, Posts und Werbeanzeigen für Selbstständige und kleine Unternehmen, persönlich betreut von Celvin Senzel.",
   keywords: [
-    "Content Marketing",
+    "Content Creation",
+    "Social Media Marketing",
+    "Meta Ads",
     "Performance Marketing",
-    "KI-Automatisierung",
     "Leadgenerierung",
+    "Reels erstellen lassen",
     "SenzelGrowth",
   ],
   authors: [{ name: "Celvin Senzel" }],
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "SenzelGrowth — Content & Marketing für lokale Unternehmen",
+    title: "SenzelGrowth – Content und Werbeanzeigen, die Anfragen bringen",
     description:
-      "Content und Marketing für lokale Unternehmen und Selbständige.",
+      "Reels, Posts und Meta Ads für Selbstständige und kleine Unternehmen. Persönlich betreut, mit ehrlicher Auswertung.",
     url: siteUrl,
     siteName: "SenzelGrowth",
     locale: "de_DE",
@@ -38,9 +44,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SenzelGrowth — Content & Marketing für lokale Unternehmen",
+    title: "SenzelGrowth – Content und Werbeanzeigen, die Anfragen bringen",
     description:
-      "Content und Marketing für lokale Unternehmen und Selbständige.",
+      "Reels, Posts und Meta Ads für Selbstständige und kleine Unternehmen.",
   },
 };
 
@@ -53,9 +59,9 @@ export default function RootLayout({
     <html
       lang="de"
       data-scroll-behavior="smooth"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${accent.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-navy-950 text-ink font-sans">
+      <body className="theme-light min-h-full flex flex-col bg-white text-ink font-sans">
         {children}
       </body>
     </html>

@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
 import { FadeIn } from "../ui/FadeIn";
@@ -11,7 +10,7 @@ const FAQS = [
   {
     question: "Für wen ist SenzelGrowth geeignet?",
     answer:
-      "Für lokale Unternehmen und Selbständige, die planbar neue Kunden gewinnen wollen, egal wie groß dein Team ist.",
+      "Für Selbstständige und kleine Unternehmen, die über Social Media sichtbar werden und mehr Anfragen bekommen wollen, zum Beispiel Beraterinnen, Therapeuten, Reisebüros oder lokale Dienstleister.",
   },
   {
     question: "Wie läuft der Einstieg ab?",
@@ -19,14 +18,14 @@ const FAQS = [
       "Wir sprechen erstmal kostenlos und unverbindlich. Danach entscheiden wir gemeinsam, ob's passt.",
   },
   {
-    question: "Bietet ihr auch nur einzelne Leistungen an, z. B. nur Content oder nur Marketing?",
+    question: "Kann ich auch einzelne Leistungen buchen?",
     answer:
-      "Ja, beides funktioniert auch einzeln. Am meisten bringt es kombiniert, das besprechen wir im Gespräch.",
+      "Ja. Content Creation und Performance Marketing gibt es einzeln oder kombiniert. KI-Automatisierung, etwa ein Chatbot, kommt nur dazu, wenn sie für dich wirklich sinnvoll ist.",
   },
   {
     question: "Wie lange dauert die Umsetzung?",
     answer:
-      "Kommt auf den Umfang an. Nach dem Strategiegespräch bekommst du einen realistischen Zeitplan.",
+      "Kommt auf den Umfang an. Nach dem Erstgespräch bekommst du einen realistischen Zeitplan.",
   },
   {
     question: "Wie wird der Erfolg gemessen?",
@@ -41,7 +40,7 @@ const FAQS = [
 ];
 
 export function Faq() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
     <section id="faq" className="py-20 lg:py-28">
@@ -67,19 +66,15 @@ export function Faq() {
                       }`}
                     />
                   </button>
-                  <AnimatePresence initial={false}>
-                    {isOpen && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: "auto", opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.25, ease: "easeInOut" }}
-                        className="overflow-hidden"
-                      >
-                        <p className="pb-6 text-sm leading-relaxed text-muted">{faq.answer}</p>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
+                  <div
+                    className={`grid transition-[grid-template-rows] duration-300 ease-in-out ${
+                      isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+                    }`}
+                  >
+                    <div className="overflow-hidden">
+                      <p className="pb-6 text-sm leading-relaxed text-muted">{faq.answer}</p>
+                    </div>
+                  </div>
                 </div>
               </FadeIn>
             );

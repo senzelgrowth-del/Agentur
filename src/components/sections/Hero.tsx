@@ -1,46 +1,72 @@
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { Container } from "../ui/Container";
-import { Button } from "../ui/Button";
-import { FadeIn } from "../ui/FadeIn";
 import { GlowOrbs } from "../ui/GlowOrbs";
-import { CALENDLY_URL } from "@/lib/content";
+import { CALENDLY_URL, PROOF } from "@/lib/content";
 
 export function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden pt-36 pb-16 lg:pt-44 lg:pb-20">
+    <section id="top" className="relative overflow-hidden pt-28 pb-16 lg:pt-36 lg:pb-24">
       <div className="bg-grid pointer-events-none absolute inset-0 opacity-[0.35] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_0%,#000_20%,transparent_80%)]" />
       <GlowOrbs preset="hero" />
 
-      <Container className="relative flex flex-col items-center gap-8 text-center">
-        <FadeIn>
-          <span className="inline-flex items-center rounded-full border border-line-strong px-4 py-1.5 text-sm text-muted-strong">
-            Content & Marketing für lokale Unternehmen und Selbständige
+      {/* Mobile order: intro -> photo -> CTA. Desktop: intro + CTA left, photo right. */}
+      <Container className="relative grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-16">
+        <div className="flex flex-col items-center gap-6 text-center lg:items-start lg:self-end lg:text-left">
+          <span className="inline-flex items-center gap-2 rounded-full border border-line-strong bg-white/80 px-4 py-1.5 text-sm text-muted-strong">
+            <span className="h-2 w-2 rounded-full bg-[#163a6b]" />
+            Content Creation &amp; Performance Marketing
           </span>
-        </FadeIn>
-
-        <FadeIn delay={0.05}>
-          <h1 className="text-balance max-w-3xl text-4xl font-semibold leading-[1.1] tracking-tight text-ink sm:text-5xl lg:text-6xl">
-            Content und Marketing, das dir neue Kunden bringt.
+          <h1 className="text-balance text-4xl font-semibold leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-6xl">
+            Content und Werbeanzeigen, die{" "}
+            <span className="accent-font text-[#163a6b]">Anfragen bringen.</span>
           </h1>
-        </FadeIn>
-
-        <FadeIn delay={0.1}>
           <p className="max-w-xl text-balance text-lg leading-relaxed text-muted">
-            Organisch oder bezahlt, kurze Clips oder lange Videos: Ich baue
-            Content und Kampagnen, die zu deinem Unternehmen passen.
-            KI-Automatisierung kommt dazu, wo sie wirklich Zeit spart.
+            Für Selbstständige und kleine Unternehmen: Ich erstelle deine Reels und Posts und sorge mit
+            Meta Ads dafür, dass sie die richtigen Menschen erreichen.
           </p>
-        </FadeIn>
+        </div>
 
-        <FadeIn delay={0.15} className="flex flex-col gap-4 sm:flex-row">
-          <Button href={CALENDLY_URL} external>
-            Kostenloses Strategiegespräch
-            <ArrowRight size={16} />
-          </Button>
-          <Button href="#ergebnisse" variant="secondary">
-            Ergebnisse ansehen
-          </Button>
-        </FadeIn>
+        <figure className="soft-shadow relative mx-auto w-full max-w-sm overflow-hidden rounded-[2rem] border border-line bg-white lg:row-span-2 lg:max-w-none">
+          <div className="relative aspect-[4/5] w-full">
+            <Image
+              src="/celvin-portrait.jpg"
+              alt="Celvin Senzel, Gründer von SenzelGrowth"
+              fill
+              priority
+              sizes="(min-width: 1024px) 28rem, 90vw"
+              className="object-cover"
+            />
+          </div>
+          <figcaption className="px-6 py-5">
+            <div>
+              <p className="text-2xl font-semibold tracking-tight text-ink">Celvin Senzel</p>
+              <p className="text-sm text-muted">Gründer von SenzelGrowth</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <div className="flex flex-col items-center gap-6 lg:items-start lg:self-start">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-3 rounded-xl bg-ink px-7 py-4 text-base font-medium text-white shadow-[0_14px_40px_-14px_rgba(10,14,26,0.6)] transition-colors hover:bg-[#163a6b]"
+          >
+            Kostenloses Erstgespräch
+            <ArrowRight size={18} className="transition-transform group-hover:translate-x-0.5" />
+          </a>
+          <p className="text-sm text-muted">Kostenlos &amp; 100 % unverbindlich · Termin direkt online wählen</p>
+          <dl className="flex gap-10 border-t border-line pt-5">
+            {PROOF.map((p) => (
+              <div key={p.label}>
+                <dt className="sr-only">{p.label}</dt>
+                <dd className="text-3xl font-semibold tracking-tight text-ink">{p.value}</dd>
+                <dd className="text-sm text-muted">{p.label}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
       </Container>
     </section>
   );

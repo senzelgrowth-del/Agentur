@@ -1,30 +1,34 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 import { Container } from "../ui/Container";
 import { Button } from "../ui/Button";
-import { FadeIn } from "../ui/FadeIn";
 import { GlowOrbs } from "../ui/GlowOrbs";
-import { CALENDLY_URL } from "@/lib/content";
+import { CALENDLY_URL, CONTACT_EMAIL } from "@/lib/content";
 
 export function FinalCta() {
   return (
     <section className="py-20 lg:py-28">
       <Container>
-        <FadeIn className="relative overflow-hidden rounded-3xl border border-line-strong bg-navy-900 px-8 py-20 text-center sm:px-16">
+        <div className="theme-dark relative overflow-hidden rounded-3xl border border-line-strong bg-navy-900 px-8 py-20 text-center sm:px-16">
           <GlowOrbs preset="cta" />
           <div className="relative flex flex-col items-center gap-6">
-            <h2 className="text-balance max-w-2xl text-3xl sm:text-4xl lg:text-[2.75rem] font-semibold leading-[1.15] tracking-tight text-ink">
-              Lass uns über dein Wachstum sprechen.
+            <h2 className="text-balance max-w-2xl text-3xl font-semibold leading-[1.15] tracking-tight text-ink sm:text-4xl lg:text-[2.75rem]">
+              Noch Fragen?
             </h2>
             <p className="max-w-xl text-balance text-lg leading-relaxed text-muted">
-              In einem kurzen, kostenlosen Gespräch schauen wir, ob und wie
-              ich dir helfen kann.
+              Schreib mir einfach. Ich antworte dir persönlich, ohne Verkaufsdruck.
             </p>
-            <Button href={CALENDLY_URL} external className="mt-2">
-              Kostenloses Strategiegespräch buchen
-              <ArrowRight size={16} />
-            </Button>
+            <div className="mt-2 flex flex-col gap-3 sm:flex-row">
+              <Button href={`mailto:${CONTACT_EMAIL}?subject=Frage%20an%20SenzelGrowth`}>
+                <Mail size={16} />
+                Frage stellen
+              </Button>
+              <Button href={CALENDLY_URL} external variant="secondary">
+                Erstgespräch buchen
+                <ArrowRight size={16} />
+              </Button>
+            </div>
           </div>
-        </FadeIn>
+        </div>
       </Container>
     </section>
   );

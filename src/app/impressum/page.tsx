@@ -8,6 +8,7 @@ import { CONTACT_EMAIL } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Impressum — SenzelGrowth",
   description: "Impressum von SenzelGrowth — Celvin Senzel.",
+  alternates: { canonical: "/impressum" },
 };
 
 export default function ImpressumPage() {
@@ -16,11 +17,11 @@ export default function ImpressumPage() {
       <Navbar />
       <main className="flex-1 pt-40 pb-24">
         <Container className="flex flex-col gap-10 max-w-2xl">
-          <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-ink">
+          <h1 className="hyphens-auto break-words text-[1.7rem] sm:text-4xl font-semibold tracking-tight text-ink">
             Impressum
           </h1>
 
-          <LegalSection title="Angaben gemäß § 5 TMG">
+          <LegalSection title="Angaben gemäß § 5 DDG">
             <p>
               Celvin Senzel
               <br />
@@ -32,11 +33,6 @@ export default function ImpressumPage() {
 
           <LegalSection title="Kontakt">
             <p>
-              Telefon:{" "}
-              <a href="tel:+491637212600" className="text-ink hover:text-accent-strong">
-                +49 163 7212600
-              </a>
-              <br />
               E-Mail:{" "}
               <a href={`mailto:${CONTACT_EMAIL}`} className="text-accent-strong hover:text-ink">
                 {CONTACT_EMAIL}
@@ -44,7 +40,7 @@ export default function ImpressumPage() {
             </p>
           </LegalSection>
 
-          <LegalSection title="Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV">
+          <LegalSection title="Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV">
             <p>
               Celvin Senzel
               <br />
@@ -63,9 +59,9 @@ export default function ImpressumPage() {
                 Die Inhalte dieser Seiten wurden mit größter Sorgfalt erstellt.
                 Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte
                 kann jedoch keine Gewähr übernommen werden. Als Diensteanbieter
-                sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen
+                sind wir gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen
                 Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8
-                bis 10 TMG sind wir als Diensteanbieter jedoch nicht
+                bis 10 DDG sind wir als Diensteanbieter jedoch nicht
                 verpflichtet, übermittelte oder gespeicherte fremde
                 Informationen zu überwachen oder nach Umständen zu forschen,
                 die auf eine rechtswidrige Tätigkeit hinweisen.

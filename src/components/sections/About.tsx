@@ -1,45 +1,56 @@
-import Image from "next/image";
+import { Check } from "lucide-react";
 import { Container } from "../ui/Container";
-import { FadeIn } from "../ui/FadeIn";
+
+const PROMISES = [
+  "Ein fester Ansprechpartner: Du sprichst immer mit mir.",
+  "Ziel sind Anfragen, nicht Likes.",
+  "Ehrliche Zahlen jeden Monat, auch wenn sie unbequem sind.",
+];
+
+const PROCESS = [
+  { title: "Erstgespräch", text: "Kostenlos und unverbindlich. Wir klären, ob es passt." },
+  { title: "Strategie", text: "Ziele, Zielgruppe und ein Plan für Content und Anzeigen." },
+  { title: "Umsetzung", text: "Ich produziere, veröffentliche und betreue die Kampagnen." },
+  { title: "Auswertung", text: "Jeden Monat gemeinsam auf Anfragen und Zahlen schauen." },
+];
 
 export function About() {
   return (
     <section id="ueber-mich" className="py-20 lg:py-28">
-      <Container className="grid gap-16 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
-        <FadeIn className="order-2 lg:order-1">
-          <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-3xl border border-line-strong bg-navy-900">
-            <Image
-              src="/celvin.png"
-              alt="Celvin Senzel"
-              fill
-              sizes="(min-width: 1024px) 30vw, 90vw"
-              className="object-cover"
-            />
-          </div>
-        </FadeIn>
+      <Container className="grid gap-12 lg:grid-cols-2 lg:gap-20">
+        <div className="flex flex-col gap-6">
+          <span className="text-sm font-medium tracking-wide text-accent-strong uppercase">Über mich</span>
+          <h2 className="text-balance text-3xl font-semibold leading-[1.15] tracking-tight text-ink sm:text-4xl">
+            Du arbeitest direkt mit <span className="accent-font text-[#163a6b]">mir</span> zusammen.
+          </h2>
+          <p className="text-lg leading-relaxed text-muted">
+            Ich bin Celvin. Content mache ich seit über fünf Jahren. Ich
+            habe selbst Kanäle aufgebaut, bevor ich anfing, anderen dabei zu helfen, und betreue jedes
+            Projekt persönlich.
+          </p>
+          <ul className="flex flex-col gap-3">
+            {PROMISES.map((p) => (
+              <li key={p} className="flex items-start gap-3 text-base text-ink">
+                <Check size={18} className="mt-0.5 shrink-0 text-[#163a6b]" />
+                {p}
+              </li>
+            ))}
+          </ul>
+        </div>
 
-        <div className="order-1 flex flex-col items-start gap-6 lg:order-2">
-          <FadeIn>
-            <span className="text-sm font-medium tracking-wide text-accent-strong uppercase">
-              Über mich
-            </span>
-          </FadeIn>
-          <FadeIn delay={0.05}>
-            <h2 className="text-balance text-3xl sm:text-4xl font-semibold leading-[1.15] tracking-tight text-ink">
-              Hi, ich bin Celvin.
-            </h2>
-          </FadeIn>
-          <FadeIn delay={0.1} className="flex flex-col gap-4 text-lg leading-relaxed text-muted">
-            <p>
-              SenzelGrowth gibt es seit 2024, Content mache ich schon seit über
-              5 Jahren. Ich habe selbst Kanäle aufgebaut, bevor ich anfing,
-              anderen dabei zu helfen.
-            </p>
-            <p>
-              Ich antworte schnell, wir checken uns regelmäßig ein, und wenn
-              etwas nicht funktioniert, sage ich das auch so.
-            </p>
-          </FadeIn>
+        <div className="flex flex-col gap-5">
+          <h3 className="text-sm font-medium tracking-wide text-accent-strong uppercase">So läuft die Zusammenarbeit ab</h3>
+          <ol className="flex flex-col">
+            {PROCESS.map((step, i) => (
+              <li key={step.title} className="flex gap-5 border-t border-line py-5 last:border-b">
+                <span className="w-8 shrink-0 text-2xl font-semibold leading-none text-[#163a6b]">{i + 1}</span>
+                <div>
+                  <p className="font-semibold text-ink">{step.title}</p>
+                  <p className="mt-1 text-sm leading-relaxed text-muted">{step.text}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
         </div>
       </Container>
     </section>

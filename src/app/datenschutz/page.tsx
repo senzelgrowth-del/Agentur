@@ -8,6 +8,7 @@ import { CONTACT_EMAIL } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Datenschutzerklärung — SenzelGrowth",
   description: "Datenschutzerklärung von SenzelGrowth — Celvin Senzel.",
+  alternates: { canonical: "/datenschutz" },
 };
 
 export default function DatenschutzPage() {
@@ -16,7 +17,7 @@ export default function DatenschutzPage() {
       <Navbar />
       <main className="flex-1 pt-40 pb-24">
         <Container className="flex flex-col gap-10 max-w-2xl">
-          <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-ink">
+          <h1 className="hyphens-auto break-words text-[1.7rem] sm:text-4xl font-semibold tracking-tight text-ink">
             Datenschutzerklärung
           </h1>
 
@@ -50,12 +51,32 @@ export default function DatenschutzPage() {
               prüfen, wenn uns konkrete Anhaltspunkte für eine rechtswidrige
               Nutzung bekannt werden.
             </p>
+            <p>
+              Hosting: Diese Website wird bei Netlify, Inc. (512 2nd Street,
+              Suite 200, San Francisco, CA 94107, USA) gehostet. Beim Aufruf
+              der Seite verarbeitet Netlify technisch notwendige Daten wie die
+              IP-Adresse, Datum und Uhrzeit des Abrufs sowie Browserangaben, um
+              die Website auszuliefern und vor Missbrauch zu schützen. Dabei
+              kann eine Übermittlung in die USA stattfinden; diese erfolgt auf
+              Grundlage der EU-Standardvertragsklauseln bzw. des EU-US Data
+              Privacy Framework. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO
+              (berechtigtes Interesse an einer sicheren und zuverlässigen
+              Bereitstellung der Website). Weitere Informationen:{" "}
+              <a
+                href="https://www.netlify.com/privacy/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent-strong hover:text-ink"
+              >
+                netlify.com/privacy
+              </a>
+              .
+            </p>
           </LegalSection>
 
           <LegalSection title="3. Kontaktaufnahme">
             <p>
-              Wenn Sie uns per E-Mail oder über ein Kontaktformular
-              kontaktieren, werden Ihre Angaben zur Bearbeitung Ihrer Anfrage
+              Wenn Sie uns per E-Mail kontaktieren, werden Ihre Angaben zur Bearbeitung Ihrer Anfrage
               und für den Fall von Anschlussfragen bei uns gespeichert. Diese
               Daten geben wir nicht ohne Ihre Einwilligung weiter.
             </p>
@@ -69,25 +90,13 @@ export default function DatenschutzPage() {
           <LegalSection title="4. Externe Dienste">
             <div>
               <h3 className="mb-2 text-sm font-semibold text-muted-strong">
-                Google Fonts
+                Schriftarten
               </h3>
               <p>
-                Diese Seite nutzt zur einheitlichen Darstellung von
-                Schriftarten Google Fonts. Anbieter ist Google LLC, 1600
-                Amphitheatre Parkway, Mountain View, CA 94043, USA. Beim
-                Aufruf der Seite lädt Ihr Browser die benötigten Schriften in
-                Ihren Browser-Cache. Dabei kann Ihre IP-Adresse an
-                Google-Server übertragen werden. Weitere Informationen finden
-                Sie in der Datenschutzerklärung von Google unter{" "}
-                <a
-                  href="https://policies.google.com/privacy"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-accent-strong hover:text-ink"
-                >
-                  policies.google.com/privacy
-                </a>
-                .
+                Die auf dieser Website verwendeten Schriftarten werden lokal von
+                unserem eigenen Server ausgeliefert. Beim Aufruf der Seite
+                findet keine Verbindung zu Servern von Google oder anderen
+                Schriftanbietern statt.
               </p>
             </div>
             <div>
