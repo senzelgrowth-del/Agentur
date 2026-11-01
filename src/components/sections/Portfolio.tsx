@@ -41,8 +41,8 @@ const PROJECTS: Project[] = [
 const MORE = [
   { image: "/portfolio/instagram-wachstum.jpg", caption: "Instagram: +105 % Aufrufe in 28 Tagen", client: "Content" },
   { image: "/portfolio/video-auswertung.jpg", caption: "Auswertung eines Kurzvideos", client: "Content" },
-  { image: "/portfolio/kampagnen-verlauf.jpg", caption: "Verlauf einer Werbekampagne", client: "Kampagnen" },
-  { image: "/portfolio/meta-kampagnen.jpg", caption: "Meta-Kampagnen im Vergleich", client: "Kampagnen" },
+  { image: "/portfolio/kampagnen-verlauf.jpg", caption: "Verlauf einer Google-Ads-Kampagne", client: "Kampagnen · Google Ads" },
+  { image: "/portfolio/meta-kampagnen-uebersicht.jpg", caption: "Drei Meta-Kampagnen im Überblick", client: "Kampagnen · Meta Ads" },
   { image: "/portfolio/google-ads-hinweis.jpg", caption: "Hinweis von Google zu einer Kampagne", client: "Kampagnen" },
   { image: "/results/ki-chat-automatisierung.png", caption: "Chatbot für Kundenanfragen", client: "Extra" },
 ];
