@@ -6,6 +6,9 @@ Zentrale Ablage für Meta-Ads-Creatives, organische Posts und alle Reise-Infos d
 
 `brand/starshine-emotions-logo.jpg`: drei orange Sterne über „Starshine Emotions“ in Dunkelblau, auf einem Verlauf von Himmelblau nach Sand. In Posts wird es als runder Badge eingesetzt, bei Spartacus mit Regenbogen-Ring.
 
+## Styleguide
+**Verbindlich für alle neuen Creatives: `brand/STYLEGUIDE.md` + `brand/style/base.mjs`.** Ältere Skripte (Runde 1/2) sind Archiv.
+
 ## Ordner
 
 | Ordner | Inhalt |

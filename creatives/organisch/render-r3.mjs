@@ -1,134 +1,144 @@
-// Runde 3: seriöse, hochwertige Einzelposts (4:5, 1080x1350) – je 2 pro Kampagne.
-// Fotos stammen von den Landingpages auf starshine-emotions.com (src/web-*.jpg).
-// Jeder Post mit eigenem Layout; Schrift mindestens 30 px, keine Schatten, Starshine-Logo.
+// Runde 3: hochwertige Einzelposts (4:5) – je 2 pro Kampagne, gerendert mit dem Stilpaket
+// (creatives/brand/style). Fotos von den Landingpages auf starshine-emotions.com (src/web-*.jpg).
+// Jeder Post nutzt eine andere Layout-Vorlage aus dem Styleguide.
 // Aufruf: node creatives/organisch/render-r3.mjs
-import { readFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { createRequire } from "node:module";
-import { execSync } from "node:child_process";
-
-// Playwright aus dem Projekt oder (Fallback) aus der globalen Installation laden
-const require = createRequire(import.meta.url);
-let chromium;
-try {
-  ({ chromium } = require("playwright"));
-} catch {
-  ({ chromium } = require(join(execSync("npm root -g").toString().trim(), "playwright")));
-}
+import { page, render, imgFrom, rainbowRule, THEMES, TYPE, MARGIN as M, LOGO } from "../brand/style/base.mjs";
 
 const dir = dirname(fileURLToPath(import.meta.url));
-const out = join(dir, "export");
-mkdirSync(out, { recursive: true });
+const img = imgFrom(join(dir, "src"));
+const { spartacus: SP, karlmay: KM, schlager: SL, danzig: DZ } = THEMES;
 
-const img = (f) =>
-  `data:image/jpeg;base64,${readFileSync(join(dir, "src", f)).toString("base64")}`;
-
-const W = 1080;
-const H = 1350;
-const RB = "linear-gradient(90deg,#e53b3b,#f28c28,#f7d23e,#3cb371,#3b82f6,#8b5cf6)";
-const logo = (css) => `<img src="${img("starshine-logo.jpg")}" style="position:absolute;width:120px;height:120px;border-radius:50%;object-fit:cover;border:4px solid #fff;${css}">`;
-const page = (fonts, css, body) => `<!doctype html><html><head><meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=${fonts}&family=Montserrat:wght@600;700;800;900&display=block" rel="stylesheet">
-<style>*{margin:0;padding:0;box-sizing:border-box}html,body{width:${W}px;height:${H}px;overflow:hidden}
-body{font-family:Montserrat,sans-serif;position:relative}${css}</style></head><body>${body}</body></html>`;
-
-// Jeder Post hat ein eigenes Layout – gemeinsam sind nur Logo, Mindestschriftgröße (30 px) und die Reisefarben.
 const posts = [
-  // Danzig 1: Foto oben, darunter zentriert und festlich auf Nachtblau
-  ["r3-danzig-silvester-feuerwerk", page("DM+Serif+Display:ital@0;1",
-    `body{background:#1b1427;color:#fbf3e6;text-align:center}
-.ph{position:absolute;left:0;right:0;top:0;height:760px;background:url(${img("web-danzig-feuerwerk.jpg")}) 50% 50%/cover}
-.tx{position:absolute;left:60px;right:60px;top:820px}
-h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:128px;line-height:1}
-h1 em{color:#f2c879}
-.d{font-weight:700;font-size:42px;margin-top:36px;color:#f2c879;letter-spacing:.04em}
-.s{font-weight:600;font-size:36px;margin-top:14px;opacity:.9}`,
-    `<div class="ph"></div><div class="tx"><h1>Ins neue Jahr<br><em>in Danzig</em></h1>
-<div class="d">30.12.2026 – 02.01.2027</div><div class="s">Galadinner mit Open Bar</div></div>${logo("right:40px;top:40px")}`)],
-
-  // Danzig 2: heller, fröhlicher Look passend zum weißen Pressefoto
-  ["r3-danzig-heiko-andy", page("DM+Serif+Display:ital@0;1",
-    `body{background:#fff;color:#2a1a33;text-align:center}
-.ph{position:absolute;left:0;right:0;top:40px;height:720px;background:url(${img("web-danzig-heiko-andy.jpg")}) 50% 30%/contain no-repeat}
-.tx{position:absolute;left:60px;right:60px;top:800px}
-.k{display:inline-block;background:#e8711c;color:#fff;font-weight:800;font-size:36px;padding:14px 34px;border-radius:60px}
-h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:116px;line-height:1.02;margin-top:32px}
-h1 em{color:#e8711c}
-.d{font-weight:700;font-size:40px;margin-top:30px}`,
-    `<div class="ph"></div><div class="tx"><div class="k">Silvester-Schlagergala</div>
-<h1>Mit <em>Heiko &amp; Andy</em><br>in Danzig</h1><div class="d">30.12. – 02.01. · ab 789 € p. P.</div></div>${logo("left:40px;top:40px;border-color:#f3e7d8")}`)],
-
-  // Karl May 1: Foto randlos, Titelblock unten links (einfarbig, kein Verlauf)
-  ["r3-karlmay-finale-am-kalkberg", page("Bebas+Neue",
-    `.ph{position:absolute;inset:0;background:url(${img("web-karlmay-feuerwerk.jpg")}) 50% 40%/cover}
-.box{position:absolute;left:56px;bottom:64px;background:#3b1d0e;color:#f5e4c3;padding:34px 44px 36px;border-radius:16px}
-h1{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:120px;line-height:.95}
-h1 span{color:#f2b544}
-.d{font-weight:700;font-size:34px;margin-top:18px}`,
-    `<div class="ph"></div><div class="box"><h1>Das große<br><span>Finale</span></h1>
-<div class="d">19.07.2027 · mit Feuerwerk</div></div>${logo("right:48px;top:48px")}`)],
-
-  // Karl May 2: Tagesfoto randlos, sandfarbene Karte oben, Preis-Etikett unten
-  ["r3-karlmay-sommer-im-wilden-westen", page("Bebas+Neue",
-    `.ph{position:absolute;inset:0;background:url(${img("web-karlmay-arena-tag.jpg")}) 55% 60%/cover}
-.card{position:absolute;left:56px;right:56px;top:56px;background:#f5e4c3;color:#3b1d0e;border-radius:18px;padding:34px 40px 36px;text-align:center}
-h1{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:104px;line-height:.98}
-h1 span{color:#c4561f}
-.d{font-weight:700;font-size:34px;margin-top:14px}
-.p{position:absolute;left:56px;bottom:64px;background:#c4561f;color:#fff;border-radius:60px;padding:18px 36px;font-weight:900;font-size:40px}`,
-    `<div class="ph"></div><div class="card"><h1>Ein Sommertag im<br><span>Wilden Westen</span></h1>
-<div class="d">Karl-May-Spiele Bad Segeberg 2027</div></div><div class="p">399 € p. P.</div>${logo("right:48px;bottom:48px")}`)],
-
-  // Schlager 1: Foto randlos, kräftiges Korallen-Band unten mit Schwungschrift
-  ["r3-schlager-eine-woche-auf-see", page("Pacifico",
-    `.ph{position:absolute;left:0;right:0;top:0;height:960px;background:url(${img("web-schlager-deck-party.jpg")}) 40% 60%/cover}
-.band{position:absolute;left:0;right:0;bottom:0;height:390px;background:#ff6b6b;color:#fff;text-align:center;padding-top:44px}
-h1{font-family:Pacifico,cursive;font-weight:400;font-size:84px;line-height:1.3}
-.d{font-weight:800;font-size:36px;margin-top:10px;color:#2b0f33}`,
-    `<div class="ph"></div><div class="band"><h1>Eine Woche<br>Schlager auf See</h1><div class="d">Costa Deliziosa · Oktober 2027</div></div>${logo("right:40px;top:40px")}`)],
-
-  // Schlager 2: Konzertfoto im Rahmen auf Pflaume, Titel darunter in Sonnengelb
-  ["r3-schlager-jeden-abend-live", page("Pacifico",
-    `body{background:#2b0f33;color:#fff;text-align:center}
-.ph{position:absolute;left:48px;right:48px;top:48px;height:840px;border-radius:28px;background:url(${img("web-schlager-konzert.jpg")}) 45% 50%/cover}
-.tx{position:absolute;left:60px;right:60px;top:920px}
-h1{font-family:Pacifico,cursive;font-weight:400;font-size:100px;line-height:1.3;color:#ffd166}
-.d{font-weight:700;font-size:36px;margin-top:14px}`,
-    `<div class="ph"></div><div class="tx"><h1>Jeden Abend live</h1><div class="d">Über 30 Schlagerstars an Bord</div></div>${logo("right:72px;top:72px")}`)],
-
-  // Spartacus 1: Luftbild randlos, Text direkt im klaren Himmel
-  ["r3-spartacus-zwischen-den-kontinenten", page("DM+Serif+Display",
-    `.ph{position:absolute;inset:0;background:url(${img("web-spartacus-schiff-insel.jpg")}) 50% 70%/cover}
-.tx{position:absolute;left:0;right:0;top:80px;text-align:center;color:#14213d}
-h1{font-weight:900;font-size:92px;line-height:1.02;letter-spacing:-.02em}
-h1 span{background:${RB};-webkit-background-clip:text;color:transparent}
-.d{display:inline-block;margin-top:26px;background:#14213d;color:#fff;border-radius:60px;padding:14px 34px;font-weight:800;font-size:34px}`,
-    `<div class="ph"></div><div class="tx"><h1>Zwischen den<br><span>Kontinenten</span></h1>
-<div class="d">Spartacus Gay Cruise · 15.–22.10.2027</div></div>${logo("right:48px;bottom:48px")}`)],
-
-  // Spartacus 2: heller Grund, großer Titel links, Foto abgerundet unten
-  ["r3-spartacus-sonne-an-deck", page("DM+Serif+Display",
-    `body{background:#fffaf3;color:#14213d}
-.tx{position:absolute;left:64px;right:64px;top:70px}
-h1{font-weight:900;font-size:96px;line-height:1.02;letter-spacing:-.02em}
-h1 span{background:${RB};-webkit-background-clip:text;color:transparent}
-.bar{width:140px;height:10px;border-radius:5px;background:${RB};margin-top:30px}
-.d{font-weight:700;font-size:34px;margin-top:24px}
-.ph{position:absolute;left:48px;right:48px;top:480px;bottom:48px;border-radius:28px;background:url(${img("web-spartacus-oasis-pool.jpg")}) 40% 60%/cover}`,
-    `<div class="tx"><h1>Sonne tanken.<br><span>Du selbst sein.</span></h1><div class="bar"></div>
-<div class="d">Spartacus Gay Cruise 2027 · Vasco da Gama</div></div><div class="ph"></div>${logo("right:72px;bottom:72px")}`)],
+  // Vorlage „Gerahmt“: Foto mit Rand auf Nachtblau, Text linksbündig darunter
+  {
+    name: "r3-danzig-silvester-feuerwerk",
+    html: page(
+      `body{background:${DZ.ink};color:${DZ.paper}}
+.ph{position:absolute;left:${M}px;right:${M}px;top:${M}px;height:624px;background:url(${img("web-danzig-feuerwerk.jpg")}) 50% 50%/cover}
+.tx{position:absolute;left:${M}px;right:${M}px;top:752px}
+.label{color:${DZ.accent}}
+h1{font-size:${TYPE.h1}px;line-height:.98;margin-top:22px}
+h1 em{color:${DZ.accent}}
+.info{margin-top:30px;opacity:.88}`,
+      `<div class="ph"></div><div class="tx"><div class="label">Silvester an der Ostsee</div>
+<h1 class="serif">Ins neue Jahr<br><em>in Danzig</em></h1>
+<div class="info">30.12.2026 – 02.01.2027<br>Galadinner mit Open Bar</div></div>
+<img class="logo" src="${LOGO}" style="right:${M}px;bottom:${M}px">`,
+    ),
+  },
+  // Vorlage „Hell“: Pressefoto auf Weiß, zentrierte Typografie
+  {
+    name: "r3-danzig-heiko-andy",
+    html: page(
+      `body{background:#fff;color:${DZ.ink};text-align:center}
+.ph{position:absolute;left:0;right:0;top:56px;height:700px;background:url(${img("web-danzig-heiko-andy.jpg")}) 50% 40%/contain no-repeat}
+.tx{position:absolute;left:${M}px;right:${M}px;top:820px}
+.label{color:#c8631f}
+h1{font-size:124px;line-height:1;margin-top:26px}
+h1 em{color:#c8631f}
+.info{margin-top:34px}`,
+      `<div class="ph"></div><div class="tx"><div class="label">Silvester-Schlagergala · Danzig</div>
+<h1 class="serif">Mit <em>Heiko &amp; Andy</em><br>ins neue Jahr</h1>
+<div class="info">30.12.2026 – 02.01.2027 · ab 789 € p. P.</div></div>
+<img class="logo" src="${LOGO}" style="left:${M}px;top:${M}px">`,
+    ),
+  },
+  // Vorlage „Block“: Foto randlos, einfarbiger Titelblock unten links
+  {
+    name: "r3-karlmay-finale-am-kalkberg",
+    html: page(
+      `.ph{position:absolute;inset:0;background:url(${img("web-karlmay-feuerwerk.jpg")}) 50% 40%/cover}
+.box{position:absolute;left:${M}px;bottom:${M}px;background:${KM.ink};color:${KM.paper};padding:44px 52px 46px}
+.label{color:#e0a15e}
+h1{font-family:Poster;font-weight:700;font-size:${TYPE.poster}px;line-height:.9;letter-spacing:.01em;margin-top:18px;text-transform:uppercase}
+.info{margin-top:22px}`,
+      `<div class="ph"></div><div class="box"><div class="label">Karl-May-Spiele 2027</div>
+<h1>Das große<br>Finale</h1><div class="info">19.07.2027 · mit Feuerwerk</div></div>
+<img class="logo" src="${LOGO}" style="right:${M}px;top:${M}px">`,
+    ),
+  },
+  // Vorlage „Himmel“: Foto randlos, Titel im ruhigen Himmel, Infoleiste unten
+  {
+    name: "r3-karlmay-sommer-im-wilden-westen",
+    html: page(
+      `.ph{position:absolute;left:0;right:0;top:0;bottom:220px;background:url(${img("web-karlmay-arena-tag.jpg")}) 30% 70%/cover}
+h1{position:absolute;left:${M}px;top:${M}px;font-family:Poster;font-weight:700;font-size:112px;line-height:.92;color:${KM.ink};white-space:nowrap;text-transform:uppercase}
+.bar{position:absolute;left:0;right:0;bottom:0;height:220px;background:${KM.paper};color:${KM.ink};padding:0 ${M}px;display:flex;flex-direction:column;justify-content:center}
+.label{color:${KM.accent}}
+.info{margin-top:10px}`,
+      `<div class="ph"></div><h1>Ein Sommertag<br>im Wilden Westen</h1>
+<div class="bar"><div class="label">Karl-May-Spiele Bad Segeberg 2027</div><div class="info">Bus ab Erfurt · 2 Nächte HP · Ticket · 399 € p. P.</div></div>
+<img class="logo" src="${LOGO}" style="right:${M}px;bottom:58px">`,
+    ),
+  },
+  // Vorlage „Geteilt“: Foto oben, Meeresblau-Fläche mit Serif-Titel
+  {
+    name: "r3-schlager-eine-woche-auf-see",
+    html: page(
+      `body{background:#173a5e;color:${SL.paper}}
+.ph{position:absolute;left:0;right:0;top:0;height:800px;background:url(${img("web-schlager-deck-party.jpg")}) 45% 60%/cover}
+.tx{position:absolute;left:${M}px;right:${M}px;top:858px}
+.label{color:${SL.accent}}
+h1{font-size:112px;line-height:.98;margin-top:20px}
+h1 em{color:${SL.accent}}
+.info{margin-top:26px;opacity:.9}`,
+      `<div class="ph"></div><div class="tx"><div class="label">Schlager Seereise 2027</div>
+<h1 class="serif">Eine Woche<br>Schlager <em>auf See</em></h1>
+<div class="info">Costa Deliziosa · Oktober 2027</div></div>
+<img class="logo" src="${LOGO}" style="right:${M}px;bottom:${M}px">`,
+    ),
+  },
+  // Vorlage „Bühne“: Konzertfoto oben, zentrierter Titel auf Pflaume
+  {
+    name: "r3-schlager-jeden-abend-live",
+    html: page(
+      `body{background:${SL.ink};color:${SL.paper};text-align:center}
+.ph{position:absolute;left:0;right:0;top:0;height:880px;background:url(${img("web-schlager-konzert.jpg")}) 45% 50%/cover}
+.tx{position:absolute;left:${M}px;right:${M}px;top:930px}
+.label{color:${SL.accent}}
+h1{font-size:${TYPE.h1}px;line-height:1;margin-top:18px;font-style:italic}
+.info{margin-top:22px;opacity:.9}`,
+      `<div class="ph"></div><div class="tx"><div class="label">Schlager Seereise 2027</div>
+<h1 class="serif">Jeden Abend live.</h1><div class="info">Über 30 Schlagerstars an Bord</div></div>
+<img class="logo" src="${LOGO}" style="right:${M}px;top:${M}px">`,
+    ),
+  },
+  // Vorlage „Himmel“ (Variante zentriert): Luftbild, Titel im Himmel, Navy-Leiste
+  {
+    name: "r3-spartacus-zwischen-den-kontinenten",
+    html: page(
+      `.ph{position:absolute;left:0;right:0;top:0;bottom:200px;background:url(${img("web-spartacus-schiff-insel.jpg")}) 50% 55%/cover}
+h1{position:absolute;left:0;right:0;top:84px;text-align:center;font-size:${TYPE.h1}px;line-height:.96;color:${SP.ink}}
+h1 em{font-style:italic}
+.bar{position:absolute;left:0;right:0;bottom:0;height:200px;background:${SP.ink};color:${SP.paper};padding:0 ${M}px;display:flex;flex-direction:column;justify-content:center}
+.label{color:${SP.accent}}
+.info{margin-top:8px}`,
+      `<div class="ph"></div><h1 class="serif">Zwischen den<br><em>Kontinenten</em></h1>
+${rainbowRule(`position:absolute;left:0;right:0;bottom:200px;height:8px`)}
+<div class="bar"><div class="label">Spartacus Gay Cruise 2027</div><div class="info">15.–22.10.2027 · Mallorca – Spanien – Marokko</div></div>
+<img class="logo" src="${LOGO}" style="right:${M}px;bottom:48px">`,
+    ),
+  },
+  // Vorlage „Papier“: heller Grund, großer Serif-Titel, Foto randlos unten
+  {
+    name: "r3-spartacus-sonne-an-deck",
+    html: page(
+      `body{background:${SP.paper};color:${SP.ink}}
+.tx{position:absolute;left:${M}px;right:${M}px;top:${M + 10}px}
+.label{color:#9a7a45}
+h1{font-size:${TYPE.h1}px;line-height:.96;margin-top:22px}
+h1 em{font-style:italic}
+.info{margin-top:26px}
+.ph{position:absolute;left:0;right:0;bottom:0;height:720px;background:url(${img("web-spartacus-oasis-pool.jpg")}) 40% 62%/cover}`,
+      `<div class="tx"><div class="label">Spartacus Gay Cruise 2027</div>
+<h1 class="serif">Sonne tanken.<br><em>Du selbst sein.</em></h1>
+<div class="info">Pool, Sauna &amp; Vollpension inklusive</div></div>
+${rainbowRule(`position:absolute;left:0;right:0;bottom:720px;height:8px`)}
+<div class="ph"></div><img class="logo" src="${LOGO}" style="right:${M}px;top:${M}px">`,
+    ),
+  },
 ];
 
-const browser = await chromium.launch();
-for (const [name, html] of posts) {
-  const p = { name };
-  const page = await browser.newPage({ viewport: { width: W, height: H } });
-  await page.setContent(html, { waitUntil: "networkidle" });
-  await page.evaluate(() => document.fonts.ready);
-  const png = join(out, `${p.name}.png`);
-  await page.screenshot({ path: png });
-  await page.close();
-  console.log("✓", p.name);
-}
-await browser.close();
+await render(posts, join(dir, "export"));
