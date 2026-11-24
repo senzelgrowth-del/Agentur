@@ -30,15 +30,20 @@ const add = (name, css, body) => posts.push({ name, html: page(css, body) });
 // ================= SPARTACUS =================
 // 1 · Emotion: ein ruhiger Ort, der „du“ sagt
 add(
-  "r4-sp-1-dein-platz-an-deck",
-  `body{background:#fff;color:${SP.ink};text-align:center}
-.ph{position:absolute;left:0;right:0;top:0;height:930px;background:url(${img("web-sp-lido-bar.jpg")}) 50% 55%/cover}
-.tx{position:absolute;left:60px;right:60px;top:992px}
-h1{font-weight:900;font-size:92px;line-height:1.02;letter-spacing:-.02em}
-.sub{font-weight:700;font-size:38px;color:${SP.sub};margin-top:22px}`,
-  `<div class="ph"></div>${rainbowRule("position:absolute;left:0;right:0;top:930px;height:10px")}
-<div class="tx"><h1>Dein Platz an Deck <span class="rb">wartet.</span></h1><div class="sub">Spartacus Gay Cruise · 15.–22.10.2027</div></div>
-${logo("right:56px;top:56px")}`,
+  "r4-sp-1-packliste",
+  `body{background:#fff;color:${SP.ink}}
+.k{position:absolute;left:80px;top:80px;font-weight:800;font-size:32px;letter-spacing:.14em;color:#6b7690}
+h1{position:absolute;left:80px;right:80px;top:130px;font-weight:900;font-size:100px;line-height:1;letter-spacing:-.02em}
+ul{list-style:none;position:absolute;left:80px;right:80px;top:400px}
+li{display:flex;align-items:center;gap:30px;height:140px;border-bottom:3px solid #eef0f5;font-weight:700;font-size:52px}
+li i{width:56px;height:56px;border-radius:14px;border:5px solid ${SP.ink};position:relative;flex:0 0 auto}
+li i::after{content:"";position:absolute;left:12px;top:-2px;width:18px;height:34px;border:solid;border-width:0 9px 9px 0;border-color:var(--c);transform:rotate(40deg)}
+.f{position:absolute;left:80px;right:80px;bottom:72px;font-weight:700;font-size:38px;color:#6b7690}`,
+  `<div class="k">SPARTACUS GAY CRUISE 2027</div><h1>Deine<br><span class="rb">Packliste.</span></h1>
+<ul>${[["Sonnenbrille", "#e53b3b"], ["Badehose", "#f28c28"], ["Outfit für die Themenparty", "#e9b824"], ["Tanzschuhe für die DJ-Nächte", "#3cb371"], ["Lieblingsmensch", "#8b5cf6"]]
+    .map(([t, c]) => `<li><i style="--c:${c}"></i>${t}</li>`)
+    .join("")}</ul>
+<div class="f">Abfahrt 15.10.2027 · Palma de Mallorca</div>${logo("right:72px;top:72px", 120)}`,
 );
 
 // 2 · Save-Post: großes Datum, wird gespeichert und geteilt
@@ -124,14 +129,19 @@ ${logo("right:56px;top:56px")}`,
 
 // 6 · Highlight-Event: Oktoberfest auf See
 add(
-  "r4-sl-2-oktoberfest",
-  `.ph{position:absolute;inset:0;background:url(${img("web-sl-208.jpg")}) 50% 40%/cover}
-.tx{position:absolute;left:60px;right:60px;top:64px}
-h1{${outline(110)}}
+  "r4-sl-2-so-schoen-wars",
+  `body{background:#f4ead9;color:${SL.ink}}
+.h{position:absolute;left:60px;right:60px;top:66px;text-align:center}
+h1{font-family:Fredoka;font-weight:700;font-size:92px;line-height:1.02}
 h1 span{color:${SL.accent}}
-.sub{${outline(50, 10)};margin-top:12px}`,
-  `<div class="ph"></div><div class="tx"><h1>O'zapft is –<br><span>auf hoher See!</span></h1><div class="sub">Schlager-Seereise 2027</div></div>
-${vinyl("right:48px;bottom:56px")}`,
+.sub{font-weight:700;font-size:36px;margin-top:14px}
+.pol{position:absolute;background:#fff;padding:22px 22px 0;width:500px;box-shadow:0 2px 0 rgba(0,0,0,.06)}
+.pol div{height:360px;background-size:cover;background-position:center}
+.pol p{font-family:Fredoka;font-weight:600;font-size:38px;text-align:center;padding:16px 0 20px}`,
+  `<div class="h"><h1>So schön war's <span>2025</span>!</h1><div class="sub">Schlager-Seereise · im Oktober 2027 dabei sein?</div></div>
+<div class="pol" style="left:50px;top:300px;transform:rotate(-5deg)"><div style="background-image:url(${img("web-sl-208.jpg")})"></div><p>Oktoberfest auf See</p></div>
+<div class="pol" style="right:50px;top:320px;transform:rotate(4deg)"><div style="background-image:url(${img("web-sl-250.jpg")});background-position:30% 40%"></div><p>Live-Konzerte</p></div>
+<div class="pol" style="left:290px;top:830px;transform:rotate(-1.5deg)"><div style="height:300px;background-image:url(${img("web-sl-314.jpg")})"></div><p>Sonnendeck</p></div>`,
 );
 
 // 7 · Abstimmung: Lieblingsort an Bord (Tag oder Abend)
@@ -197,14 +207,17 @@ h1 span{color:${KM.accent}}
 
 // 11 · Nostalgie-Frage: zwei Winnetou-Generationen
 add(
-  "r4-km-3-pierre-brice-oder-klaws",
-  `.ph{position:absolute;inset:0;background:url(${img("web-km-reiter.jpg")}) 50% 85%/cover}
-.band{position:absolute;left:0;right:0;top:0;background:${KM.ink};color:${KM.paper};padding:62px 64px 56px;text-align:center}
-h1{font-family:'Alfa Slab One';font-weight:400;font-size:84px;line-height:1.08}
-h1 span{color:${KM.accent}}
-.sub{font-family:Roboto;font-weight:700;font-size:40px;color:#fff;margin-top:22px}`,
-  `<div class="ph"></div><div class="band"><div class="label" style="color:${KM.accent};letter-spacing:.2em;margin-bottom:18px">Karl-May-Spiele Bad Segeberg</div><h1>Pierre Brice oder<br><span>Alexander Klaws?</span></h1><div class="sub">Ihr Lieblings-Winnetou? Ab in die Kommentare!</div></div>
-${logo("right:48px;bottom:48px", 140)}`,
+  "r4-km-3-zum-siebten-mal",
+  `body{background:${KM.ink};color:${KM.paper}}
+.ph{position:absolute;right:0;top:0;bottom:0;width:470px;background:url(${img("winnetou-reiter.jpg")}) 50% 60%/cover}
+.tx{position:absolute;left:72px;top:80px;width:520px}
+.label{color:${KM.accent};letter-spacing:.16em}
+.n{font-family:'Alfa Slab One';font-size:420px;line-height:.9;color:${KM.accent};margin-top:30px}
+h1{font-family:'Alfa Slab One';font-weight:400;font-size:62px;line-height:1.12;margin-top:10px}
+.sub{font-family:Roboto;font-weight:700;font-size:36px;color:#fff;margin-top:36px;line-height:1.35}`,
+  `<div class="ph"></div><div class="tx"><div class="label">Karl-May-Spiele<br>Bad Segeberg 2027</div>
+<div class="n">7.</div><h1>Mal reitet Alexander Klaws als Winnetou.</h1>
+<div class="sub">Wir fahren im Juli mit dem Bus ab Erfurt hin – ab 399 € p. P.</div></div>`,
 );
 
 // 12 · Weihnachten: Erlebnis verschenken
@@ -226,14 +239,21 @@ h1 span{color:#b5542a}
 // ================= DANZIG SILVESTER =================
 // 13 · Hook-Frage kurz vor Silvester
 add(
-  "r4-dz-1-noch-keine-plaene",
-  `body{background:${DZ.ink};text-align:center}
-.ph{position:absolute;left:0;right:0;bottom:0;height:1000px;background:url(${img("danzig-mottlau-nacht.jpg")}) 50% 100%/cover}
-.tx{position:absolute;left:50px;right:50px;top:70px}
-h1{font-family:'DM Serif Display';font-weight:400;font-size:112px;line-height:1;color:${DZ.paper}}
-h1 span{color:${DZ.accent}}
-.pill{display:inline-block;margin-top:30px;background:${DZ.accent};color:${DZ.ink};border-radius:60px;padding:16px 40px;font-weight:700;font-size:38px}`,
-  `<div class="ph"></div><div class="tx"><h1>Noch keine Pläne<br>für <span>Silvester?</span></h1><div class="pill">Mit uns nach Danzig · 30.12.–02.01.</div></div>`,
+  "r4-dz-1-silvesterabend",
+  `body{background:#241a30;color:${DZ.paper}}
+.k{position:absolute;left:80px;top:80px;font-weight:800;font-size:32px;letter-spacing:.14em;color:${DZ.accent}}
+h1{position:absolute;left:80px;right:80px;top:130px;font-family:'DM Serif Display';font-weight:400;font-size:104px;line-height:1}
+.line{position:absolute;left:112px;top:470px;width:6px;height:590px;background:${DZ.accent}}
+.st{position:absolute;left:80px;right:80px;display:flex;gap:44px;align-items:flex-start}
+.st b{flex:0 0 70px;height:70px;border-radius:50%;background:${DZ.accent};color:#241a30;font-family:'DM Serif Display';font-weight:400;font-size:44px;display:flex;align-items:center;justify-content:center}
+.st h2{font-family:'DM Serif Display';font-weight:400;font-size:66px;line-height:1}
+.st p{font-weight:700;font-size:36px;margin-top:12px;opacity:.9}
+.f{position:absolute;left:80px;bottom:72px;font-weight:700;font-size:36px}`,
+  `<div class="k">SILVESTER IN DANZIG</div><h1>Ihr Silvesterabend<br>in drei Akten.</h1><div class="line"></div>
+<div class="st" style="top:460px"><b>1</b><div><h2>Galadinner</h2><p>festlich, mit Open Bar</p></div></div>
+<div class="st" style="top:700px"><b>2</b><div><h2>Schlagergala</h2><p>live mit Heiko &amp; Andy</p></div></div>
+<div class="st" style="top:940px"><b>3</b><div><h2>Mitternacht</h2><p>Anstoßen an der Ostsee</p></div></div>
+<div class="f">30.12.2026 – 02.01.2027 · ab 789 € p. P.</div>${logo("right:72px;bottom:56px", 120)}`,
 );
 
 // 14 · Alles drin: vier Highlights als Kacheln
@@ -261,16 +281,17 @@ h1 span{color:${DZ.accent}}
 
 // 15 · Fan-Frage zu Heiko & Andy
 add(
-  "r4-dz-3-heiko-andy",
-  `body{background:#fff;color:${DZ.ink};text-align:center}
-.ph{position:absolute;left:0;right:0;top:60px;height:660px;background:url(${img("web-danzig-heiko-andy.jpg")}) 50% 40%/contain no-repeat}
-.tx{position:absolute;left:50px;right:50px;top:760px}
-h1{font-family:'DM Serif Display';font-weight:400;font-size:100px;line-height:1.02}
-h1 span{color:#e8711c}
-.sub{font-weight:700;font-size:38px;margin-top:26px}
-.k{display:inline-block;margin-top:26px;background:#e8711c;color:#fff;font-weight:800;font-size:34px;padding:12px 34px;border-radius:60px}`,
-  `<div class="ph"></div><div class="tx"><h1>Mit <span>Heiko &amp; Andy</span><br>ins neue Jahr feiern?</h1>
-<div class="k">Silvester-Schlagergala in Danzig</div></div>`,
+  "r4-dz-3-postkarte",
+  `body{background:#e9dfcf}
+.card{position:absolute;left:56px;right:56px;top:150px;height:1060px;background:#fffdf8;transform:rotate(-2deg);padding:36px}
+.ph{height:600px;background:url(${img("danzig-mottlau-nacht.jpg")}) 50% 70%/cover}
+.stamp{position:absolute;right:60px;top:60px;width:170px;height:200px;background:#fff;border:4px dashed #c9b9a0;display:flex;align-items:center;justify-content:center}
+.stamp img{width:130px;height:130px;border-radius:50%;object-fit:cover}
+h1{font-family:'DM Serif Display';font-weight:400;font-size:100px;line-height:1;color:${DZ.ink};margin-top:42px}
+h1 span{color:#b8862f}
+.t{font-weight:700;font-size:36px;color:#4a3e58;margin-top:22px;line-height:1.4;max-width:680px}`,
+  `<div class="card"><div class="ph"></div><div class="stamp"><img src="${LOGO}"></div>
+<h1>Grüße aus <span>Danzig</span></h1><div class="t">Silvester 2026/27 mit Galadinner, Open Bar und Schlagergala mit Heiko &amp; Andy.</div></div>`,
 );
 
 await render(posts, join(dir, "export"));

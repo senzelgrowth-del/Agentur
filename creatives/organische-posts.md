@@ -388,15 +388,14 @@ Bilder: `organisch/export/r4-*.png` · Skript: `organisch/render-r4.mjs`
 Prinzip: Jeder Post hat **eine** Idee und **eine** Handlung (kommentieren, speichern, markieren oder Nachricht). Die erste Zeile funktioniert auch ohne „mehr lesen“, der Text im Bild ist auch auf dem Handy lesbar.
 
 ### SPARTACUS (du)
-**1 · Dein Platz an Deck wartet** – Emotion
-> Dein Platz an Deck wartet. 🌈
+**1 · Deine Packliste.** – Speicher- und Teil-Post
+> Deine Packliste für die Spartacus Gay Cruise 2027 ✅🌈
 >
-> Ein Drink in der Hand, die Sonne im Gesicht und um dich herum Menschen, bei denen du einfach du sein kannst. Genau dafür gibt es die Spartacus Gay Cruise.
+> Sonnenbrille, Badehose, Outfit für die Themenparty, Tanzschuhe für die DJ-Nächte – und das Wichtigste: dein Lieblingsmensch.
 >
-> 📅 15.–22.10.2027 · ab Palma de Mallorca
-> 💶 ab 1.349 € p. P. inkl. Vollpension
+> Markier die Person, die mit auf deine Liste gehört! 👇
 >
-> 📩 Schreib uns – wir halten dir einen Platz frei.
+> 📅 15.–22.10.2027 · ab Palma de Mallorca · ab 1.349 € p. P.
 
 **2 · Save the Date 15.10.** – Speicher-Post
 > Speicher dir diesen Post – am 15.10.2027 heißt es Leinen los! 🚢🌈
@@ -435,13 +434,14 @@ Prinzip: Jeder Post hat **eine** Idee und **eine** Handlung (kommentieren, speic
 >
 > Bei welchem Lied singen Sie garantiert mit? 👇
 
-**6 · O'zapft is – auf hoher See!** – Event-Highlight
-> O'zapft is – mitten im Mittelmeer! 🍻
+**6 · So schön war's 2025!** – Rückblick mit echten Fotos
+> So schön war's auf der Schlager-Seereise 2025! 📸🎶
 >
-> Dirndl, Lederhose und Blasmusik auf See: Das Oktoberfest ist eines der Highlights der Schlager-Seereise 2027. Dazu kommen White Night, Tanzkurse und tägliche Konzerte.
+> Oktoberfest auf See, Live-Konzerte ganz nah an den Stars und Sonnenuntergänge auf dem Deck. Im Oktober 2027 geht es wieder los – diesmal ab Triest oder Bari.
 >
-> 📅 02.–09.10. ab Triest · 03.–10.10. ab Bari
-> 📩 Schreiben Sie uns – wir beraten Sie gern.
+> 💶 ab 1.299 € p. P. inkl. Vollpension & Trinkgeldern
+>
+> Waren Sie 2025 dabei? Erzählen Sie uns Ihr schönstes Erlebnis! 👇
 
 **7 · Tagsüber Sonne. Abends Gänsehaut.** – Emotion
 > Tagsüber Sonne. Abends Gänsehaut. ☀️🎶
@@ -487,12 +487,14 @@ Prinzip: Jeder Post hat **eine** Idee und **eine** Handlung (kommentieren, speic
 >
 > 📩 Schreiben Sie uns einfach eine Nachricht.
 
-**11 · Pierre Brice oder Alexander Klaws?** – Nostalgie-Frage
-> Pierre Brice oder Alexander Klaws – wer ist Ihr Lieblings-Winnetou? 🤠
+**11 · Zum 7. Mal Winnetou** – Fakt mit Wow-Effekt
+> Zum 7. Mal reitet Alexander Klaws 2027 als Winnetou über die Bühne am Kalkberg. 🐎
 >
-> Schreiben Sie es in die Kommentare! 👇
+> Erleben Sie ihn live bei den Karl-May-Spielen in Bad Segeberg – wir bringen Sie mit dem Bus ab Erfurt hin, inklusive 2 Nächten mit Halbpension und Eintrittskarte.
 >
-> Alexander Klaws reitet 2027 zum siebten Mal am Kalkberg. Wir fahren im Juli mit dem Bus ab Erfurt hin – kommen Sie mit?
+> 📅 07.–09.07. oder 18.–20.07.2027 · 💶 399 € p. P.
+>
+> 📩 Schreiben Sie uns einfach eine Nachricht.
 
 **12 · Verschenken Sie Wilden Westen.** – Weihnachts-Geschenkidee
 > Noch auf der Suche nach einem Weihnachtsgeschenk? 🎁 Verschenken Sie Wilden Westen!
@@ -504,15 +506,16 @@ Prinzip: Jeder Post hat **eine** Idee und **eine** Handlung (kommentieren, speic
 > Wem würden Sie diese Reise schenken? Markieren Sie die Person! 👇
 
 ### DANZIG SILVESTER (Sie) – zuerst posten
-**13 · Noch keine Pläne für Silvester?** – Hook
-> Noch keine Pläne für Silvester? 🥂 Dann kommen Sie doch mit nach Danzig!
+**13 · Ihr Silvesterabend in drei Akten** – Ablauf
+> Ihr Silvesterabend in Danzig – in drei Akten. ✨
 >
-> Galadinner mit Open Bar, Schlagergala mit Heiko & Andy und vier Tage an der polnischen Ostsee.
+> 1️⃣ Festliches Galadinner mit Open Bar
+> 2️⃣ Schlagergala live mit Heiko & Andy
+> 3️⃣ Um Mitternacht anstoßen an der Ostsee 🥂
 >
-> 📅 30.12.2026 – 02.01.2027 · ab 789 € p. P.
-> 🚌 Haustür-Transfer & Komfort-Reisebus
+> 📅 30.12.2026 – 02.01.2027 · 3 Nächte im 4-Sterne-Hotel · ab 789 € p. P.
 >
-> 📩 Jetzt Nachricht schreiben.
+> 📩 Jetzt Nachricht schreiben und Platz sichern.
 
 **14 · 4 Tage. 1 Jahreswechsel.** – Übersicht
 > 4 Tage, 1 Jahreswechsel – und alles ist schon organisiert. ✨
@@ -526,17 +529,19 @@ Prinzip: Jeder Post hat **eine** Idee und **eine** Handlung (kommentieren, speic
 >
 > 📩 Schreiben Sie uns – wir reservieren Ihren Platz.
 
-**15 · Mit Heiko & Andy ins neue Jahr feiern?** – Fan-Frage
-> Mit Heiko & Andy ins neue Jahr feiern – wer ist dabei? 🙋‍♀️🙋‍♂️
+**15 · Grüße aus Danzig** – Postkarte
+> Grüße aus Danzig! 💌 So könnte Ihr Jahreswechsel aussehen.
 >
-> Schreiben Sie „Ich!“ in die Kommentare und markieren Sie, mit wem Sie anstoßen möchten. 🥂
+> Lichter über der Mottlau, ein festliches Galadinner mit Open Bar und die Schlagergala mit Heiko & Andy – Silvester an der polnischen Ostsee.
 >
-> Silvester-Schlagergala in Danzig · 30.12.2026 – 02.01.2027 · ab 789 € p. P.
+> 📅 30.12.2026 – 02.01.2027 · ab 789 € p. P.
+>
+> Wem würden Sie diese Postkarte schicken? Markieren Sie die Person! 👇
 
 ### Redaktionsplan (ab 24.11.)
 | Woche | Danzig | Karl May | Schlager | Spartacus |
 |---|---|---|---|---|
-| 24.11. | 13 Noch keine Pläne · 15 Heiko & Andy | 12 Geschenk | 5 Mitsingen | 2 Save the Date |
+| 24.11. | 13 Drei Akten · 15 Postkarte | 12 Geschenk | 5 Mitsingen | 2 Save the Date |
 | 01.12. | 14 4 Tage | 10 Winnetou live | 7 Tagsüber Sonne | 3 Pool/Bar/Club |
-| 08.12. | – | 11 Brice oder Klaws | 6 Oktoberfest | 1 Dein Platz an Deck |
+| 08.12. | – | 11 Zum 7. Mal | 6 So schön war's 2025 | 1 Packliste |
 | 15.12. | – | 9 Wenn es dunkel wird | 8 Triest oder Bari | 4 Route |
