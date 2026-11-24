@@ -300,7 +300,8 @@ Danzig zuerst – die Reise startet am 30.12.
 ---
 
 ## Runde 3 – seriöse Einzelposts (Fotos von den Landingpages)
-Bilder: `organisch/export/r3-*.png` · Skript: `organisch/render-r3.mjs`
+Bilder: `organisch/export/r3-*.png` · Skript: `organisch/render-r3.mjs` · jeder Post mit eigenem Layout, Schrift mindestens 30 px
+Fotonachweise (wie auf den Landingpages): Karl May © Robin Schart · Schlager © Philipp Kumbier · Danzig-Feuerwerk © Patryk Kosmider/stock.adobe.com
 
 ### Danzig Silvester – „Ins neue Jahr in Danzig“
 > Ein Jahreswechsel, wie er im Buche steht: Feuerwerk über der Mottlau, festliches Galadinner und Open Bar – Silvester an der polnischen Ostsee. 🎆
