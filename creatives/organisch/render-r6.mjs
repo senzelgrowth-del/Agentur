@@ -63,45 +63,48 @@ h1{position:absolute;left:0;right:0;top:118px;text-align:center;font-family:'Alf
 );
 
 // 3 · Gruppen & Vereine – mit dem Starshine-Bus
-// 3 · Vereinsausflug als klassisches Western-Plakat (Rahmen, Zacken, Sterne, Banner)
-const burst = (n = 24, r1 = 50, r2 = 43) =>
-  `polygon(${Array.from({ length: n * 2 }, (_, k) => {
-    const a = (Math.PI * k) / n, r = k % 2 ? r2 : r1;
-    return `${(50 + r * Math.cos(a)).toFixed(2)}% ${(50 + r * Math.sin(a)).toFixed(2)}%`;
+// 3 · Vereinsausflug: klassischer Reiseprospekt auf Weiß – Bus-Grafik als Overlay,
+// verspielte Farben, bewusst leicht unperfekt (gezackte Kanten, Versatz, schiefe Elemente)
+const C = { rust: "#c8532a", mustard: "#f2b632", teal: "#2a9d8f", sky: "#7cc4e8", ink: "#2b1a12" };
+let seed = 7;
+const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
+// unregelmäßige Blob-Form als Polygon (handgemacht wirkend)
+const blob = (n = 26, j = 0.07) =>
+  `polygon(${Array.from({ length: n }, (_, k) => {
+    const a = (2 * Math.PI * k) / n, r = 0.5 - j / 2 + rnd() * j;
+    return `${(50 + r * 100 * Math.cos(a)).toFixed(1)}% ${(50 + r * 100 * Math.sin(a)).toFixed(1)}%`;
   }).join(",")})`;
-const zigzag = (c) =>
-  `background:linear-gradient(135deg,${c} 25%,transparent 25%) -18px 0/36px 36px,linear-gradient(225deg,${c} 25%,transparent 25%) -18px 0/36px 36px;`;
-const star = (css) => `<span style="position:absolute;${css};color:${RUST};font-size:46px;line-height:1">★</span>`;
+const rough = (n = 30) =>
+  `polygon(${Array.from({ length: n * 2 }, (_, k) => {
+    const a = (Math.PI * k) / n, r = k % 2 ? 44 + rnd() * 3 : 50;
+    return `${(50 + r * Math.cos(a)).toFixed(1)}% ${(50 + r * Math.sin(a)).toFixed(1)}%`;
+  }).join(",")})`;
+const spark = (css, col, size = 54) => `<span style="position:absolute;${css};color:${col};font-size:${size}px;line-height:1">★</span>`;
 add(
   "r6-km-3-vereinsausflug",
-  `body{background:#efdfbd;color:${KM.ink}}
-.paper{position:absolute;inset:0;background:repeating-radial-gradient(circle at 30% 20%,rgba(120,80,40,.035) 0 2px,transparent 2px 7px)}
-.frame{position:absolute;inset:26px;border:6px solid ${KM.ink}}
-.frame2{position:absolute;inset:40px;border:2px solid ${KM.ink}}
-.ribbon{position:absolute;left:110px;right:110px;top:82px;height:74px;white-space:nowrap;background:${KM.ink};color:${KM.paper};display:flex;align-items:center;justify-content:center;font-weight:800;font-size:27px;letter-spacing:.1em;
-  clip-path:polygon(0 0,100% 0,96% 50%,100% 100%,0 100%,4% 50%)}
-.h1{position:absolute;left:0;right:0;top:186px;text-align:center;font-family:'Alfa Slab One';font-size:116px;line-height:1;color:${RUST};letter-spacing:.02em}
-.h2{position:absolute;left:0;right:0;top:322px;text-align:center;font-family:'Alfa Slab One';font-size:68px;line-height:1}
-.zz{position:absolute;left:80px;right:80px;height:18px}
-.ph{position:absolute;left:80px;right:80px;top:462px;height:500px;border:8px solid ${KM.ink};background:url(${img("web-karlmay-arena-tag.jpg")}) 30% 68%/cover}
-.burst{position:absolute;right:70px;top:410px;width:250px;height:250px;background:${RUST};clip-path:${burst()};transform:rotate(-10deg);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center}
-.burst b{font-family:'Alfa Slab One';font-weight:400;font-size:64px;line-height:1}
-.burst span{font-family:Roboto;font-weight:700;font-size:30px}
-.bus{position:absolute;left:110px;top:820px;width:470px}
-.sub{position:absolute;left:0;right:0;top:1022px;text-align:center;font-family:'Alfa Slab One';font-size:56px}
-.rule{position:absolute;left:250px;right:250px;top:1104px;height:4px;background:${KM.ink}}
-.facts{position:absolute;left:0;right:0;top:1128px;text-align:center;font-family:Roboto;font-weight:700;font-size:40px;line-height:1.4}`,
-  `<div class="paper"></div><div class="frame"></div><div class="frame2"></div>
-${star("left:58px;top:56px")}${star("right:58px;top:56px")}${star("left:58px;bottom:56px")}${star("right:58px;bottom:56px")}
-<div class="ribbon">★ KARL-MAY-SPIELE BAD SEGEBERG 2027 ★</div>
-<div class="h1">GEMEINSAM</div><div class="h2">in den Wilden Westen!</div>
-<div class="zz" style="top:440px;${zigzag(KM.ink)}transform:scaleY(-1)"></div>
-<div class="ph"></div>
-<div class="zz" style="top:970px;${zigzag(KM.ink)}"></div>
+  `body{background:#fff;color:${C.ink}}
+.tag{position:absolute;left:70px;top:70px;background:${C.teal};color:#fff;font-weight:800;font-size:30px;letter-spacing:.08em;padding:14px 28px;transform:rotate(-2.5deg);border-radius:6px}
+.h1{position:absolute;left:66px;top:150px;font-family:'Alfa Slab One';font-size:132px;line-height:1;color:${C.rust};text-shadow:7px 6px 0 ${C.mustard};transform:rotate(-1.5deg)}
+.h2{position:absolute;left:72px;top:300px;font-family:'Alfa Slab One';font-size:64px;line-height:1}
+.wave{position:absolute;left:70px;top:378px}
+.back{position:absolute;left:150px;top:430px;width:820px;height:640px;background:${C.mustard};clip-path:${blob(30, 0.09)};transform:rotate(4deg)}
+.ph{position:absolute;left:110px;top:450px;width:840px;height:590px;clip-path:${blob(28, 0.06)};background:url(${img("web-karlmay-arena-tag.jpg")}) 30% 68%/cover}
+.bus{position:absolute;left:40px;top:850px;width:640px;transform:rotate(-3deg)}
+.price{position:absolute;right:50px;top:820px;width:260px;height:260px;background:${C.rust};clip-path:${rough()};transform:rotate(9deg);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.price b{font-family:'Alfa Slab One';font-weight:400;font-size:70px;line-height:1}
+.price span{font-family:Roboto;font-weight:700;font-size:30px}
+.f{position:absolute;left:72px;bottom:64px}
+.f h2{font-family:'Alfa Slab One';font-weight:400;font-size:54px;line-height:1}
+.f p{font-family:Roboto;font-weight:700;font-size:36px;margin-top:12px;line-height:1.3}
+.f p span{background:${C.sky};padding:0 8px}`,
+  `<div class="tag">KARL-MAY-SPIELE BAD SEGEBERG 2027</div>
+<div class="h1">Gemeinsam</div><div class="h2">in den Wilden Westen!</div>
+<svg class="wave" width="640" height="30" viewBox="0 0 640 30"><path d="M4 18 C 60 4, 110 28, 170 15 S 280 6, 340 17 S 450 28, 520 13 S 600 10, 636 19" fill="none" stroke="${C.teal}" stroke-width="9" stroke-linecap="round"/></svg>
+<div class="back"></div><div class="ph"></div>
+${spark("right:80px;top:180px;transform:rotate(14deg)", C.mustard, 70)}${spark("right:170px;top:300px;transform:rotate(-12deg)", C.teal, 44)}${spark("left:60px;top:500px;transform:rotate(-8deg)", C.rust, 52)}${spark("right:90px;top:420px;transform:rotate(20deg)", C.sky, 60)}
 <img class="bus" src="${png("web-starshine-bus.png")}">
-<div class="burst"><span>nur</span><b>399 €</b><span>p. P.</span></div>
-<div class="sub">Der Vereinsausflug 2027</div><div class="rule"></div>
-<div class="facts">Bus ab Erfurt · Hotel mit HP · Ticket<br>07.–09.07. &amp; 18.–20.07.2027</div>`,
+<div class="price"><span>nur</span><b>399 €</b><span>p. P.</span></div>
+<div class="f"><h2>Der Vereinsausflug 2027</h2><p>Bus ab Erfurt · Hotel mit HP · Ticket<br><span>07.–09.07.</span> &amp; <span>18.–20.07.2027</span></p></div>`,
 );
 
 await render(posts, join(dir, "export"));
