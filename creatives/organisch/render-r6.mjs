@@ -107,4 +107,32 @@ ${spark("right:80px;top:180px;transform:rotate(14deg)", C.mustard, 70)}${spark("
 <div class="f"><h2>Der Vereinsausflug 2027</h2><p>Bus ab Erfurt · Hotel mit HP · Ticket<br><span>07.–09.07.</span> &amp; <span>18.–20.07.2027</span></p></div>`,
 );
 
+// 4 · Gleicher Prospekt-Stil: Winnetou live – Nachtfoto, Bus von rechts, Preis links
+add(
+  "r6-km-4-winnetou-live",
+  `body{background:#fff;color:${C.ink}}
+.tag{position:absolute;right:70px;top:70px;background:${C.rust};color:#fff;font-weight:800;font-size:30px;letter-spacing:.08em;padding:14px 28px;transform:rotate(2deg);border-radius:6px}
+.h1{position:absolute;left:66px;top:150px;font-family:'Alfa Slab One';font-size:150px;line-height:1;color:${C.teal};text-shadow:7px 6px 0 ${C.mustard};transform:rotate(-2deg)}
+.h2{position:absolute;left:72px;top:318px;font-family:'Alfa Slab One';font-size:64px;line-height:1}
+.wave{position:absolute;left:70px;top:396px}
+.back{position:absolute;left:90px;top:440px;width:860px;height:640px;background:${C.sky};clip-path:${blob(30, 0.1)};transform:rotate(-5deg)}
+.ph{position:absolute;left:130px;top:460px;width:840px;height:590px;clip-path:${blob(28, 0.07)};background:url(${img("web-km-einritt.jpg")}) 50% 100%/cover}
+.bus{position:absolute;right:20px;top:960px;width:470px;transform:rotate(2.5deg)}
+.price{position:absolute;left:50px;top:830px;width:250px;height:250px;background:${C.mustard};clip-path:${rough()};transform:rotate(-8deg);color:${C.ink};display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.price b{font-family:'Alfa Slab One';font-weight:400;font-size:66px;line-height:1}
+.price span{font-family:Roboto;font-weight:700;font-size:30px}
+.f{position:absolute;left:72px;bottom:64px}
+.f h2{font-family:'Alfa Slab One';font-weight:400;font-size:52px;line-height:1}
+.f p{font-family:Roboto;font-weight:700;font-size:36px;margin-top:12px;line-height:1.3}
+.f p span{background:${C.mustard};padding:0 8px}`,
+  `<div class="tag">KARL-MAY-SPIELE 2027</div>
+<div class="h1">Winnetou</div><div class="h2">live am Kalkberg erleben!</div>
+<svg class="wave" width="700" height="30" viewBox="0 0 700 30"><path d="M4 15 C 70 28, 120 4, 190 16 S 300 27, 370 13 S 480 4, 560 17 S 650 24, 696 12" fill="none" stroke="${C.rust}" stroke-width="9" stroke-linecap="round"/></svg>
+<div class="back"></div><div class="ph"></div>
+${spark("right:90px;top:200px;transform:rotate(-14deg)", C.rust, 64)}${spark("right:60px;top:470px;transform:rotate(10deg)", C.mustard, 56)}${spark("left:56px;top:520px;transform:rotate(18deg)", C.teal, 48)}${spark("left:300px;top:1090px;transform:rotate(-6deg)", C.sky, 44)}
+<div class="price"><span>nur</span><b>399 €</b><span>p. P.</span></div>
+<img class="bus" src="${png("web-starshine-bus.png")}">
+<div class="f"><h2>Mit uns nach Bad Segeberg</h2><p>Bus ab Erfurt · 2 Nächte mit HP · Ticket<br><span>07.–09.07.</span> &amp; <span>18.–20.07.2027</span></p></div>`,
+);
+
 await render(posts, join(dir, "export"));

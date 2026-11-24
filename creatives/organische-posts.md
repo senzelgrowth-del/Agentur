@@ -669,3 +669,18 @@ Fotos: Starshine-Reisebus und Arena von der Website, Frühstück von Pexels (#25
 > 📅 07.–09.07. oder 18.–20.07.2027 · 💶 399 € p. P.
 >
 > 📩 Schreiben Sie uns – wir planen gern für Ihre ganze Gruppe.
+
+**4 · Winnetou live am Kalkberg erleben!** – Prospekt-Stil wie der Vereinsausflug
+**Bild:** `organisch/export/r6-km-4-winnetou-live.png`
+
+> Winnetou live am Kalkberg erleben! 🐎✨
+>
+> Wenn Winnetou und Old Shatterhand in die Arena reiten, ist die Kindheit plötzlich wieder ganz nah. Erleben Sie die Karl-May-Spiele 2027 mit Alexander Klaws als Winnetou – ganz bequem mit uns.
+>
+> 🚌 Busreise ab Erfurt
+> 🏨 2 Nächte mit Halbpension
+> 🎟️ Eintrittskarte inklusive
+>
+> 📅 07.–09.07. oder 18.–20.07.2027 · 💶 399 € p. P.
+>
+> 📩 Schreiben Sie uns einfach eine Nachricht.
