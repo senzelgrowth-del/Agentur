@@ -1,5 +1,7 @@
 # Starshine Emotions – Styleguide für Social-Creatives
 
+> Zuerst `LEARNINGS.md` lesen: Dort steht alles, was der Kunde gelobt oder abgelehnt hat.
+
 Gilt für alle Posts und Anzeigen. Technische Basis: `brand/style/base.mjs`. Jedes neue Skript importiert `page`, `render`, `THEMES`, `TYPE` und `LOGO` von dort. Referenz-Umsetzung: `organisch/render-r3.mjs`.
 
 ## Grundhaltung
