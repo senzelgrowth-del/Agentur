@@ -63,18 +63,45 @@ h1{position:absolute;left:0;right:0;top:118px;text-align:center;font-family:'Alf
 );
 
 // 3 · Gruppen & Vereine – mit dem Starshine-Bus
+// 3 · Vereinsausflug als klassisches Western-Plakat (Rahmen, Zacken, Sterne, Banner)
+const burst = (n = 24, r1 = 50, r2 = 43) =>
+  `polygon(${Array.from({ length: n * 2 }, (_, k) => {
+    const a = (Math.PI * k) / n, r = k % 2 ? r2 : r1;
+    return `${(50 + r * Math.cos(a)).toFixed(2)}% ${(50 + r * Math.sin(a)).toFixed(2)}%`;
+  }).join(",")})`;
+const zigzag = (c) =>
+  `background:linear-gradient(135deg,${c} 25%,transparent 25%) -18px 0/36px 36px,linear-gradient(225deg,${c} 25%,transparent 25%) -18px 0/36px 36px;`;
+const star = (css) => `<span style="position:absolute;${css};color:${RUST};font-size:46px;line-height:1">★</span>`;
 add(
   "r6-km-3-vereinsausflug",
-  `body{background:${KM.paper};color:${KM.ink}}
-.ph{position:absolute;left:0;right:0;top:0;height:640px;background:url(${img("web-km-einritt.jpg")}) 50% 72%/cover}
-.bus{position:absolute;left:50%;top:500px;transform:translateX(-50%);width:760px}
-.tx{position:absolute;left:72px;right:72px;top:830px;text-align:center}
-.label{color:${RUST};letter-spacing:.14em}
-h1{font-family:'Alfa Slab One';font-weight:400;font-size:88px;line-height:1.04;margin-top:14px}
-.sub{font-family:Roboto;font-weight:700;font-size:38px;margin-top:22px;line-height:1.3}`,
-  `<div class="ph"></div><img class="bus" src="${png("web-starshine-bus.png")}">
-<div class="tx"><div class="label">Karl-May-Spiele Bad Segeberg 2027</div><h1>Der perfekte<br>Vereinsausflug.</h1>
-<div class="sub">Für Gruppen, Vereine &amp; Reisegemeinschaften – Bus, Hotel &amp; Ticket ab 399 € p. P.</div></div>`,
+  `body{background:#efdfbd;color:${KM.ink}}
+.paper{position:absolute;inset:0;background:repeating-radial-gradient(circle at 30% 20%,rgba(120,80,40,.035) 0 2px,transparent 2px 7px)}
+.frame{position:absolute;inset:26px;border:6px solid ${KM.ink}}
+.frame2{position:absolute;inset:40px;border:2px solid ${KM.ink}}
+.ribbon{position:absolute;left:110px;right:110px;top:82px;height:74px;white-space:nowrap;background:${KM.ink};color:${KM.paper};display:flex;align-items:center;justify-content:center;font-weight:800;font-size:27px;letter-spacing:.1em;
+  clip-path:polygon(0 0,100% 0,96% 50%,100% 100%,0 100%,4% 50%)}
+.h1{position:absolute;left:0;right:0;top:186px;text-align:center;font-family:'Alfa Slab One';font-size:116px;line-height:1;color:${RUST};letter-spacing:.02em}
+.h2{position:absolute;left:0;right:0;top:322px;text-align:center;font-family:'Alfa Slab One';font-size:68px;line-height:1}
+.zz{position:absolute;left:80px;right:80px;height:18px}
+.ph{position:absolute;left:80px;right:80px;top:462px;height:500px;border:8px solid ${KM.ink};background:url(${img("web-karlmay-arena-tag.jpg")}) 30% 68%/cover}
+.burst{position:absolute;right:70px;top:410px;width:250px;height:250px;background:${RUST};clip-path:${burst()};transform:rotate(-10deg);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center}
+.burst b{font-family:'Alfa Slab One';font-weight:400;font-size:64px;line-height:1}
+.burst span{font-family:Roboto;font-weight:700;font-size:30px}
+.bus{position:absolute;left:110px;top:820px;width:470px}
+.sub{position:absolute;left:0;right:0;top:1022px;text-align:center;font-family:'Alfa Slab One';font-size:56px}
+.rule{position:absolute;left:250px;right:250px;top:1104px;height:4px;background:${KM.ink}}
+.facts{position:absolute;left:0;right:0;top:1128px;text-align:center;font-family:Roboto;font-weight:700;font-size:40px;line-height:1.4}`,
+  `<div class="paper"></div><div class="frame"></div><div class="frame2"></div>
+${star("left:58px;top:56px")}${star("right:58px;top:56px")}${star("left:58px;bottom:56px")}${star("right:58px;bottom:56px")}
+<div class="ribbon">★ KARL-MAY-SPIELE BAD SEGEBERG 2027 ★</div>
+<div class="h1">GEMEINSAM</div><div class="h2">in den Wilden Westen!</div>
+<div class="zz" style="top:440px;${zigzag(KM.ink)}transform:scaleY(-1)"></div>
+<div class="ph"></div>
+<div class="zz" style="top:970px;${zigzag(KM.ink)}"></div>
+<img class="bus" src="${png("web-starshine-bus.png")}">
+<div class="burst"><span>nur</span><b>399 €</b><span>p. P.</span></div>
+<div class="sub">Der Vereinsausflug 2027</div><div class="rule"></div>
+<div class="facts">Bus ab Erfurt · Hotel mit HP · Ticket<br>07.–09.07. &amp; 18.–20.07.2027</div>`,
 );
 
 await render(posts, join(dir, "export"));

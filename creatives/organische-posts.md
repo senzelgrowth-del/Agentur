@@ -657,10 +657,14 @@ Fotos: Starshine-Reisebus und Arena von der Website, Frühstück von Pexels (#25
 >
 > 📩 Jetzt Nachricht schreiben und Platz reservieren.
 
-**3 · Der perfekte Vereinsausflug.**
-> Noch auf der Suche nach dem Vereinsausflug für 2027? 🚌🤠
+**3 · GEMEINSAM in den Wilden Westen!** – Western-Plakat für Vereine & Gruppen
+> GEMEINSAM in den Wilden Westen! 🤠🚌
 >
-> Unsere Reise zu den Karl-May-Spielen in Bad Segeberg ist ideal für Gruppen, Vereine und Reisegemeinschaften: gemeinsam im Bus ab Erfurt, 2 Nächte im Hotel mit Halbpension und Eintrittskarte inklusive. Weitere Zustiege sind direkt an der Strecke möglich.
+> Der Bus voller bekannter Gesichter, die Vorfreude auf der Fahrt und dann gemeinsam staunen, wenn Winnetou in die Arena reitet: Die Karl-May-Spiele 2027 sind der perfekte Vereinsausflug.
+>
+> ✅ Busreise ab Erfurt, weitere Zustiege direkt an der Strecke möglich
+> ✅ 2 Nächte im Good Morning Hotel Bad Oldesloe mit Halbpension
+> ✅ Eintrittskarte inklusive
 >
 > 📅 07.–09.07. oder 18.–20.07.2027 · 💶 399 € p. P.
 >
