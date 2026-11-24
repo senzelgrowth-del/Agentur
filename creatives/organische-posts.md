@@ -545,3 +545,87 @@ Prinzip: Jeder Post hat **eine** Idee und **eine** Handlung (kommentieren, speic
 | 01.12. | 14 4 Tage | 10 Winnetou live | 7 Tagsüber Sonne | 3 Pool/Bar/Club |
 | 08.12. | – | 11 Zum 7. Mal | 6 So schön war's 2025 | 1 Packliste |
 | 15.12. | – | 9 Wenn es dunkel wird | 8 Triest oder Bari | 4 Route |
+
+---
+
+## Runde 5 – 8 weitere Posts mit neuen Fotos
+Bilder: `organisch/export/r5-*.png` · Skript: `organisch/render-r5.mjs`
+
+**Fotos:**
+- **Pexels** (lizenzfrei, Pexels-Lizenz, Namensnennung nicht nötig): Barcelona #19866630, Perast/Montenegro #31989354, Anstoßen #3171736, Danzig bei Nacht #14018883, Marienburg #18689965
+- **Landingpages:** Vasco da Gama Dome-Lounge, Costa Deliziosa (© Costa Crociere), Karl May Einritt (© Robin Schart)
+
+**Abgleich mit den Landingpages:**
+- Barcelona: 16.10., 08–19 Uhr, laut Reiseablauf
+- Kotor: 04.10., laut Fahrplan auf beiden Routen
+- Danzig: alle Leistungen laut Seite
+
+**Spartacus 1 · Barcelona** (Hafen-Steckbrief)
+> Stopp 1 der Spartacus Gay Cruise 2027: Barcelona! 🌈🇪🇸
+>
+> Am 16.10. liegen wir von 8 bis 19 Uhr in Barcelona – genug Zeit für Strand, Altstadt oder einen Abstecher nach Sitges, eines der offensten Reiseziele für die LGBTQ+ Community.
+>
+> 📅 15.–22.10.2027 · ab Palma de Mallorca · ab 1.349 € p. P.
+>
+> 📩 Schreib uns für alle Infos.
+
+**Spartacus 2 · Sundowner mit Meerblick rundum**
+> Sundowner mit Meerblick rundum. 🍸🌅
+>
+> Die Dome Observation Lounge der Vasco da Gama ist der perfekte Ort, um den Tag ausklingen zu lassen – bevor es in die nächste Partynacht geht.
+>
+> 📅 Spartacus Gay Cruise · 15.–22.10.2027
+> 📩 Schreib uns – wir beraten dich persönlich.
+
+**Schlager 1 · Hallo, Montenegro!**
+> Hallo, Montenegro! 🏝️
+>
+> Am 04.10.2027 macht die Schlager-Seereise in Kotor Halt – mitten in einer der schönsten Buchten Europas. Dazu Italien, Griechenland und Albanien.
+>
+> 📅 02.–09.10. ab Triest · 03.–10.10. ab Bari
+> 💶 ab 1.299 € p. P. inkl. Vollpension
+>
+> 📩 Schreiben Sie uns für alle Infos.
+
+**Schlager 2 · Ihr Zuhause für eine Woche**
+> Ihr Zuhause für eine Woche: die Costa Deliziosa. 🚢
+>
+> 7 Nächte, über 30 Schlagerstars an Bord, Vollpension und Trinkgelder inklusive – tagsüber Mittelmeer, abends Konzerte.
+>
+> 📅 Oktober 2027 · ab Triest oder Bari · ab 1.299 € p. P.
+>
+> 📩 Jetzt Nachricht schreiben und Kabine reservieren.
+
+**Karl May · Gänsehaut, wenn Winnetou einreitet**
+> Gänsehaut pur, wenn Winnetou in die Arena reitet. 🐎
+>
+> Erleben Sie diesen Moment live bei den Karl-May-Spielen 2027 in Bad Segeberg – mit Alexander Klaws als Winnetou.
+>
+> 🚌 Busreise ab Erfurt · 2 Nächte mit Halbpension · Eintrittskarte
+> 📅 07.–09.07. oder 18.–20.07.2027 · 💶 399 € p. P.
+>
+> 📩 Schreiben Sie uns einfach eine Nachricht.
+
+**Danzig 1 · Auf ein neues Jahr!**
+> Auf ein neues Jahr! 🥂
+>
+> Beim festlichen Silvester-Galadinner mit Open Bar in Danzig stoßen Sie gemeinsam an – danach feiern Sie mit Heiko & Andy ins neue Jahr.
+>
+> 📅 30.12.2026 – 02.01.2027 · ab 789 € p. P.
+>
+> 📩 Jetzt Nachricht schreiben und Platz sichern.
+
+**Danzig 2 · Sie feiern. Wir kümmern uns.**
+> Sie feiern. Wir kümmern uns. ✨
+>
+> Haustür-Transfer, 4-Sterne-Hotel direkt an der Ostsee, geführte Ausflüge und persönliche Reisebegleitung – bei unserer Silvesterreise nach Danzig ist alles organisiert.
+>
+> 📅 30.12.2026 – 02.01.2027 · ab 789 € p. P.
+> ℹ️ Haustür-Transfer inklusive in den PLZ-Gebieten 01 und 02, andere Gebiete auf Anfrage.
+
+**Danzig 3 · Die Marienburg**
+> Die Marienburg – die größte Backsteinburg der Welt. 🏰
+>
+> Bei unserer Silvesterreise nach Danzig ist der geführte Ausflug dorthin bereits inklusive. Dazu: Galadinner, Schlagergala mit Heiko & Andy und eine Dreistadt-Tour.
+>
+> 📅 30.12.2026 – 02.01.2027 · ab 789 € p. P.

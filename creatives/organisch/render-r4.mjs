@@ -76,7 +76,7 @@ h1{font-weight:900;font-size:72px;line-height:1.05;letter-spacing:-.02em}
 .sub{font-weight:700;font-size:34px;color:${SP.sub};margin-top:14px}
 .r{position:absolute;left:0;right:0;height:340px;background-size:cover}
 .lab{position:absolute;left:60px;bottom:32px;display:flex;align-items:center;gap:18px;background:#fff;border-radius:80px;padding:10px 34px 10px 10px;font-weight:900;font-size:44px}`,
-  `<div class="h"><h1>Erster Abend an Bord –<br><span class="rb">wohin zuerst?</span></h1><div class="sub">Spartacus Gay Cruise 2027 · kommentiere 1, 2 oder 3</div></div>
+  `<div class="h"><h1>Erster Abend an Bord –<br><span class="rb">wohin zuerst?</span></h1><div class="sub">Spartacus Gay Cruise 2027</div></div>
 ${spots
   .map(
     ([f, t, pos], i) =>
