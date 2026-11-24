@@ -136,15 +136,17 @@ ${vinyl("right:48px;bottom:56px")}`,
 
 // 7 · Abstimmung: Lieblingsort an Bord (Tag oder Abend)
 add(
-  "r4-sl-3-deck-oder-saal",
+  "r4-sl-3-tagsueber-abends",
   `body{background:${SL.ink}}
-.a,.b{position:absolute;left:0;right:0;height:671px;background-size:cover}
+.a,.b{position:absolute;left:0;right:0;height:667px;background-size:cover}
 .a{top:0;background-image:url(${img("web-sl-314.jpg")});background-position:50% 40%}
 .b{bottom:0;background-image:url(${img("web-sl-63.jpg")});background-position:50% 45%}
-.l{position:absolute;left:60px;${outline(70, 12)}}
-.or{position:absolute;left:50%;top:675px;transform:translate(-50%,-50%);width:150px;height:150px;border-radius:50%;background:${SL.accent};color:#fff;font-family:Fredoka;font-weight:700;font-size:44px;display:flex;align-items:center;justify-content:center;border:8px solid #fff}`,
-  `<div class="a"></div><div class="b"></div>
-<div class="l" style="top:56px">1 · Sonnendeck</div><div class="l" style="bottom:64px">2 · Konzertsaal</div><div class="or">oder?</div>`,
+.sep{position:absolute;left:0;right:0;top:667px;height:16px;background:${SL.accent}}
+.l{position:absolute;left:60px;${outline(104, 14)}}
+.l span{color:${SL.accent}}`,
+  `<div class="a"></div><div class="sep"></div><div class="b"></div>
+<div class="l" style="top:60px">Tagsüber Sonne.</div><div class="l" style="bottom:70px"><span>Abends Gänsehaut.</span></div>
+${logo("right:56px;top:470px", 130)}`,
 );
 
 // 8 · Entscheidungshilfe: Triest oder Bari
@@ -181,16 +183,16 @@ h1{font-family:'Alfa Slab One';font-weight:400;font-size:86px;line-height:1.1;ma
 // 10 · Reibung nehmen: alles schon geplant (Checkliste)
 const checks = ["Busreise ab Erfurt", "2 Nächte im Hotel", "Halbpension", "Eintrittskarte"];
 add(
-  "r4-km-2-alles-geplant",
-  `body{background:${KM.paper};color:${KM.ink}}
-h1{position:absolute;left:72px;right:60px;top:80px;font-family:'Alfa Slab One';font-weight:400;font-size:88px;line-height:1.06}
-ul{list-style:none;position:absolute;left:72px;right:60px;top:330px}
-li{display:flex;align-items:center;gap:26px;font-family:Roboto;font-weight:700;font-size:46px;height:92px}
-.ph{position:absolute;left:0;right:0;bottom:0;height:540px;background:url(${img("web-karlmay-arena-tag.jpg")}) 30% 70%/cover}
-.p{position:absolute;right:56px;bottom:56px;background:${KM.ink};color:${KM.paper};font-family:'Alfa Slab One';font-size:54px;padding:18px 34px;border-radius:14px}`,
-  `<h1>Ihr Ausflug ist<br>schon geplant.</h1>
-<ul>${checks.map((c) => `<li>${badge("✓", "#b5542a", "#fff", 60)}${c}</li>`).join("")}</ul>
-<div class="ph"></div><div class="p">399 € p. P.</div>`,
+  "r4-km-2-winnetou-live",
+  `.ph{position:absolute;left:0;right:0;top:0;bottom:430px;background:url(${img("web-km-reiter.jpg")}) 50% 80%/cover}
+.band{position:absolute;left:0;right:0;bottom:0;height:430px;background:${KM.ink};color:${KM.paper};padding:56px 72px 0}
+h1{font-family:'Alfa Slab One';font-weight:400;font-size:100px;line-height:1.05}
+h1 span{color:${KM.accent}}
+.sub{font-family:Roboto;font-weight:700;font-size:40px;color:#fff;margin-top:26px;line-height:1.35}
+.p{position:absolute;right:56px;bottom:368px;background:${KM.accent};color:${KM.ink};font-family:'Alfa Slab One';font-size:56px;padding:16px 32px;border-radius:14px}`,
+  `<div class="ph"></div><div class="band"><h1>Winnetou<br><span>live erleben.</span></h1>
+<div class="sub">Bus ab Erfurt · Hotel · Ticket – alles inklusive</div></div>
+<div class="p">399 € p. P.</div>${logo("right:48px;top:48px", 140)}`,
 );
 
 // 11 · Nostalgie-Frage: zwei Winnetou-Generationen
@@ -208,12 +210,17 @@ ${logo("right:48px;bottom:48px", 140)}`,
 // 12 · Weihnachten: Erlebnis verschenken
 add(
   "r4-km-4-geschenk",
-  `.ph{position:absolute;inset:0;background:url(${img("web-karlmay-feuerwerk.jpg")}) 50% 40%/cover}
-.card{position:absolute;left:60px;right:60px;bottom:64px;background:${KM.paper};color:${KM.ink};border-radius:22px;padding:48px 52px 50px;text-align:center}
-h1{font-family:'Alfa Slab One';font-weight:400;font-size:74px;line-height:1.1}
-.sub{font-family:Roboto;font-weight:700;font-size:38px;margin-top:22px;color:#6b4a35}`,
-  `<div class="ph"></div><div class="card"><h1>Das schönste Geschenk<br>passt in keinen Karton.</h1><div class="sub">Karl-May-Spiele 2027 verschenken · 399 € p. P.</div></div>
-${logo("right:56px;top:56px")}`,
+  `body{background:${KM.paper};color:${KM.ink}}
+.tx{position:absolute;left:72px;right:72px;top:76px}
+.label{color:#b5542a;letter-spacing:.2em}
+h1{font-family:'Alfa Slab One';font-weight:400;font-size:96px;line-height:1.05;margin-top:18px}
+h1 span{color:#b5542a}
+.sub{font-family:Roboto;font-weight:700;font-size:42px;margin-top:24px;line-height:1.3}
+.ph{position:absolute;left:0;right:0;bottom:0;height:740px;background:url(${img("web-karlmay-arena-tag.jpg")}) 30% 70%/cover}
+.p{position:absolute;left:72px;bottom:56px;background:${KM.ink};color:${KM.paper};font-family:Roboto;font-weight:700;font-size:38px;padding:18px 32px;border-radius:14px}`,
+  `<div class="tx"><div class="label">Geschenkidee Weihnachten</div><h1>Verschenken Sie<br><span>Wilden Westen.</span></h1>
+<div class="sub">Ein Tag bei den Karl-May-Spielen 2027 – mit Bus, Hotel &amp; Ticket.</div></div>
+<div class="ph"></div><div class="p">399 € p. P. · Juli 2027</div>${logo("right:56px;bottom:48px", 140)}`,
 );
 
 // ================= DANZIG SILVESTER =================

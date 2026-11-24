@@ -443,13 +443,15 @@ Prinzip: Jeder Post hat **eine** Idee und **eine** Handlung (kommentieren, speic
 > 📅 02.–09.10. ab Triest · 03.–10.10. ab Bari
 > 📩 Schreiben Sie uns – wir beraten Sie gern.
 
-**7 · Sonnendeck oder Konzertsaal?** – Abstimmung
-> Wo verbringen Sie Ihre Zeit an Bord am liebsten? ☀️🎶
+**7 · Tagsüber Sonne. Abends Gänsehaut.** – Emotion
+> Tagsüber Sonne. Abends Gänsehaut. ☀️🎶
 >
-> 1️⃣ Sonnendeck
-> 2️⃣ Konzertsaal
+> So fühlt sich eine Woche auf der Schlager-Seereise an: tagsüber Mittelmeer und Sonnendeck, abends Konzerte mit über 30 Stars – ganz nah dran.
 >
-> Schreiben Sie 1 oder 2 in die Kommentare – und markieren Sie Ihre Reisebegleitung! 👇
+> 📅 02.–09.10. ab Triest · 03.–10.10. ab Bari
+> 💶 ab 1.299 € p. P. inkl. Vollpension & Trinkgeldern
+>
+> Mit wem würden Sie diese Woche erleben? Markieren Sie die Person! 👇
 
 **8 · Triest oder Bari?** – Entscheidungshilfe
 > Triest oder Bari – welche Schlager-Seereise passt zu Ihnen? 🚢
@@ -472,17 +474,18 @@ Prinzip: Jeder Post hat **eine** Idee und **eine** Handlung (kommentieren, speic
 >
 > 📩 Jetzt Nachricht schreiben.
 
-**10 · Ihr Ausflug ist schon geplant** – Checkliste
-> Sie wollten schon immer mal zu den Karl-May-Spielen? Wir haben schon alles geplant. ✅
+**10 · Winnetou live erleben.** – Angebot klar und emotional
+> Winnetou live erleben – mitten im Wilden Westen am Kalkberg. 🐎
 >
-> ✔️ Busreise ab Erfurt
-> ✔️ 2 Nächte im Good Morning Hotel Bad Oldesloe
-> ✔️ Halbpension
-> ✔️ Eintrittskarte
+> Wir bringen Sie im Juli 2027 bequem zu den Karl-May-Spielen nach Bad Segeberg, mit Alexander Klaws als Winnetou.
+>
+> ✅ Busreise ab Erfurt
+> ✅ 2 Nächte im Hotel mit Halbpension
+> ✅ Eintrittskarte inklusive
 >
 > 📅 07.–09.07. oder 18.–20.07.2027 · 💶 399 € p. P.
 >
-> 📩 Einfach Nachricht schreiben – den Rest übernehmen wir.
+> 📩 Schreiben Sie uns einfach eine Nachricht.
 
 **11 · Pierre Brice oder Alexander Klaws?** – Nostalgie-Frage
 > Pierre Brice oder Alexander Klaws – wer ist Ihr Lieblings-Winnetou? 🤠
@@ -491,12 +494,12 @@ Prinzip: Jeder Post hat **eine** Idee und **eine** Handlung (kommentieren, speic
 >
 > Alexander Klaws reitet 2027 zum siebten Mal am Kalkberg. Wir fahren im Juli mit dem Bus ab Erfurt hin – kommen Sie mit?
 
-**12 · Das schönste Geschenk passt in keinen Karton** – Weihnachten
-> Das schönste Geschenk passt in keinen Karton. 🎁
+**12 · Verschenken Sie Wilden Westen.** – Weihnachts-Geschenkidee
+> Noch auf der Suche nach einem Weihnachtsgeschenk? 🎁 Verschenken Sie Wilden Westen!
 >
-> Verschenken Sie zu Weihnachten einen Tag voller Abenteuer: die Karl-May-Spiele 2027 in Bad Segeberg mit Busreise, Hotel und Ticket.
+> Ein Ausflug zu den Karl-May-Spielen 2027 nach Bad Segeberg – mit Busreise ab Erfurt, 2 Nächten im Hotel mit Halbpension und Eintrittskarte.
 >
-> 💶 399 € p. P.
+> 📅 Juli 2027 · 💶 399 € p. P.
 >
 > Wem würden Sie diese Reise schenken? Markieren Sie die Person! 👇
 
@@ -534,6 +537,6 @@ Prinzip: Jeder Post hat **eine** Idee und **eine** Handlung (kommentieren, speic
 | Woche | Danzig | Karl May | Schlager | Spartacus |
 |---|---|---|---|---|
 | 24.11. | 13 Noch keine Pläne · 15 Heiko & Andy | 12 Geschenk | 5 Mitsingen | 2 Save the Date |
-| 01.12. | 14 4 Tage | 10 Checkliste | 7 Deck oder Saal | 3 Pool/Bar/Club |
+| 01.12. | 14 4 Tage | 10 Winnetou live | 7 Tagsüber Sonne | 3 Pool/Bar/Club |
 | 08.12. | – | 11 Brice oder Klaws | 6 Oktoberfest | 1 Dein Platz an Deck |
 | 15.12. | – | 9 Wenn es dunkel wird | 8 Triest oder Bari | 4 Route |
