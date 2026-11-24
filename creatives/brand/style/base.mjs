@@ -27,25 +27,30 @@ const font = (family, file, style = "normal", weight = 400) =>
     join(here, "fonts", file),
   ).toString("base64")}) format('truetype')}`;
 const FONT_FACES = [
-  font("Serif", "InstrumentSerif-Regular.ttf"),
-  font("Serif", "InstrumentSerif-Italic.ttf", "italic"),
-  font("Sans", "InstrumentSans-Regular.ttf", "normal", 400),
-  font("Sans", "InstrumentSans-Bold.ttf", "normal", 700),
-  font("Poster", "BigShoulders-Bold.ttf", "normal", 700),
+  ...[600, 700, 800, 900].map((w) => font("Montserrat", `Montserrat-${w}.ttf`, "normal", w)),
+  ...[600, 700].map((w) => font("Fredoka", `Fredoka-${w}.ttf`, "normal", w)),
+  font("Alfa Slab One", "AlfaSlabOne-400.ttf"),
+  font("DM Serif Display", "DMSerifDisplay-400.ttf"),
+  ...[500, 700].map((w) => font("Roboto", `Roboto-${w}.ttf`, "normal", w)),
 ].join("\n");
 
 // Typo-Skala (px). Nichts unter 30 px – auch auf dem Handy im Feed gut lesbar.
-export const TYPE = { label: 30, info: 36, h2: 96, h1: 128, poster: 150 };
+export const TYPE = { label: 30, info: 36, h2: 84, h1: 104 };
 
-// Farbwelten je Reise – je eine Fläche, eine Schrift- und eine Akzentfarbe (aus den Fotos abgeleitet)
+// Hausstil je Reise – abgeleitet aus den erfolgreichen Bestandsposts auf Facebook/Instagram
 export const THEMES = {
-  spartacus: { ink: "#13203a", paper: "#f6f1e8", accent: "#c9a66b", rainbow: true },
-  karlmay: { ink: "#2e1a10", paper: "#efe3cc", accent: "#b5542a" },
-  schlager: { ink: "#1f1530", paper: "#f7efe6", accent: "#e9b949" },
-  danzig: { ink: "#17121f", paper: "#f5ecdd", accent: "#d8b26e" },
+  // Montserrat ExtraBold, Navy, Jahreszahl/Akzentwort im Regenbogen, helles Textfeld
+  spartacus: { font: "Montserrat", weight: 800, ink: "#14213d", paper: "#ffffff", sub: "#4a5568" },
+  // Alfa Slab One auf dunklem Lederbraun, Creme-Schrift, Roboto für Unterzeilen
+  karlmay: { font: "Alfa Slab One", weight: 400, ink: "#2b1a12", paper: "#f6ead2", accent: "#e8a33d", subFont: "Roboto" },
+  // Fredoka Bold weiß mit dunkler Kontur, Pink als Akzent, Preis-Schallplatte
+  schlager: { font: "Fredoka", weight: 700, ink: "#1b1640", paper: "#ffffff", accent: "#e8508f" },
+  // DM Serif Display auf Nachtblau, Champagner-Gold
+  danzig: { font: "DM Serif Display", weight: 400, ink: "#1b1427", paper: "#fbf3e6", accent: "#f2c879" },
 };
 
-export const RAINBOW = ["#d94141", "#e8862e", "#e9c53a", "#3fa66a", "#3a7bd5", "#7d5bd0"];
+export const RAINBOW = ["#e53b3b", "#f28c28", "#f7d23e", "#3cb371", "#3b82f6", "#8b5cf6"];
+export const RAINBOW_CSS = `linear-gradient(90deg,${RAINBOW.join(",")})`;
 
 export const imgFrom = (dir) => (f) =>
   `data:image/jpeg;base64,${readFileSync(join(dir, f)).toString("base64")}`;
@@ -57,11 +62,11 @@ export const page = (css, body) => `<!doctype html><html><head><meta charset="ut
 ${FONT_FACES}
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:${W}px;height:${H}px;overflow:hidden}
-body{font-family:Sans,sans-serif;position:relative;-webkit-font-smoothing:antialiased;text-rendering:geometricPrecision}
-.label{font-family:Sans;font-weight:700;font-size:${TYPE.label}px;letter-spacing:.14em;text-transform:uppercase}
-.info{font-family:Sans;font-weight:400;font-size:${TYPE.info}px;line-height:1.35}
-.serif{font-family:Serif;font-weight:400;letter-spacing:-.01em}
-.logo{position:absolute;width:104px;height:104px;border-radius:50%;object-fit:cover}
+body{font-family:Montserrat,sans-serif;position:relative;-webkit-font-smoothing:antialiased}
+.label{font-weight:800;font-size:${TYPE.label}px;letter-spacing:.12em;text-transform:uppercase}
+.info{font-weight:700;font-size:${TYPE.info}px;line-height:1.3}
+.rb{background:${RAINBOW_CSS};-webkit-background-clip:text;color:transparent}
+.logo{position:absolute;width:150px;height:150px;border-radius:50%;object-fit:cover}
 ${css}
 </style></head><body>${body}</body></html>`;
 
