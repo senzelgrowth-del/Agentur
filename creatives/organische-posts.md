@@ -380,3 +380,160 @@ Fotonachweise (wie auf den Landingpages): Karl May © Robin Schart · Schlager �
 > 💶 ab 1.349 € p. P.
 >
 > 📩 Schreib uns und sichere dir deine Kabine.
+
+---
+
+## Runde 4 – 15 neue Posts (Instagram & Facebook)
+Bilder: `organisch/export/r4-*.png` · Skript: `organisch/render-r4.mjs`
+Prinzip: Jeder Post hat **eine** Idee und **eine** Handlung (kommentieren, speichern, markieren oder Nachricht). Die erste Zeile funktioniert auch ohne „mehr lesen“, der Text im Bild ist auch auf dem Handy lesbar.
+
+### SPARTACUS (du)
+**1 · Dein Platz an Deck wartet** – Emotion
+> Dein Platz an Deck wartet. 🌈
+>
+> Ein Drink in der Hand, die Sonne im Gesicht und um dich herum Menschen, bei denen du einfach du sein kannst. Genau dafür gibt es die Spartacus Gay Cruise.
+>
+> 📅 15.–22.10.2027 · ab Palma de Mallorca
+> 💶 ab 1.349 € p. P. inkl. Vollpension
+>
+> 📩 Schreib uns – wir halten dir einen Platz frei.
+
+**2 · Save the Date 15.10.** – Speicher-Post
+> Speicher dir diesen Post – am 15.10.2027 heißt es Leinen los! 🚢🌈
+>
+> Eine Woche Mittelmeer mit Shows, DJs, Drag und Tea Dances. Von Mallorca über Spanien bis nach Marokko.
+>
+> Wen nimmst du mit? Markier die Person! 👇
+
+**3 · Pool, Bar oder Club?** – Abstimmung
+> Erster Abend an Bord – wohin gehst du zuerst? 👀
+>
+> 1️⃣ Pool
+> 2️⃣ Bar
+> 3️⃣ Club
+>
+> Schreib deine Zahl in die Kommentare! 👇
+>
+> Spartacus Gay Cruise · 15.–22.10.2027 · Vasco da Gama
+
+**4 · 8 Tage. 2 Kontinente.** – Info zum Speichern
+> 8 Tage, 2 Kontinente, 6 Häfen – das ist die Route der Spartacus Gay Cruise 2027. 🗺️
+>
+> Welcher Stopp ist dein Favorit? Barcelona mit Sitges um die Ecke oder Tanger in Marokko? 👇
+>
+> 💶 ab 1.349 € p. P. · Vollpension & Hafengebühren inklusive
+> 📩 Alle Infos per Nachricht.
+
+### SCHLAGER (Sie)
+**5 · Mitsingen erwünscht!** – Emotion
+> Mitsingen ausdrücklich erwünscht! 🎤
+>
+> Auf der Schlager-Seereise 2027 stehen Ihre Stars nicht weit weg auf einer großen Bühne – sie sind ganz nah dran, jeden Abend, eine Woche lang.
+>
+> 📅 Oktober 2027 · ab Triest oder Bari
+> 💶 ab 1.299 € p. P. inkl. Vollpension
+>
+> Bei welchem Lied singen Sie garantiert mit? 👇
+
+**6 · O'zapft is – auf hoher See!** – Event-Highlight
+> O'zapft is – mitten im Mittelmeer! 🍻
+>
+> Dirndl, Lederhose und Blasmusik auf See: Das Oktoberfest ist eines der Highlights der Schlager-Seereise 2027. Dazu kommen White Night, Tanzkurse und tägliche Konzerte.
+>
+> 📅 02.–09.10. ab Triest · 03.–10.10. ab Bari
+> 📩 Schreiben Sie uns – wir beraten Sie gern.
+
+**7 · Sonnendeck oder Konzertsaal?** – Abstimmung
+> Wo verbringen Sie Ihre Zeit an Bord am liebsten? ☀️🎶
+>
+> 1️⃣ Sonnendeck
+> 2️⃣ Konzertsaal
+>
+> Schreiben Sie 1 oder 2 in die Kommentare – und markieren Sie Ihre Reisebegleitung! 👇
+
+**8 · Triest oder Bari?** – Entscheidungshilfe
+> Triest oder Bari – welche Schlager-Seereise passt zu Ihnen? 🚢
+>
+> 🔵 Triest, 02.–09.10.2027: die klassische Schlager-Seereise
+> 🩷 Bari, 03.–10.10.2027: zusätzlich mit Rock'n'Roll-Party und The Firebirds
+>
+> Beide mit über 30 Schlagerstars, Vollpension und Trinkgeldern inklusive – ab 1.299 € p. P.
+>
+> 📩 Schreiben Sie uns, wir helfen bei der Wahl.
+
+### KARL MAY (Sie)
+**9 · Wenn es dunkel wird am Kalkberg …** – Stimmung
+> Wenn es dunkel wird am Kalkberg … beginnt der schönste Teil des Abends. 🌙🔥
+>
+> Bei der Abendvorstellung am 19.07.2027 erleben Sie die Karl-May-Spiele mit großem Finale-Feuerwerk – und mit Alexander Klaws als Winnetou.
+>
+> 🚌 Busreise ab Erfurt · 2 Nächte mit Halbpension · Ticket
+> 💶 399 € p. P.
+>
+> 📩 Jetzt Nachricht schreiben.
+
+**10 · Ihr Ausflug ist schon geplant** – Checkliste
+> Sie wollten schon immer mal zu den Karl-May-Spielen? Wir haben schon alles geplant. ✅
+>
+> ✔️ Busreise ab Erfurt
+> ✔️ 2 Nächte im Good Morning Hotel Bad Oldesloe
+> ✔️ Halbpension
+> ✔️ Eintrittskarte
+>
+> 📅 07.–09.07. oder 18.–20.07.2027 · 💶 399 € p. P.
+>
+> 📩 Einfach Nachricht schreiben – den Rest übernehmen wir.
+
+**11 · Pierre Brice oder Alexander Klaws?** – Nostalgie-Frage
+> Pierre Brice oder Alexander Klaws – wer ist Ihr Lieblings-Winnetou? 🤠
+>
+> Schreiben Sie es in die Kommentare! 👇
+>
+> Alexander Klaws reitet 2027 zum siebten Mal am Kalkberg. Wir fahren im Juli mit dem Bus ab Erfurt hin – kommen Sie mit?
+
+**12 · Das schönste Geschenk passt in keinen Karton** – Weihnachten
+> Das schönste Geschenk passt in keinen Karton. 🎁
+>
+> Verschenken Sie zu Weihnachten einen Tag voller Abenteuer: die Karl-May-Spiele 2027 in Bad Segeberg mit Busreise, Hotel und Ticket.
+>
+> 💶 399 € p. P.
+>
+> Wem würden Sie diese Reise schenken? Markieren Sie die Person! 👇
+
+### DANZIG SILVESTER (Sie) – zuerst posten
+**13 · Noch keine Pläne für Silvester?** – Hook
+> Noch keine Pläne für Silvester? 🥂 Dann kommen Sie doch mit nach Danzig!
+>
+> Galadinner mit Open Bar, Schlagergala mit Heiko & Andy und vier Tage an der polnischen Ostsee.
+>
+> 📅 30.12.2026 – 02.01.2027 · ab 789 € p. P.
+> 🚌 Haustür-Transfer & Komfort-Reisebus
+>
+> 📩 Jetzt Nachricht schreiben.
+
+**14 · 4 Tage. 1 Jahreswechsel.** – Übersicht
+> 4 Tage, 1 Jahreswechsel – und alles ist schon organisiert. ✨
+>
+> 🥂 Silvester-Galadinner mit Open Bar
+> 🎤 Schlagergala mit Heiko & Andy
+> 🏰 Ausflug zur Marienburg
+> 🌊 Dreistadt-Tour: Danzig, Gdynia & Sopot
+>
+> 🏨 3 Nächte im 4-Sterne-Hotel an der Ostsee · ab 789 € p. P.
+>
+> 📩 Schreiben Sie uns – wir reservieren Ihren Platz.
+
+**15 · Mit Heiko & Andy ins neue Jahr feiern?** – Fan-Frage
+> Mit Heiko & Andy ins neue Jahr feiern – wer ist dabei? 🙋‍♀️🙋‍♂️
+>
+> Schreiben Sie „Ich!“ in die Kommentare und markieren Sie, mit wem Sie anstoßen möchten. 🥂
+>
+> Silvester-Schlagergala in Danzig · 30.12.2026 – 02.01.2027 · ab 789 € p. P.
+
+### Redaktionsplan (ab 24.11.)
+| Woche | Danzig | Karl May | Schlager | Spartacus |
+|---|---|---|---|---|
+| 24.11. | 13 Noch keine Pläne · 15 Heiko & Andy | 12 Geschenk | 5 Mitsingen | 2 Save the Date |
+| 01.12. | 14 4 Tage | 10 Checkliste | 7 Deck oder Saal | 3 Pool/Bar/Club |
+| 08.12. | – | 11 Brice oder Klaws | 6 Oktoberfest | 1 Dein Platz an Deck |
+| 15.12. | – | 9 Wenn es dunkel wird | 8 Triest oder Bari | 4 Route |
