@@ -629,3 +629,39 @@ Bilder: `organisch/export/r5-*.png` · Skript: `organisch/render-r5.mjs`
 > Bei unserer Silvesterreise nach Danzig ist der geführte Ausflug dorthin bereits inklusive. Dazu: Galadinner, Schlagergala mit Heiko & Andy und eine Dreistadt-Tour.
 >
 > 📅 30.12.2026 – 02.01.2027 · ab 789 € p. P.
+
+---
+
+## Runde 6 – 3 weitere Karl-May-Posts
+Bilder: `organisch/export/r6-*.png` · Skript: `organisch/render-r6.mjs`
+Fotos: Starshine-Reisebus und Arena von der Website, Frühstück von Pexels (#25781659). Alle Fakten laut Landingpage.
+
+**1 · 3 Tage Wilder Westen.**
+> 3 Tage Wilder Westen – so sieht Ihre Reise zu den Karl-May-Spielen 2027 aus. 🤠
+>
+> 🚌 Tag 1: mit dem Bus ab Erfurt nach Bad Oldesloe
+> 🐎 Tag 2: Karl-May-Spiele am Kalkberg, mit Alexander Klaws als Winnetou
+> ☕ Tag 3: Frühstück und entspannte Heimreise
+>
+> 2 Nächte im Good Morning Hotel mit Halbpension und Eintrittskarte inklusive – 399 € p. P.
+>
+> 📩 Schreiben Sie uns einfach eine Nachricht.
+
+**2 · Zwei Termine im Juli**
+> Zwei Termine, ein großes Abenteuer: die Karl-May-Spiele 2027 in Bad Segeberg. 🎟️
+>
+> 📅 07.–09.07.2027: Vorstellung am 08.07. um 15 Uhr
+> 🎆 18.–20.07.2027: Vorstellung am 19.07. um 20 Uhr mit großem Finale-Feuerwerk
+>
+> Beide Termine mit Busreise ab Erfurt, 2 Nächten mit Halbpension und Eintrittskarte – 399 € p. P.
+>
+> 📩 Jetzt Nachricht schreiben und Platz reservieren.
+
+**3 · Der perfekte Vereinsausflug.**
+> Noch auf der Suche nach dem Vereinsausflug für 2027? 🚌🤠
+>
+> Unsere Reise zu den Karl-May-Spielen in Bad Segeberg ist ideal für Gruppen, Vereine und Reisegemeinschaften: gemeinsam im Bus ab Erfurt, 2 Nächte im Hotel mit Halbpension und Eintrittskarte inklusive. Weitere Zustiege sind direkt an der Strecke möglich.
+>
+> 📅 07.–09.07. oder 18.–20.07.2027 · 💶 399 € p. P.
+>
+> 📩 Schreiben Sie uns – wir planen gern für Ihre ganze Gruppe.
