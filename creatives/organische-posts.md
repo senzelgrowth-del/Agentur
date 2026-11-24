@@ -296,3 +296,86 @@ Starshine-Logo im Regenbogen-Ring, „Lust auf Meer? Schreib uns einfach!“ –
 | ab 01.12. | Post 5 Highlights | Post 2 „Tag oder Nacht?“ | Post 3 „Welche Party?“ | Post 6 „In Zahlen“ |
 
 Danzig zuerst – die Reise startet am 30.12.
+
+---
+
+## Runde 3 – seriöse Einzelposts (Fotos von den Landingpages)
+Bilder: `organisch/export/r3-*.png` · Skript: `organisch/render-r3.mjs`
+
+### Danzig Silvester – „Ins neue Jahr in Danzig“
+> Ein Jahreswechsel, wie er im Buche steht: Feuerwerk über der Mottlau, festliches Galadinner und Open Bar – Silvester an der polnischen Ostsee. 🎆
+>
+> 📅 30.12.2026 – 02.01.2027
+> 🏨 3 Nächte im 4-Sterne-Hotel direkt an der Ostsee in Gdynia
+> 🚌 Haustür-Transfer & Komfort-Reisebus
+> 💶 ab 789 € p. P.
+>
+> 📩 Schreiben Sie uns – wir reservieren Ihren Platz.
+
+### Danzig Silvester – „Mit Heiko & Andy ins neue Jahr“
+> Mit Heiko & Andy ins neue Jahr feiern – bei unserer Silvester-Schlagergala in Danzig. 🎶🥂
+>
+> Dazu erwarten Sie ein festliches Galadinner mit Open Bar, ein Ausflug zur Marienburg und eine geführte Tour durch Danzig, Gdynia und Sopot.
+>
+> 📅 30.12.2026 – 02.01.2027 · ab 789 € p. P.
+>
+> 📩 Jetzt Nachricht schreiben und dabei sein!
+
+### Karl May – „Das große Finale am Kalkberg“
+> Wenn sich am Kalkberg der Himmel färbt, ist das große Finale da. 🎆 Bei der Abendvorstellung am 19.07.2027 erleben Sie die Karl-May-Spiele mit Feuerwerk – und Alexander Klaws als Winnetou.
+>
+> ✅ Busreise ab Erfurt
+> ✅ 2 Nächte im Good Morning Hotel Bad Oldesloe mit Halbpension
+> ✅ Eintrittskarte inklusive
+>
+> 📅 18.–20.07.2027 · 💶 399 € p. P.
+>
+> 📩 Schreiben Sie uns – wir beraten Sie gern persönlich.
+
+### Karl May – „Ein Sommertag im Wilden Westen“
+> Sonne, Felsen und tausende Zuschauer: Die Freilichtbühne am Kalkberg ist ein Erlebnis für sich. 🤠 Erleben Sie die Karl-May-Spiele 2027 bequem mit uns – ohne eigene Anreiseplanung.
+>
+> 📅 07.–09.07.2027 (Vorstellung 15 Uhr) oder 18.–20.07.2027 (Vorstellung 20 Uhr mit Feuerwerk)
+> 🚌 Busreise ab Erfurt · 2 Nächte mit Halbpension · Ticket inklusive
+> 💶 399 € p. P.
+>
+> 📩 Jetzt Nachricht schreiben und Platz reservieren.
+
+### Schlager – „Eine Woche Schlager auf See“
+> Tagsüber Sonne und Mittelmeer, abends Konzerte und Tanz: Die Schlager Seereise 2027 ist Urlaub und Musikfestival in einem. 🚢🎶
+>
+> ✅ Über 30 Schlagerstars an Bord
+> ✅ 7 Nächte östliches Mittelmeer – Italien, Montenegro, Griechenland, Albanien
+> ✅ Vollpension & Trinkgelder inklusive
+>
+> 📅 02.–09.10.2027 ab Triest oder 03.–10.10.2027 ab Bari · ab 1.299 € p. P.
+>
+> 📩 Schreiben Sie uns – wir finden die passende Kabine für Sie.
+
+### Schlager – „Jeden Abend live dabei“
+> Jeden Abend ein neues Konzert, jeden Abend Gänsehaut. 🎤 Auf der Schlager Seereise 2027 erleben Sie über 30 Stars live – unter anderem Semino Rossi, Stefan Mross und Patrick Lindner.
+>
+> ✨ White Night & Oktoberfest auf See
+> 💃 Schlagerpartys & Tanzkurse
+>
+> 📅 Oktober 2027 · ab Triest oder Bari · ab 1.299 € p. P.
+>
+> 📩 Jetzt Nachricht schreiben und Kabine reservieren.
+
+### Spartacus – „Zwischen den Kontinenten“
+> Eine Woche, zwei Kontinente: Die Spartacus Gay Cruise 2027 führt dich von Mallorca über Barcelona und Valencia bis nach Tanger in Marokko. 🌍🌈
+>
+> 🚢 Vasco da Gama · 15.–22.10.2027
+> 🎤 Shows, DJs, Drag & Tea Dances
+> 🍽️ Vollpension, Hafengebühren & deutschsprachiger Service inklusive
+>
+> 💶 ab 1.349 € p. P.
+> 📩 Schreib uns – wir beraten dich persönlich.
+
+### Spartacus – „Sonne tanken, du selbst sein“
+> Liege, Sonne, Meerblick – und Menschen, bei denen du ganz du selbst sein kannst. ☀️🌈 Auf der Spartacus Gay Cruise 2027 sind Pool, Sauna und Vollpension bereits inklusive.
+>
+> 📅 15.–22.10.2027 · ab Palma de Mallorca
+> 💶 ab 1.349 € p. P.
+>
+> 📩 Schreib uns und sichere dir deine Kabine.
