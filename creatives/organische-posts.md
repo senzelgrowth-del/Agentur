@@ -74,6 +74,35 @@ Bilder (4:5, 1080 × 1350): `creatives/organisch/export/`
 **Bild:** `organisch/export/spartacus-cta-abschluss.png` – als letzte Folie hinter das Abstimmungsbild setzen.
 Starshine-Logo im Regenbogen-Ring, „Lust auf Meer? Schreib uns einfach!“ – angelehnt an die Starshine-Vorlage.
 
+### Post 5 – „Wen nimmst du mit an Bord?“ (Runde 2)
+**Bild:** `organisch/export/spartacus-5-wen-nimmst-du-mit.png`
+
+> Wen nimmst du mit an Bord? 🌈 Markier die Person! 👇
+>
+> Eine Woche Mittelmeer, Sonnenuntergänge an Deck und jede Nacht Party – mit der richtigen Begleitung wird die Spartacus Gay Cruise 2027 unvergesslich. 🚢
+>
+> 📅 15.–22. Oktober 2027
+> 🚢 Vasco da Gama ab Palma de Mallorca
+> 📍 Barcelona · Valencia · Alicante · Marbella · Tanger
+>
+> 📩 Schreib uns – wir schicken dir alle Infos!
+
+### Post 6 – „Eine Woche in Zahlen“ (Runde 2)
+**Bild:** `organisch/export/spartacus-6-in-zahlen.png`
+
+> 7 Nächte. 6 Häfen. 8 Stars. 2 Kontinente. 🌈 Welche Zahl macht dich am meisten heiß auf die Reise? 👇
+>
+> Die Spartacus Gay Cruise 2027 bringt dich von Mallorca über Spanien bis nach Marokko – mit Tante Gladice, Nelson Cerqueira, Abby OMG & Co. an Bord. 🎤
+>
+> ✅ Vollpension, Pool & Sauna inklusive
+> ✅ DJ-Nächte, Drag-Shows & Tea Dances
+> ✅ Deutschsprachiger Service
+>
+> 📅 15.–22. Oktober 2027 · ab 1.349 € p. P.
+>
+> 📩 Schreib uns und sicher dir deine Kabine!
+
+
 ---
 
 ## Danzig
@@ -132,6 +161,37 @@ Starshine-Logo im Regenbogen-Ring, „Lust auf Meer? Schreib uns einfach!“ –
 >
 > Mit wem würden Sie gern ins neue Jahr feiern? Markieren Sie die Person! 👇
 
+### Post 4 – „Wie feiern Sie Silvester?“ (Runde 2)
+**Bild:** `organisch/export/danzig-4-gala-oder-sofa.png`
+
+> Gala in Danzig oder Sofa zu Hause? 🥂🛋️ 1 oder 2 – ab in die Kommentare! 👇
+>
+> Für alle, die diesmal mehr wollen: Feiern Sie mit uns an der polnischen Ostsee ins neue Jahr – mit Silvester-Galadinner, Open Bar und Heiko & Andy live. 🎶
+>
+> 📅 30.12.2026 – 02.01.2027
+> 🏨 3 Nächte im 4-Sterne-Hotel an der Ostsee
+> 💶 ab 789 € p. P.
+>
+> 📩 Jetzt Nachricht schreiben und Platz reservieren!
+
+### Post 5 – „Silvester in Danzig“ Highlights (Runde 2)
+**Bild:** `organisch/export/danzig-5-highlights.png`
+
+> Noch keine Pläne für Silvester? ✨ Wir haben da was für Sie! 👇
+>
+> Vier Tage Ostsee, ein festlicher Jahreswechsel und ein Programm, bei dem Sie sich um nichts kümmern müssen.
+>
+> 🥂 Silvester-Galadinner mit Open Bar
+> 🎤 Schlagergala mit Heiko & Andy
+> 🏰 Ausflug zur Marienburg
+> 🌊 Dreistadt-Tour: Danzig, Gdynia & Sopot
+>
+> 📅 30.12.2026 – 02.01.2027 · ab 789 € p. P.
+> 🚌 Haustür-Transfer & Komfort-Reisebus
+>
+> 📩 Schreiben Sie uns – wir beraten Sie gern persönlich!
+
+
 ---
 
 ## Karl-May-Spiele Bad Segeberg 2027
@@ -152,6 +212,36 @@ Starshine-Logo im Regenbogen-Ring, „Lust auf Meer? Schreib uns einfach!“ –
 >
 > 📩 Jetzt Nachricht schreiben und Platz reservieren!
 
+### Post 2 – „Tag oder Nacht?“ (Runde 2)
+**Bild:** `organisch/export/karlmay-2-tag-oder-nacht.png`
+
+> Tag oder Nacht? 🤠 1 oder 2 – welche Vorstellung wäre Ihre? 👇
+>
+> 1️⃣ 08.07. um 15 Uhr – Western-Abenteuer bei Tageslicht
+> 2️⃣ 19.07. um 20 Uhr – Abendvorstellung mit großem Feuerwerk 🎆
+>
+> Beide Termine erleben Sie mit uns: Busreise ab Erfurt, 2 Nächte mit Halbpension und Eintrittskarte – mit Alexander Klaws als Winnetou. 🐎
+>
+> 💶 399 € p. P.
+> 📩 Jetzt Nachricht schreiben und Platz reservieren!
+
+### Post 3 – „Winnetou unterm Baum“ Geschenkidee (Runde 2, ideal ab Ende November)
+**Bild:** `organisch/export/karlmay-3-geschenkidee.png`
+
+> Noch auf der Suche nach einem Weihnachtsgeschenk? 🎁 Wie wäre es mit Winnetou?
+>
+> Verschenken Sie ein Erlebnis, auf das man sich das ganze Jahr freut: die Karl-May-Spiele 2027 in Bad Segeberg – mit Alexander Klaws als Winnetou. 🐎
+>
+> ✅ Busreise ab Erfurt
+> ✅ 2 Nächte mit Halbpension
+> ✅ Eintrittskarte inklusive
+>
+> 📅 07.–09.07.2027 oder 18.–20.07.2027 (mit Feuerwerk 🎆)
+> 💶 399 € p. P.
+>
+> Wem würden Sie diese Reise schenken? Markieren Sie die Person! 👇
+
+
 ---
 
 ## Schlager Seereise 2027
@@ -171,3 +261,38 @@ Starshine-Logo im Regenbogen-Ring, „Lust auf Meer? Schreib uns einfach!“ –
 > 💶 ab 1.299 € p. P., Trinkgelder inklusive
 >
 > 📩 Jetzt Nachricht schreiben und Kabine reservieren!
+
+### Post 2 – „Ihr Lieblingsschlager?“ (Runde 2)
+**Bild:** `organisch/export/schlager-2-lieblingsschlager.png`
+
+> Welcher Schlager darf an Bord auf keinen Fall fehlen? 🎶 Schreiben Sie Ihren Lieblingssong in die Kommentare! 👇
+>
+> Auf der Schlager Seereise 2027 singen Sie ihn vielleicht schon bald live mit – mit über 30 Stars wie Semino Rossi, Stefan Mross und Patrick Lindner. 🚢
+>
+> 📅 02.–09.10.2027 ab Triest oder 03.–10.10.2027 ab Bari
+> 💶 ab 1.299 € p. P., Vollpension & Trinkgelder inklusive
+>
+> 📩 Jetzt Nachricht schreiben und Kabine reservieren!
+
+### Post 3 – „Welche Party?“ (Runde 2)
+**Bild:** `organisch/export/schlager-3-welche-party.png`
+
+> White Night oder Oktoberfest auf See? 🤍🍻 1 oder 2 – ab in die Kommentare! 👇
+>
+> Auf der Schlager Seereise 2027 müssen Sie sich nicht entscheiden: Beide Partys stehen auf dem Programm – dazu tägliche Konzerte, Tanzkurse und „Voice of the Sea“. 🎤
+>
+> 📅 02.–09.10.2027 ab Triest oder 03.–10.10.2027 ab Bari
+> 💶 ab 1.299 € p. P.
+>
+> 📩 Jetzt Nachricht schreiben und Kabine reservieren!
+
+---
+
+## Redaktionsplan Runde 2 (1 Post pro Woche je Kampagne)
+
+| Woche | Danzig Silvester | Karl May | Schlager | Spartacus |
+|---|---|---|---|---|
+| ab 24.11. | Post 4 „Gala oder Sofa?“ | Post 3 Geschenkidee | Post 2 Lieblingsschlager | Post 5 „Wen nimmst du mit?“ |
+| ab 01.12. | Post 5 Highlights | Post 2 „Tag oder Nacht?“ | Post 3 „Welche Party?“ | Post 6 „In Zahlen“ |
+
+Danzig zuerst – die Reise startet am 30.12.

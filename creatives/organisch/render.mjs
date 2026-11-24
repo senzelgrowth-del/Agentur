@@ -275,6 +275,156 @@ const karlmay1 = page(
 <div class="tag t2"><b>2</b>Old Shatterhand</div>`,
 );
 
+// ---------- Runde 2: je 2 neue organische Posts pro Kampagne ----------
+const bubble = (cls, n, t) => `<div class="tag ${cls}"><b>${n}</b>${t}</div>`;
+
+// Spartacus 5: „Wen nimmst du mit an Bord?“ – Markier-Format
+const spartacus5 = page(
+  spartacusCss +
+    `
+.head{position:absolute;left:48px;right:48px;top:0;height:360px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+h1{font-weight:900;font-size:92px;line-height:1.02;letter-spacing:-.02em;margin-top:22px}
+.photo{position:absolute;left:48px;right:48px;top:360px;bottom:48px;border-radius:24px;background:url(${img("promenade-night.jpg")}) 60% 50%/cover no-repeat}
+.chip{position:absolute;left:50%;bottom:90px;transform:translateX(-50%);background:${cream};border-radius:60px;padding:18px 36px;font-weight:900;font-size:36px;white-space:nowrap}`,
+  `<div class="head">${spartacusKicker}<h1>Wen nimmst du<br><span class="rb">mit an Bord?</span></h1></div>
+<div class="photo"></div><div class="chip">Markier die Person 👇</div>`,
+);
+
+// Spartacus 6: die Reise in Zahlen
+const stats = [["7", "Nächte"], ["6", "Häfen"], ["8", "Stars an Bord"], ["2", "Kontinente"]];
+const spartacus6 = page(
+  spartacusCss +
+    `
+.photo{position:absolute;left:48px;right:48px;top:48px;height:560px;border-radius:24px;background:url(${img("sunset-deck.jpg")}) 55% 60%/cover no-repeat}
+.body{position:absolute;left:48px;right:48px;top:650px;text-align:center}
+h1{font-weight:900;font-size:62px;letter-spacing:-.02em;margin-top:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}
+.cell{background:#fff;border:2px solid rgba(20,33,61,.08);border-radius:22px;padding:22px 10px 24px}
+.n{font-weight:900;font-size:104px;line-height:1}
+.l{font-weight:800;font-size:30px;margin-top:6px}`,
+  `<div class="photo"></div>
+<div class="body">${spartacusKicker}<h1>Eine Woche in <span class="rb">Zahlen</span></h1>
+<div class="grid">${stats.map(([n, l]) => `<div class="cell"><div class="n rb">${n}</div><div class="l">${l}</div></div>`).join("")}</div></div>`,
+);
+
+// Karl May: gemeinsame Bausteine (einfarbige Western-Blöcke, keine Verläufe)
+const kmCss = `
+.head{position:absolute;left:0;right:0;top:80px;text-align:center}
+.t{display:inline-block;font-family:'Bebas Neue',sans-serif;font-size:124px;line-height:1;background:${leather};color:${sandK};padding:22px 44px 8px;border-radius:18px}
+.t span{color:#f2b544}
+.tag{position:absolute;font-weight:900;font-size:38px;background:${sandK};color:${leather};padding:16px 28px;border-radius:14px;white-space:nowrap}
+.tag b{display:inline-flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:50%;background:${rust};color:#fff;margin-right:14px}`;
+const bebas = `<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=block" rel="stylesheet">`;
+
+// Karl May 2: Welcher Termin? Nachmittag oder Abend mit Feuerwerk
+const karlmay2 = page(
+  kmCss +
+    `
+html,body{background:${leather}}
+.half{position:absolute;left:0;right:0;height:675px}
+.h1{top:0;background:url(${img("arena-tag.jpg")}) 40% 55%/cover no-repeat}
+.h2{top:675px;background:url(${img("finale-feuerwerk.jpg")}) 50% 45%/cover no-repeat}
+.bar{position:absolute;left:0;right:0;top:671px;height:8px;background:${rust}}
+.head{top:60px}
+.a{left:48px;top:560px}
+.b{left:48px;bottom:56px}`,
+  `${bebas}<div class="half h1"></div><div class="half h2"></div><div class="bar"></div>
+<div class="head"><div class="t">Tag <span>oder</span> Nacht?</div></div>
+${bubble("a", 1, "08.07. · Nachmittag")}
+${bubble("b", 2, "19.07. · mit Feuerwerk 🎆")}`,
+);
+
+// Karl May 3: Geschenkidee zu Weihnachten
+const karlmay3 = page(
+  kmCss +
+    `
+.photo{position:absolute;inset:0;background:url(${img("winnetou-reiter.jpg")}) 50% 100%/cover no-repeat}
+.k{display:inline-block;font-weight:800;font-size:28px;letter-spacing:.16em;text-transform:uppercase;background:${rust};color:${sandK};padding:12px 22px;border-radius:10px;margin-bottom:16px}
+.price{position:absolute;right:48px;bottom:56px;background:${sandK};color:${leather};border-radius:14px;padding:18px 28px;font-weight:900;font-size:40px}`,
+  `${bebas}<div class="photo"></div>
+<div class="head"><div class="k">🎁 Geschenkidee</div><br><div class="t">Winnetou<br><span>unterm Baum</span></div></div>
+<div class="price">399 € p. P.</div>`,
+);
+
+// Schlager: lebhaft, ohne Schatten, einfarbige Flächen
+const plum = "#2b0f33";
+const coralS = "#ff6b6b";
+const sunS = "#ffd166";
+const pacifico = `<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=block" rel="stylesheet">`;
+const schCss = `
+html,body{background:${plum}}
+.head{position:absolute;left:0;right:0;top:0;height:330px;background:${plum};display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff}
+.k{font-weight:800;font-size:25px;letter-spacing:.24em;text-transform:uppercase;color:${sunS};padding-left:.24em}
+h1{font-family:Pacifico,cursive;font-weight:400;font-size:92px;line-height:1.3;margin-top:4px}
+h1 span{color:${sunS}}
+.photo{position:absolute;left:0;right:0;top:330px;bottom:0}
+.tag{position:absolute;font-weight:900;font-size:38px;background:#fff;color:${plum};padding:16px 28px;border-radius:60px;white-space:nowrap}
+.tag b{display:inline-flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:50%;background:${coralS};color:#fff;margin-right:14px}`;
+
+// Schlager 2: Lieblingsschlager in die Kommentare
+const schlager2 = page(
+  schCss +
+    `
+.photo{background:url(${img("konzert-atrium.jpg")}) 50% 50%/cover no-repeat}
+.chip{position:absolute;left:50%;bottom:64px;transform:translateX(-50%);background:${sunS};color:${plum};border-radius:60px;padding:18px 38px;font-weight:900;font-size:38px;white-space:nowrap}`,
+  `${pacifico}<div class="head"><div class="k">Schlager Seereise 2027</div><h1>Ihr <span>Lieblingsschlager?</span></h1></div>
+<div class="photo"></div><div class="chip">🎶 Ab in die Kommentare!</div>`,
+);
+
+// Schlager 3: White Night oder Oktoberfest?
+const schlager3 = page(
+  schCss +
+    `
+.photo{background:url(${img("sonnendeck-hafen.jpg")}) 42% 50%/cover no-repeat}
+.a{left:56px;bottom:170px}
+.b{left:56px;bottom:64px}`,
+  `${pacifico}<div class="head"><div class="k">Schlager Seereise 2027</div><h1>Welche <span>Party?</span></h1></div>
+<div class="photo"></div>
+${bubble("a", 1, "White Night 🤍")}
+${bubble("b", 2, "Oktoberfest auf See 🍻")}`,
+);
+
+// Danzig: Silvester-Look (Nachthimmel, Champagner-Gold, DM Serif Display)
+const dmSerif = `<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=block" rel="stylesheet">`;
+const dzCss = `
+html,body{background:${sky}}
+.photo{position:absolute;left:0;right:0;bottom:0;height:1080px;background:url(${img("danzig-mottlau-nacht.jpg")}) 50% 100%/cover no-repeat}
+.head{position:absolute;left:40px;right:40px;top:70px;text-align:center}
+h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:128px;line-height:.98;color:#fbf3e6}
+h1 span{color:#f2c879}
+.tag{position:absolute;font-weight:800;font-size:38px;background:#fbf3e6;color:#2a1a33;padding:16px 28px;border-radius:60px;white-space:nowrap}
+.tag b{display:inline-flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:50%;background:#f2c879;color:#2a1a33;margin-right:14px}`;
+
+// Danzig 4: Gala oder Sofa?
+const danzig4 = page(
+  dzCss +
+    `
+.a{left:56px;bottom:190px}
+.b{left:56px;bottom:80px}`,
+  `${dmSerif}<div class="photo"></div>
+<div class="head"><h1>Wie feiern Sie<br><span>Silvester?</span></h1></div>
+${bubble("a", 1, "Gala in Danzig 🥂")}
+${bubble("b", 2, "Sofa zu Hause 🛋️")}`,
+);
+
+// Danzig 5: Highlights auf einen Blick
+const dzHighlights = [["🥂", "Galadinner mit Open Bar"], ["🎤", "Heiko &amp; Andy live"], ["🏰", "Ausflug zur Marienburg"], ["🌊", "Danzig, Gdynia &amp; Sopot"]];
+const danzig5 = page(
+  dzCss +
+    `
+.photo{height:560px}
+.head{top:64px}
+h1{font-size:104px}
+ul{list-style:none;position:absolute;left:90px;right:90px;top:330px}
+li{display:flex;align-items:center;gap:26px;padding:17px 0;border-bottom:2px solid rgba(242,200,121,.25);font-weight:700;font-size:38px;color:#fbf3e6}
+li i{font-style:normal;font-size:44px;width:56px;text-align:center}
+.price{position:absolute;left:50%;bottom:64px;transform:translateX(-50%);background:#f2c879;color:#2a1a33;border-radius:60px;padding:16px 36px;font-weight:800;font-size:36px;white-space:nowrap}`,
+  `${dmSerif}<div class="photo"></div>
+<div class="head"><h1>Silvester <span>in Danzig</span></h1></div>
+<ul>${dzHighlights.map(([e, t]) => `<li><i>${e}</i>${t}</li>`).join("")}</ul>
+<div class="price">30.12.–02.01. · ab 789 € p. P.</div>`,
+);
+
 const posts = [
   ["spartacus-1-freundschaften-an-deck", spartacus1],
   ["spartacus-2-dein-tag-an-bord", spartacus2],
@@ -285,6 +435,14 @@ const posts = [
   ["danzig-2-fuenf-gruende", danzig2],
   ["danzig-3-silvester", danzig3],
   ["karlmay-1-team-winnetou", karlmay1],
+  ["spartacus-5-wen-nimmst-du-mit", spartacus5],
+  ["spartacus-6-in-zahlen", spartacus6],
+  ["karlmay-2-tag-oder-nacht", karlmay2],
+  ["karlmay-3-geschenkidee", karlmay3],
+  ["schlager-2-lieblingsschlager", schlager2],
+  ["schlager-3-welche-party", schlager3],
+  ["danzig-4-gala-oder-sofa", danzig4],
+  ["danzig-5-highlights", danzig5],
 ];
 
 const browser = await chromium.launch();
