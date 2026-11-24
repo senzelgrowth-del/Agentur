@@ -24,6 +24,10 @@ Kräftige, gut lesbare Schriften – **keine dünnen Serifen**. Lokal in `brand/
 
 **Layout:** pro Post unterschiedlich. Mal steht das Foto oben und der Text unten, mal umgekehrt, mal geht das Foto über die ganze Fläche und der Text liegt darauf.
 
+## Pflicht in jedem Post
+- **Reise sofort erkennbar:** Der Name der Reise (z. B. „Spartacus Gay Cruise 2027“, „Schlager-Seereise 2027“, „Karl-May-Spiele Bad Segeberg 2027“, „Silvester in Danzig“) steht gut sichtbar im Bild, als Titel, Label über dem Titel oder Unterzeile.
+- Eine Idee und eine Handlung pro Post (kommentieren, speichern, markieren oder Nachricht).
+
 ## Nicht verwenden
 - dünne, filigrane Schriften
 - Emojis im Bild

@@ -71,7 +71,7 @@ h1{font-weight:900;font-size:72px;line-height:1.05;letter-spacing:-.02em}
 .sub{font-weight:700;font-size:34px;color:${SP.sub};margin-top:14px}
 .r{position:absolute;left:0;right:0;height:340px;background-size:cover}
 .lab{position:absolute;left:60px;bottom:32px;display:flex;align-items:center;gap:18px;background:#fff;border-radius:80px;padding:10px 34px 10px 10px;font-weight:900;font-size:44px}`,
-  `<div class="h"><h1>Erster Abend an Bord –<br><span class="rb">wohin zuerst?</span></h1><div class="sub">Kommentiere 1, 2 oder 3</div></div>
+  `<div class="h"><h1>Erster Abend an Bord –<br><span class="rb">wohin zuerst?</span></h1><div class="sub">Spartacus Gay Cruise 2027 · kommentiere 1, 2 oder 3</div></div>
 ${spots
   .map(
     ([f, t, pos], i) =>
@@ -94,15 +94,15 @@ const route = [
 add(
   "r4-sp-4-route",
   `body{background:${SP.ink};color:#fff}
-h1{position:absolute;left:96px;right:60px;top:80px;font-weight:900;font-size:96px;line-height:1;letter-spacing:-.02em}
-.list{position:absolute;left:96px;right:80px;top:330px}
-.it{display:flex;align-items:center;height:110px;position:relative}
+h1{position:absolute;left:96px;right:60px;top:122px;font-weight:900;font-size:90px;line-height:1;letter-spacing:-.02em}
+.list{position:absolute;left:96px;right:80px;top:350px}
+.it{display:flex;align-items:center;height:98px;position:relative}
 .it .d{width:150px;font-weight:700;font-size:34px;color:#c9d4ea}
 .it .dot{width:30px;height:30px;border-radius:50%;background:#fff;border:7px solid ${SP.ink};box-shadow:0 0 0 4px #fff;margin-right:34px;position:relative;z-index:2}
 .it .n{font-weight:800;font-size:46px;white-space:nowrap}
 .it .x{font-weight:600;font-size:32px;color:#c9d4ea;margin-left:16px}
-.line{position:absolute;left:261px;top:385px;width:8px;height:770px;background:linear-gradient(180deg,#e53b3b,#f28c28,#f7d23e,#3cb371,#3b82f6,#8b5cf6);border-radius:4px}`,
-  `<h1>8 Tage.<br><span class="rb">2 Kontinente.</span></h1><div class="line"></div>
+.line{position:absolute;left:261px;top:400px;width:8px;height:690px;background:linear-gradient(180deg,#e53b3b,#f28c28,#f7d23e,#3cb371,#3b82f6,#8b5cf6);border-radius:4px}`,
+  `<div style="position:absolute;left:96px;top:70px;font-weight:800;font-size:32px;letter-spacing:.14em;color:#c9d4ea">SPARTACUS GAY CRUISE 2027</div><h1>8 Tage.<br><span class="rb">2 Kontinente.</span></h1><div class="line"></div>
 <div class="list">${route
     .map(([d, n, x]) => `<div class="it"><span class="d">${d}</span><span class="dot"></span><span class="n">${n}</span>${x ? `<span class="x">${x}</span>` : ""}</div>`)
     .join("")}</div>
@@ -130,7 +130,7 @@ add(
 h1{${outline(110)}}
 h1 span{color:${SL.accent}}
 .sub{${outline(50, 10)};margin-top:12px}`,
-  `<div class="ph"></div><div class="tx"><h1>O'zapft is –<br><span>auf hoher See!</span></h1><div class="sub">Oktoberfest an Bord der Costa Deliziosa</div></div>
+  `<div class="ph"></div><div class="tx"><h1>O'zapft is –<br><span>auf hoher See!</span></h1><div class="sub">Schlager-Seereise 2027</div></div>
 ${vinyl("right:48px;bottom:56px")}`,
 );
 
@@ -145,7 +145,7 @@ add(
 .l{position:absolute;left:60px;${outline(104, 14)}}
 .l span{color:${SL.accent}}`,
   `<div class="a"></div><div class="sep"></div><div class="b"></div>
-<div class="l" style="top:60px">Tagsüber Sonne.</div><div class="l" style="bottom:70px"><span>Abends Gänsehaut.</span></div>
+<div class="l" style="top:60px">Tagsüber Sonne.<div style="font-size:50px;-webkit-text-stroke-width:10px;margin-top:8px">Schlager-Seereise 2027</div></div><div class="l" style="bottom:70px"><span>Abends Gänsehaut.</span></div>
 ${logo("right:56px;top:470px", 130)}`,
 );
 
@@ -154,14 +154,14 @@ add(
   "r4-sl-4-triest-oder-bari",
   `body{background:#fff7ef;color:${SL.ink}}
 .ph{position:absolute;left:0;right:0;top:0;height:560px;background:url(${img("web-sl-24.jpg")}) 50% 55%/cover}
-h1{position:absolute;left:60px;right:60px;top:608px;font-family:Fredoka;font-weight:700;font-size:96px;line-height:1;text-align:center}
+h1{position:absolute;left:60px;right:60px;top:618px;font-family:Fredoka;font-weight:700;font-size:96px;line-height:1;text-align:center}
 h1 span{color:${SL.accent}}
 .cards{position:absolute;left:60px;right:60px;top:740px;display:flex;gap:28px}
 .c{flex:1;border-radius:28px;padding:36px 34px;color:#fff;min-height:420px}
 .c .t{font-family:Fredoka;font-weight:700;font-size:64px}
 .c .d{font-weight:800;font-size:36px;margin-top:10px}
 .c .x{font-weight:600;font-size:32px;line-height:1.3;margin-top:22px;opacity:.95}`,
-  `<div class="ph"></div><h1>Triest oder <span>Bari?</span></h1>
+  `<div class="ph"></div><div style="position:absolute;left:60px;top:470px;${outline(56, 10)}">Schlager-Seereise 2027</div><h1>Triest oder <span>Bari?</span></h1>
 <div class="cards"><div class="c" style="background:${SL.ink}"><div class="t">Triest</div><div class="d">02.–09.10.2027</div><div class="x">Die klassische Schlager-Seereise</div></div>
 <div class="c" style="background:${SL.accent}"><div class="t">Bari</div><div class="d">03.–10.10.2027</div><div class="x">Plus Rock'n'Roll-Party mit The Firebirds</div></div></div>`,
 );
@@ -185,12 +185,12 @@ const checks = ["Busreise ab Erfurt", "2 Nächte im Hotel", "Halbpension", "Eint
 add(
   "r4-km-2-winnetou-live",
   `.ph{position:absolute;left:0;right:0;top:0;bottom:430px;background:url(${img("web-km-reiter.jpg")}) 50% 80%/cover}
-.band{position:absolute;left:0;right:0;bottom:0;height:430px;background:${KM.ink};color:${KM.paper};padding:56px 72px 0}
-h1{font-family:'Alfa Slab One';font-weight:400;font-size:100px;line-height:1.05}
+.band{position:absolute;left:0;right:0;bottom:0;height:430px;background:${KM.ink};color:${KM.paper};padding:54px 72px 0}
+h1{font-family:'Alfa Slab One';font-weight:400;font-size:76px;line-height:1.05;white-space:nowrap}
 h1 span{color:${KM.accent}}
 .sub{font-family:Roboto;font-weight:700;font-size:40px;color:#fff;margin-top:26px;line-height:1.35}
-.p{position:absolute;right:56px;bottom:368px;background:${KM.accent};color:${KM.ink};font-family:'Alfa Slab One';font-size:56px;padding:16px 32px;border-radius:14px}`,
-  `<div class="ph"></div><div class="band"><h1>Winnetou<br><span>live erleben.</span></h1>
+.p{position:absolute;left:56px;top:56px;background:${KM.accent};color:${KM.ink};font-family:'Alfa Slab One';font-size:56px;padding:16px 32px;border-radius:14px}`,
+  `<div class="ph"></div><div class="band"><div class="label" style="color:${KM.accent};letter-spacing:.2em">Karl-May-Spiele Bad Segeberg 2027</div><h1 style="margin-top:14px">Winnetou <span>live erleben.</span></h1>
 <div class="sub">Bus ab Erfurt · Hotel · Ticket – alles inklusive</div></div>
 <div class="p">399 € p. P.</div>${logo("right:48px;top:48px", 140)}`,
 );
@@ -203,7 +203,7 @@ add(
 h1{font-family:'Alfa Slab One';font-weight:400;font-size:84px;line-height:1.08}
 h1 span{color:${KM.accent}}
 .sub{font-family:Roboto;font-weight:700;font-size:40px;color:#fff;margin-top:22px}`,
-  `<div class="ph"></div><div class="band"><h1>Pierre Brice oder<br><span>Alexander Klaws?</span></h1><div class="sub">Ihr Lieblings-Winnetou? Ab in die Kommentare!</div></div>
+  `<div class="ph"></div><div class="band"><div class="label" style="color:${KM.accent};letter-spacing:.2em;margin-bottom:18px">Karl-May-Spiele Bad Segeberg</div><h1>Pierre Brice oder<br><span>Alexander Klaws?</span></h1><div class="sub">Ihr Lieblings-Winnetou? Ab in die Kommentare!</div></div>
 ${logo("right:48px;bottom:48px", 140)}`,
 );
 
@@ -218,7 +218,7 @@ h1 span{color:#b5542a}
 .sub{font-family:Roboto;font-weight:700;font-size:42px;margin-top:24px;line-height:1.3}
 .ph{position:absolute;left:0;right:0;bottom:0;height:740px;background:url(${img("web-karlmay-arena-tag.jpg")}) 30% 70%/cover}
 .p{position:absolute;left:72px;bottom:56px;background:${KM.ink};color:${KM.paper};font-family:Roboto;font-weight:700;font-size:38px;padding:18px 32px;border-radius:14px}`,
-  `<div class="tx"><div class="label">Geschenkidee Weihnachten</div><h1>Verschenken Sie<br><span>Wilden Westen.</span></h1>
+  `<div class="tx"><div class="label">Karl-May-Spiele 2027 · Geschenkidee</div><h1>Verschenken Sie<br><span>Wilden Westen.</span></h1>
 <div class="sub">Ein Tag bei den Karl-May-Spielen 2027 – mit Bus, Hotel &amp; Ticket.</div></div>
 <div class="ph"></div><div class="p">399 € p. P. · Juli 2027</div>${logo("right:56px;bottom:48px", 140)}`,
 );
@@ -254,7 +254,7 @@ h1 span{color:${DZ.accent}}
 .t b{display:block;font-family:'DM Serif Display';font-weight:400;font-size:52px;color:${DZ.accent}}
 .t span{display:block;font-weight:700;font-size:32px;margin-top:8px}
 .p{position:absolute;left:0;right:0;bottom:56px;text-align:center;font-weight:800;font-size:40px}`,
-  `<div class="ph"></div><h1>4 Tage.<br><span>1 Jahreswechsel.</span></h1>
+  `<div class="ph"></div><h1>Silvester in Danzig:<br><span>4 Tage, alles drin.</span></h1>
 <div class="g">${dz.map(([b, s]) => `<div class="t"><b>${b}</b><span>${s}</span></div>`).join("")}</div>
 <div class="p">30.12.2026 – 02.01.2027 · ab 789 € p. P.</div>`,
 );
